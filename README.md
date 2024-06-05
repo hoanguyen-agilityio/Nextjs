@@ -27,8 +27,9 @@ Make sure you install packages with correct version below:
   - [node v18.18.2+](https://nodejs.org/en/download/package-manager)
   - [pnpm 9.1.2+](https://pnpm.io/installation)
 
-- **Note:** Please add `.env` into root of project source code, refer `.env.sample`.
-- Refer: [Clone this mockAPI](https://mockapi.io/clone/665e8a3f1e9017dc16f05e15)
+- **Note:**:
+    - Please add `.env` into root of project source code, refer `.env.sample`.
+    - Refer: Here's the [sample mockAPI project](https://mockapi.io/clone/665e8a3f1e9017dc16f05e15), feel free to **clone** then use in your project
 
 Check and update config image hosting on `next.config.mjs` file follow [Next.js document](https://nextjs.org/docs/messages/next-image-unconfigured-host)
 
