@@ -1,13 +1,31 @@
-## Summary:
-  - Link of a ticket for this MR
-  - MR description
+# Merge Request
 
-## Screenshots:
-  - Provide Image/Video for your changes if any
+### Summary
 
-## Checklist:
-  - [ ] Self-reviewing your changes
-  - [ ] Following code style guide, spell check
-  - [ ] Add/Update comments where necessary to explain logic
-  - [ ] Verify feature/bugfix manual by yourself
-  - [ ] Add/Update Unit test
+(Provide a detailed description of the changes included in this merge request.)
+
+### GitLab Issue Link
+
+(Provide the link to the GitLab issue associated with the completion of this feature.)
+
+
+### Completed Tasks
+
+(Mention a detailed list of the tasks that have been completed.)
+
+### Pre-Pull Request Checklist
+
+Please ensure the following before submitting your pull request:
+
+- [ ] Conduct a self-review of your changes.
+- [ ] Follow the code style guide, and perform spell checks and linting.
+- [ ] Add or update comments where necessary to explain your logic.
+- [ ] Manually verify the feature or bug fix.
+- [ ] Add or update unit tests and ensure all tests pass.
+- [ ] Ensure the build script passes.
+- [ ] Update the relevant documentations.
+- [ ] Assign the pull request to reviewers.
+
+### Relevant Logs and/or Screenshots:
+
+(If your changes involve any updates to the user interface, kindly include screenshots, videos of the modifications.)
