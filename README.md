@@ -81,3 +81,23 @@ Check and update config image hosting on `next.config.mjs` file follow [Next.js 
 ├── tailwind.config.ts              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
 ```
+
+## Maintainers
+
+This project is maintained by:
+
+- **Huy Nguyen Van**
+  - Email: huy.nguyenvan@asnet.com.vn
+  - GitLab: [@huy.nguyenvan](https://gitlab.asoft-python.com/huy.nguyenvan)
+  - Slack: huy.nguyenvan
+
+### Responsibilities
+
+- Reviewing and merging pull requests.
+- Managing and responding to issues.
+- Updating project documentation.
+- Ensuring the project is up-to-date with the latest standards and practices.
+
+### Availability
+
+Huy is typically available during weekdays and aims to respond to issues and pull requests within 48 hours. For urgent matters, please email directly.
