@@ -35,10 +35,10 @@ Check and update config image hosting on `next.config.mjs` file follow [Next.js 
 
 ### Get source code
 
-| Command                                                                                              | Action                    |
-| :----------------------------------------------------------------------------------------------------| :------------------------ |
-| `git clone --depth=1 git@gitlab.asoft-python.com:huy.nguyenvan/nextjs-boilerplate.git nextjs-project`| Clone Repository with SSH |
-| `$ cd nextjs-project`                                                                                | Redirect to folder        |
+| Command                                                                                                            | Action                    |
+| :------------------------------------------------------------------------------------------------------------------| :------------------------ |
+| `git clone --depth=1 git@gitlab.asoft-python.com:bgh/javascript/boilerplates/nextjs-boilerplate.git nextjs-project`| Clone Repository with SSH |
+| `$ cd nextjs-project`                                                                                              | Redirect to folder        |
 
 ### Build and Run app
 
