@@ -20,3 +20,4 @@ export { default as ChartArrows } from './ChartArrows';
 export { default as FilterIcon } from './Filter';
 export { default as ArrowLeft } from './ArrowLeft';
 export { default as ArrowRight } from './ArrowRight';
+export { default as CheckedIcon } from './Checked';
