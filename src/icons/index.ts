@@ -17,3 +17,4 @@ export { default as RightArrowUp } from './RightArrowUp';
 export { default as NewCustomerIcon } from './NewCustomer';
 export { default as CalendarIcon } from './Calendar';
 export { default as ChartArrows } from './ChartArrows';
+export { default as FilterIcon } from './Filter';
