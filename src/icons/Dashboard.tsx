@@ -1,6 +1,6 @@
 import { IconProps } from '@/types';
 
-const Dashboard: React.FC<IconProps> = ({ width, height, className }) => (
+const DashboardIcon: React.FC<IconProps> = ({ width, height, className }) => (
   <svg
     width={width}
     height={height}
@@ -18,4 +18,4 @@ const Dashboard: React.FC<IconProps> = ({ width, height, className }) => (
   </svg>
 );
 
-export default Dashboard;
+export default DashboardIcon;
