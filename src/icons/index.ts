@@ -14,3 +14,4 @@ export { default as NotificationIcon } from './Notification';
 export { default as SearchIcon } from './Search';
 export { default as UpAndDownArrows } from './UpAndDownArrows';
 export { default as RightArrowUp } from './RightArrowUp';
+export { default as NewCustomerIcon } from './NewCustomer';
