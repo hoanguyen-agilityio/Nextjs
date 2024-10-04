@@ -6,3 +6,4 @@ export { default as NewsFeedIcon } from './NewsFeed';
 export { default as AnalyticsIcon } from './Analytics';
 export { default as MarketIcon } from './Market';
 export { default as ArchiveIcon } from './Archive';
+export { default as ProfileIcon } from './Profile';
