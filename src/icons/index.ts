@@ -11,3 +11,4 @@ export { default as SettingIcon } from './Settings';
 export { default as PlusIcon } from './Plus';
 export { default as MoonIcon } from './Moon';
 export { default as NotificationIcon } from './Notification';
+export { default as SearchIcon } from './Search';
