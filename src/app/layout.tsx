@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 // Components
 import Header from '@/layouts/Header';
 import './globals.css';
+import { NextUIProvider } from '@nextui-org/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,8 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
+        <NextUIProvider>
+          <Header />
+          {children}
+        </NextUIProvider>
       </body>
     </html>
   );
