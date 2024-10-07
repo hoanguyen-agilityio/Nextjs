@@ -18,9 +18,7 @@ describe('Search component', () => {
             className="mr-5 cursor-pointer"
           />
         }
-      >
-        Button
-      </SearchCustom>,
+      />,
     );
     expect(container).toMatchSnapshot();
   });
