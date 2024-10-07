@@ -11,9 +11,6 @@ const ButtonCustom = extendVariants(Button, {
     isDisabled: {
       true: 'opacity-50 cursor-not-allowed',
     },
-    isLoading: {
-      true: '[&_div]:w-5 [&_div]:h-5',
-    },
     size: {
       xs: 'py-4 pl-5 pr-4 text-xbase font-semibold border',
       md: 'py-1 px-2 text-base',
