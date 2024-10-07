@@ -4,7 +4,7 @@ import { extendVariants, Button } from '@nextui-org/react';
 const ButtonCustom = extendVariants(Button, {
   variants: {
     color: {
-      default: 'text-black bg-white border-gray-700-translucent',
+      default: 'text-black bg-white border-translucent-700',
       secondary: 'bg-transparent border-transparent',
       primary: 'text-black bg-blue-500 border-blue-500',
     },
