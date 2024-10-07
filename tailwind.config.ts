@@ -36,6 +36,10 @@ const config: Config = {
         'light-gray-100': '#D9E1E7',
         'light-gray-100-translucent': '#D9E1E7CC'
       },
+      width: {
+        'm': '351px',
+        'xl': '360px',
+      }
     },
   },
   plugins: [nextui()],
