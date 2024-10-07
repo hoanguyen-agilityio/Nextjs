@@ -12,7 +12,7 @@ const ButtonCustom = extendVariants(Button, {
       true: 'opacity-50 cursor-not-allowed',
     },
     size: {
-      xs: 'py-4 pl-5 pr-4 text-xbase font-semibold border',
+      xs: 'py-4 pl-5 pr-4 text-xsm font-semibold border',
       md: 'py-1 px-2 text-base',
     },
     radius: {

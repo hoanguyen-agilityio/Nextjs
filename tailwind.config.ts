@@ -15,9 +15,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       size: {
-        'xbase': '15px',
-        'lg-sm': '17px',
-        'xxxl': '32px',
+        'sm': '14px',
+        'xsm': '15px',
+        'base': '16px',
+        'lg': '17px',
+        'xl': '18px',
+        '2xl': '20px',
+        '3xl': '32px',
+        '4xl': '36px',
       },
       colors: {
         ...colors,
