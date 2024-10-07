@@ -36,7 +36,7 @@ export const ButtonWithLabelAndIcon: Story = {
     children: 'Button',
     startContent: <ArrowLeft width="19px" height="14px" fill="white" />,
     className:
-      'flex py-3 px-6 rounded-lg border-2 border-slate-950 bg-black text-white',
+      'flex py-3 px-6 rounded-lg border border-slate-950 text-white bg-black-900',
     isDisabled: false,
     color: 'default',
     size: 'xs',
@@ -53,7 +53,7 @@ export const ButtonIcon: Story = {
     size: 'xs',
     radius: 'sm',
     className:
-      'py-3 px-6 rounded-lg border-2 border-slate-950 bg-black text-white',
+      'py-3 px-6 rounded-lg border border-slate-950 bg-black-900 text-white',
   },
 };
 
