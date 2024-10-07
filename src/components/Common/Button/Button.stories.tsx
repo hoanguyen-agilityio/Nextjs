@@ -1,40 +1,46 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Button from './index';
+import ButtonCustom from './index';
 import { ArrowLeft } from '@/icons';
 
 export default {
   title: 'Components/Button',
-  component: Button,
+  component: ButtonCustom,
 } as Meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof ButtonCustom>;
 
 // Button type default
 export const ButtonDefault: Story = {
   args: {
-    label: 'Default Button',
-    className: 'py-3 px-6 rounded-lg border-2 border-slate-950',
+    children: 'Default Button',
+    color: 'default',
+    size: 'xs',
+    radius: 'sm',
   },
 };
 
 // Button type default disable
 export const ButtonDisabledDefault: Story = {
   args: {
-    label: 'Default Button',
-    className:
-      'py-3 px-6 rounded-lg border-2 border-slate-950 cursor-not-allowed opacity-50',
+    children: 'Default Button',
     isDisabled: true,
+    color: 'default',
+    size: 'xs',
+    radius: 'sm',
   },
 };
 
 // Button with label and icon
 export const ButtonWithLabelAndIcon: Story = {
   args: {
-    label: 'Button',
+    children: 'Button',
     startContent: <ArrowLeft width="19px" height="14px" fill="white" />,
     className:
       'flex py-3 px-6 rounded-lg border-2 border-slate-950 bg-black text-white',
     isDisabled: false,
+    color: 'default',
+    size: 'xs',
+    radius: 'sm',
   },
 };
 
@@ -42,8 +48,24 @@ export const ButtonWithLabelAndIcon: Story = {
 export const ButtonIcon: Story = {
   args: {
     startContent: <ArrowLeft width="19px" height="14px" fill="white" />,
+    isDisabled: false,
+    color: 'default',
+    size: 'xs',
+    radius: 'sm',
     className:
       'py-3 px-6 rounded-lg border-2 border-slate-950 bg-black text-white',
-    isDisabled: false,
+  },
+};
+
+// Button loading
+export const ButtonLoading: Story = {
+  args: {
+    children: 'Loading...',
+    color: 'default',
+    size: 'xs',
+    radius: 'sm',
+    isLoading: true,
+    isDisabled: true,
+    className: 'flex',
   },
 };
