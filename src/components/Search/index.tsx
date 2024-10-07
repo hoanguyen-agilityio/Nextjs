@@ -37,7 +37,7 @@ const SearchCustom = extendVariants(Input, {
       xs: {
         mainWrapper: 'w-xl h-14',
         innerWrapper: 'flex',
-        inputWrapper: 'py-4 px-6 w-xl',
+        inputWrapper: 'py-4 px-6 w-full',
         input: 'text-base font-semibold',
       },
       md: {

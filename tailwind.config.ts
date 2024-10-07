@@ -1,6 +1,6 @@
 import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
-import { colors, fontSize } from "@/themes";
+import { colors, fontSize, screen } from "@/themes";
 
 const config: Config = {
   content: [
@@ -21,9 +21,8 @@ const config: Config = {
         ...colors,
       },
       width: {
-        'm': '351px',
-        'xl': '360px',
-      }
+        ...screen,
+      },
     },
   },
   plugins: [nextui()],
