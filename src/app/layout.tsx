@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-// Components
-import Header from '@/layouts/Header';
-import './globals.css';
 import { NextUIProvider } from '@nextui-org/react';
 
-const inter = Inter({ subsets: ['latin'] });
+// Components
+import montserrat from '@/assets/fonts';
+import Header from '@/layouts/Header';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Next.js Boilerplate',
@@ -26,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <NextUIProvider>
           <Header />
           {children}
