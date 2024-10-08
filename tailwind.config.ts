@@ -1,5 +1,6 @@
 import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
+import { colors, fontSize } from "@/themes";
 
 const config: Config = {
   content: [
@@ -13,6 +14,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontSize,
+      colors
     },
   },
   plugins: [nextui()],
