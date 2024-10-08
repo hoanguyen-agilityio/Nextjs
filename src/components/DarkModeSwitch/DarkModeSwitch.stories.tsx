@@ -8,7 +8,7 @@ export default {
 
 type Story = StoryObj<typeof DarkModeSwitch>;
 
-// Button type default
+// Dark mode switch type default
 export const DarkModeSwitchDefault: Story = {
   args: {},
 };
