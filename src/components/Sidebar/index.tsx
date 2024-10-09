@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { Logo, PlusIcon } from '@/icons';
 import { ButtonCustom, DarkModeSwitch, Menu } from '@/components';
 import { colors } from '@/themes';
+import { HOME_PAGE } from '@/Constant';
 
 const Sidebar = () => {
   return (
     <aside className="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg">
       <div className="pl-xl py-3xl border-b-2 border-gray-50">
-        <Link href="/">
+        <Link href={HOME_PAGE}>
           <Logo width="267px" height="42px" fill={colors.dark[800]} />
         </Link>
       </div>
