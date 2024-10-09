@@ -1,2 +1,2 @@
-export * from './Menu';
-export * from './Router';
+export * from './menu';
+export * from './router';
