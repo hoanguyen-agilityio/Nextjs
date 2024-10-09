@@ -1,6 +1,6 @@
+import { colors } from '@/themes';
 import { SearchCustom } from '@/components';
 import { NotificationIcon, SearchIcon, UpAndDownArrows } from '@/icons';
-import { colors } from '@/themes';
 
 const Header = () => {
   return (
