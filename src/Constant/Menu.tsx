@@ -9,7 +9,7 @@ import {
   PROFILE_PAGE,
   SETTINGS_PAGE,
   WALLET_PAGE,
-} from './Router';
+} from './router';
 
 const Dashboard = dynamic(() => import('@/icons/Dashboard'));
 const Inbox = dynamic(() => import('@/icons/Inbox'));
