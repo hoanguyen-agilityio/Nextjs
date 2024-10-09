@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sidebar render Sidebar 1`] = `
+exports[`Sidebar Component render Sidebar 1`] = `
 <div>
   <aside
     class="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg"
@@ -51,7 +51,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="dashboard"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-[#12AFF0] bg-[#12AFF033]"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-blue-400 bg-translucent-400"
           >
             <span
               class="ml-5"
@@ -64,7 +64,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="inbox"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -77,7 +77,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="wallet"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -90,7 +90,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="newsFeed"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -103,7 +103,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="analytics"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -116,7 +116,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="market"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -129,7 +129,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="archive"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -142,7 +142,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="profile"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400 mt-[100px]"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400 mt-[100px]"
           >
             <span
               class="ml-5"
@@ -155,7 +155,7 @@ exports[`Sidebar render Sidebar 1`] = `
           href="settings"
         >
           <li
-            class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
           >
             <span
               class="ml-5"
@@ -167,17 +167,16 @@ exports[`Sidebar render Sidebar 1`] = `
       </ul>
     </nav>
     <div
-      class="px-[52px] text-grayBlue-400 font-semibold pt-6 border-t-2 border-gray-50"
+      class="px-[52px] pt-6 border-t-2 border-gray-50"
     >
       <button
-        class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent flex flex-row-reverse items-center text-lg"
+        class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
         type="button"
       >
-        Add new product
         <svg
-          class="mr-4"
           fill="none"
           height="46px"
+          style="max-width: none;"
           viewBox="0 0 46 46"
           width="46px"
           xmlns="http://www.w3.org/2000/svg"
@@ -195,6 +194,7 @@ exports[`Sidebar render Sidebar 1`] = `
             fill-rule="evenodd"
           />
         </svg>
+        Add new product
       </button>
       <div
         class="flex items-center justify-between my-11"
@@ -218,7 +218,7 @@ exports[`Sidebar render Sidebar 1`] = `
             />
           </svg>
           <label
-            class="text-lg font-semibold"
+            class="text-lg font-semibold text-grayBlue-400"
           >
             Dark mode
           </label>

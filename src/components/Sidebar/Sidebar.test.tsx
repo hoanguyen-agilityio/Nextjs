@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Sidebar from '.';
+import { HOME_PAGE } from '@/Constant';
 
 describe('Sidebar Component', () => {
   test('render Sidebar', () => {
@@ -17,6 +18,6 @@ describe('Sidebar Component', () => {
     render(<Sidebar />);
 
     screen.getByText('Dashboard').click();
-    expect(window.location.pathname).toBe('/');
+    expect(window.location.pathname).toBe(HOME_PAGE);
   });
 });
