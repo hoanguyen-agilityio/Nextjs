@@ -8,6 +8,7 @@ const PlusIcon: React.FC<IconProps> = ({ width, height, className }) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     className={className}
+    style={{ maxWidth: 'none' }}
   >
     <circle cx="23" cy="23" r="23" fill="#12AFF0" />
     <path
