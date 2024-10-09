@@ -1,15 +1,5 @@
 import dynamic from 'next/dynamic';
-import {
-  ANALYTICS_PAGE,
-  ARCHIVE_PAGE,
-  DASHBOARD_PAGE,
-  INBOX_PAGE,
-  MARKET_PAGE,
-  NEWS_FEED_PAGE,
-  PROFILE_PAGE,
-  SETTINGS_PAGE,
-  WALLET_PAGE,
-} from './router';
+import { ROUTERS } from './router';
 
 const Dashboard = dynamic(() => import('@/icons/Dashboard'));
 const Inbox = dynamic(() => import('@/icons/Inbox'));
@@ -26,47 +16,47 @@ export const MENU = [
     icon: <Dashboard width="30px" height="30px" />,
     label: 'Dashboard',
     className: 'text-blue-400 bg-translucent-400',
-    href: DASHBOARD_PAGE,
+    href: ROUTERS.DASHBOARD,
   },
   {
     icon: <Inbox width="30px" height="30px" />,
     label: 'Inbox',
-    href: INBOX_PAGE,
+    href: ROUTERS.INBOX,
   },
   {
     icon: <Wallet width="30px" height="30px" />,
     label: 'Wallet',
-    href: WALLET_PAGE,
+    href: ROUTERS.WALLET,
   },
   {
     icon: <NewsFeed width="30px" height="30px" />,
     label: 'NewsFeed',
-    href: NEWS_FEED_PAGE,
+    href: ROUTERS.NEWS_FEED,
   },
   {
     icon: <Analytics width="30px" height="30px" />,
     label: 'Analytics',
-    href: ANALYTICS_PAGE,
+    href: ROUTERS.ANALYTICS,
   },
   {
     icon: <Market width="30px" height="30px" />,
     label: 'Market',
-    href: MARKET_PAGE,
+    href: ROUTERS.MARKET,
   },
   {
     icon: <Archive width="30px" height="30px" />,
     label: 'Archive',
-    href: ARCHIVE_PAGE,
+    href: ROUTERS.ARCHIVE,
   },
   {
     icon: <Profile width="30px" height="30px" />,
     label: 'Profile',
     className: 'mt-[100px]',
-    href: PROFILE_PAGE,
+    href: ROUTERS.PROFILE,
   },
   {
     icon: <Settings width="30px" height="30px" />,
     label: 'Settings',
-    href: SETTINGS_PAGE,
+    href: ROUTERS.PROFILE,
   },
 ];
