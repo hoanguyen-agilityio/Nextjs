@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Component render menu 1`] = `
+<div>
+  <nav
+    class="px-6 border-b-2 border-gray-50"
+  >
+    <ul>
+      <a
+        href="dashboard"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-blue-400 bg-translucent-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Dashboard
+          </span>
+        </li>
+      </a>
+      <a
+        href="inbox"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Inbox
+          </span>
+        </li>
+      </a>
+      <a
+        href="wallet"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Wallet
+          </span>
+        </li>
+      </a>
+      <a
+        href="newsFeed"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            NewsFeed
+          </span>
+        </li>
+      </a>
+      <a
+        href="analytics"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Analytics
+          </span>
+        </li>
+      </a>
+      <a
+        href="market"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Market
+          </span>
+        </li>
+      </a>
+      <a
+        href="archive"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Archive
+          </span>
+        </li>
+      </a>
+      <a
+        href="profile"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400 mt-[100px]"
+        >
+          <span
+            class="ml-5"
+          >
+            Profile
+          </span>
+        </li>
+      </a>
+      <a
+        href="settings"
+      >
+        <li
+          class="flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+        >
+          <span
+            class="ml-5"
+          >
+            Settings
+          </span>
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+`;

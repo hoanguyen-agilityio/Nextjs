@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Sidebar from '.';
 
-describe('Sidebar', () => {
+describe('Sidebar Component', () => {
   test('render Sidebar', () => {
     const { container } = render(<Sidebar />);
     expect(container).toMatchSnapshot();
