@@ -18,6 +18,7 @@ const config: Config = {
       colors,
       maxWidth: screen,
       width: screen,
+      height: screen,
       spacing: {
         ...customSpacing.padding,
         ...customSpacing.margin,
