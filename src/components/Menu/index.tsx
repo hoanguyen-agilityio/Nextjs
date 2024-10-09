@@ -10,7 +10,7 @@ const Menu = () => {
           <Link href={href} key={label}>
             <li
               className={twMerge(
-                'flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400',
+                'flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400',
                 className,
               )}
             >
