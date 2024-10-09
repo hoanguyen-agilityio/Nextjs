@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { twMerge } from 'tailwind-merge';
 import { MENU } from '@/Constant';
 
 const Menu = () => {
@@ -8,7 +9,10 @@ const Menu = () => {
         {MENU.map(({ icon, label, className, href }) => (
           <Link href={href} key={label}>
             <li
-              className={`flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold ${className}`}
+              className={twMerge(
+                'flex py-[18px] pl-[26px] rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400',
+                className,
+              )}
             >
               {icon}
               <span className="ml-5">{label}</span>

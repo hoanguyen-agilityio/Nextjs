@@ -31,49 +31,42 @@ export const MENU = [
   {
     icon: <Inbox width="30px" height="30px" />,
     label: 'Inbox',
-    className: 'text-grayBlue-400',
     href: INBOX_PAGE,
   },
   {
     icon: <Wallet width="30px" height="30px" />,
     label: 'Wallet',
-    className: 'text-grayBlue-400',
     href: WALLET_PAGE,
   },
   {
     icon: <NewsFeed width="30px" height="30px" />,
     label: 'NewsFeed',
-    className: 'text-grayBlue-400',
     href: NEWS_FEED_PAGE,
   },
   {
     icon: <Analytics width="30px" height="30px" />,
     label: 'Analytics',
-    className: 'text-grayBlue-400',
     href: ANALYTICS_PAGE,
   },
   {
     icon: <Market width="30px" height="30px" />,
     label: 'Market',
-    className: 'text-grayBlue-400',
     href: MARKET_PAGE,
   },
   {
     icon: <Archive width="30px" height="30px" />,
     label: 'Archive',
-    className: 'text-grayBlue-400',
     href: ARCHIVE_PAGE,
   },
   {
     icon: <Profile width="30px" height="30px" />,
     label: 'Profile',
-    className: 'text-grayBlue-400 mt-[100px]',
+    className: 'mt-[100px]',
     href: PROFILE_PAGE,
   },
   {
     icon: <Settings width="30px" height="30px" />,
     label: 'Settings',
-    className: 'text-grayBlue-400',
     href: SETTINGS_PAGE,
   },
 ];
