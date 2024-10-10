@@ -1,8 +1,10 @@
+import { Overview } from '@/components';
+
 const Homepage = () => {
   return (
-    <main className="container mx-auto">
-      <h1 className="text-lg font-semibold">This is homepage</h1>
-    </main>
+    <div className="pl-7 pr-[50px] pt-5 pb-11">
+      <Overview />
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-// Third party
+'use client';
 import { extendVariants, Button } from '@nextui-org/react';
 
 const ButtonCustom = extendVariants(Button, {
