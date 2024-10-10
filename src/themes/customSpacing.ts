@@ -24,7 +24,7 @@ export const customSpacing = {
     '3xl': '30px',
     '4xl': '42px',
     '5xl': '50px',
-    '6xl': '105',
+    '6xl': '105px',
     '8xl': '137px',
   },
 };

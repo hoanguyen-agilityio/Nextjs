@@ -1,10 +1,9 @@
-'use client';
 import { dateDicker, productSelector } from '@/mocks';
 import { CalendarIcon } from '@/icons';
 import { OverviewStats, RenderSelect } from '@/components';
 
 const Overview = () => (
-  <section className="w-full rounded-lg">
+  <section className="w-full rounded-lg bg-white">
     <div className="flex pt-5 pl-5">
       <div className="pl-lg pr-5 py-3 rounded-lg flex justify-between  border-1 border-gray-50 w-s cursor-pointer">
         <CalendarIcon width="20px" height="21px" fill="black" />
@@ -13,12 +12,12 @@ const Overview = () => (
       <RenderSelect
         defaultSelectedKey="Weekly"
         items={dateDicker}
-        width="120px"
+        className="w-[120px]"
       />
       <RenderSelect
         defaultSelectedKey="All Products"
         items={productSelector}
-        width="152px"
+        className="w-[152px]"
       />
     </div>
     <OverviewStats />
