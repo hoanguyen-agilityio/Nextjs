@@ -16,6 +16,7 @@ const ButtonCustom = extendVariants(Button, {
       md: 'py-1 px-2 text-base',
     },
     radius: {
+      md: 'rounded-md',
       sm: 'rounded-lg',
     },
     defaultVariants: {
