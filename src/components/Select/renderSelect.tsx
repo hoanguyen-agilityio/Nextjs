@@ -7,19 +7,17 @@ interface IRenderSelect {
   width: string;
 }
 
-const RenderSelect = ({ defaultSelectedKey, items, width }: IRenderSelect) => {
-  return (
-    <SelectCustom
-      defaultSelectedKeys={[defaultSelectedKey]}
-      color="default"
-      size="default"
-      className={`w-[${width}] ml-5`}
-    >
-      {items.map((item) => (
-        <SelectItem key={item.key}>{item.label}</SelectItem>
-      ))}
-    </SelectCustom>
-  );
-};
+const RenderSelect = ({ defaultSelectedKey, items, width }: IRenderSelect) => (
+  <SelectCustom
+    defaultSelectedKeys={[defaultSelectedKey]}
+    color="default"
+    size="default"
+    className={`w-[${width}] ml-5`}
+  >
+    {items.map((item) => (
+      <SelectItem key={item.key}>{item.label}</SelectItem>
+    ))}
+  </SelectCustom>
+);
 
 export default RenderSelect;
