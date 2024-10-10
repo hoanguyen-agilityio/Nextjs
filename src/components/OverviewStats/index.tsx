@@ -2,17 +2,17 @@ import { ChartArrows } from '@/icons';
 import { data } from '@/mocks';
 
 const OverviewStats = () => (
-  <div className="flex justify-between w-full pt-11 pb-[50px] pl-20 pr-[137px] bg-white text-black">
+  <div className="flex justify-between w-full pt-11 pb-5xl pl-20 pr-8xl bg-white text-black">
     {data.map((item, index) => (
       <div
         key={index}
-        className={`flex flex-col items-center ${index !== data.length - 1 ? 'border-r border-gray-700 pr-[105px]' : ''}`}
+        className={`flex flex-col items-center ${index !== data.length - 1 ? 'border-r border-gray-700 pr-6xl' : ''}`}
       >
-        <span className="text-4xl font-semibold mb-[6px]">{item.value}</span>
-        <span className="text-base font-semibold text-grayBlue-400 mb-[5px]">
+        <span className="text-4xl font-semibold mb-2sm">{item.value}</span>
+        <span className="text-base font-semibold text-grayBlue-400 mb-2sm">
           {item.label}
         </span>
-        <div className="flex items-center rounded-lg bg-gray-50 py-[10px] px-[11px]">
+        <div className="flex items-center rounded-lg bg-gray-50 py-sm px-m">
           <ChartArrows
             width="12px"
             height="7px"
