@@ -14,7 +14,7 @@ import { columns, rows } from '@/mocks';
 import { CheckedIcon, ProductIcon } from '@/icons';
 import { ButtonCustom, TableCustom } from '@/components';
 
-const Dashboard = memo(({ products }: ProductList) => (
+const Table = memo(({ products }: ProductList) => (
   <TableCustom
     aria-label="Controlled table example with dynamic content"
     selectionMode="multiple"
@@ -96,6 +96,6 @@ const Dashboard = memo(({ products }: ProductList) => (
   </TableCustom>
 ));
 
-Dashboard.displayName = 'Dashboard';
+Table.displayName = 'Table';
 
-export default Dashboard;
+export default Table;

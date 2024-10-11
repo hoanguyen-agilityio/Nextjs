@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react';
-import Dashboard from '.';
 import { rows } from '@/mocks';
+import Table from '.';
 
-describe('Dashboard component', () => {
+describe('Table component', () => {
   const mockProducts = rows;
-  test('renders dashboard', () => {
-    const { container } = render(<Dashboard products={mockProducts} />);
+  test('renders table', () => {
+    const { container } = render(<Table products={mockProducts} />);
     expect(container).toMatchSnapshot();
   });
 
   test('renders the correct number of rows', () => {
-    render(<Dashboard products={mockProducts} />);
+    render(<Table products={mockProducts} />);
 
     const rowElements = screen.getAllByRole('row');
     expect(rowElements.length).toBe(mockProducts.length + 1);
