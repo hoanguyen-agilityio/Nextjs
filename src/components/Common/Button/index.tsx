@@ -6,7 +6,8 @@ const ButtonCustom = extendVariants(Button, {
     color: {
       default: 'text-black bg-white border-translucent-700',
       secondary: 'bg-transparent border-transparent',
-      primary: 'text-black bg-blue-500 border-blue-500',
+      primary: 'bg-blue-500 border-blue-500',
+      info: 'bg-translucent-400 text-blue-400',
     },
     isDisabled: {
       true: 'opacity-50 cursor-not-allowed',
