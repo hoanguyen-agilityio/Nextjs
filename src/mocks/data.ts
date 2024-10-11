@@ -33,4 +33,88 @@ const data = [
   },
 ];
 
-export { dateDicker, productSelector, data };
+const rows = [
+  {
+    key: '1',
+    img: '',
+    name: 'Basic design guideline',
+    status: '9 Jan 2023 9:43 PM',
+    views: '3.147',
+    sales: '1.004',
+    conversion: '6,5%',
+    total: '$14.238',
+  },
+  {
+    key: '2',
+    img: '',
+    name: 'Basic design guideline',
+    status: '9 Jan 2023 9:43 PM',
+    views: '3.147',
+    sales: '1.004',
+    conversion: '6,5%',
+    total: '$14.238',
+  },
+  {
+    key: '3',
+    img: '',
+    name: 'Basic design guideline',
+    status: '9 Jan 2023 9:43 PM',
+    views: '3.147',
+    sales: '1.004',
+    conversion: '6,5%',
+    total: '$14.238',
+  },
+  {
+    key: '4',
+    img: '',
+    name: 'Basic design guideline',
+    status: '9 Jan 2023 9:43 PM',
+    views: '3.147',
+    sales: '1.004',
+    conversion: '6,5%',
+    total: '$14.238',
+  },
+];
+
+const columns = [
+  {
+    key: 'no',
+    label: 'No',
+    className: 'w-20',
+  },
+  {
+    key: 'img',
+    label: '',
+    className: 'w-16',
+  },
+  {
+    key: 'name',
+    label: 'Name',
+  },
+  {
+    key: 'status',
+    label: 'Status',
+  },
+  {
+    key: 'views',
+    label: 'Views',
+  },
+  {
+    key: 'sales',
+    label: 'Sales',
+  },
+  {
+    key: 'conversion',
+    label: 'Conversion',
+  },
+  {
+    key: 'total',
+    label: 'Total',
+  },
+  {
+    key: 'details',
+    label: 'Details',
+  },
+];
+
+export { dateDicker, productSelector, data, rows, columns };

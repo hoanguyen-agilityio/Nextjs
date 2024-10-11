@@ -8,3 +8,4 @@ export { default as Pagination } from './Pagination';
 export * from './Common';
 export * from './Select';
 export * from './OverviewStats';
+export * from './Table';
