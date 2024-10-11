@@ -1,5 +1,6 @@
 export interface IProducts {
   key: string;
+  img: string;
   name: string;
   status: string;
   views: string;
@@ -10,4 +11,9 @@ export interface IProducts {
 
 export interface ProductList {
   products: IProducts[];
+}
+
+export interface TableRowCustomProps {
+  item: IProducts;
+  index: number;
 }

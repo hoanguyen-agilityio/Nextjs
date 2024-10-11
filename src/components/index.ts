@@ -4,8 +4,8 @@ export { default as DarkModeSwitch } from './DarkModeSwitch';
 export { default as Menu } from './Menu';
 export { default as Overview } from './Overview';
 export { default as Pagination } from './Pagination';
-export { default as Table } from './Table';
 
 export * from './Common';
 export * from './Select';
 export * from './OverviewStats';
+export * from './Table';
