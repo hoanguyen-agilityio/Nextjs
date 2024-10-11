@@ -8,6 +8,12 @@ const TableCustom = extendVariants(Table, {
         td: 'data-[selected=true]:before:opacity-0',
       },
     },
+    size: {
+      default: {
+        base: 'mt-5',
+        wrapper: 'py-7 px-4xl',
+      },
+    },
   },
 });
 
