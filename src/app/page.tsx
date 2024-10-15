@@ -1,5 +1,5 @@
-import { rows } from '@/mocks';
 import { colors } from '@/themes';
+import { getData } from '@/Services';
 import {
   ButtonCustom,
   Overview,
@@ -15,7 +15,8 @@ import {
   SearchIcon,
 } from '@/icons';
 
-const Homepage = () => {
+const Homepage = async () => {
+  const data = await getData();
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
       <div className="flex justify-between items-center mb-l">
@@ -107,7 +108,7 @@ const Homepage = () => {
           }
         />
       </div>
-      <Table products={rows} />
+      <Table products={data || []} />
       <Pagination />
     </div>
   );

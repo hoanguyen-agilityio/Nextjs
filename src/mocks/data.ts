@@ -36,7 +36,6 @@ const data = [
 const rows = [
   {
     key: '1',
-    img: '',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
     views: '3.147',
@@ -46,7 +45,6 @@ const rows = [
   },
   {
     key: '2',
-    img: '',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
     views: '3.147',
@@ -56,7 +54,6 @@ const rows = [
   },
   {
     key: '3',
-    img: '',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
     views: '3.147',
@@ -66,7 +63,6 @@ const rows = [
   },
   {
     key: '4',
-    img: '',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
     views: '3.147',
