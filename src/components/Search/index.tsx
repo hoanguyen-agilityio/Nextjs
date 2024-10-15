@@ -34,6 +34,7 @@ const SearchCustom = extendVariants(Input, {
         ],
         input: [
           'text-grayBlue-400',
+          'placeholder:text-grayBlue-400',
           'flex-grow',
           'focus:outline-none',
           'focus:ring-0',
