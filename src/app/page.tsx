@@ -1,3 +1,5 @@
+import { rows } from '@/mocks';
+import { colors } from '@/themes';
 import {
   ButtonCustom,
   Overview,
@@ -12,8 +14,6 @@ import {
   RightArrowUp,
   SearchIcon,
 } from '@/icons';
-import { rows } from '@/mocks';
-import { colors } from '@/themes';
 
 const Homepage = () => {
   return (
