@@ -1,6 +1,5 @@
 export interface IProducts {
   key: string;
-  img: string;
   name: string;
   status: string;
   views: string;

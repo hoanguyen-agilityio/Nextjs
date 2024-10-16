@@ -1,11 +1,10 @@
-import { rows } from '@/mocks';
+import { Suspense } from 'react';
 import { colors } from '@/themes';
 import {
   ButtonCustom,
   Overview,
-  Pagination,
+  ProductTable,
   SearchCustom,
-  Table,
 } from '@/components';
 import {
   CloseIcon,
@@ -14,6 +13,7 @@ import {
   RightArrowUp,
   SearchIcon,
 } from '@/icons';
+import { TableSkeleton } from '@/ui';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',
@@ -113,8 +113,9 @@ const Homepage = () => {
           }
         />
       </div>
-      <Table products={rows} />
-      <Pagination />
+      <Suspense fallback={<TableSkeleton productCount={10} />}>
+        <ProductTable />
+      </Suspense>
     </div>
   );
 };
