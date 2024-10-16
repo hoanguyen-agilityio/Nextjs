@@ -1,6 +1,6 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { EMPTY_TEXT, ROUTERS } from '@/Constant';
 import { IProducts } from '@/types';
 import { getData } from '@/Services';
@@ -11,13 +11,13 @@ const ProductTable = () => {
   const searchParams = useSearchParams();
   const searchQuery = searchParams.get(ROUTERS.SEARCH) || EMPTY_TEXT;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await getData(searchQuery);
-      setData(result || []);
-    };
+  const fetchData = async (query: string) => {
+    const result = await getData(query);
+    setData(result || []);
+  };
 
-    fetchData();
+  useMemo(() => {
+    fetchData(searchQuery);
   }, [searchQuery]);
 
   return (
