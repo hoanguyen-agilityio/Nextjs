@@ -14,7 +14,7 @@ const SearchCustom = extendVariants(Input, {
           'focus-within:ring-0',
         ],
         input: [
-          'text-gray-blue-400',
+          'text-grayBlue-400',
           'flex-grow',
           'focus:outline-none',
           'focus:ring-0',
@@ -23,6 +23,7 @@ const SearchCustom = extendVariants(Input, {
       secondary: {
         inputWrapper: [
           'bg-white',
+          'flex items-center space-x-2',
           'border',
           'border-gray-50',
           'h-full',
@@ -31,7 +32,13 @@ const SearchCustom = extendVariants(Input, {
           'dark:border-gray-700',
           'focus-within:ring-0',
         ],
-        input: ['text-gray-blue-400', 'focus:outline-none', 'focus:ring-0'],
+        input: [
+          'text-grayBlue-400',
+          'placeholder:text-grayBlue-400',
+          'flex-grow',
+          'focus:outline-none',
+          'focus:ring-0',
+        ],
       },
     },
     size: {
@@ -42,6 +49,7 @@ const SearchCustom = extendVariants(Input, {
         input: 'text-base font-semibold',
       },
       md: {
+        base: 'w-80',
         mainWrapper: 'w-80 h-12',
         innerWrapper: 'flex',
         inputWrapper: 'py-3.5 px-5 w-80',
