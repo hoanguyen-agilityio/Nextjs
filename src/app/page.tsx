@@ -1,11 +1,10 @@
+import { Suspense } from 'react';
 import { colors } from '@/themes';
-import { getData } from '@/Services';
 import {
   ButtonCustom,
   Overview,
-  Pagination,
+  ProductTable,
   SearchCustom,
-  Table,
 } from '@/components';
 import {
   CloseIcon,
@@ -14,6 +13,7 @@ import {
   RightArrowUp,
   SearchIcon,
 } from '@/icons';
+import { TableSkeleton } from '@/ui';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',
@@ -21,9 +21,7 @@ export const metadata = {
     'View and manage the list of products, apply filters, and search functionality on the dashboard.',
 };
 
-const Homepage = async () => {
-  const data = await getData();
-
+const Homepage = () => {
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
       <div className="flex justify-between items-center mb-l">
@@ -115,8 +113,9 @@ const Homepage = async () => {
           }
         />
       </div>
-      <Table products={data || []} />
-      <Pagination />
+      <Suspense fallback={<TableSkeleton productCount={10} />}>
+        <ProductTable />
+      </Suspense>
     </div>
   );
 };
