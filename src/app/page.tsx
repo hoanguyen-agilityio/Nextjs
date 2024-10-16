@@ -15,8 +15,15 @@ import {
   SearchIcon,
 } from '@/icons';
 
+export const metadata = {
+  title: 'Dashboard - Products Overview',
+  description:
+    'View and manage the list of products, apply filters, and search functionality on the dashboard.',
+};
+
 const Homepage = async () => {
   const data = await getData();
+
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
       <div className="flex justify-between items-center mb-l">
