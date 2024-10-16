@@ -1,6 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { ROUTERS } from '@/Constant';
 import { SearchCustom } from '@/components';
 import { SearchIcon } from '@/icons';
 
@@ -13,7 +14,7 @@ const ProductSearch = () => {
     if (query.trim()) {
       router.push(`?search=${encodeURIComponent(query)}`);
     } else {
-      router.push('/');
+      router.push(ROUTERS.HOME);
     }
   };
 
