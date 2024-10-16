@@ -15,6 +15,12 @@ import {
   SearchIcon,
 } from '@/icons';
 
+export const metadata = {
+  title: 'Dashboard - Products Overview',
+  description:
+    'View and manage the list of products, apply filters, and search functionality on the dashboard.',
+};
+
 const Homepage = () => {
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
