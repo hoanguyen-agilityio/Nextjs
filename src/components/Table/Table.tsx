@@ -35,7 +35,10 @@ const Table = memo(
         </TableHeader>
         <TableBody items={products}>
           {(products ?? []).map((item, index) => (
-            <TableRow key={item.key} className="p-2 border-b font-semibold">
+            <TableRow
+              key={item.key}
+              className="p-2 border-b font-semibold dark:border-gray-700"
+            >
               {(columnKey: React.Key) =>
                 RenderColumn(String(columnKey), {
                   item,
