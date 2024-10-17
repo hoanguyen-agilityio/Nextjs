@@ -1,47 +1,30 @@
 'use client';
-import { useMemo, useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { EMPTY_TEXT, ROUTERS } from '@/Constant';
+import { useRouter } from 'next/navigation';
 import { IProducts } from '@/types';
-import { getData } from '@/Services';
 import { Table, Pagination } from '@/components';
 
-const ProductTable = () => {
-  const [data, setData] = useState<IProducts[]>([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const searchParams = useSearchParams();
+interface IProductTable {
+  products: IProducts[];
+  currentPage: number;
+  itemsPerPage: number;
+  totalItems: number;
+}
+
+const ProductTable = ({
+  products,
+  currentPage,
+  itemsPerPage,
+  totalItems,
+}: IProductTable) => {
   const router = useRouter();
-  const searchQuery = searchParams.get(ROUTERS.SEARCH) || EMPTY_TEXT;
-  const itemsPerPage = 10;
-
-  const fetchData = async (query: string) => {
-    const result = await getData(query);
-    return result || [];
-  };
-
-  useMemo(() => {
-    let fetchedData: IProducts[] = [];
-    fetchData(searchQuery).then((result) => {
-      fetchedData = result;
-      setData(fetchedData);
-    });
-    return fetchedData;
-  }, [searchQuery]);
-
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-  const totalItems = data.length;
-
   const handlePageChange = (page: number) => {
-    setCurrentPage(page);
     router.push(`?page=${page}`);
   };
 
   return (
     <>
       <Table
-        products={currentItems}
+        products={products}
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
       />

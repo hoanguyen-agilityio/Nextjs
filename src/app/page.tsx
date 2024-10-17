@@ -4,7 +4,7 @@ import {
   ButtonCustom,
   Overview,
   ProductSearch,
-  ProductTable,
+  ProductTableWrapper,
 } from '@/components';
 import { CloseIcon, FilterIcon, NewCustomerIcon, RightArrowUp } from '@/icons';
 import { TableSkeleton } from '@/ui';
@@ -15,7 +15,14 @@ export const metadata = {
     'View and manage the list of products, apply filters, and search functionality on the dashboard.',
 };
 
-const Homepage = () => {
+const Homepage = ({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string };
+}) => {
+  const searchQuery = searchParams.search || '';
+  const currentPage = parseInt(searchParams.page || '1', 10);
+
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
       <div className="flex justify-between items-center mb-l">
@@ -96,7 +103,10 @@ const Homepage = () => {
         <ProductSearch />
       </div>
       <Suspense fallback={<TableSkeleton productCount={10} />}>
-        <ProductTable />
+        <ProductTableWrapper
+          searchQuery={searchQuery}
+          currentPage={currentPage}
+        />
       </Suspense>
     </div>
   );
