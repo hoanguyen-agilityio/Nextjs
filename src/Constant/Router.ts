@@ -11,6 +11,7 @@ const ROUTERS = {
   ARCHIVE: 'archive',
   PROFILE: 'profile',
   SETTINGS: 'settings',
+  SEARCH: 'search',
 };
 
 export { ROUTERS, BASE_URL, PRODUCT_URL };

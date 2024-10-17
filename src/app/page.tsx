@@ -3,16 +3,10 @@ import { colors } from '@/themes';
 import {
   ButtonCustom,
   Overview,
+  ProductSearch,
   ProductTable,
-  SearchCustom,
 } from '@/components';
-import {
-  CloseIcon,
-  FilterIcon,
-  NewCustomerIcon,
-  RightArrowUp,
-  SearchIcon,
-} from '@/icons';
+import { CloseIcon, FilterIcon, NewCustomerIcon, RightArrowUp } from '@/icons';
 import { TableSkeleton } from '@/ui';
 
 export const metadata = {
@@ -99,19 +93,7 @@ const Homepage = () => {
             Filter
           </ButtonCustom>
         </div>
-        <SearchCustom
-          color="secondary"
-          placeholder="search"
-          size="md"
-          radius="xs"
-          startContent={
-            <SearchIcon
-              width="21px"
-              height="21px"
-              className="mr-5 cursor-pointer"
-            />
-          }
-        />
+        <ProductSearch />
       </div>
       <Suspense fallback={<TableSkeleton productCount={10} />}>
         <ProductTable />
