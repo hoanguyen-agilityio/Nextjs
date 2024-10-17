@@ -1,12 +1,12 @@
 import { Suspense } from 'react';
-import { colors } from '@/themes';
 import {
   ButtonCustom,
+  Filter,
   Overview,
   ProductSearch,
   ProductTableWrapper,
 } from '@/components';
-import { CloseIcon, FilterIcon, NewCustomerIcon, RightArrowUp } from '@/icons';
+import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import { TableSkeleton } from '@/ui';
 
 export const metadata = {
@@ -51,47 +51,7 @@ const Homepage = ({
       </div>
       <Overview />
       <div className="flex justify-between items-center mt-3xl">
-        <div className="flex">
-          <ButtonCustom
-            color="info"
-            radius="sm"
-            endContent={
-              <CloseIcon width="12px" height="12px" fill={colors.blue[400]} />
-            }
-            className="text-xsm text-blue-400 font-semibold h-auto py-4 pr-4 pl-5 gap-lg mr-5"
-          >
-            All time
-          </ButtonCustom>
-          <ButtonCustom
-            color="info"
-            radius="sm"
-            endContent={
-              <CloseIcon width="12px" height="12px" fill={colors.blue[400]} />
-            }
-            className="text-xsm text-blue-400 font-semibold h-auto py-4 pr-4 pl-5 gap-5 mr-5"
-          >
-            Paid
-          </ButtonCustom>
-          <ButtonCustom
-            color="info"
-            radius="sm"
-            endContent={
-              <CloseIcon width="12px" height="12px" fill={colors.blue[400]} />
-            }
-            className="text-xsm text-blue-400 font-semibold h-auto py-4 pr-4 pl-5 gap-lg mr-5"
-          >
-            Premium
-          </ButtonCustom>
-          <ButtonCustom
-            color="default"
-            size="xs"
-            radius="sm"
-            startContent={<FilterIcon width="18px" height="16px" />}
-            className="h-auto gap-4"
-          >
-            Filter
-          </ButtonCustom>
-        </div>
+        <Filter />
         <ProductSearch />
       </div>
       <Suspense fallback={<TableSkeleton productCount={10} />}>

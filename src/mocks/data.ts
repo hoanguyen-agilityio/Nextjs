@@ -113,4 +113,15 @@ const columns = [
   },
 ];
 
-export { dateDicker, productSelector, data, rows, columns };
+const items = [
+  {
+    key: 'views_ascending',
+    label: 'Views ascending',
+  },
+  {
+    key: 'views_decreasing',
+    label: 'Views decreasing',
+  },
+];
+
+export { dateDicker, productSelector, data, rows, columns, items };
