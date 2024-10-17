@@ -6,13 +6,13 @@ import { ButtonCustom } from '@/components';
 
 const renderColumn = (
   columnKey: string,
-  { item, index }: TableRowCustomProps,
+  { item, index, currentPage, itemsPerPage }: TableRowCustomProps,
 ) => {
   switch (columnKey) {
     case 'no':
       return (
         <TableCell className="font-semibold text-dark-800">
-          {index + 1}
+          {index + 1 + (currentPage - 1) * itemsPerPage}
         </TableCell>
       );
     case 'name':

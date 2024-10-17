@@ -1,29 +1,39 @@
 'use client';
-import { useSearchParams } from 'next/navigation';
-import { useMemo, useState } from 'react';
-import { EMPTY_TEXT, ROUTERS } from '@/Constant';
+import { useRouter } from 'next/navigation';
 import { IProducts } from '@/types';
-import { getData } from '@/Services';
 import { Table, Pagination } from '@/components';
 
-const ProductTable = () => {
-  const [data, setData] = useState<IProducts[]>([]);
-  const searchParams = useSearchParams();
-  const searchQuery = searchParams.get(ROUTERS.SEARCH) || EMPTY_TEXT;
+interface IProductTable {
+  products: IProducts[];
+  currentPage: number;
+  itemsPerPage: number;
+  totalItems: number;
+}
 
-  const fetchData = async (query: string) => {
-    const result = await getData(query);
-    setData(result || []);
+const ProductTable = ({
+  products,
+  currentPage,
+  itemsPerPage,
+  totalItems,
+}: IProductTable) => {
+  const router = useRouter();
+  const handlePageChange = (page: number) => {
+    router.push(`?page=${page}`);
   };
-
-  useMemo(() => {
-    fetchData(searchQuery);
-  }, [searchQuery]);
 
   return (
     <>
-      <Table products={data} />
-      <Pagination />
+      <Table
+        products={products}
+        currentPage={currentPage}
+        itemsPerPage={itemsPerPage}
+      />
+      <Pagination
+        currentPage={currentPage}
+        totalItems={totalItems}
+        itemsPerPage={itemsPerPage}
+        onPageChange={handlePageChange}
+      />
     </>
   );
 };
