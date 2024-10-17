@@ -1,5 +1,4 @@
 import { getKeyValue, TableCell } from '@nextui-org/react';
-import { colors } from '@/themes';
 import { TableRowCustomProps } from '@/types';
 import { CheckedIcon, ProductIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
@@ -11,20 +10,20 @@ const renderColumn = (
   switch (columnKey) {
     case 'no':
       return (
-        <TableCell className="font-semibold text-dark-800">
+        <TableCell className="font-semibold text-dark-800 dark:text-white">
           {index + 1 + (currentPage - 1) * itemsPerPage}
         </TableCell>
       );
     case 'name':
       return (
-        <TableCell className="font-semibold text-dark-800">
+        <TableCell className="font-semibold text-dark-800 dark:text-white">
           {getKeyValue(item, columnKey)}
         </TableCell>
       );
     case 'img':
       return (
         <TableCell>
-          <ProductIcon width="54px" height="54px" fill={colors.gray[50]} />
+          <ProductIcon width="54px" height="54px" />
         </TableCell>
       );
     case 'status':
@@ -41,7 +40,7 @@ const renderColumn = (
             color="default"
             size="md"
             radius="sm"
-            className="text-sm text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+            className="text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
           >
             Details
           </ButtonCustom>

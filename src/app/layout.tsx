@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { NextUIProvider } from '@nextui-org/react';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 // Components
 import montserrat from '@/assets/fonts';
@@ -27,13 +28,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <NextUIProvider>
-          <main className="flex">
-            <Sidebar />
-            <div className="w-full">
-              <Header />
-              {children}
-            </div>
-          </main>
+          <NextThemesProvider attribute="class" defaultTheme="light">
+            <main className="flex">
+              <Sidebar />
+              <div className="w-full">
+                <Header />
+                {children}
+              </div>
+            </main>
+          </NextThemesProvider>
         </NextUIProvider>
       </body>
     </html>

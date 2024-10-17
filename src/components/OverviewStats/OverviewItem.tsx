@@ -17,8 +17,8 @@ const OverviewItem = memo(
       <span className="text-base font-semibold text-grayBlue-400 mb-2sm">
         {label}
       </span>
-      <div className="flex items-center rounded-lg bg-gray-50 py-sm px-m">
-        <ChartArrows width="12px" height="7px" fill="black" className="mr-1" />
+      <div className="flex items-center rounded-lg bg-gray-50 py-sm px-m dark:bg-gray-700">
+        <ChartArrows width="12px" height="7px" className="mr-1" />
         <span className="text-sm font-bold">{growth}</span>
       </div>
     </div>

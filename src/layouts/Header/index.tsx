@@ -4,7 +4,7 @@ import { NotificationIcon, SearchIcon, UpAndDownArrows } from '@/icons';
 
 const Header = () => {
   return (
-    <header className="flex justify-between w-full h-[104px] bg-white border-b-2 border-gray-50 pl-6 pr-4xl">
+    <header className="flex justify-between w-full h-[104px] bg-white border-b-2 border-gray-50 pl-6 pr-4xl dark:bg-dark-900 dark:border-gray-700">
       <div className="flex items-center relative w-xl">
         <SearchCustom
           color="default"
@@ -26,12 +26,14 @@ const Header = () => {
           height="26px"
           className="mr-10 cursor-pointer"
         />
-        <div className="flex items-center border-l-2 border-gray-50 pl-10">
+        <div className="flex items-center border-l-2 border-gray-50 pl-10 dark:border-gray-700">
           <span className="rounded-full w-sm h-sm bg-translucent-400 text-blue-400 flex items-center justify-center text-xl font-semibold">
             TE
           </span>
           <div className="flex flex-col ml-6 font-semibold">
-            <span className="text-xl text-dark-800">Theo Edwards</span>
+            <span className="text-xl text-dark-800 dark:text-white">
+              Theo Edwards
+            </span>
             <span className="text-base text-grayBlue-400">Administrator</span>
           </div>
           <UpAndDownArrows
