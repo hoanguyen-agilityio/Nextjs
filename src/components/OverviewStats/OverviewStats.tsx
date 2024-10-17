@@ -2,7 +2,7 @@ import { data } from '@/mocks';
 import OverviewItem from './OverviewItem';
 
 const OverviewStats = () => (
-  <div className="flex justify-between w-full pt-11 pb-5xl pl-20 pr-8xl bg-white text-black">
+  <div className="flex justify-between w-full pt-11 pb-5xl pl-20 pr-8xl bg-white text-black dark:bg-dark-900">
     {data.map((item, index) => (
       <OverviewItem
         key={index}

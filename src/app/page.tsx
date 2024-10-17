@@ -33,20 +33,14 @@ const Homepage = ({
             radius="sm"
             className="mr-5 h-auto gap-6"
             size="xs"
-            startContent={
-              <RightArrowUp
-                width="14px"
-                height="13px"
-                fill={colors.dark[800]}
-              />
-            }
+            startContent={<RightArrowUp width="14px" height="13px" />}
           >
             Export
           </ButtonCustom>
           <ButtonCustom
             color="primary"
             radius="sm"
-            className="p-4 h-auto gap-4 text-xsm font-semibold text-white"
+            className="p-4 h-auto gap-4 text-xsm font-semibold text-white dark:text-black-900"
             startContent={
               <NewCustomerIcon width="26px" height="26px" fill="white" />
             }
@@ -92,9 +86,7 @@ const Homepage = ({
             color="default"
             size="xs"
             radius="sm"
-            startContent={
-              <FilterIcon width="18px" height="16px" fill="black" />
-            }
+            startContent={<FilterIcon width="18px" height="16px" />}
             className="h-auto gap-4"
           >
             Filter

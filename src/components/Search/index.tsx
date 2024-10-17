@@ -28,7 +28,7 @@ const SearchCustom = extendVariants(Input, {
           'border-gray-50',
           'h-full',
           // dark theme
-          'dark:bg-dark-gray-900',
+          'dark:bg-dark-900',
           'dark:border-gray-700',
           'focus-within:ring-0',
         ],

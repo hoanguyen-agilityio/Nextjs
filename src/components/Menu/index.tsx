@@ -4,7 +4,7 @@ import { MENU } from '@/Constant';
 
 const Menu = () => {
   return (
-    <nav className="px-6 border-b-2 border-gray-50">
+    <nav className="px-6 border-b-2 border-gray-50 dark:border-gray-700">
       <ul>
         {MENU.map(({ icon, label, className, href }) => (
           <Link href={href} key={label}>

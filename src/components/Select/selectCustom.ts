@@ -5,7 +5,8 @@ const SelectCustom = extendVariants(Select, {
   variants: {
     color: {
       default: {
-        trigger: 'bg-white border-1 border-gray-50',
+        trigger:
+          'bg-white border-1 border-gray-50 dark:bg-dark-900 dark:border-gray-700',
         description: 'text-black',
         label: 'font-bold text-black',
         listbox: 'font-bold text-black',

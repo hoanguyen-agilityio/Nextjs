@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { useCallback } from 'react';
-import { colors } from '@/themes';
 import { ArrowLeft, ArrowRight } from '@/icons';
 import { ButtonCustom } from '@/components';
 
@@ -32,9 +31,7 @@ const Pagination = ({
       <ButtonCustom
         color="default"
         radius="md"
-        startContent={
-          <ArrowLeft width="19px" height="14px" fill={colors.dark[800]} />
-        }
+        startContent={<ArrowLeft width="19px" height="14px" />}
         className={clsx(
           'p-3 gap-4 font-semibold text-base border-1 border-translucent-100',
           { 'cursor-not-allowed opacity-50': currentPage === 1 },
@@ -52,9 +49,7 @@ const Pagination = ({
         radius="md"
         disabled={currentPage === totalPages}
         onClick={navigateToNextPage}
-        endContent={
-          <ArrowRight width="19px" height="14px" fill={colors.dark[800]} />
-        }
+        endContent={<ArrowRight width="19px" height="14px" />}
         className={clsx(
           'p-3 gap-4 font-semibold text-base border-1 border-translucent-100',
           { 'cursor-not-allowed opacity-50': currentPage === totalPages },

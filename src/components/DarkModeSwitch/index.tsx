@@ -1,7 +1,16 @@
+'use client';
+
 import { Switch } from '@nextui-org/react';
+import { useTheme } from 'next-themes';
 import { MoonIcon } from '@/icons';
 
 const DarkModeSwitch = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
     <div className="flex items-center justify-between my-11">
       <div className="flex items-center">
@@ -11,7 +20,8 @@ const DarkModeSwitch = () => {
         </label>
       </div>
       <Switch
-        defaultSelected
+        isSelected={theme === 'dark'}
+        onChange={toggleTheme}
         color="success"
         size="md"
         aria-label="Automatic updates"
