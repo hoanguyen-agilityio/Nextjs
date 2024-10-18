@@ -27,8 +27,8 @@ exports[`Table component renders table 1`] = `
           >
             <th
               class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-              data-key="row-header-column-7hgmc30zn6k"
-              id="react-aria-:r0:-row-header-column-7hgmc30zn6k"
+              data-key="row-header-column-2rr1a5galw9"
+              id="react-aria-:r0:-row-header-column-2rr1a5galw9"
               role="columnheader"
               tabindex="-1"
             >
@@ -163,7 +163,7 @@ exports[`Table component renders table 1`] = `
           <tr
             aria-labelledby="react-aria-:r0:-1-no"
             aria-selected="false"
-            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold"
+            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
             data-first="true"
             data-key="1"
             role="row"
@@ -216,14 +216,14 @@ exports[`Table component renders table 1`] = `
               </label>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="11no"
               id="react-aria-:r0:-1-no"
               role="rowheader"
               tabindex="-1"
             >
               <span>
-                1
+                NaN
               </span>
             </td>
             <td
@@ -240,9 +240,9 @@ exports[`Table component renders table 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  class="fill-gray-50 dark:fill-gray-700"
                   clip-rule="evenodd"
                   d="M0 20.4878V10.4878C0 7.72637 0.976311 5.36935 2.92893 3.41672C4.88155 1.4641 7.23858 0.487793 10 0.487793H44C46.7614 0.487793 49.1184 1.4641 51.0711 3.41672C53.0237 5.36935 54 7.72637 54 10.4878V44.4878C54 47.2492 53.0237 49.6062 51.0711 51.5589C49.1184 53.5115 46.7614 54.4878 44 54.4878H10C7.23858 54.4878 4.88155 53.5115 2.92893 51.5589C0.976311 49.6062 0 47.2492 0 44.4878V20.4878Z"
-                  fill="#F1F4F9"
                   fill-rule="evenodd"
                 />
                 <ellipse
@@ -268,7 +268,7 @@ exports[`Table component renders table 1`] = `
               </svg>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="11name"
               role="gridcell"
               tabindex="-1"
@@ -353,7 +353,7 @@ exports[`Table component renders table 1`] = `
               tabindex="-1"
             >
               <button
-                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white py-1 px-2 rounded-lg text-sm text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
                 type="button"
               >
                 Details
@@ -363,7 +363,7 @@ exports[`Table component renders table 1`] = `
           <tr
             aria-labelledby="react-aria-:r0:-2-no"
             aria-selected="false"
-            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold"
+            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
             data-key="2"
             data-middle="true"
             data-odd="true"
@@ -417,14 +417,14 @@ exports[`Table component renders table 1`] = `
               </label>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="22no"
               id="react-aria-:r0:-2-no"
               role="rowheader"
               tabindex="-1"
             >
               <span>
-                2
+                NaN
               </span>
             </td>
             <td
@@ -441,9 +441,9 @@ exports[`Table component renders table 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  class="fill-gray-50 dark:fill-gray-700"
                   clip-rule="evenodd"
                   d="M0 20.4878V10.4878C0 7.72637 0.976311 5.36935 2.92893 3.41672C4.88155 1.4641 7.23858 0.487793 10 0.487793H44C46.7614 0.487793 49.1184 1.4641 51.0711 3.41672C53.0237 5.36935 54 7.72637 54 10.4878V44.4878C54 47.2492 53.0237 49.6062 51.0711 51.5589C49.1184 53.5115 46.7614 54.4878 44 54.4878H10C7.23858 54.4878 4.88155 53.5115 2.92893 51.5589C0.976311 49.6062 0 47.2492 0 44.4878V20.4878Z"
-                  fill="#F1F4F9"
                   fill-rule="evenodd"
                 />
                 <ellipse
@@ -469,7 +469,7 @@ exports[`Table component renders table 1`] = `
               </svg>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="22name"
               role="gridcell"
               tabindex="-1"
@@ -554,7 +554,7 @@ exports[`Table component renders table 1`] = `
               tabindex="-1"
             >
               <button
-                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white py-1 px-2 rounded-lg text-sm text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
                 type="button"
               >
                 Details
@@ -564,7 +564,7 @@ exports[`Table component renders table 1`] = `
           <tr
             aria-labelledby="react-aria-:r0:-3-no"
             aria-selected="false"
-            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold"
+            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
             data-key="3"
             data-middle="true"
             role="row"
@@ -617,14 +617,14 @@ exports[`Table component renders table 1`] = `
               </label>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="33no"
               id="react-aria-:r0:-3-no"
               role="rowheader"
               tabindex="-1"
             >
               <span>
-                3
+                NaN
               </span>
             </td>
             <td
@@ -641,9 +641,9 @@ exports[`Table component renders table 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  class="fill-gray-50 dark:fill-gray-700"
                   clip-rule="evenodd"
                   d="M0 20.4878V10.4878C0 7.72637 0.976311 5.36935 2.92893 3.41672C4.88155 1.4641 7.23858 0.487793 10 0.487793H44C46.7614 0.487793 49.1184 1.4641 51.0711 3.41672C53.0237 5.36935 54 7.72637 54 10.4878V44.4878C54 47.2492 53.0237 49.6062 51.0711 51.5589C49.1184 53.5115 46.7614 54.4878 44 54.4878H10C7.23858 54.4878 4.88155 53.5115 2.92893 51.5589C0.976311 49.6062 0 47.2492 0 44.4878V20.4878Z"
-                  fill="#F1F4F9"
                   fill-rule="evenodd"
                 />
                 <ellipse
@@ -669,7 +669,7 @@ exports[`Table component renders table 1`] = `
               </svg>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="33name"
               role="gridcell"
               tabindex="-1"
@@ -754,7 +754,7 @@ exports[`Table component renders table 1`] = `
               tabindex="-1"
             >
               <button
-                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white py-1 px-2 rounded-lg text-sm text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
                 type="button"
               >
                 Details
@@ -764,7 +764,7 @@ exports[`Table component renders table 1`] = `
           <tr
             aria-labelledby="react-aria-:r0:-4-no"
             aria-selected="false"
-            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold"
+            class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
             data-key="4"
             data-last="true"
             data-odd="true"
@@ -818,14 +818,14 @@ exports[`Table component renders table 1`] = `
               </label>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="44no"
               id="react-aria-:r0:-4-no"
               role="rowheader"
               tabindex="-1"
             >
               <span>
-                4
+                NaN
               </span>
             </td>
             <td
@@ -842,9 +842,9 @@ exports[`Table component renders table 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  class="fill-gray-50 dark:fill-gray-700"
                   clip-rule="evenodd"
                   d="M0 20.4878V10.4878C0 7.72637 0.976311 5.36935 2.92893 3.41672C4.88155 1.4641 7.23858 0.487793 10 0.487793H44C46.7614 0.487793 49.1184 1.4641 51.0711 3.41672C53.0237 5.36935 54 7.72637 54 10.4878V44.4878C54 47.2492 53.0237 49.6062 51.0711 51.5589C49.1184 53.5115 46.7614 54.4878 44 54.4878H10C7.23858 54.4878 4.88155 53.5115 2.92893 51.5589C0.976311 49.6062 0 47.2492 0 44.4878V20.4878Z"
-                  fill="#F1F4F9"
                   fill-rule="evenodd"
                 />
                 <ellipse
@@ -870,7 +870,7 @@ exports[`Table component renders table 1`] = `
               </svg>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-dark-800 dark:text-white"
               data-key="44name"
               role="gridcell"
               tabindex="-1"
@@ -955,7 +955,7 @@ exports[`Table component renders table 1`] = `
               tabindex="-1"
             >
               <button
-                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white py-1 px-2 rounded-lg text-sm text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+                class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
                 type="button"
               >
                 Details

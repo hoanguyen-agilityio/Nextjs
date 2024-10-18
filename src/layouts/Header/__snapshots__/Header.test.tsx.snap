@@ -3,7 +3,7 @@
 exports[`Header Layout render header 1`] = `
 <div>
   <header
-    class="flex justify-between w-full h-[104px] bg-white border-b-2 border-gray-50 pl-6 pr-4xl"
+    class="flex justify-between w-full h-[104px] bg-white border-b-2 border-gray-50 pl-6 pr-4xl dark:bg-dark-900 dark:border-gray-700"
   >
     <div
       class="flex items-center relative w-xl"
@@ -48,7 +48,7 @@ exports[`Header Layout render header 1`] = `
               </svg>
               <input
                 aria-label="search"
-                class="w-full bg-transparent !outline-none placeholder:text-foreground-500 focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground text-gray-blue-400 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+                class="w-full bg-transparent !outline-none placeholder:text-foreground-500 focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground text-grayBlue-400 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
                 data-has-start-content="true"
                 data-slot="input"
                 id="react-aria-:r0:"
@@ -80,7 +80,7 @@ exports[`Header Layout render header 1`] = `
         />
       </svg>
       <div
-        class="flex items-center border-l-2 border-gray-50 pl-10"
+        class="flex items-center border-l-2 border-gray-50 pl-10 dark:border-gray-700"
       >
         <span
           class="rounded-full w-sm h-sm bg-translucent-400 text-blue-400 flex items-center justify-center text-xl font-semibold"
@@ -91,7 +91,7 @@ exports[`Header Layout render header 1`] = `
           class="flex flex-col ml-6 font-semibold"
         >
           <span
-            class="text-xl text-dark-800"
+            class="text-xl text-dark-800 dark:text-white"
           >
             Theo Edwards
           </span>

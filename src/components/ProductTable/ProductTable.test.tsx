@@ -7,14 +7,14 @@ jest.mock('next/navigation', () => ({
   useRouter: jest.fn(),
 }));
 
-describe('ProductSearch Component', () => {
+describe('ProductTable Component', () => {
   beforeEach(() => {
     const mockRouter = {
       push: jest.fn(),
     };
     (useRouter as jest.Mock).mockReturnValue(mockRouter);
   });
-  test('render product search', () => {
+  test('render product table', () => {
     const { container } = render(
       <ProductTable
         products={rows}
