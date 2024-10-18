@@ -115,12 +115,12 @@ const columns = [
 
 const items = [
   {
-    key: 'views_ascending',
-    label: 'Views ascending',
+    key: 'views_below_5k',
+    label: 'Views < 5000',
   },
   {
-    key: 'views_decreasing',
-    label: 'Views decreasing',
+    key: 'views_5k_plus',
+    label: 'Views ≥ 5000',
   },
 ];
 

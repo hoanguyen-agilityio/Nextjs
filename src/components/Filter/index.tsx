@@ -6,7 +6,9 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/react';
-import { useState } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { memo, useCallback } from 'react';
+import isEqual from 'react-fast-compare';
 import { items } from '@/mocks';
 import { ButtonCustom } from '@/components';
 import { CloseIcon, FilterIcon } from '@/icons';
@@ -17,15 +19,28 @@ interface Item {
 }
 
 const Filter = () => {
-  const [selectedItem, setSelectedItem] = useState<Item | null>(null);
+  const router = useRouter();
+  const searchParams = useSearchParams();
 
-  const handleItemClick = (item: Item) => {
-    setSelectedItem(item);
-  };
+  const currentFilterKey = searchParams.get('filter');
 
-  const handleCloseButton = () => {
-    setSelectedItem(null);
-  };
+  const selectedItem =
+    items.find((item) => item.key === currentFilterKey) || null;
+
+  const handleItemClick = useCallback(
+    (item: Item) => {
+      const params = new URLSearchParams(window.location.search);
+      params.set('filter', item.key);
+      router.push(`?${params.toString()}`);
+    },
+    [router],
+  );
+
+  const handleCloseButton = useCallback(() => {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('filter');
+    router.push(`?${params.toString()}`);
+  }, [router]);
 
   return (
     <div className="flex flex-row-reverse">
@@ -66,4 +81,4 @@ const Filter = () => {
   );
 };
 
-export default Filter;
+export default memo(Filter, isEqual);
