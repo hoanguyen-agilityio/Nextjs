@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error component renders error 1`] = `
+<div>
+  <div
+    class="container max-w-lg bg-white p-8 flex flex-col items-center justify-center h-full m-auto"
+  >
+    <h1
+      class="text-3xl font-bold text-red-500 mb-4"
+    >
+      Oops! Something went wrong.
+    </h1>
+    <p
+      class="text-gray-600 text-xl"
+    />
+    <a
+      aria-label="Go to Home Page"
+      class="pt-5 text-blue-400 text-xl hover:underline"
+      href="/"
+    >
+      Go to Home Page
+    </a>
+  </div>
+</div>
+`;
