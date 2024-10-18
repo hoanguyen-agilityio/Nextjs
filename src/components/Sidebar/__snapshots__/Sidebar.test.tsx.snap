@@ -3,10 +3,10 @@
 exports[`Sidebar Component render Sidebar 1`] = `
 <div>
   <aside
-    class="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg"
+    class="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700"
   >
     <div
-      class="pl-xl py-3xl border-b-2 border-gray-50"
+      class="pl-xl py-3xl border-b-2 border-gray-50 dark:border-gray-700"
     >
       <a
         href="/"
@@ -37,18 +37,18 @@ exports[`Sidebar Component render Sidebar 1`] = `
             fill-rule="evenodd"
           />
           <path
+            class="fill-dark-800 dark:fill-white"
             d="M92.9327 30.3076H98.3344L104.244 13.1962L110.117 30.3076H115.482L123.023 5.40181H117.222L112.618 22.1144L107.108 5.40181H101.307L95.7967 22.1144L91.1925 5.40181H85.3921L92.9327 30.3076ZM138.507 11.5648V22.767L138.471 22.6582C138.471 24.6884 136.767 26.2835 134.556 26.2835C132.453 26.2835 131.003 24.6884 131.003 22.3682V11.5648H125.891V23.4921C125.891 27.7337 128.791 30.7427 132.852 30.7427C135.281 30.7427 137.383 29.6551 138.507 27.9512V30.3076H143.8V11.5648H138.507ZM159.181 11.1298C156.752 11.1298 154.649 12.2174 153.525 13.9213V11.5648H148.232V30.3076H153.525V19.1054L153.562 19.2142C153.562 17.184 155.265 15.5889 157.477 15.5889C159.58 15.5889 161.03 17.184 161.03 19.5042V30.3076H166.141V18.3804C166.141 14.1388 163.241 11.1298 159.181 11.1298ZM184.603 4.96677V14.2475C183.117 12.2899 180.942 11.1298 178.295 11.1298C173.293 11.1298 169.667 15.1901 169.667 20.9181C169.667 26.6823 173.293 30.7427 178.295 30.7427C180.942 30.7427 183.117 29.5826 184.603 27.6249V30.3076H189.896V4.96677H184.603ZM179.818 26.2835C176.882 26.2835 174.815 24.0721 174.815 20.9181C174.815 17.8003 176.882 15.5889 179.818 15.5889C182.61 15.5889 184.603 17.8003 184.603 20.9181C184.603 24.0721 182.61 26.2835 179.818 26.2835ZM203.388 26.066C201.177 26.066 199.545 24.6884 198.929 22.6582H212.451C212.451 15.5889 209.007 11.1298 203.134 11.1298C197.66 11.1298 193.491 15.2264 193.491 20.8818C193.491 26.6461 197.841 30.7427 203.424 30.7427C206.18 30.7427 209.406 29.5826 211.074 27.8424L207.702 24.3984C206.687 25.3772 204.875 26.066 203.388 26.066ZM203.352 15.8064C205.491 15.8064 206.868 17.0028 207.376 18.8517H199.002C199.69 16.9665 201.358 15.8064 203.352 15.8064ZM221.325 15.0451V11.5648H216.032V30.3076H221.325V21.3531C221.325 17.8366 223.827 15.5889 227.742 15.5889V11.1298C224.878 11.1298 222.558 12.6162 221.325 15.0451ZM242.179 30.7427C248.777 30.7427 253.454 26.1023 253.454 19.5405V5.40181H248.088V19.323C248.088 23.1658 245.623 25.8848 242.179 25.8848C238.699 25.8848 236.233 23.1658 236.233 19.323V5.40181H230.904V19.5405C230.904 26.1023 235.545 30.7427 242.179 30.7427ZM258.38 30.3076H263.745V5.40181H258.38V30.3076Z"
-            fill="#17181A"
           />
         </svg>
       </a>
     </div>
     <nav
-      class="px-6 border-b-2 border-gray-50"
+      class="px-6 border-b-2 border-gray-50 dark:border-gray-700"
     >
       <ul>
         <a
-          href="dashboard"
+          href="/"
         >
           <li
             class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-blue-400 bg-translucent-400"
@@ -152,7 +152,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
           </li>
         </a>
         <a
-          href="settings"
+          href="profile"
         >
           <li
             class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
@@ -167,7 +167,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
       </ul>
     </nav>
     <div
-      class="px-[52px] pt-6 border-t-2 border-gray-50"
+      class="px-[52px] pt-6 border-t-2 border-gray-50 dark:border-gray-700"
     >
       <button
         class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
@@ -226,14 +226,12 @@ exports[`Sidebar Component render Sidebar 1`] = `
         <label
           aria-label="Automatic updates"
           class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
-          data-selected="true"
         >
           <span
             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
           >
             <input
               aria-labelledby=":r0:"
-              checked=""
               role="switch"
               type="checkbox"
               value=""

@@ -8,6 +8,7 @@ export { default as ProductTable } from './ProductTable';
 export { default as ProductSearch } from './ProductSearch';
 export { default as ProductTableWrapper } from './ProductTableWrapper';
 export { default as Filter } from './Filter';
+export { default as Error } from './Errors';
 
 export * from './Common';
 export * from './Select';

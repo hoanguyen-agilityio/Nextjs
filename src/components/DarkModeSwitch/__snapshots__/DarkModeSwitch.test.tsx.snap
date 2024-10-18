@@ -24,7 +24,7 @@ exports[`Dark Mode Switch component renders with default type 1`] = `
         />
       </svg>
       <label
-        class="text-lg font-semibold"
+        class="text-lg font-semibold text-grayBlue-400"
       >
         Dark mode
       </label>
@@ -32,14 +32,12 @@ exports[`Dark Mode Switch component renders with default type 1`] = `
     <label
       aria-label="Automatic updates"
       class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
-      data-selected="true"
     >
       <span
         style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
       >
         <input
           aria-labelledby=":r0:"
-          checked=""
           role="switch"
           type="checkbox"
           value=""
