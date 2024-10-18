@@ -22,6 +22,7 @@ const Homepage = ({
 }) => {
   const searchQuery = searchParams.search || '';
   const currentPage = parseInt(searchParams.page || '1', 10);
+  const filter = searchParams.filter || '';
 
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
@@ -58,6 +59,7 @@ const Homepage = ({
         <ProductTableWrapper
           searchQuery={searchQuery}
           currentPage={currentPage}
+          filter={filter}
         />
       </Suspense>
     </div>
