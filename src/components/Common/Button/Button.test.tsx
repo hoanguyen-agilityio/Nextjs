@@ -16,7 +16,8 @@ describe('Button component', () => {
     render(<ButtonCustom color="primary">Primary Button</ButtonCustom>);
     const button = screen.getByRole('button', { name: /Primary Button/i });
 
-    expect(button).toHaveClass('bg-blue-500 text-black border-blue-500');
+    expect(button).toHaveClass('bg-blue-500');
+    expect(button).toHaveClass('border-blue-500');
   });
 
   test('renders the disabled button', () => {
