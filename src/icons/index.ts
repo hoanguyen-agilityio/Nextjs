@@ -23,3 +23,4 @@ export { default as ArrowRight } from './ArrowRight';
 export { default as CheckedIcon } from './Checked';
 export { default as ProductIcon } from './Product';
 export { default as CloseIcon } from './CloseIcon';
+export { default as FaceFrownIcon } from './FaceFrownIcon';
