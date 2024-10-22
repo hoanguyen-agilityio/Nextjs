@@ -57,6 +57,6 @@ export const MENU = [
   {
     icon: <Settings width="30px" height="30px" />,
     label: 'Settings',
-    href: ROUTERS.PROFILE,
+    href: ROUTERS.SETTINGS,
   },
 ];

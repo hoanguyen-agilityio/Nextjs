@@ -3,7 +3,7 @@ import { FaceFrownIcon } from '@/icons';
 
 const NotFound = () => {
   return (
-    <main className="flex h-screen flex-col items-center justify-center gap-2">
+    <section className="flex h-screen flex-col items-center justify-center gap-2">
       <FaceFrownIcon width="60px" height="60px" />
       <h2 className="text-4xl font-semibold">404 Not Found</h2>
       <p className="text-2xl">Could not find the requested invoice.</p>
@@ -13,7 +13,7 @@ const NotFound = () => {
       >
         Go Back
       </Link>
-    </main>
+    </section>
   );
 };
 
