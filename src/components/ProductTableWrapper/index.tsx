@@ -15,7 +15,7 @@ const ProductTableWrapper = async ({
   filter,
 }: IProductTableWrapper) => {
   const allData = await getData(searchQuery);
-  const safeData = allData || [];
+  const safeData = Array.isArray(allData) ? allData : [];
 
   let filteredData = safeData;
   if (filter === 'views_below_5k') {
