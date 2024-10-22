@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import TableSkeleton from './TableSkeleton';
+import TableSkeleton from '../TableSkeleton';
 
 describe('TableSkeleton UI', () => {
   test('renders table skeleton', () => {
