@@ -34,9 +34,9 @@ export const ButtonDisabledDefault: Story = {
 export const ButtonWithLabelAndIcon: Story = {
   args: {
     children: 'Button',
-    startContent: <ArrowLeft width="19px" height="14px" fill="white" />,
+    startContent: <ArrowLeft width="19px" height="14px" />,
     className:
-      'flex py-3 px-6 rounded-lg border border-slate-950 text-white bg-black-900',
+      'flex py-3 px-6 rounded-lg border border-slate-950 text-black-900 bg-white',
     isDisabled: false,
     color: 'default',
     size: 'xs',
@@ -47,13 +47,12 @@ export const ButtonWithLabelAndIcon: Story = {
 // Button icon
 export const ButtonIcon: Story = {
   args: {
-    startContent: <ArrowLeft width="19px" height="14px" fill="white" />,
+    startContent: <ArrowLeft width="19px" height="14px" />,
     isDisabled: false,
     color: 'default',
     size: 'xs',
     radius: 'sm',
-    className:
-      'py-3 px-6 rounded-lg border border-slate-950 bg-black-900 text-white',
+    className: 'py-3 px-6 rounded-lg border border-slate-950 bg-white',
   },
 };
 
