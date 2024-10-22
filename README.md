@@ -1,10 +1,24 @@
-# Next.js 14+ Boilerplate
+# Dashboard Page
 
-This is a [Next.js](https://nextjs.org/) boilerplate built with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+This application uses NextJS for Dashboard web application. The application will manage the dashboard.
 
-### Features
+## Targets
 
-This boilerplate includes:
+- Initialize a Next.js application using a single command line or migrate to the Next.js latest version from current practice.
+- Apply all the knowledge learned about Next JS into practice
+- Understand when to use the server side and when to use the client side.
+- Write unit tests and acquire coverage greater than 80%.
+
+## Requirements
+
+- Users can view the product list
+- Users can search for products by product name
+- Users can filter products by clicking on the filter button.
+- Users can change pages by clicking on the Previous button or the Next button.
+- Users can switch to dark or light mode by clicking the switch
+
+## Technical stacks
+
 - ⚡ [Next.js](https://nextjs.org/) with App Router support
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org/)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com/)
@@ -18,6 +32,65 @@ This boilerplate includes:
 - ☂️ Code coverage with [V8](https://v8.dev/blog/javascript-code-coverage)
 - 🎉 Storybook for UI development
 
+## Developer tools
+
+- [pnpm](https://pnpm.io/)
+- [eslint](https://eslint.org/)
+- [prettier](https://storybook.js.org/)
+- [husky](https://www.npmjs.com/package/husky)
+- [commitlint](https://commitlint.js.org/#/)
+
+## Design on figma
+
+- Design via [Figma](https://www.figma.com/design/kyzwfLIAiVu8tklQk2qUAn/WunderUI-(Preview)?node-id=0-20627&node-type=frame&t=AVcYhjdEo6qMOsQe-0)
+
+## Editor
+
+- Visual Studio Code
+
+## Author
+
+- **Hoa Nguyen**
+  - Email: hoa.nguyen@asnet.com.vn
+  - GitLab: [@hoa.nguyen](https://gitlab.asoft-python.com/hoa.nguyen)
+  - Slack: hoa.nguyen
+
+## Project structure
+```shell
+.
+├── README.md
+├── .husky
+├── .storybook
+├── .vscode
+├── public
+├── src
+│   ├── app
+│   ├── components
+│   ├── constants
+│   ├── context
+│   ├── icons
+│   ├── layouts
+│   ├── mocks
+│   ├── services
+│   ├── themes
+│   ├── types
+│   ├── models
+│   ├── types
+│   ├── ui
+├── .editorconfig
+├── .eslintrc.json
+├── .lintstagedrc
+├── .npmrc
+├── .prettierrc
+├── jest.config.ts
+├── jest.setup.ts
+├── next.config.mjs
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
 ## How to run
 
@@ -29,16 +102,13 @@ Make sure you install packages with correct version below:
 
 - **Note:**:
     - Please add `.env` into root of project source code, refer `.env.sample`.
-    - Refer: Here's the [sample mockAPI project](https://mockapi.io/clone/665e8a3f1e9017dc16f05e15), feel free to **clone** then use in your project
-
-Check and update config image hosting on `next.config.mjs` file follow [Next.js document](https://nextjs.org/docs/messages/next-image-unconfigured-host)
 
 ### Get source code
 
 | Command                                                                                                            | Action                    |
 | :------------------------------------------------------------------------------------------------------------------| :------------------------ |
-| `git clone --depth=1 git@gitlab.asoft-python.com:bgh/javascript/boilerplates/nextjs-boilerplate.git nextjs-project`| Clone Repository with SSH |
-| `$ cd nextjs-project`                                                                                              | Redirect to folder        |
+| `git clone https://gitlab.asoft-python.com/hoa.nguyen/nextjs.git`| Clone Repository with HTTPS |
+| `$ cd nextjs`                                                                                              | Redirect to folder        |
 
 ### Build and Run app
 
@@ -51,53 +121,3 @@ Check and update config image hosting on `next.config.mjs` file follow [Next.js 
 | `$ pnpm storybook` | Run Storybook.                                | http://localhost:6006 |
 | `$ pnpm test`      | Run Unit Test                                 | N/A                   |
 | `$ pnpm coverage`  | Generate code coverage                        | N/A                   |
-
-### Project structure
-```shell
-.
-├── README.md                       # README file
-├── .husky                          # Husky configuration
-├── .storybook                      # Storybook folder
-├── .vscode                         # VSCode configuration
-├── public                          # Public assets folder
-├── src
-│   ├── api                         # Handle data with API: GET, POST, PUT, DELETE
-│   ├── app                         # Next.js App (App Router)
-│   ├── components                  # React components
-│   ├── constants                   # App constants
-│   ├── icons                       # Icons folder
-│   ├── layouts                     # React components for app layout
-│   ├── models                      # Model type definitions
-│   ├── types                       # Type definitions
-│   ├── ui                          # React components by feature
-│   ├── utils                       # Utilities folder
-├── .eslintrc.json                  # ESLint configuration
-├── .lintstagedrc                   # Lint-stage
-├── .prettierrc                     # Prettier configuration
-├── jest.config.ts                  # Jest configuration
-├── next.config.mjs                 # Next.js configuration
-├── next.config.mjs                 # Next.js configuration
-├── postcss.config.mjs              # Post CSS configuration
-├── tailwind.config.ts              # Tailwind CSS configuration
-└── tsconfig.json                   # TypeScript configuration
-```
-
-## Maintainers
-
-This project is maintained by:
-
-- **Huy Nguyen Van**
-  - Email: huy.nguyenvan@asnet.com.vn
-  - GitLab: [@huy.nguyenvan](https://gitlab.asoft-python.com/huy.nguyenvan)
-  - Slack: huy.nguyenvan
-
-### Responsibilities
-
-- Reviewing and merging pull requests.
-- Managing and responding to issues.
-- Updating project documentation.
-- Ensuring the project is up-to-date with the latest standards and practices.
-
-### Availability
-
-Huy is typically available during weekdays and aims to respond to issues and pull requests within 48 hours. For urgent matters, please email directly.
