@@ -1,4 +1,4 @@
-import { getData } from '@/Services';
+import { getData } from '@/services';
 import { ProductTable } from '@/components';
 
 interface IProductTableWrapper {
