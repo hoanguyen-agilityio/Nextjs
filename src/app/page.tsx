@@ -7,7 +7,7 @@ import {
   ProductTableWrapper,
 } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
-import { TableSkeleton } from '@/ui';
+import { OverviewSkeleton, TableSkeleton } from '@/ui';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',
@@ -50,7 +50,9 @@ const Homepage = ({
           </ButtonCustom>
         </div>
       </div>
-      <Overview />
+      <Suspense fallback={<OverviewSkeleton productCount={4} />}>
+        <Overview />
+      </Suspense>
       <div className="flex justify-between items-center mt-3xl">
         <Filter />
         <ProductSearch />
