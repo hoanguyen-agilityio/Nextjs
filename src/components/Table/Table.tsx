@@ -16,6 +16,8 @@ const Table = memo(
     currentPage,
     itemsPerPage,
   }: ProductList & { currentPage: number; itemsPerPage: number }) => {
+    const hasData = products.length > 0;
+
     return (
       <TableCustom
         aria-label="Controlled table example with dynamic content"
@@ -33,23 +35,27 @@ const Table = memo(
             </TableColumn>
           )}
         </TableHeader>
-        <TableBody items={products}>
-          {(products ?? []).map((item, index) => (
-            <TableRow
-              key={item.key}
-              className="p-2 border-b font-semibold dark:border-gray-700"
-            >
-              {(columnKey: React.Key) =>
-                RenderColumn(String(columnKey), {
-                  item,
-                  index,
-                  currentPage,
-                  itemsPerPage,
-                })
-              }
-            </TableRow>
-          ))}
-        </TableBody>
+        {hasData ? (
+          <TableBody items={products}>
+            {(products ?? []).map((item, index) => (
+              <TableRow
+                key={item.key}
+                className="p-2 border-b font-semibold dark:border-gray-700"
+              >
+                {(columnKey: React.Key) =>
+                  RenderColumn(String(columnKey), {
+                    item,
+                    index,
+                    currentPage,
+                    itemsPerPage,
+                  })
+                }
+              </TableRow>
+            ))}
+          </TableBody>
+        ) : (
+          <TableBody emptyContent={'No data found.'}>{[]}</TableBody>
+        )}
       </TableCustom>
     );
   },
