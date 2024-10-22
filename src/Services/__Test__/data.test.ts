@@ -1,4 +1,4 @@
-import { MESSAGE, PRODUCT_URL } from '@/Constant';
+import { MESSAGE, PRODUCT_URL } from '@/constant';
 import { IProducts } from '@/types';
 import { getData } from '../data';
 import { apiRequest } from '../api';

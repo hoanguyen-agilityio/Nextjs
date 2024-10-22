@@ -1,4 +1,4 @@
-import { EMPTY_TEXT, MESSAGE, PRODUCT_URL } from '@/Constant';
+import { EMPTY_TEXT, MESSAGE, PRODUCT_URL } from '@/constant';
 import { apiRequest } from './api';
 import { IProducts } from '@/types';
 

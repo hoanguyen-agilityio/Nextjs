@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Logo, PlusIcon } from '@/icons';
 import { ButtonCustom, DarkModeSwitch, Menu } from '@/components';
-import { ROUTERS } from '@/Constant';
+import { ROUTERS } from '@/constant';
 
 const Sidebar = () => {
   return (

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
-import { MENU } from '@/Constant';
+import { MENU } from '@/constant';
 
 const Menu = () => {
   return (
