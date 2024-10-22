@@ -1,6 +1,6 @@
 import { EMPTY_TEXT, MESSAGE, PRODUCT_URL } from '@/constant';
-import { apiRequest } from './api';
 import { IProducts } from '@/types';
+import { apiRequest } from './api';
 
 const getData = async (
   search = EMPTY_TEXT,
