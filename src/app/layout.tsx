@@ -9,8 +9,8 @@ import { Sidebar } from '@/components';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js Boilerplate',
-  description: 'Next.js 14+ boilerplate app',
+  title: 'Dashboard',
+  description: 'Showcase of meta dashboard',
   icons: [
     {
       rel: 'icon',
