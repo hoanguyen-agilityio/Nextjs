@@ -13,11 +13,13 @@ const Overview = () => (
         defaultSelectedKey="weekly"
         items={dateDicker}
         className="w-[120px]"
+        ariaLabel="date selector"
       />
       <RenderSelect
         defaultSelectedKey="allProducts"
         items={productSelector}
         className="w-[152px]"
+        ariaLabel="product selector"
       />
     </div>
     <OverviewStats />
