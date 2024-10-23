@@ -1,2 +1,2 @@
-export * from './IconProps';
+export * from './icon-props';
 export * from './products';

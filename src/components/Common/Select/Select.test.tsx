@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import RenderSelect from './renderSelect';
+import RenderSelect from './RenderSelect';
 
 describe('Select Component', () => {
   const defaultProps = {
