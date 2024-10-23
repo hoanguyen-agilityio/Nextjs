@@ -10,12 +10,12 @@ const Overview = () => (
         <span className="font-semibold text-sm">12/12/2022 - 12/20/2022</span>
       </div>
       <RenderSelect
-        defaultSelectedKey="Weekly"
+        defaultSelectedKey="weekly"
         items={dateDicker}
         className="w-[120px]"
       />
       <RenderSelect
-        defaultSelectedKey="All Products"
+        defaultSelectedKey="allProducts"
         items={productSelector}
         className="w-[152px]"
       />
