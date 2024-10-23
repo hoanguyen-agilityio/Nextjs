@@ -21,7 +21,7 @@ const ProductIcon: React.FC<IconProps> = ({ width, height, className }) => (
       rx="12.96"
       ry="13.06"
       fill="#8F69E7"
-      fill-opacity="0.639216"
+      fillOpacity="0.639216"
     />
     <g style={{ mixBlendMode: 'difference' }}>
       <ellipse
@@ -30,7 +30,7 @@ const ProductIcon: React.FC<IconProps> = ({ width, height, className }) => (
         rx="12.96"
         ry="13.06"
         fill="#E95931"
-        fill-opacity="0.639216"
+        fillOpacity="0.639216"
       />
     </g>
   </svg>
