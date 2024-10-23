@@ -9,5 +9,4 @@ export { default as Filter } from './Filter';
 export { default as Error } from './Errors';
 
 export * from './Common';
-export * from './Select';
 export * from './OverviewStats';
