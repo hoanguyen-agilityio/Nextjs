@@ -6,15 +6,18 @@ interface IRenderSelect {
   defaultSelectedKey: string;
   items: Array<{ key: string; label: string }>;
   className: string;
+  ariaLabel: string;
 }
 
 const RenderSelect = ({
   defaultSelectedKey,
   items,
   className,
+  ariaLabel,
 }: IRenderSelect) => (
   <SelectCustom
     aria-hidden={true}
+    aria-label={ariaLabel}
     defaultSelectedKeys={[defaultSelectedKey]}
     color="default"
     size="default"

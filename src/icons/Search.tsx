@@ -10,8 +10,8 @@ const SearchIcon: React.FC<IconProps> = ({ width, height, className }) => (
     className={className}
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M10.25 20.9878C4.6 20.9878 0 16.3878 0 10.7378C0 5.08779 4.6 0.487793 10.25 0.487793C15.9 0.487793 20.5 5.08779 20.5 10.7378C20.5 16.3878 15.9 20.9878 10.25 20.9878ZM10.25 1.98779C5.42 1.98779 1.5 5.91779 1.5 10.7378C1.5 15.5578 5.42 19.4878 10.25 19.4878C15.08 19.4878 19 15.5578 19 10.7378C19 5.91779 15.08 1.98779 10.25 1.98779Z"
       fill="#809FB8"
     />
