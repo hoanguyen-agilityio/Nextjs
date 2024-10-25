@@ -6,123 +6,114 @@ exports[`Menu Component render menu 1`] = `
     class="px-6 border-b-2 border-gray-50 dark:border-gray-700"
   >
     <ul>
-      <a
-        href="/"
-      >
-        <li
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-blue-400 bg-translucent-400"
+          href="/"
         >
           <span
             class="ml-5"
           >
             Dashboard
           </span>
-        </li>
-      </a>
-      <a
-        href="inbox"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="inbox"
         >
           <span
             class="ml-5"
           >
             Inbox
           </span>
-        </li>
-      </a>
-      <a
-        href="wallet"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="wallet"
         >
           <span
             class="ml-5"
           >
             Wallet
           </span>
-        </li>
-      </a>
-      <a
-        href="newsFeed"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="newsFeed"
         >
           <span
             class="ml-5"
           >
             NewsFeed
           </span>
-        </li>
-      </a>
-      <a
-        href="analytics"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="analytics"
         >
           <span
             class="ml-5"
           >
             Analytics
           </span>
-        </li>
-      </a>
-      <a
-        href="market"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="market"
         >
           <span
             class="ml-5"
           >
             Market
           </span>
-        </li>
-      </a>
-      <a
-        href="archive"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="archive"
         >
           <span
             class="ml-5"
           >
             Archive
           </span>
-        </li>
-      </a>
-      <a
-        href="profile"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400 mt-[100px]"
+          href="profile"
         >
           <span
             class="ml-5"
           >
             Profile
           </span>
-        </li>
-      </a>
-      <a
-        href="profile"
-      >
-        <li
+        </a>
+      </li>
+      <li>
+        <a
           class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+          href="settings"
         >
           <span
             class="ml-5"
           >
             Settings
           </span>
-        </li>
-      </a>
+        </a>
+      </li>
     </ul>
   </nav>
 </div>
