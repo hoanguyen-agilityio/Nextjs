@@ -1,7 +1,7 @@
 'use client';
 import { extendVariants, Input } from '@nextui-org/react';
 
-const SearchCustom = extendVariants(Input, {
+const InputCustom = extendVariants(Input, {
   variants: {
     color: {
       default: {
@@ -69,4 +69,4 @@ const SearchCustom = extendVariants(Input, {
   },
 });
 
-export default SearchCustom;
+export default InputCustom;

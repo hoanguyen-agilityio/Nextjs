@@ -1,15 +1,15 @@
 import { Meta, StoryObj } from '@storybook/react';
-import SearchCustom from '.';
+import InputCustom from '.';
 import { SearchIcon } from '@/icons';
 
 export default {
   title: 'Components/Search',
-  component: SearchCustom,
+  component: InputCustom,
 } as Meta;
 
-type Story = StoryObj<typeof SearchCustom>;
+type Story = StoryObj<typeof InputCustom>;
 
-// Button type default
+// Search type default
 export const SearchDefault: Story = {
   args: {
     color: 'default',
@@ -22,7 +22,7 @@ export const SearchDefault: Story = {
   },
 };
 
-// Button type secondary
+// Search type secondary
 export const SearchSecondary: Story = {
   args: {
     color: 'secondary',

@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { ROUTERS } from '@/constant';
-import { SearchCustom } from '@/components';
+import { InputCustom } from '@/components';
 import { SearchIcon } from '@/icons';
 
 const ProductSearch = () => {
@@ -20,7 +20,7 @@ const ProductSearch = () => {
 
   return (
     <form onSubmit={handleSearch}>
-      <SearchCustom
+      <InputCustom
         color="secondary"
         placeholder="search"
         size="md"
