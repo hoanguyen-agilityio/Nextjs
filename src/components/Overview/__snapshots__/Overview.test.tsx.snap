@@ -33,6 +33,8 @@ exports[`Overview Component render overview 1`] = `
       </div>
       <div
         class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end ml-5 w-[120px]"
+        data-filled="true"
+        data-has-value="true"
         data-slot="base"
       >
         <div
@@ -45,7 +47,7 @@ exports[`Overview Component render overview 1`] = `
             style="font-size: 16px;"
             tabindex="-1"
             type="text"
-            value="Weekly"
+            value="weekly"
           />
           <label>
             <select
@@ -84,7 +86,9 @@ exports[`Overview Component render overview 1`] = `
           <button
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby="react-aria-:r7: "
+            aria-hidden="true"
+            aria-label="date selector"
+            aria-labelledby="react-aria-:r7: react-aria-:r2:"
             class="relative px-3 gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent group-data-[focus=true]:bg-default-100 min-h-10 rounded-medium data-[hover=true]:bg-default-50 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white border-1 border-gray-50 dark:bg-dark-900 dark:border-gray-700 py-3.5 h-auto"
             data-slot="trigger"
             id="react-aria-:r2:"
@@ -98,7 +102,9 @@ exports[`Overview Component render overview 1`] = `
                 class="w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground font-bold text-black"
                 data-slot="value"
                 id="react-aria-:r7:"
-              />
+              >
+                Weekly
+              </span>
             </div>
             <svg
               aria-hidden="true"
@@ -124,6 +130,8 @@ exports[`Overview Component render overview 1`] = `
       </div>
       <div
         class="group flex flex-col transition-background motion-reduce:transition-none !duration-150 group relative justify-end ml-5 w-[152px]"
+        data-filled="true"
+        data-has-value="true"
         data-slot="base"
       >
         <div
@@ -136,7 +144,7 @@ exports[`Overview Component render overview 1`] = `
             style="font-size: 16px;"
             tabindex="-1"
             type="text"
-            value="All Products"
+            value="allProducts"
           />
           <label>
             <select
@@ -165,7 +173,9 @@ exports[`Overview Component render overview 1`] = `
           <button
             aria-expanded="false"
             aria-haspopup="listbox"
-            aria-labelledby="react-aria-:rf: "
+            aria-hidden="true"
+            aria-label="product selector"
+            aria-labelledby="react-aria-:rf: react-aria-:ra:"
             class="relative px-3 gap-3 w-full inline-flex flex-row items-center shadow-sm tap-highlight-transparent group-data-[focus=true]:bg-default-100 min-h-10 rounded-medium data-[hover=true]:bg-default-50 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 bg-white border-1 border-gray-50 dark:bg-dark-900 dark:border-gray-700 py-3.5 h-auto"
             data-slot="trigger"
             id="react-aria-:ra:"
@@ -179,7 +189,9 @@ exports[`Overview Component render overview 1`] = `
                 class="w-full text-left rtl:text-right text-small truncate group-data-[has-value=true]:text-default-foreground font-bold text-black"
                 data-slot="value"
                 id="react-aria-:rf:"
-              />
+              >
+                All Products
+              </span>
             </div>
             <svg
               aria-hidden="true"
@@ -213,7 +225,7 @@ exports[`Overview Component render overview 1`] = `
         <span
           class="text-4xl font-semibold mb-2sm"
         >
-          $39.510,32
+          $39,510.32
         </span>
         <span
           class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -251,7 +263,7 @@ exports[`Overview Component render overview 1`] = `
         <span
           class="text-4xl font-semibold mb-2sm"
         >
-          175.182
+          175,182
         </span>
         <span
           class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -289,7 +301,7 @@ exports[`Overview Component render overview 1`] = `
         <span
           class="text-4xl font-semibold mb-2sm"
         >
-          508.072
+          508,072
         </span>
         <span
           class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -327,7 +339,7 @@ exports[`Overview Component render overview 1`] = `
         <span
           class="text-4xl font-semibold mb-2sm"
         >
-          105.075
+          105,075
         </span>
         <span
           class="text-base font-semibold text-grayBlue-400 mb-2sm"

@@ -1,12 +1,12 @@
 import { colors } from '@/themes';
-import { SearchCustom } from '@/components';
+import { InputCustom } from '@/components';
 import { NotificationIcon, SearchIcon, UpAndDownArrows } from '@/icons';
 
 const Header = () => {
   return (
     <header className="flex justify-between w-full h-[104px] bg-white border-b-2 border-gray-50 pl-6 pr-4xl dark:bg-dark-900 dark:border-gray-700">
       <div className="flex items-center relative w-xl">
-        <SearchCustom
+        <InputCustom
           color="default"
           placeholder="search"
           size="xs"

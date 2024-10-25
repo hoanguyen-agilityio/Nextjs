@@ -11,7 +11,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       <span
         class="text-4xl font-semibold mb-2sm"
       >
-        $39.510,32
+        $39,510.32
       </span>
       <span
         class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -49,7 +49,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       <span
         class="text-4xl font-semibold mb-2sm"
       >
-        175.182
+        175,182
       </span>
       <span
         class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -87,7 +87,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       <span
         class="text-4xl font-semibold mb-2sm"
       >
-        508.072
+        508,072
       </span>
       <span
         class="text-base font-semibold text-grayBlue-400 mb-2sm"
@@ -125,7 +125,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       <span
         class="text-4xl font-semibold mb-2sm"
       >
-        105.075
+        105,075
       </span>
       <span
         class="text-base font-semibold text-grayBlue-400 mb-2sm"

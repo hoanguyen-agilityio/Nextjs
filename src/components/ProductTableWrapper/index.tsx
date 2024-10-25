@@ -1,5 +1,6 @@
 import { getData } from '@/services';
 import { ProductTable } from '@/components';
+import { filterProducts, paginateProducts } from '@/utils';
 
 interface IProductTableWrapper {
   searchQuery: string;
@@ -17,17 +18,12 @@ const ProductTableWrapper = async ({
   const allData = await getData(searchQuery);
   const safeData = Array.isArray(allData) ? allData : [];
 
-  let filteredData = safeData;
-  if (filter === 'views_below_5k') {
-    filteredData = safeData.filter((item) => Number(item.views) < 5000);
-  } else if (filter === 'views_5k_plus') {
-    filteredData = safeData.filter((item) => Number(item.views) >= 5000);
-  }
-
-  // Pagination logic
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+  const filteredData = filterProducts(safeData, filter);
+  const currentItems = paginateProducts(
+    filteredData,
+    currentPage,
+    itemsPerPage,
+  );
 
   return (
     <ProductTable

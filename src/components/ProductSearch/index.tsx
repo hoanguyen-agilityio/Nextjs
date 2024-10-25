@@ -1,26 +1,22 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import { ROUTERS } from '@/constant';
-import { SearchCustom } from '@/components';
+import { handleSearch } from '@/utils';
+import { InputCustom } from '@/components';
 import { SearchIcon } from '@/icons';
 
 const ProductSearch = () => {
   const [query, setQuery] = useState('');
   const router = useRouter();
 
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (query.trim()) {
-      router.push(`?search=${encodeURIComponent(query)}`);
-    } else {
-      router.push(ROUTERS.HOME);
-    }
+    handleSearch(query, router);
   };
 
   return (
-    <form onSubmit={handleSearch}>
-      <SearchCustom
+    <form onSubmit={onSearchSubmit}>
+      <InputCustom
         color="secondary"
         placeholder="search"
         size="md"

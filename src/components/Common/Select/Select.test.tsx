@@ -9,6 +9,7 @@ describe('Select Component', () => {
       { key: 'key2', label: 'Item 2' },
     ],
     className: 'custom-class',
+    ariaLabel: 'Select an option',
   };
   test('render select', () => {
     const { container } = render(<RenderSelect {...defaultProps} />);

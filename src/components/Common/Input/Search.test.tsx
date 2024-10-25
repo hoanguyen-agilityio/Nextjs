@@ -1,12 +1,12 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SearchCustom from '.';
+import InputCustom from '.';
 import { SearchIcon } from '@/icons';
 
 describe('Search component', () => {
   test('renders with default type', () => {
     const { container } = render(
-      <SearchCustom
+      <InputCustom
         color="default"
         placeholder="search"
         size="xs"

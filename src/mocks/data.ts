@@ -12,22 +12,22 @@ const productSelector = [
 
 const data = [
   {
-    value: '$39.510,32',
+    value: '$39,510.32',
     label: 'Total Revenue',
     growth: '+12,7 %',
   },
   {
-    value: '175.182',
+    value: '175,182',
     label: 'Total Sales',
     growth: '+5,1 %',
   },
   {
-    value: '508.072',
+    value: '508,072',
     label: 'Customers',
     growth: '+18,3 %',
   },
   {
-    value: '105.075',
+    value: '105,075',
     label: 'New Subscriptions',
     growth: '+10,6 %',
   },

@@ -1,4 +1,3 @@
-export { default as SearchCustom } from './Search';
 export { default as DarkModeSwitch } from './DarkModeSwitch';
 export { default as Overview } from './Overview';
 export { default as Pagination } from './Pagination';

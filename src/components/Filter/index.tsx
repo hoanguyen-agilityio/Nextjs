@@ -6,41 +6,21 @@ import {
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/react';
-import { useSearchParams, useRouter } from 'next/navigation';
-import { memo, useCallback } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { memo } from 'react';
 import isEqual from 'react-fast-compare';
 import { items } from '@/mocks';
 import { ButtonCustom } from '@/components';
 import { CloseIcon, FilterIcon } from '@/icons';
-
-interface Item {
-  key: string;
-  label: string;
-}
+import { useFilterLogic } from '@/hooks';
 
 const Filter = () => {
-  const router = useRouter();
   const searchParams = useSearchParams();
-
   const currentFilterKey = searchParams.get('filter');
-
-  const selectedItem =
-    items.find((item) => item.key === currentFilterKey) || null;
-
-  const handleItemClick = useCallback(
-    (item: Item) => {
-      const params = new URLSearchParams(window.location.search);
-      params.set('filter', item.key);
-      router.push(`?${params.toString()}`);
-    },
-    [router],
+  const { selectedItem, handleItemClick, handleCloseButton } = useFilterLogic(
+    items,
+    currentFilterKey,
   );
-
-  const handleCloseButton = useCallback(() => {
-    const params = new URLSearchParams(window.location.search);
-    params.delete('filter');
-    router.push(`?${params.toString()}`);
-  }, [router]);
 
   return (
     <div className="flex flex-row-reverse">
