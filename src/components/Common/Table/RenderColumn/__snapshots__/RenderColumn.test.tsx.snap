@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderColumn renders column "details" correctly 1`] = `<div />`;
+
+exports[`renderColumn renders column "img" correctly 1`] = `<div />`;
+
+exports[`renderColumn renders column "name" correctly 1`] = `<div />`;
+
+exports[`renderColumn renders column "no" correctly 1`] = `<div />`;
+
+exports[`renderColumn renders column "status" correctly 1`] = `<div />`;
+
+exports[`renderColumn renders default case for column correctly 1`] = `<div />`;

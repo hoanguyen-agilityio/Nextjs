@@ -1,2 +1,2 @@
-export { default as Table } from './Table';
+export { default as Table } from './RenderTable';
 export { default as RenderColumn } from './RenderColumn';

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Table from './Table';
+import Table from './RenderTable';
 import { rows } from '@/mocks';
 
 export default {
