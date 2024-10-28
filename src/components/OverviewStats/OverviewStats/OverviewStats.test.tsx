@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import OverviewStats from './OverviewStats';
+import OverviewStats from '.';
 
 describe('OverviewStats Component', () => {
   test('render overview stats', () => {
