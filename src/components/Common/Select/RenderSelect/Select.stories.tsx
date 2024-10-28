@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { dateDicker, productSelector } from '@/mocks';
-import RenderSelect from './RenderSelect';
+import RenderSelect from '.';
 
 export default {
   title: 'Components/RenderSelect',

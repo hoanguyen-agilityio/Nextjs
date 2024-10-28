@@ -1,6 +1,6 @@
 'use client';
 import { SelectItem } from '@nextui-org/react';
-import SelectCustom from './SelectCustom';
+import { SelectCustom } from '@/components';
 
 interface IRenderSelect {
   defaultSelectedKey: string;
