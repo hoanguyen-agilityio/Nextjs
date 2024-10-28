@@ -1,5 +1,5 @@
-import { EMPTY_TEXT, MESSAGE, PRODUCT_URL } from '@/constant';
-import { IProducts } from '@/types';
+import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constant';
+import { IProducts, OverviewDataItem } from '@/types';
 import { apiRequest } from './api';
 
 const getData = async (
@@ -28,4 +28,22 @@ const getData = async (
   }
 };
 
-export { getData };
+const getDataOverview = async () => {
+  const revalidate = 60;
+  try {
+    if (!OVERVIEW_URL) {
+      throw new Error(MESSAGE.ERROR_URL);
+    }
+    const res = await apiRequest<OverviewDataItem[]>(
+      OVERVIEW_URL,
+      'GET',
+      undefined,
+      revalidate,
+    );
+    return res;
+  } catch (error) {
+    console.error(MESSAGE.ERROR_GET_DATA, error);
+  }
+};
+
+export { getData, getDataOverview };
