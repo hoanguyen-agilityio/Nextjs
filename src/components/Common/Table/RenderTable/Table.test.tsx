@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { rows } from '@/mocks';
-import Table from './Table';
+import Table from '.';
 
 describe('Table component', () => {
   const mockProducts = rows;

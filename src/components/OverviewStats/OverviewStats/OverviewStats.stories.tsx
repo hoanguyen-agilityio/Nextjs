@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import OverviewStats from './OverviewStats';
+import OverviewStats from '.';
 
 export default {
   title: 'Components/OverviewStats',
