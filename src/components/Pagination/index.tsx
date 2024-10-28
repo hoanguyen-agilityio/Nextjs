@@ -1,14 +1,8 @@
 import clsx from 'clsx';
 import { useCallback } from 'react';
+import { PaginationProps } from '@/types';
 import { ArrowLeft, ArrowRight } from '@/icons';
 import { ButtonCustom } from '@/components';
-
-interface PaginationProps {
-  currentPage: number;
-  totalItems: number;
-  itemsPerPage: number;
-  onPageChange: (page: number) => void;
-}
 
 const Pagination = ({
   currentPage,
