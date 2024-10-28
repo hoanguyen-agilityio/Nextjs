@@ -27,8 +27,8 @@ exports[`Table component renders table 1`] = `
           >
             <th
               class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-              data-key="row-header-column-c5tsws7vxeh"
-              id="react-aria-:r0:-row-header-column-c5tsws7vxeh"
+              data-key="row-header-column-1l2s6oxokoc"
+              id="react-aria-:r0:-row-header-column-1l2s6oxokoc"
               role="columnheader"
               tabindex="-1"
             >
@@ -964,6 +964,60 @@ exports[`Table component renders table 1`] = `
           </tr>
         </tbody>
       </table>
+      <div
+        class="flex justify-between items-center mt-4"
+      >
+        <button
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white rounded-md p-3 gap-4 font-semibold text-base border-1 border-translucent-100 cursor-not-allowed opacity-50"
+          disabled=""
+          type="button"
+        >
+          <svg
+            fill="none"
+            height="14px"
+            viewBox="0 0 20 15"
+            width="19px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="fill-dark-800 dark:fill-white"
+              clip-rule="evenodd"
+              d="M6.92481 13.8671L0.724792 7.68506C0.428955 7.38574 0.428955 6.9043 0.724792 6.60498L6.92481 0.424072C7.11755 0.230713 7.39886 0.154785 7.66278 0.224976C7.92667 0.295166 8.13309 0.500732 8.20428 0.764404C8.27545 1.02808 8.20056 1.30969 8.00781 1.50317L3.1178 6.3811H18.6248C18.8991 6.37891 19.1536 6.52405 19.2914 6.76135C19.4292 6.99854 19.4292 7.2915 19.2914 7.52869C19.1536 7.76599 18.8991 7.91113 18.6248 7.90906H3.11682L8.00684 12.7871C8.30267 13.0864 8.30267 13.5679 8.00684 13.8672C7.7077 14.1663 7.2229 14.1661 6.92383 13.8672L6.92481 13.8671Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Previous
+        </button>
+        <span
+          class="text-grayBlue-400 font-semibold"
+        >
+          Page 
+          1
+           of 
+          1
+        </span>
+        <button
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white rounded-md p-3 gap-4 font-semibold text-base border-1 border-translucent-100 cursor-not-allowed opacity-50"
+          disabled=""
+          type="button"
+        >
+          Next
+          <svg
+            fill="none"
+            height="14px"
+            viewBox="0 0 20 15"
+            width="19px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="fill-dark-800 dark:fill-white"
+              clip-rule="evenodd"
+              d="M11.9924 13.8666C11.6967 13.5674 11.6967 13.0859 11.9924 12.7866L16.8824 7.90857H1.37549C1.10107 7.91064 0.84668 7.7655 0.708862 7.5282C0.571045 7.29102 0.571045 6.99805 0.708862 6.76086C0.84668 6.52356 1.10107 6.37842 1.37537 6.38049L16.8824 6.38061L11.9924 1.50256C11.6946 1.20386 11.6953 0.720093 11.9941 0.422241C12.2928 0.124268 12.7766 0.125 13.0745 0.423706L19.2744 6.60461C19.5708 6.90356 19.5708 7.3855 19.2744 7.68457L13.0745 13.8666C12.931 14.01 12.7363 14.0907 12.5334 14.0907C12.3306 14.0907 12.1359 14.01 11.9924 13.8666Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </div>

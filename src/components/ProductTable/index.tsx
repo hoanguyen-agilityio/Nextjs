@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { IProducts } from '@/types';
-import { Table, Pagination } from '@/components';
+import { Table } from '@/components';
 
 interface IProductTable {
   products: IProducts[];
@@ -22,19 +22,13 @@ const ProductTable = ({
   };
 
   return (
-    <>
-      <Table
-        products={products}
-        currentPage={currentPage}
-        itemsPerPage={itemsPerPage}
-      />
-      <Pagination
-        currentPage={currentPage}
-        totalItems={totalItems}
-        itemsPerPage={itemsPerPage}
-        onPageChange={handlePageChange}
-      />
-    </>
+    <Table
+      products={products}
+      currentPage={currentPage}
+      itemsPerPage={itemsPerPage}
+      totalItems={totalItems}
+      onPageChange={handlePageChange}
+    />
   );
 };
 

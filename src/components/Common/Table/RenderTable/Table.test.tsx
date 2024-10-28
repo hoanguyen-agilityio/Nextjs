@@ -6,12 +6,18 @@ describe('Table component', () => {
   const mockProducts = rows;
   const currentPage = 1;
   const itemsPerPage = 10;
+  const totalItems = mockProducts.length;
+
+  const mockOnPageChange = jest.fn();
+
   test('renders table', () => {
     const { container } = render(
       <Table
         products={mockProducts}
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
+        totalItems={totalItems}
+        onPageChange={mockOnPageChange}
       />,
     );
     expect(container).toMatchSnapshot();
@@ -23,6 +29,8 @@ describe('Table component', () => {
         products={mockProducts}
         currentPage={currentPage}
         itemsPerPage={itemsPerPage}
+        totalItems={totalItems}
+        onPageChange={mockOnPageChange}
       />,
     );
 

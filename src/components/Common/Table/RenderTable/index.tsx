@@ -1,4 +1,3 @@
-'use client';
 import {
   TableBody,
   TableColumn,
@@ -6,16 +5,18 @@ import {
   TableRow,
 } from '@nextui-org/react';
 import { memo } from 'react';
-import { ProductList } from '@/types';
+import { PaginationProps, ProductList } from '@/types';
 import { columns } from '@/mocks';
-import { RenderColumn, TableCustom } from '@/components';
+import { Pagination, RenderColumn, TableCustom } from '@/components';
 
 const Table = memo(
   ({
     products,
     currentPage,
     itemsPerPage,
-  }: ProductList & { currentPage: number; itemsPerPage: number }) => {
+    totalItems,
+    onPageChange,
+  }: ProductList & PaginationProps) => {
     const hasData = products.length > 0;
 
     return (
@@ -24,6 +25,14 @@ const Table = memo(
         selectionMode="multiple"
         color="default"
         size="default"
+        bottomContent={
+          <Pagination
+            currentPage={currentPage}
+            totalItems={totalItems}
+            itemsPerPage={itemsPerPage}
+            onPageChange={onPageChange}
+          />
+        }
       >
         <TableHeader
           columns={columns}
