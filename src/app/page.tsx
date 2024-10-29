@@ -1,11 +1,12 @@
 import { Suspense } from 'react';
-import { ButtonCustom, ProductTableWrapper } from '@/components';
+import { ButtonCustom } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import {
   Filter,
   Overview,
   OverviewSkeleton,
   ProductSearch,
+  ProductTableWrapper,
   TableSkeleton,
 } from '@/ui';
 
