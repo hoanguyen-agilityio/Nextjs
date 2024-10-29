@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { IProducts } from '@/types';
-import { Table } from '@/components';
+import { Table } from '@/ui';
 
 interface IProductTable {
   products: IProducts[];

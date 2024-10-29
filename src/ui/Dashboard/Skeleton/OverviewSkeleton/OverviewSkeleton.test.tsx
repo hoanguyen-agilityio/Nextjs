@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import OverviewSkeleton from '../OverviewSkeleton';
+import OverviewSkeleton from '.';
 
 describe('OverviewSkeleton UI', () => {
   test('renders overview skeleton', () => {

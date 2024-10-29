@@ -1,5 +1,5 @@
 import { getDataOverview } from '@/services';
-import { OverviewItem } from '@/components';
+import { OverviewItem } from '@/ui';
 
 const OverviewStats = async () => {
   const data = (await getDataOverview()) || [];
