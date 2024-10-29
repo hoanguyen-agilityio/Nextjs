@@ -1,6 +1,6 @@
 import { getData } from '@/services';
-import { ProductTable } from '@/components';
 import { filterProducts, paginateProducts } from '@/utils';
+import { ProductTable } from '@/ui';
 
 interface IProductTableWrapper {
   searchQuery: string;
