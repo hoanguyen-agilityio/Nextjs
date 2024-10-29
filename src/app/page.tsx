@@ -3,11 +3,10 @@ import {
   ButtonCustom,
   Filter,
   Overview,
-  ProductSearch,
   ProductTableWrapper,
 } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
-import { OverviewSkeleton, TableSkeleton } from '@/ui';
+import { OverviewSkeleton, ProductSearch, TableSkeleton } from '@/ui';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',
