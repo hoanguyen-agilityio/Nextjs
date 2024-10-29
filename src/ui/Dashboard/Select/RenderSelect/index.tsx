@@ -16,7 +16,6 @@ const RenderSelect = ({
   ariaLabel,
 }: IRenderSelect) => (
   <SelectCustom
-    aria-hidden={true}
     aria-label={ariaLabel}
     defaultSelectedKeys={[defaultSelectedKey]}
     color="default"
