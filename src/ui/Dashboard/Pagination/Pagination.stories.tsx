@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import Pagination from '.';
 
 export default {
-  title: 'Components/Pagination',
+  title: 'UI/Dashboard/Pagination',
   component: Pagination,
 } as Meta;
 

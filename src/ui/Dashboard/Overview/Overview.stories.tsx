@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import Overview from '.';
 
 export default {
-  title: 'Components/Overview',
+  title: 'UI/Dashboard/Overview',
   component: Overview,
 } as Meta;
 

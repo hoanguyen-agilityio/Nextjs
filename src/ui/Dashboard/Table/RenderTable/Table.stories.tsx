@@ -3,7 +3,7 @@ import { rows } from '@/mocks';
 import Table from '.';
 
 export default {
-  title: 'Components/Table',
+  title: 'UI/Dashboard/Table',
   component: Table,
   parameters: {
     layout: 'fullscreen',

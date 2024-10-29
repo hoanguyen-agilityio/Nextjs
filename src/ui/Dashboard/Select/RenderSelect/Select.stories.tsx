@@ -3,7 +3,7 @@ import { dateDicker, productSelector } from '@/mocks';
 import RenderSelect from '.';
 
 export default {
-  title: 'Components/RenderSelect',
+  title: 'UI/Dashboard/RenderSelect',
   component: RenderSelect,
 } as Meta;
 
