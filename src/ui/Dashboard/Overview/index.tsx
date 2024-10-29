@@ -1,7 +1,6 @@
 import { dateDicker, productSelector } from '@/mocks';
 import { CalendarIcon } from '@/icons';
-import { RenderSelect } from '@/components';
-import { OverviewStats } from '@/ui';
+import { OverviewStats, RenderSelect } from '@/ui';
 
 const Overview = () => (
   <section className="w-full rounded-lg bg-white dark:bg-dark-900">

@@ -8,3 +8,4 @@ export { default as ProductTableWrapper } from './ProductTableWrapper';
 export * from './Skeleton';
 export * from './OverviewStats';
 export * from './Table';
+export * from './Select';
