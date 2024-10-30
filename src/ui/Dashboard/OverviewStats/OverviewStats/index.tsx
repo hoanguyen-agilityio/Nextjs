@@ -1,5 +1,5 @@
 import { OverviewData } from '@/types';
-import { OverviewItem } from '@/ui';
+import OverviewItem from '../OverviewItem';
 
 const OverviewStats = ({ data }: OverviewData) => {
   return (
