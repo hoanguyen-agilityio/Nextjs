@@ -1,9 +1,9 @@
 import { MESSAGE, PRODUCT_URL } from '@/constants';
 import { IProducts } from '@/types';
-import { getData, getDataOverview } from '../data';
-import { apiRequest } from '../api';
+import { apiRequest } from '@/services';
+import { getData, getDataOverview } from '../productActions';
 
-jest.mock('../api', () => ({
+jest.mock('@/services/api', () => ({
   apiRequest: jest.fn(),
 }));
 
