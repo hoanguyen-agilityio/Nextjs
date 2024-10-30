@@ -1,6 +1,6 @@
 import { MESSAGE, PRODUCT_URL } from '@/constants';
 import { IProducts } from '@/types';
-import { getData } from '../data';
+import { getData, getDataOverview } from '../data';
 import { apiRequest } from '../api';
 
 jest.mock('../api', () => ({
@@ -75,5 +75,45 @@ describe('getData', () => {
     );
     expect(result).toBeNull();
     expect(console.error).toHaveBeenCalledWith(MESSAGE.ERROR_GET_DATA, error);
+  });
+});
+
+describe('getDataOverview', () => {
+  const mockData = [
+    { value: '$39,510.32', label: 'Total Revenue', growth: '+12.7%' },
+    { value: '175,182', label: 'Total Sales', growth: '+5.1%' },
+  ];
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  test('should return data when API request is successful', async () => {
+    (apiRequest as jest.Mock).mockResolvedValue(mockData);
+
+    const result = await getDataOverview();
+
+    expect(apiRequest).toHaveBeenCalledWith(
+      expect.any(String),
+      'GET',
+      undefined,
+      60,
+    );
+    expect(result).toEqual(mockData);
+  });
+
+  test('should handle an error during API request', async () => {
+    const errorMessage = 'API error';
+    (apiRequest as jest.Mock).mockRejectedValue(new Error(errorMessage));
+
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+
+    await getDataOverview();
+
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      MESSAGE.ERROR_GET_DATA,
+      expect.any(Error),
+    );
+    consoleErrorSpy.mockRestore();
   });
 });
