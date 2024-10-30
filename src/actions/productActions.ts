@@ -1,6 +1,6 @@
 import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constants';
+import { apiRequest } from '@/services';
 import { IProducts, OverviewDataItem } from '@/types';
-import { apiRequest } from './api';
 
 const getData = async (
   search = EMPTY_TEXT,

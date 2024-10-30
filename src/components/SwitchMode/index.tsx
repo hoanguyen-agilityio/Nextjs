@@ -4,7 +4,7 @@ import { Switch } from '@nextui-org/react';
 import { useTheme } from 'next-themes';
 import { MoonIcon } from '@/icons';
 
-const DarkModeSwitch = () => {
+const SwitchMode = () => {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
@@ -30,4 +30,4 @@ const DarkModeSwitch = () => {
   );
 };
 
-export default DarkModeSwitch;
+export default SwitchMode;
