@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ROUTERS } from '@/constants';
 import { Logo, PlusIcon } from '@/icons';
-import { Menu, ButtonCustom, DarkModeSwitch } from '@/components';
+import { Menu, ButtonCustom, SwitchMode } from '@/components';
 
 const Sidebar = () => (
   <aside className="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700">
@@ -19,7 +19,7 @@ const Sidebar = () => (
       >
         Add new product
       </ButtonCustom>
-      <DarkModeSwitch />
+      <SwitchMode />
     </div>
   </aside>
 );

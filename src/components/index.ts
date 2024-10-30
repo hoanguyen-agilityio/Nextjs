@@ -1,4 +1,4 @@
-export { default as DarkModeSwitch } from './DarkModeSwitch';
+export { default as SwitchMode } from './SwitchMode';
 export { default as Error } from './Errors';
 
-export * from './commons';
+export * from './common';
