@@ -8,7 +8,9 @@ import { memo } from 'react';
 import { PaginationProps, ProductList } from '@/types';
 import { columns } from '@/mocks';
 import { TableCustom } from '@/components';
-import { Pagination, RenderColumn } from '@/ui';
+import RenderColumn from '../RenderColumn';
+import Pagination from '../../Pagination';
+// import { Pagination } from '@/ui';
 
 const Table = memo(
   ({

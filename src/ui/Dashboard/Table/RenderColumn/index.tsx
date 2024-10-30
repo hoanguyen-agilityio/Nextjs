@@ -3,7 +3,7 @@ import { TableRowCustomProps } from '@/types';
 import { CheckedIcon, ProductIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
 
-const renderColumn = (
+const RenderColumn = (
   columnKey: string,
   { item, index, currentPage, itemsPerPage }: TableRowCustomProps,
 ) => {
@@ -55,4 +55,4 @@ const renderColumn = (
   }
 };
 
-export default renderColumn;
+export default RenderColumn;

@@ -1,22 +1,21 @@
-import { getData } from '@/service';
 import { filterProducts, paginateProducts } from '@/utils';
 import { ProductTable } from '@/ui';
+import { IProducts } from '@/types';
 
 interface IProductTableWrapper {
-  searchQuery: string;
   currentPage: number;
   filter?: string;
+  data: IProducts[];
 }
 
 const itemsPerPage = 10;
 
-const ProductTableWrapper = async ({
-  searchQuery,
+const ProductTableWrapper = ({
   currentPage,
   filter,
+  data,
 }: IProductTableWrapper) => {
-  const allData = await getData(searchQuery);
-  const safeData = Array.isArray(allData) ? allData : [];
+  const safeData = Array.isArray(data) ? data : [];
 
   const filteredData = filterProducts(safeData, filter);
   const currentItems = paginateProducts(

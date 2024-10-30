@@ -1,9 +1,7 @@
-import { getDataOverview } from '@/service';
+import { OverviewData } from '@/types';
 import { OverviewItem } from '@/ui';
 
-const OverviewStats = async () => {
-  const data = (await getDataOverview()) || [];
-
+const OverviewStats = ({ data }: OverviewData) => {
   return (
     <div className="flex justify-between w-full pt-11 pb-5xl pl-20 pr-8xl bg-white text-black dark:bg-dark-900">
       {data.length > 0 ? (

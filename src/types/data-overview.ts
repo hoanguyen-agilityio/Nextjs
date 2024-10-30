@@ -3,3 +3,7 @@ export interface OverviewDataItem {
   label: string;
   growth: string;
 }
+
+export interface OverviewData {
+  data: OverviewDataItem[];
+}
