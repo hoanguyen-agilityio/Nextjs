@@ -1,6 +1,6 @@
 import { dateDicker, productSelector } from '@/mocks';
-import { CalendarIcon } from '@/icons';
 import { OverviewData } from '@/types';
+import { CalendarIcon } from '@/icons';
 import { RenderSelect } from '../Select';
 import { OverviewStats } from '../OverviewStats';
 

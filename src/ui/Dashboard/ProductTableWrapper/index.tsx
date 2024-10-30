@@ -1,6 +1,6 @@
 import { filterProducts, paginateProducts } from '@/utils';
-import { ProductTable } from '@/ui';
 import { IProducts } from '@/types';
+import { ProductTable } from '@/ui';
 
 interface IProductTableWrapper {
   currentPage: number;
