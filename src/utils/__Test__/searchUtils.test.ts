@@ -1,5 +1,5 @@
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
-import { ROUTERS } from '@/constant';
+import { ROUTERS } from '@/constants';
 import { handleSearch } from '../searchUtils';
 
 describe('handleSearch', () => {

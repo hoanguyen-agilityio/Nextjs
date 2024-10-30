@@ -1,4 +1,4 @@
-import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constant';
+import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constants';
 import { IProducts, OverviewDataItem } from '@/types';
 import { apiRequest } from './api';
 
