@@ -1,4 +1,4 @@
-import { getData } from '@/services';
+import { getData } from '@/service';
 import { filterProducts, paginateProducts } from '@/utils';
 import { ProductTable } from '@/ui';
 

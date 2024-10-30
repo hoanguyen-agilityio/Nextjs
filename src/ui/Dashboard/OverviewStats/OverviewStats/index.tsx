@@ -1,4 +1,4 @@
-import { getDataOverview } from '@/services';
+import { getDataOverview } from '@/service';
 import { OverviewItem } from '@/ui';
 
 const OverviewStats = async () => {
