@@ -10,9 +10,9 @@ import { useSearchParams } from 'next/navigation';
 import { memo } from 'react';
 import isEqual from 'react-fast-compare';
 import { items } from '@/mocks';
+import { useFilterLogic } from '@/hooks';
 import { ButtonCustom } from '@/components';
 import { CloseIcon, FilterIcon } from '@/icons';
-import { useFilterLogic } from '@/hooks';
 
 const Filter = () => {
   const searchParams = useSearchParams();
