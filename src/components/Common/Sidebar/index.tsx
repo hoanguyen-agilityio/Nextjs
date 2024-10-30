@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ROUTERS } from '@/constant';
+import { ROUTERS } from '@/constants';
 import { Logo, PlusIcon } from '@/icons';
 import { Menu, ButtonCustom, DarkModeSwitch } from '@/components';
 

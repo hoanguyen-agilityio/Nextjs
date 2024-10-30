@@ -17,7 +17,7 @@ const mockSearchParams = {
 };
 
 export default {
-  title: 'Components/Filter',
+  title: 'UI/Dashboard/Filter',
   component: Filter,
   decorators: [
     (Story) => {

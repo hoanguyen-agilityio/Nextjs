@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Sidebar from '.';
-import { ROUTERS } from '@/constant';
+import { ROUTERS } from '@/constants';
 
 describe('Sidebar Component', () => {
   test('render Sidebar', () => {

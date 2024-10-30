@@ -1,5 +1,5 @@
 'use client';
-import { MESSAGE, ROUTERS } from '@/constant';
+import { MESSAGE, ROUTERS } from '@/constants';
 import Link from 'next/link';
 
 type ErrorProps = {

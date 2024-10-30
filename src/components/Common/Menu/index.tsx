@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
-import { MENU } from '@/constant';
+import { MENU } from '@/constants';
 
 const Menu = () => (
   <nav className="px-6 border-b-2 border-gray-50 dark:border-gray-700">

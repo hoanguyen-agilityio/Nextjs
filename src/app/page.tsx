@@ -9,6 +9,7 @@ import {
   ProductTableWrapper,
   TableSkeleton,
 } from '@/ui';
+import { getData, getDataOverview } from '@/services';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',
@@ -16,7 +17,7 @@ export const metadata = {
     'View and manage the list of products, apply filters, and search functionality on the dashboard.',
 };
 
-const Homepage = ({
+const Homepage = async ({
   searchParams,
 }: {
   searchParams: { [key: string]: string };
@@ -24,6 +25,9 @@ const Homepage = ({
   const searchQuery = searchParams.search || '';
   const currentPage = parseInt(searchParams.page || '1', 10);
   const filter = searchParams.filter || '';
+
+  const allData = await getData(searchQuery);
+  const dataOverview = (await getDataOverview()) || [];
 
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
@@ -52,7 +56,7 @@ const Homepage = ({
         </div>
       </div>
       <Suspense fallback={<OverviewSkeleton productCount={4} />}>
-        <Overview />
+        <Overview data={dataOverview} />
       </Suspense>
       <div className="flex justify-between items-center mt-3xl">
         <Filter />
@@ -60,7 +64,7 @@ const Homepage = ({
       </div>
       <Suspense fallback={<TableSkeleton productCount={10} />}>
         <ProductTableWrapper
-          searchQuery={searchQuery}
+          data={allData ?? []}
           currentPage={currentPage}
           filter={filter}
         />
