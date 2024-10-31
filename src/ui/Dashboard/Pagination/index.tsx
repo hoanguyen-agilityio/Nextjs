@@ -35,9 +35,11 @@ const Pagination = ({
       >
         Previous
       </ButtonCustom>
-      <span className="text-grayBlue-400 font-semibold">
-        Page {currentPage} of {totalPages}
-      </span>
+      {totalPages > 0 && (
+        <span className="text-grayBlue-400 font-semibold">
+          Page {currentPage} of {totalPages}
+        </span>
+      )}
       <ButtonCustom
         color="default"
         radius="md"
