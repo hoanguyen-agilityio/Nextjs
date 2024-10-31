@@ -1,7 +1,7 @@
 import { MESSAGE, PRODUCT_URL } from '@/constants';
 import { IProducts } from '@/types';
 import { apiRequest } from '@/services';
-import { getData, getDataOverview } from '../productActions';
+import { getDataProducts, getDataOverview } from '../productActions';
 
 jest.mock('@/services/api', () => ({
   apiRequest: jest.fn(),
@@ -41,7 +41,7 @@ describe('getData', () => {
   test('fetches data with search query', async () => {
     (apiRequest as jest.Mock).mockResolvedValue(mockProducts);
 
-    const result = await getData('test search');
+    const result = await getDataProducts('test search');
 
     expect(apiRequest).toHaveBeenCalledWith(
       `${PRODUCT_URL}?search=test%20search`,
@@ -55,7 +55,7 @@ describe('getData', () => {
   test('fetches data without search query', async () => {
     (apiRequest as jest.Mock).mockResolvedValue(mockProducts);
 
-    const result = await getData();
+    const result = await getDataProducts();
 
     expect(apiRequest).toHaveBeenCalledWith(PRODUCT_URL, 'GET', undefined, 10);
     expect(result).toEqual(mockProducts);
@@ -65,7 +65,7 @@ describe('getData', () => {
     const error = new Error('API error');
     (apiRequest as jest.Mock).mockRejectedValue(error);
 
-    const result = await getData('error search');
+    const result = await getDataProducts('error search');
 
     expect(apiRequest).toHaveBeenCalledWith(
       `${PRODUCT_URL}?search=error%20search`,

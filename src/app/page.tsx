@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { getData, getDataOverview } from '@/actions';
+import { getDataProducts, getDataOverview } from '@/actions';
 import { ButtonCustom } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import {
@@ -26,7 +26,7 @@ const Homepage = async ({
   const currentPage = parseInt(searchParams.page || '1', 10);
   const filter = searchParams.filter || '';
 
-  const allData = await getData(searchQuery);
+  const allData = await getDataProducts(searchQuery);
   const dataOverview = (await getDataOverview()) || [];
 
   return (

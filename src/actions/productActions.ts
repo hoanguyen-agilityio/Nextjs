@@ -2,7 +2,7 @@ import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constants';
 import { apiRequest } from '@/services';
 import { IProducts, OverviewDataItem } from '@/types';
 
-const getData = async (
+const getDataProducts = async (
   search = EMPTY_TEXT,
   revalidate = 10,
 ): Promise<IProducts[] | null> => {
@@ -46,4 +46,4 @@ const getDataOverview = async () => {
   }
 };
 
-export { getData, getDataOverview };
+export { getDataProducts, getDataOverview };
