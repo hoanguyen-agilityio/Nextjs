@@ -4,8 +4,6 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 // Components
 import montserrat from '@/assets/fonts';
-import Header from '@/layouts/Header';
-import { Sidebar } from '@/components';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -29,13 +27,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="light">
-            <main className="flex">
-              <Sidebar />
-              <div className="w-full">
-                <Header />
-                {children}
-              </div>
-            </main>
+            {children}
           </NextThemesProvider>
         </NextUIProvider>
       </body>
