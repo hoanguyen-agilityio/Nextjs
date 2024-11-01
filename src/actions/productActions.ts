@@ -43,6 +43,7 @@ const getDataOverview = async () => {
     return res;
   } catch (error) {
     console.error(MESSAGE.ERROR_GET_DATA_OVERVIEW, error);
+    return [];
   }
 };
 

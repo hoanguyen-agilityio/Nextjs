@@ -1,5 +1,4 @@
 import { Suspense } from 'react';
-import { getDataProducts, getDataOverview } from '@/actions';
 import { ButtonCustom } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import {
@@ -17,7 +16,7 @@ export const metadata = {
     'View and manage the list of products, apply filters, and search functionality on the dashboard.',
 };
 
-const Homepage = async ({
+const Homepage = ({
   searchParams,
 }: {
   searchParams: { [key: string]: string };
@@ -25,9 +24,6 @@ const Homepage = async ({
   const searchQuery = searchParams.search || '';
   const currentPage = parseInt(searchParams.page || '1', 10);
   const filter = searchParams.filter || '';
-
-  const allData = await getDataProducts(searchQuery);
-  const dataOverview = (await getDataOverview()) || [];
 
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
@@ -56,7 +52,7 @@ const Homepage = async ({
         </div>
       </div>
       <Suspense fallback={<OverviewSkeleton productCount={4} />}>
-        <Overview data={dataOverview} />
+        <Overview />
       </Suspense>
       <div className="flex justify-between items-center mt-3xl">
         <Filter />
@@ -64,7 +60,7 @@ const Homepage = async ({
       </div>
       <Suspense fallback={<TableSkeleton productCount={10} />}>
         <ProductTableWrapper
-          data={allData ?? []}
+          searchQuery={searchQuery}
           currentPage={currentPage}
           filter={filter}
         />
