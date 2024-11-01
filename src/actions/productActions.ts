@@ -23,7 +23,7 @@ const getDataProducts = async (
     );
     return res;
   } catch (error) {
-    console.error(MESSAGE.ERROR_GET_DATA, error);
+    console.error(MESSAGE.ERROR_GET_DATA_PRODUCT, error);
     return null;
   }
 };
@@ -42,7 +42,8 @@ const getDataOverview = async () => {
     );
     return res;
   } catch (error) {
-    console.error(MESSAGE.ERROR_GET_DATA, error);
+    console.error(MESSAGE.ERROR_GET_DATA_OVERVIEW, error);
+    return [];
   }
 };
 
