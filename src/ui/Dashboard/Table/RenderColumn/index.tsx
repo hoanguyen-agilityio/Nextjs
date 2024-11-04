@@ -1,6 +1,6 @@
-import { getKeyValue, TableCell } from '@nextui-org/react';
+import { getKeyValue, Image, TableCell } from '@nextui-org/react';
 import { TableRowCustomProps } from '@/types';
-import { CheckedIcon, ProductIcon } from '@/icons';
+import { CheckedIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
 
 const RenderColumn = (
@@ -23,7 +23,13 @@ const RenderColumn = (
     case 'img':
       return (
         <TableCell>
-          <ProductIcon width="54px" height="54px" />
+          <Image
+            src={getKeyValue(item, columnKey)}
+            alt={getKeyValue(item, 'name') || 'Image'}
+            fallbackSrc={getKeyValue(item, 'fallbackSrc')}
+            className="rounded-none"
+            loading="lazy"
+          />
         </TableCell>
       );
     case 'status':
