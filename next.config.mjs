@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
+function createRemotePattern(hostname) {
+  return {
+    protocol: 'https',
+    hostname,
+    port: '',
+    pathname: '/**',
+  };
+}
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'loremflickr.com',
-        port: '',
-        pathname: '/**',
-      },
+      createRemotePattern('loremflickr.com'),
+      createRemotePattern('picsum.photos'),
+      createRemotePattern('fastly.picsum.photos'),
     ],
   },
   async headers() {

@@ -6,6 +6,7 @@ export interface IProducts {
   sales: string;
   conversion: string;
   total: string;
+  img: string;
 }
 
 export interface ProductList {

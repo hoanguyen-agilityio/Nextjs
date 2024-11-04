@@ -16,6 +16,7 @@ const config: Config = {
       './node_modules/@nextui-org/theme/dist/components/toggle.js',
       './node_modules/@nextui-org/theme/dist/components/skeleton.js',
       './node_modules/@nextui-org/theme/dist/components/circular-progress.js',
+      './node_modules/@nextui-org/theme/dist/components/image.js',
     ],
   },
   content: [
