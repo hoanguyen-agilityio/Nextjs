@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { getKeyValue, Image, TableCell } from '@nextui-org/react';
+import { ROUTERS } from '@/constants';
 import { TableRowCustomProps } from '@/types';
 import { CheckedIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
@@ -42,14 +44,16 @@ const RenderColumn = (
     case 'details':
       return (
         <TableCell>
-          <ButtonCustom
-            color="default"
-            size="md"
-            radius="sm"
-            className="text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
-          >
-            Details
-          </ButtonCustom>
+          <Link href={ROUTERS.DETAIL}>
+            <ButtonCustom
+              color="default"
+              size="md"
+              radius="sm"
+              className="text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+            >
+              Details
+            </ButtonCustom>
+          </Link>
         </TableCell>
       );
     default:

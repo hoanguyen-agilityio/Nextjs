@@ -12,6 +12,7 @@ const ROUTERS = {
   PROFILE: 'profile',
   SETTINGS: 'settings',
   SEARCH: 'search',
+  DETAIL: 'detail',
 };
 
 export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL };

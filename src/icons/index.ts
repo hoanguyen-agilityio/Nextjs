@@ -24,3 +24,6 @@ export { default as CheckedIcon } from './Checked';
 export { default as ProductIcon } from './Product';
 export { default as CloseIcon } from './CloseIcon';
 export { default as FaceFrownIcon } from './FaceFrownIcon';
+export { default as ThreeDotsIcon } from './ThreeDots';
+export { default as ClockIcon } from './Clock';
+export { default as RatingIcon } from './Rating';
