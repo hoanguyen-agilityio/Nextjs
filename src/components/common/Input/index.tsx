@@ -55,6 +55,16 @@ const InputCustom = extendVariants(Input, {
         inputWrapper: 'py-3.5 px-5 w-80',
         input: 'text-base font-semibold',
       },
+      xl: {
+        mainWrapper: 'w-full h-14',
+        input: 'font-semibold text-xsm',
+        inputWrapper: 'pt-lg pb-4 px-4',
+      },
+      xxl: {
+        mainWrapper: 'w-full h-14',
+        input: 'font-semibold text-xsm text-right',
+        inputWrapper: 'pt-lg pb-4 px-4',
+      },
     },
     radius: {
       xs: {

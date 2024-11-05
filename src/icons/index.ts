@@ -27,3 +27,5 @@ export { default as FaceFrownIcon } from './FaceFrownIcon';
 export { default as ThreeDotsIcon } from './ThreeDots';
 export { default as ClockIcon } from './Clock';
 export { default as RatingIcon } from './Rating';
+export { default as ImageIcon } from './Image';
+export { default as FileIcon } from './File';

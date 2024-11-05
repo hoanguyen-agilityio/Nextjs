@@ -20,7 +20,7 @@ const ProductPreview = ({
   imageFallbackSrc,
 }: ProductPreviewProp) => {
   return (
-    <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl">
+    <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[450px]">
       <CardHeader className="flex justify-between">
         <span className="font-bold text-2xl dark:text-white text-black-900">
           Product Preview
