@@ -67,7 +67,7 @@ const Form = ({ data, modePage, label }: FormProps) => {
               title={title}
               describe={describe}
               classWrapper={classWrapper}
-              isDisabled={!!data}
+              isDisabled={modePage === 'detail'}
               defaultSelected={defaultSelected}
             />
           ),
