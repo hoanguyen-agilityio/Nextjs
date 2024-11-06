@@ -13,6 +13,8 @@ const ROUTERS = {
   SETTINGS: 'settings',
   SEARCH: 'search',
   DETAIL: 'detail',
+  ADD_PRODUCT: 'add',
+  EDIT_PRODUCT: 'edit',
 };
 
 export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL };

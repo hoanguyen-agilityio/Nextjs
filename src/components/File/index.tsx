@@ -24,7 +24,10 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
   const MAX_TOTAL_SIZE = 5 * 1024 * 1024 * 1024; // 5GB
 
   useEffect(() => {
-    if (Array.isArray(data?.link)) {
+    if (mode === 'add') {
+      setFiles([]);
+      onFilesChange([]);
+    } else if (Array.isArray(data?.link)) {
       const initialFiles = data.link.map((link) => ({
         src: link,
         name: 'Uploaded file',
@@ -33,7 +36,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
       setFiles(initialFiles);
       onFilesChange(initialFiles.map((file) => file.src));
     }
-  }, [data?.link, onFilesChange]);
+  }, [mode, data?.link, onFilesChange]);
 
   // Handle file upload (select or drop)
   const handleFileUpload = (fileList: FileList | null) => {

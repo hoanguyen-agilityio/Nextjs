@@ -4,6 +4,7 @@ import { ROUTERS } from '@/constants';
 import { TableRowCustomProps } from '@/types';
 import { CheckedIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
+import DropdownIcon from '../../Dropdown';
 
 const RenderColumn = (
   columnKey: string,
@@ -58,6 +59,12 @@ const RenderColumn = (
               Details
             </ButtonCustom>
           </Link>
+        </TableCell>
+      );
+    case 'dropdown':
+      return (
+        <TableCell>
+          <DropdownIcon />
         </TableCell>
       );
     default:
