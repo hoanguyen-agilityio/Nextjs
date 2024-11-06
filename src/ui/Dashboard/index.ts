@@ -4,6 +4,7 @@ export { default as Overview } from './Overview';
 export { default as Pagination } from './Pagination';
 export { default as ProductTable } from './ProductTable';
 export { default as ProductTableWrapper } from './ProductTableWrapper';
+export { default as DropdownIcon } from './Dropdown';
 
 export * from './Skeleton';
 export * from './OverviewStats';

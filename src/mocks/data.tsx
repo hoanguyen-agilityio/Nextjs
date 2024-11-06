@@ -1,3 +1,7 @@
+import Link from 'next/link';
+import { ROUTERS } from '@/constants';
+import { ProductAction } from '@/types';
+
 const dateDicker = [
   { key: 'day', label: 'Day' },
   { key: 'weekly', label: 'Weekly' },
@@ -110,6 +114,11 @@ const columns = [
   {
     key: 'details',
     label: 'Details',
+    className: 'w-10',
+  },
+  {
+    key: 'dropdown',
+    label: '',
   },
 ];
 
@@ -124,4 +133,31 @@ const items = [
   },
 ];
 
-export { dateDicker, productSelector, data, rows, columns, items };
+const productActions: ProductAction[] = [
+  {
+    key: 'new',
+    label: <Link href={ROUTERS.ADD_PRODUCT}>Add New Product</Link>,
+    color: 'default',
+  },
+  {
+    key: 'edit',
+    label: <Link href={ROUTERS.EDIT_PRODUCT}>Edit Product</Link>,
+    color: 'default',
+  },
+  {
+    key: 'delete',
+    label: 'Delete Product',
+    className: 'text-danger',
+    color: 'danger',
+  },
+];
+
+export {
+  dateDicker,
+  productSelector,
+  data,
+  rows,
+  columns,
+  items,
+  productActions,
+};
