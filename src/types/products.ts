@@ -6,7 +6,13 @@ export interface IProducts {
   sales: string;
   conversion: string;
   total: string;
-  img: string;
+  img: string[];
+  id: string;
+  fallbackSrc: string;
+  file: string[];
+  download: string;
+  link: string;
+  personal: string;
 }
 
 export interface ProductList {
