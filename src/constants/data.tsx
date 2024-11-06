@@ -31,4 +31,52 @@ const INPUT_FIELD_DATA = [
   },
 ];
 
-export { INPUT_FIELD_DATA };
+const KEY_SWITCH = [
+  {
+    title: 'Generate License Keys',
+    describe: 'Issue each customer a unique license key after purchase',
+    classWrapper: 'mt-9',
+  },
+  {
+    title: 'Redirect customers after purchase?',
+    describe: 'Redirect customers to a custom URL after making a purchase',
+    classWrapper: 'mt-[60px]',
+  },
+  {
+    title: 'Display product on shop page?',
+    describe: 'Show this product on your shop page',
+    classWrapper: 'mt-[60px]',
+  },
+];
+
+const CUSTOM_INPUT_FIELDS = [
+  {
+    label: 'Download Button',
+    message: 'Customize the button text in the email receipt.',
+    size: 'xl' as const,
+    classWrapper: 'mt-[60px]',
+    className: 'mt-2',
+  },
+  {
+    label: 'Download Button',
+    message: 'Customize the button text in the email receipt.',
+    size: '3xl' as const,
+    classWrapper: 'mt-[34px]',
+    className: 'mt-2',
+    startContent: (
+      <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
+        <p className="font-semibold text-xsm text-grayBlue-400">https://</p>
+      </div>
+    ),
+  },
+  {
+    label: 'Personal Note',
+    message: 'Add a personalized thank you note to the end of email receipts.',
+    size: 'xl' as const,
+    classWrapper: 'mt-[34px]',
+    className: 'mt-2',
+    placeholder: 'Thank you for purchasing my product!',
+  },
+];
+
+export { INPUT_FIELD_DATA, KEY_SWITCH, CUSTOM_INPUT_FIELDS };

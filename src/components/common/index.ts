@@ -6,3 +6,5 @@ export { default as InputCustom } from './Input';
 export { default as ChipCustom } from './Chip';
 export { default as InputField } from './InputField';
 export { default as Form } from './Form';
+export { default as KeySwitch } from './KeySwitch';
+export { default as CheckboxCustom } from './Checkbox';

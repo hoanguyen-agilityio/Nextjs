@@ -1,16 +1,16 @@
 import { Form, ProductPreview } from '@/components';
 
-const DetailPage = () => {
+const OverviewDetail = () => {
   return (
-    <main className="flex gap-8">
+    <div className="flex gap-8">
       <Form />
       <ProductPreview
         imageSrc="https://picsum.photos/200/300"
         imageAlt="test"
         imageFallbackSrc="https://picsum.photos/200/300"
       />
-    </main>
+    </div>
   );
 };
 
-export default DetailPage;
+export default OverviewDetail;

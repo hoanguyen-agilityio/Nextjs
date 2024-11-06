@@ -29,3 +29,4 @@ export { default as ClockIcon } from './Clock';
 export { default as RatingIcon } from './Rating';
 export { default as ImageIcon } from './Image';
 export { default as FileIcon } from './File';
+export { default as BackIcon } from './Back';
