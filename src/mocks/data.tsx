@@ -133,7 +133,7 @@ const items = [
   },
 ];
 
-const productActions: ProductAction[] = [
+const productActions = (id: string | number): ProductAction[] => [
   {
     key: 'new',
     label: <Link href={ROUTERS.ADD_PRODUCT}>Add New Product</Link>,
@@ -141,7 +141,7 @@ const productActions: ProductAction[] = [
   },
   {
     key: 'edit',
-    label: <Link href={ROUTERS.EDIT_PRODUCT}>Edit Product</Link>,
+    label: <Link href={`${ROUTERS.EDIT_PRODUCT}/${id}`}>Edit Product</Link>,
     color: 'default',
   },
   {
