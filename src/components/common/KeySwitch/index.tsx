@@ -1,12 +1,17 @@
-import { Switch } from '@nextui-org/react';
+import { Switch, SwitchProps } from '@nextui-org/react';
 
-interface IKeySwitch {
+interface IKeySwitch extends SwitchProps {
   title: string;
   describe: string;
   classWrapper?: string;
 }
 
-const KeySwitch = ({ title, describe, classWrapper }: IKeySwitch) => {
+const KeySwitch = ({
+  title,
+  describe,
+  classWrapper,
+  ...switchProps
+}: IKeySwitch) => {
   return (
     <div className={`flex justify-between ${classWrapper}`}>
       <div>
@@ -15,7 +20,7 @@ const KeySwitch = ({ title, describe, classWrapper }: IKeySwitch) => {
         </span>
         <p className="font-normal text-xsm text-grayBlue-400">{describe}</p>
       </div>
-      <Switch />
+      <Switch {...switchProps} />
     </div>
   );
 };

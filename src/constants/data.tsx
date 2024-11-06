@@ -16,7 +16,7 @@ const INPUT_FIELD_DATA = [
     size: 'xl' as const,
   },
   {
-    type: 'number',
+    type: 'text',
     label: 'Price',
     placeholder: '0.00',
     message: 'Give your product a final price.',
@@ -46,6 +46,7 @@ const KEY_SWITCH = [
     title: 'Display product on shop page?',
     describe: 'Show this product on your shop page',
     classWrapper: 'mt-[60px]',
+    defaultSelected: true,
   },
 ];
 
@@ -58,8 +59,8 @@ const CUSTOM_INPUT_FIELDS = [
     className: 'mt-2',
   },
   {
-    label: 'Download Button',
-    message: 'Customize the button text in the email receipt.',
+    label: 'Product Link',
+    message: 'Customize the button link in the email receipt.',
     size: '3xl' as const,
     classWrapper: 'mt-[34px]',
     className: 'mt-2',

@@ -1,17 +1,26 @@
 'use client';
-import { ImageIcon } from '@/icons';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
+import { Image } from '@nextui-org/react';
 import { ButtonCustom, InputCustom } from '../common';
+import { ImageIcon } from '@/icons';
 
 interface ImageUploaderProps {
-  onImagesChange: (images: string[]) => void;
+  mode: 'add' | 'edit' | 'detail';
+  onImagesChange?: (images: string[]) => void;
+  data?: { img: string[] };
 }
 
-const Media = ({ onImagesChange }: ImageUploaderProps) => {
-  const [images, setImages] = useState<string[]>([]);
+const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
+  const [images, setImages] = useState<string[]>(data?.img || []);
   const [url, setUrl] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  useEffect(() => {
+    if (data?.img) {
+      setImages(data.img);
+    }
+  }, [data?.img]);
 
   // Handle file upload (select or drop)
   const handleFileUpload = (files: FileList | null) => {
@@ -21,11 +30,10 @@ const Media = ({ onImagesChange }: ImageUploaderProps) => {
       );
       const updatedImages = [...images, ...newImages].slice(0, 10);
       setImages(updatedImages);
-      onImagesChange(updatedImages);
+      onImagesChange?.(updatedImages);
     }
   };
 
-  // Handle drag and drop
   const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     handleFileUpload(event.dataTransfer.files);
@@ -35,40 +43,33 @@ const Media = ({ onImagesChange }: ImageUploaderProps) => {
     event.preventDefault();
   };
 
-  // Handle URL input submission
   const handleUrlSubmit = () => {
     if (url && images.length < 10) {
       const updatedImages = [...images, url];
       setImages(updatedImages);
-      onImagesChange(updatedImages);
+      onImagesChange?.(updatedImages);
       setUrl('');
       setShowModal(false);
     }
   };
 
-  // Remove image
   const handleImageDelete = (index: number) => {
     const updatedImages = images.filter((_, i) => i !== index);
     setImages(updatedImages);
-    onImagesChange(updatedImages);
-
-    // Revoke the object URL to free memory
+    onImagesChange?.(updatedImages);
     URL.revokeObjectURL(images[index]);
   };
 
-  // Trigger file input on media area click
   const handleAreaClick = () => {
     setShowModal(true);
   };
 
-  // Trigger file input from modal
   const handleFileInputClick = () => {
     if (fileInputRef.current) {
       fileInputRef.current.click();
     }
   };
 
-  // Handle file input change when choosing images from the computer
   const handleFileInputChange = (files: FileList | null) => {
     handleFileUpload(files);
     setShowModal(false);
@@ -79,55 +80,57 @@ const Media = ({ onImagesChange }: ImageUploaderProps) => {
       <h3 className="font-semibold text-lg text-black-900 dark:text-white mb-3">
         Media
       </h3>
-      <div
-        className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3"
-        onDrop={handleDrop}
-        onDragOver={handleDragOver}
-        onClick={handleAreaClick}
-      >
-        <ImageIcon width="60px" height="60px" />
-        <p className="text-center font-normal text-xsm text-grayBlue-400">
-          Drop your images here, or click to browse 1600 x 1200 (4:3) <br />
-          recommended, up to 10MB each.
-        </p>
-        <InputCustom
-          type="file"
-          accept="image/*"
-          multiple
-          onChange={(e) => handleFileUpload(e.target.files)}
-          ref={fileInputRef}
-          className="hidden"
-        />
-      </div>
 
-      {/* Image preview with delete button */}
+      {mode !== 'detail' && (
+        <div
+          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3"
+          onDrop={handleDrop}
+          onDragOver={handleDragOver}
+          onClick={handleAreaClick}
+        >
+          <ImageIcon width="60px" height="60px" />
+          <p className="text-center font-normal text-xsm text-grayBlue-400">
+            Drop your images here, or click to browse 1600 x 1200 (4:3) <br />
+            recommended, up to 10MB each.
+          </p>
+          <InputCustom
+            type="file"
+            accept="image/*"
+            multiple
+            onChange={(e) => handleFileUpload(e.target.files)}
+            ref={fileInputRef}
+            className="hidden"
+          />
+        </div>
+      )}
+
       <div className="image-previews mt-4 grid grid-cols-2 gap-2">
         {images.map((src, index) => (
           <div key={index} className="relative group">
-            <img
+            <Image
               src={src}
               alt={`Preview ${index}`}
               className="w-full h-32 object-cover rounded-md"
             />
-            <ButtonCustom
-              type="button"
-              onClick={() => handleImageDelete(index)}
-              className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-              aria-label="Delete image"
-            >
-              &times;
-            </ButtonCustom>
+            {mode !== 'detail' && (
+              <ButtonCustom
+                type="button"
+                onClick={() => handleImageDelete(index)}
+                className="absolute top-2 right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Delete image"
+              >
+                &times;
+              </ButtonCustom>
+            )}
           </div>
         ))}
       </div>
 
-      {/* Note below the uploader */}
       <p className="font-normal text-xsm text-grayBlue-400 mt-3">
         Add up to 10 images to your product. Used to represent your product
         during checkout, in email, social sharing, and more.
       </p>
 
-      {/* Modal for URL input */}
       {showModal && (
         <div className="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="modal-content bg-white p-4 rounded-md shadow-md">

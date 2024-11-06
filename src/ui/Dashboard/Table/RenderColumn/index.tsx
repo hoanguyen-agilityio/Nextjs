@@ -26,7 +26,11 @@ const RenderColumn = (
       return (
         <TableCell>
           <Image
-            src={getKeyValue(item, columnKey)}
+            src={
+              Array.isArray(getKeyValue(item, columnKey))
+                ? getKeyValue(item, columnKey)[0]
+                : getKeyValue(item, columnKey)
+            }
             alt={getKeyValue(item, 'name') || 'Image'}
             fallbackSrc={getKeyValue(item, 'fallbackSrc')}
             className="rounded-none"
@@ -44,7 +48,7 @@ const RenderColumn = (
     case 'details':
       return (
         <TableCell>
-          <Link href={ROUTERS.DETAIL}>
+          <Link href={`${ROUTERS.DETAIL}/${item.id}`}>
             <ButtonCustom
               color="default"
               size="md"

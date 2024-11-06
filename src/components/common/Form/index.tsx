@@ -1,51 +1,107 @@
 'use client';
-
 import { Card } from '@nextui-org/react';
-import ButtonCustom from '../Button';
-import InputField from '../InputField';
+import Link from 'next/link';
 import {
   CUSTOM_INPUT_FIELDS,
   INPUT_FIELD_DATA,
   KEY_SWITCH,
   ROUTERS,
 } from '@/constants';
-import Media from '@/components/Media';
-import File from '@/components/File';
-import KeySwitch from '../KeySwitch';
+import { IProducts } from '@/types';
+import {
+  Media,
+  File,
+  CheckboxCustom,
+  KeySwitch,
+  ButtonCustom,
+  InputField,
+} from '@/components';
 import { BackIcon } from '@/icons';
-import Link from 'next/link';
-import CheckboxCustom from '../Checkbox';
 
-const Form = () => {
+interface FormProps {
+  data: IProducts | null;
+  modePage: 'add' | 'edit' | 'detail';
+  label: string;
+}
+
+const Form = ({ data, modePage, label }: FormProps) => {
   return (
     <Card className="flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9">
       <form className="w-full">
         {INPUT_FIELD_DATA.map((field, index) => (
-          <InputField key={index} color="default" {...field} />
-        ))}
-        <Media onImagesChange={(images) => console.log(images)} />
-        <File onFilesChange={(file) => console.log(file)} />
-        {KEY_SWITCH.map(({ title, describe, classWrapper }) => (
-          <KeySwitch
-            key={title}
-            title={title}
-            describe={describe}
-            classWrapper={classWrapper}
+          <InputField
+            key={index}
+            color="default"
+            {...field}
+            value={
+              data
+                ? field.label === 'Name *'
+                  ? data.name
+                  : field.label === 'Description'
+                    ? data.status
+                    : field.label === 'Price'
+                      ? data.total
+                      : ''
+                : ''
+            }
           />
         ))}
+        <Media
+          onImagesChange={(images) => console.log(images)}
+          data={data ? { img: data.img } : undefined}
+          mode={modePage}
+        />
+        <File
+          onFilesChange={(file) => console.log(file)}
+          data={
+            data && data.link
+              ? { link: Array.isArray(data.link) ? data.link : [data.link] }
+              : undefined
+          }
+          mode={modePage}
+        />
+        {KEY_SWITCH.map(
+          ({ title, describe, classWrapper, defaultSelected }) => (
+            <KeySwitch
+              key={title}
+              title={title}
+              describe={describe}
+              classWrapper={classWrapper}
+              isDisabled={!!data}
+              defaultSelected={defaultSelected}
+            />
+          ),
+        )}
         {CUSTOM_INPUT_FIELDS.map((field, index) => (
-          <InputField key={`custom-${index}`} color="default" {...field} />
+          <InputField
+            key={`custom-${index}`}
+            color="default"
+            {...field}
+            value={
+              data
+                ? field.label === 'Download Button'
+                  ? data.download
+                  : field.label === 'Product Link'
+                    ? data.link
+                    : field.label === 'Personal Note'
+                      ? data.personal
+                      : ''
+                : ''
+            }
+          />
         ))}
-        <CheckboxCustom size="default" className="mt-8">
-          I agree with Terms and Policy
-        </CheckboxCustom>
+        {modePage !== 'detail' && (
+          <CheckboxCustom size="default" className="mt-8">
+            I agree with Terms and Policy
+          </CheckboxCustom>
+        )}
         <div className="flex gap-5 mt-8">
           <ButtonCustom
             color="dark"
             radius="sm"
             className="h-auto py-4 px-[102px] font-semibold text-base"
           >
-            Publish Product
+            {label}
           </ButtonCustom>
           <ButtonCustom
             color="grey"

@@ -1,4 +1,3 @@
-import { ClockIcon, RatingIcon, ThreeDotsIcon } from '@/icons';
 import {
   Card,
   CardBody,
@@ -6,18 +5,21 @@ import {
   CardHeader,
   Image,
 } from '@nextui-org/react';
+import { ClockIcon, RatingIcon, ThreeDotsIcon } from '@/icons';
 import { ChipCustom } from '../common';
 
 interface ProductPreviewProp {
   imageSrc: string;
   imageAlt: string;
   imageFallbackSrc: string;
+  price: string;
 }
 
 const ProductPreview = ({
   imageSrc,
   imageAlt,
   imageFallbackSrc,
+  price,
 }: ProductPreviewProp) => {
   return (
     <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[450px]">
@@ -55,7 +57,7 @@ const ProductPreview = ({
           </div>
         </div>
         <ChipCustom color="success" size="sm">
-          $98.00
+          {price}
         </ChipCustom>
       </CardFooter>
     </Card>
