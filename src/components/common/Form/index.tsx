@@ -1,5 +1,6 @@
 'use client';
 import { Card } from '@nextui-org/react';
+import { ReactNode } from 'react';
 import Link from 'next/link';
 import {
   CUSTOM_INPUT_FIELDS,
@@ -21,7 +22,7 @@ import { BackIcon } from '@/icons';
 interface FormProps {
   data: IProducts | null;
   modePage: 'add' | 'edit' | 'detail';
-  label: string;
+  label: string | ReactNode;
 }
 
 const Form = ({ data, modePage, label }: FormProps) => {

@@ -8,7 +8,11 @@ import { ThreeDotsIcon } from '@/icons';
 import { ButtonCustom } from '@/components';
 import { productActions } from '@/mocks';
 
-const DropdownIcon = () => {
+interface DropdownIconProps {
+  id: string | number;
+}
+
+const DropdownIcon = ({ id }: DropdownIconProps) => {
   return (
     <Dropdown>
       <DropdownTrigger>
@@ -18,11 +22,11 @@ const DropdownIcon = () => {
         />
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
-        {productActions.map((item) => (
+        {productActions(id).map((item) => (
           <DropdownItem
             key={item.key}
             className={item.className}
-            color={item.color}
+            color={item.color || 'default'}
           >
             {item.label}
           </DropdownItem>

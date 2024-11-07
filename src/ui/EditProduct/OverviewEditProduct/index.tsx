@@ -4,10 +4,8 @@ import { useParams } from 'next/navigation';
 import { getDataById } from '@/services';
 import { IProducts } from '@/types';
 import { Form, ProductPreview } from '@/components';
-import Link from 'next/link';
-import { ROUTERS } from '@/constants';
 
-const OverviewDetail = () => {
+const OverviewEditProduct = () => {
   const { id } = useParams();
   const [data, setData] = useState<IProducts | null>(null);
 
@@ -23,11 +21,7 @@ const OverviewDetail = () => {
 
   return (
     <div className="flex gap-8">
-      <Form
-        data={data}
-        modePage="detail"
-        label={<Link href={`${ROUTERS.EDIT_PRODUCT}/${id}`}>Edit Product</Link>}
-      />
+      <Form data={data} modePage="edit" label="Publish Product" />
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}
         imageAlt={data?.name ?? 'Product Image'}
@@ -38,4 +32,4 @@ const OverviewDetail = () => {
   );
 };
 
-export default OverviewDetail;
+export default OverviewEditProduct;

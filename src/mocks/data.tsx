@@ -39,6 +39,7 @@ const data = [
 
 const rows = [
   {
+    id: '1',
     key: '1',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
@@ -46,8 +47,21 @@ const rows = [
     sales: '1.004',
     conversion: '6,5%',
     total: '$14.238',
+    img: [
+      'https://picsum.photos/id/74/4288/2848',
+      'https://picsum.photos/id/78/4288/2848',
+      'https://picsum.photos/id/82/4288/2848',
+    ],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'Mock data',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: 'Mock data',
   },
   {
+    id: '2',
     key: '2',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
@@ -55,8 +69,21 @@ const rows = [
     sales: '1.004',
     conversion: '6,5%',
     total: '$14.238',
+    img: [
+      'https://picsum.photos/id/74/4288/2848',
+      'https://picsum.photos/id/78/4288/2848',
+      'https://picsum.photos/id/82/4288/2848',
+    ],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'Mock data',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: 'Mock data',
   },
   {
+    id: '3',
     key: '3',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
@@ -64,8 +91,21 @@ const rows = [
     sales: '1.004',
     conversion: '6,5%',
     total: '$14.238',
+    img: [
+      'https://picsum.photos/id/74/4288/2848',
+      'https://picsum.photos/id/78/4288/2848',
+      'https://picsum.photos/id/82/4288/2848',
+    ],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'Mock data',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: 'Mock data',
   },
   {
+    id: '4',
     key: '4',
     name: 'Basic design guideline',
     status: '9 Jan 2023 9:43 PM',
@@ -73,6 +113,18 @@ const rows = [
     sales: '1.004',
     conversion: '6,5%',
     total: '$14.238',
+    img: [
+      'https://picsum.photos/id/74/4288/2848',
+      'https://picsum.photos/id/78/4288/2848',
+      'https://picsum.photos/id/82/4288/2848',
+    ],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'Mock data',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: 'Mock data',
   },
 ];
 
@@ -133,7 +185,7 @@ const items = [
   },
 ];
 
-const productActions: ProductAction[] = [
+const productActions = (id: string | number): ProductAction[] => [
   {
     key: 'new',
     label: <Link href={ROUTERS.ADD_PRODUCT}>Add New Product</Link>,
@@ -141,7 +193,7 @@ const productActions: ProductAction[] = [
   },
   {
     key: 'edit',
-    label: <Link href={ROUTERS.EDIT_PRODUCT}>Edit Product</Link>,
+    label: <Link href={`${ROUTERS.EDIT_PRODUCT}/${id}`}>Edit Product</Link>,
     color: 'default',
   },
   {
