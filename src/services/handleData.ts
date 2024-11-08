@@ -20,7 +20,6 @@ const editData = async ({ products }: ProductList, id: string) => {
     if (!PRODUCT_URL) {
       throw new Error('PRODUCT_URL is not defined');
     }
-    console.log();
 
     const response = await apiRequest(`${PRODUCT_URL}/${id}`, 'PUT', products);
     return response;
@@ -29,4 +28,17 @@ const editData = async ({ products }: ProductList, id: string) => {
   }
 };
 
-export { addData, editData };
+const deleteData = async (id: string) => {
+  try {
+    if (!PRODUCT_URL) {
+      throw new Error('PRODUCT_URL is not defined');
+    }
+
+    const response = await apiRequest(`${PRODUCT_URL}/${id}`, 'DELETE');
+    return response;
+  } catch (error) {
+    console.error('Error delete product:', error);
+  }
+};
+
+export { addData, editData, deleteData };
