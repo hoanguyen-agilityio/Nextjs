@@ -185,7 +185,10 @@ const items = [
   },
 ];
 
-const productActions = (id: string | number): ProductAction[] => [
+const productActions = (
+  id: string | number,
+  onOpen: () => void,
+): ProductAction[] => [
   {
     key: 'new',
     label: <Link href={ROUTERS.ADD_PRODUCT}>Add New Product</Link>,
@@ -201,6 +204,7 @@ const productActions = (id: string | number): ProductAction[] => [
     label: 'Delete Product',
     className: 'text-danger',
     color: 'danger',
+    onOpen,
   },
 ];
 

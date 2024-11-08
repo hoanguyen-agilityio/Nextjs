@@ -70,7 +70,7 @@ const RenderColumn = (
     case 'dropdown':
       return (
         <TableCell>
-          <DropdownIcon id={item.id} />
+          <DropdownIcon id={item.id ?? ''} />
         </TableCell>
       );
     default:
