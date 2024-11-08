@@ -15,6 +15,7 @@ import {
   InputField,
 } from '@/components';
 import { BackIcon } from '@/icons';
+import { useRouter } from 'next/navigation';
 
 const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
   const { control, handleSubmit, reset, setValue } = useForm({
@@ -32,6 +33,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
       file: data?.file || [],
     },
   });
+  const router = useRouter();
 
   useEffect(() => {
     if (data) {
@@ -59,6 +61,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
     }
     reset();
     clearImages();
+    router.push(ROUTERS.HOME);
   };
 
   return (
