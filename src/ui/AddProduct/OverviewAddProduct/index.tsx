@@ -3,17 +3,17 @@ import { Form, ProductPreview } from '@/components';
 import { IMAGE } from '@/constants';
 import { addData } from '@/services';
 import { IProducts } from '@/types';
+import { revalidatePath } from 'next/cache';
 
 const OverviewAddProduct = () => {
-  const handleFormSubmit = async (products: IProducts[], reset: () => void) => {
+  const handleFormSubmit = async (products: IProducts[]) => {
     try {
       const response = await addData({ products });
-
-      if (response) {
-        reset();
-      }
+      return response;
     } catch (err) {
       console.error('Error adding product:', err);
+    } finally {
+      revalidatePath('/');
     }
   };
   return (

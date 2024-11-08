@@ -1,15 +1,15 @@
 export interface IProducts {
-  key: string;
+  key?: string;
   name: string;
   status: string;
   views: string;
   sales: string;
   conversion: string;
   total: string;
-  img: string[];
-  id: string;
-  fallbackSrc: string;
-  file: string[];
+  img?: string[];
+  id?: string;
+  fallbackSrc?: string;
+  file?: string[];
   download: string;
   link: string;
   personal: string;

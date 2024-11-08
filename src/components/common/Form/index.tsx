@@ -2,9 +2,9 @@
 import { Card } from '@nextui-org/react';
 import Link from 'next/link';
 import { useForm, Controller } from 'react-hook-form';
-import { ReactNode, useEffect } from 'react';
+import { useEffect } from 'react';
 import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
-import { IProducts } from '@/types';
+import { FormProps, IProducts } from '@/types';
 import { normalizeUrl } from '@/utils';
 import {
   Media,
@@ -16,25 +16,18 @@ import {
 } from '@/components';
 import { BackIcon } from '@/icons';
 
-interface FormProps {
-  data?: IProducts | null;
-  modePage: 'add' | 'edit' | 'detail';
-  label: string | ReactNode;
-  onSubmit?: (formData: IProducts, reset: () => void) => void;
-}
-
 const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
   const { control, handleSubmit, reset } = useForm({
     defaultValues: {
       name: data?.name || '',
-      description: data?.status || '',
-      price: data?.total || '',
-      view: data?.views || '',
+      status: data?.status || '',
+      total: data?.total || '',
+      views: data?.views || '',
       sales: data?.sales || '',
       conversion: data?.conversion || '',
       download: data?.download || '',
-      productLink: data?.link || '',
-      personalNote: data?.personal || '',
+      link: data?.link || '',
+      personal: data?.personal || '',
     },
   });
 
@@ -42,20 +35,23 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
     if (data) {
       reset({
         name: data.name || '',
-        description: data.status || '',
-        price: data.total || '',
-        view: data.views || '',
+        status: data.status || '',
+        total: data.total || '',
+        views: data.views || '',
         sales: data.sales || '',
         conversion: data.conversion || '',
         download: data.download || '',
-        productLink: data.link || '',
-        personalNote: data.personal || '',
+        link: data.link || '',
+        personal: data.personal || '',
       });
     }
   }, [data, reset]);
 
-  const safeOnSubmit = (formData: IProducts) => {
-    onSubmit && onSubmit(formData, reset);
+  const safeOnSubmit = (formData: IProducts[]) => {
+    if (onSubmit) {
+      onSubmit(formData);
+    }
+    reset();
   };
 
   return (
@@ -84,7 +80,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         <Controller
-          name="description"
+          name="status"
           control={control}
           rules={{
             required: MESSAGE.DESCRIPTION_REQUIRED,
@@ -103,7 +99,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         <Controller
-          name="price"
+          name="total"
           control={control}
           rules={{
             required: MESSAGE.PRICE_REQUIRED,
@@ -132,7 +128,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         <Controller
-          name="view"
+          name="views"
           control={control}
           rules={{
             required: MESSAGE.VIEW_REQUIRED,
@@ -199,7 +195,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
         />
         <Media
           onImagesChange={(images) => console.log(images)}
-          data={data ? { img: data.img } : undefined}
+          data={data && data.img ? { img: data.img } : undefined}
           mode={modePage}
         />
         <File
@@ -238,7 +234,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         <Controller
-          name="productLink"
+          name="link"
           control={control}
           render={({ field }) => (
             <InputField
@@ -263,7 +259,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         <Controller
-          name="personalNote"
+          name="personal"
           control={control}
           render={({ field }) => (
             <InputField

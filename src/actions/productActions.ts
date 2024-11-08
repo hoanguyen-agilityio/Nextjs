@@ -4,7 +4,7 @@ import { IProducts, OverviewDataItem } from '@/types';
 
 const getDataProducts = async (
   search = EMPTY_TEXT,
-  revalidate = 1,
+  revalidate = 60,
 ): Promise<IProducts[] | null> => {
   try {
     if (!PRODUCT_URL) {
