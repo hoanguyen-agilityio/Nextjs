@@ -1,32 +1,33 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
-import { getDataById } from '@/services';
-import { IProducts } from '@/types';
 import { Form, ProductPreview } from '@/components';
+import { IMAGE } from '@/constants';
+import { addData } from '@/services';
+import { IProducts } from '@/types';
+import { revalidateTag } from 'next/cache';
 
 const OverviewAddProduct = () => {
-  const { id } = useParams();
-  const [data, setData] = useState<IProducts | null>(null);
+  const handleFormSubmit = async (products: IProducts[]) => {
+    try {
+      const response = await addData({ products });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const productId = Array.isArray(id) ? id[0] : id;
-      const result = await getDataById(productId);
-      setData(result as IProducts);
-    };
-
-    fetchData();
-  }, [id]);
-
+      revalidateTag('add');
+      return response;
+    } catch (err) {
+      console.error('Error adding product:', err);
+    }
+  };
   return (
     <div className="flex gap-8">
-      <Form data={data} modePage="add" label="Publish Product" />
+      <Form
+        modePage="add"
+        label="Publish Product"
+        onSubmit={handleFormSubmit}
+      />
       <ProductPreview
-        imageSrc={data?.img?.[0] ?? ''}
-        imageAlt={data?.name ?? 'Product Image'}
-        imageFallbackSrc={data?.fallbackSrc ?? ''}
-        price={data?.total ?? 'N/A'}
+        imageSrc={IMAGE.DEFAULT}
+        imageAlt="Image default"
+        imageFallbackSrc={IMAGE.BLUR}
+        price="$99.99"
       />
     </div>
   );

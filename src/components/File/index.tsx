@@ -9,25 +9,24 @@ interface FileUploaderProps {
   data?: { link: string[] };
 }
 
+const MAX_TOTAL_SIZE = 5 * 1024 * 1024 * 1024; // 5GB
+
 const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
   const [files, setFiles] = useState<
     { src: string; name: string; size: number }[]
   >(
-    Array.isArray(data?.link)
-      ? data.link.map((link) => ({ src: link, name: 'Uploaded file', size: 0 }))
-      : [],
+    data?.link?.map((link) => ({
+      src: link,
+      name: 'Uploaded file',
+      size: 0,
+    })) || [],
   );
   const [url, setUrl] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-  const MAX_TOTAL_SIZE = 5 * 1024 * 1024 * 1024; // 5GB
-
   useEffect(() => {
-    if (mode === 'add') {
-      setFiles([]);
-      onFilesChange([]);
-    } else if (Array.isArray(data?.link)) {
+    if (data?.link) {
       const initialFiles = data.link.map((link) => ({
         src: link,
         name: 'Uploaded file',
@@ -36,44 +35,40 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
       setFiles(initialFiles);
       onFilesChange(initialFiles.map((file) => file.src));
     }
-  }, [mode, data?.link, onFilesChange]);
+  }, [data, onFilesChange]);
 
-  // Handle file upload (select or drop)
-  const handleFileUpload = (fileList: FileList | null) => {
-    if (fileList) {
-      let totalSize = files.reduce((sum, file) => sum + file.size, 0);
-      const newFiles = Array.from(fileList).reduce(
-        (acc, file) => {
-          if (totalSize + file.size <= MAX_TOTAL_SIZE) {
-            totalSize += file.size;
-            acc.push({
-              src: URL.createObjectURL(file),
-              name: file.name,
-              size: file.size,
-            });
-          } else {
-            alert('File size exceeds the maximum limit of 5GB');
-          }
-          return acc;
-        },
-        [] as { src: string; name: string; size: number }[],
-      );
-
-      const updatedFiles = [...files, ...newFiles];
-      setFiles(updatedFiles);
-      onFilesChange(updatedFiles.map((file) => file.src));
-    }
+  const updateFiles = (
+    newFiles: { src: string; name: string; size: number }[],
+  ) => {
+    const updatedFiles = [...files, ...newFiles];
+    setFiles(updatedFiles);
+    onFilesChange(updatedFiles.map((file) => file.src));
   };
 
-  // Handle URL input submission
+  const handleFileUpload = (fileList: FileList | null) => {
+    if (!fileList) return;
+
+    let totalSize = files.reduce((sum, file) => sum + file.size, 0);
+    const validFiles = Array.from(fileList).filter((file) => {
+      if (totalSize + file.size <= MAX_TOTAL_SIZE) {
+        totalSize += file.size;
+        return true;
+      }
+      alert('File size exceeds the maximum limit of 5GB');
+      return false;
+    });
+
+    const newFiles = validFiles.map((file) => ({
+      src: URL.createObjectURL(file),
+      name: file.name,
+      size: file.size,
+    }));
+    updateFiles(newFiles);
+  };
+
   const handleUrlSubmit = () => {
     if (url) {
-      const updatedFiles = [
-        ...files,
-        { src: url, name: 'Uploaded from URL', size: 0 },
-      ];
-      setFiles(updatedFiles);
-      onFilesChange(updatedFiles.map((file) => file.src));
+      updateFiles([{ src: url, name: 'Uploaded from URL', size: 0 }]);
       setUrl('');
       setShowModal(false);
     }
@@ -84,12 +79,6 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
     setFiles(updatedFiles);
     onFilesChange(updatedFiles.map((file) => file.src));
     URL.revokeObjectURL(files[index].src);
-  };
-
-  const handleFileInputClick = () => {
-    if (fileInputRef.current) {
-      fileInputRef.current.click();
-    }
   };
 
   return (
@@ -163,7 +152,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
                 type="button"
                 color="primary"
                 radius="sm"
-                onClick={handleFileInputClick}
+                onClick={() => fileInputRef.current?.click()}
                 className="rounded-md px-4 py-2 mb-2"
               >
                 Choose File from Computer
@@ -184,18 +173,20 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
                 className="border border-gray-300 rounded-md p-2 w-full"
               />
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-end gap-3 mt-2">
               <ButtonCustom
-                onClick={handleUrlSubmit}
-                className="bg-blue-500 text-white rounded-md px-4 py-2 mr-2"
-              >
-                Add
-              </ButtonCustom>
-              <ButtonCustom
+                type="button"
+                color="default"
                 onClick={() => setShowModal(false)}
-                className="bg-gray-300 text-black rounded-md px-4 py-2"
               >
                 Cancel
+              </ButtonCustom>
+              <ButtonCustom
+                type="button"
+                color="primary"
+                onClick={handleUrlSubmit}
+              >
+                Add
               </ButtonCustom>
             </div>
           </div>
