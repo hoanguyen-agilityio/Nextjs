@@ -1,17 +1,15 @@
 'use client';
-import { Form, ProductPreview } from '@/components';
+import { revalidateTag } from 'next/cache';
 import { IMAGE } from '@/constants';
 import { addData } from '@/services';
 import { IProducts } from '@/types';
-import { revalidateTag } from 'next/cache';
+import { Form, ProductPreview } from '@/components';
 
 const OverviewAddProduct = () => {
   const handleFormSubmit = async (products: IProducts[]) => {
     try {
-      const response = await addData({ products });
-
-      revalidateTag('add');
-      return response;
+      await addData({ products });
+      revalidateTag('product');
     } catch (err) {
       console.error('Error adding product:', err);
     }

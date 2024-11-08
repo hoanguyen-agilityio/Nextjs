@@ -4,3 +4,4 @@ export * from './message';
 export * from './image';
 export * from './data';
 export * from './regex';
+export * from './api-path';

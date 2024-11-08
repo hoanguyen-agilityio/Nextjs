@@ -15,4 +15,18 @@ const addData = async ({ products }: ProductList) => {
   }
 };
 
-export { addData };
+const editData = async ({ products }: ProductList, id: string) => {
+  try {
+    if (!PRODUCT_URL) {
+      throw new Error('PRODUCT_URL is not defined');
+    }
+    console.log();
+
+    const response = await apiRequest(`${PRODUCT_URL}/${id}`, 'PUT', products);
+    return response;
+  } catch (error) {
+    console.error('Error edit product:', error);
+  }
+};
+
+export { addData, editData };

@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { ButtonCustom, InputCustom } from '../common';
 import { FileIcon } from '@/icons';
 
@@ -21,21 +21,10 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
       size: 0,
     })) || [],
   );
+
   const [url, setUrl] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
-
-  useEffect(() => {
-    if (data?.link) {
-      const initialFiles = data.link.map((link) => ({
-        src: link,
-        name: 'Uploaded file',
-        size: 0,
-      }));
-      setFiles(initialFiles);
-      onFilesChange(initialFiles.map((file) => file.src));
-    }
-  }, [data, onFilesChange]);
 
   const updateFiles = (
     newFiles: { src: string; name: string; size: number }[],
@@ -78,7 +67,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
     const updatedFiles = files.filter((_, i) => i !== index);
     setFiles(updatedFiles);
     onFilesChange(updatedFiles.map((file) => file.src));
-    URL.revokeObjectURL(files[index].src);
+    URL.revokeObjectURL(files[index].src); // Clean up object URL
   };
 
   return (
