@@ -17,7 +17,7 @@ import {
 import { BackIcon } from '@/icons';
 
 const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
-  const { control, handleSubmit, reset } = useForm({
+  const { control, handleSubmit, reset, setValue } = useForm({
     defaultValues: {
       name: data?.name || '',
       status: data?.status || '',
@@ -28,6 +28,8 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
       download: data?.download || '',
       link: data?.link || '',
       personal: data?.personal || '',
+      img: data?.img || [],
+      file: data?.file || [],
     },
   });
 
@@ -43,15 +45,20 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
         download: data.download || '',
         link: data.link || '',
         personal: data.personal || '',
+        img: data?.img || [],
+        file: data?.file || [],
       });
     }
   }, [data, reset]);
+
+  const clearImages = () => setValue('img', []);
 
   const safeOnSubmit = (formData: IProducts[]) => {
     if (onSubmit) {
       onSubmit(formData);
     }
     reset();
+    clearImages();
   };
 
   return (
@@ -193,19 +200,36 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
             />
           )}
         />
-        <Media
-          onImagesChange={(images) => console.log(images)}
-          data={data && data.img ? { img: data.img } : undefined}
-          mode={modePage}
+        <Controller
+          name="img"
+          control={control}
+          render={({ field }) => (
+            <Media
+              {...field}
+              onImagesChange={(images) => {
+                setValue('img', images);
+                if (images.length === 0) clearImages();
+              }}
+              data={data?.img ? { img: data.img } : undefined}
+              mode={modePage}
+            />
+          )}
         />
-        <File
-          onFilesChange={(file) => console.log(file)}
-          data={
-            data && data.link
-              ? { link: Array.isArray(data.link) ? data.link : [data.link] }
-              : undefined
-          }
-          mode={modePage}
+        <Controller
+          name="file"
+          control={control}
+          render={({ field }) => (
+            <File
+              {...field}
+              onFilesChange={(file) => setValue('file', file)}
+              data={
+                data && data.link
+                  ? { link: Array.isArray(data.link) ? data.link : [data.link] }
+                  : undefined
+              }
+              mode={modePage}
+            />
+          )}
         />
         {KEY_SWITCH.map(
           ({ title, describe, classWrapper, defaultSelected }) => (
