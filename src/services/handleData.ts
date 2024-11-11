@@ -39,7 +39,6 @@ class API {
 
   async put<T>(path: string, payload: object = {}): Promise<T> {
     noStore();
-    console.log('Hoá nè', `${PRODUCT_URL}${path}`);
 
     const response = await fetch(`${PRODUCT_URL}${path}`, {
       method: 'PUT',
