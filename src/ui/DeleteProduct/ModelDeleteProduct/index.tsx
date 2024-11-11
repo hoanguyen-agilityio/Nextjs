@@ -1,4 +1,3 @@
-import { deleteData } from '@/services';
 import {
   Button,
   Modal,
@@ -7,7 +6,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from '@nextui-org/react';
-import { revalidateTag } from 'next/cache';
+import { handleDeleteProduct } from '@/actions';
 
 interface IModelDeleteProduct {
   isOpen: boolean;
@@ -20,16 +19,9 @@ const ModelDeleteProduct = ({
   onOpenChange,
   id,
 }: IModelDeleteProduct) => {
-  const handleDeleteProduct = async () => {
-    try {
-      const res = await deleteData(id);
-      revalidateTag('product');
-      return res;
-    } catch (error) {
-      console.error('Failed to delete product', error);
-    }
+  const handleDelete = () => {
+    handleDeleteProduct(id);
   };
-
   return (
     <>
       <Modal
@@ -55,7 +47,7 @@ const ModelDeleteProduct = ({
                 <Button
                   color="primary"
                   onPress={onClose}
-                  onClick={handleDeleteProduct}
+                  onClick={handleDelete}
                 >
                   Delete
                 </Button>
