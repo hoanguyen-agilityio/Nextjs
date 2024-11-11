@@ -12,13 +12,15 @@ const Sidebar = () => (
     </div>
     <Menu />
     <div className="px-[52px] pt-6 border-t-2 border-gray-50 dark:border-gray-700">
-      <ButtonCustom
-        color="secondary"
-        startContent={<PlusIcon width="46px" height="46px" />}
-        className="flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
-      >
-        Add new product
-      </ButtonCustom>
+      <Link href={ROUTERS.ADD_PRODUCT}>
+        <ButtonCustom
+          color="secondary"
+          startContent={<PlusIcon width="46px" height="46px" />}
+          className="flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
+        >
+          Add new product
+        </ButtonCustom>
+      </Link>
       <SwitchMode />
     </div>
   </aside>

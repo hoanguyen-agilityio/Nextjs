@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { getDataById } from '@/services';
+import { APIs } from '@/services';
 import { IProducts } from '@/types';
 import { Form, ProductPreview } from '@/components';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ const OverviewDetail = () => {
   useEffect(() => {
     const fetchData = async () => {
       const productId = Array.isArray(id) ? id[0] : id;
-      const result = await getDataById(productId);
+      const result = await APIs.get(`/${productId}`);
       setData(result as IProducts);
     };
 

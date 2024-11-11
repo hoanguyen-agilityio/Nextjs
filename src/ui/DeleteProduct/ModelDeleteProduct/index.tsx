@@ -6,13 +6,22 @@ import {
   ModalFooter,
   ModalHeader,
 } from '@nextui-org/react';
+import { handleDeleteProduct } from '@/actions';
 
 interface IModelDeleteProduct {
   isOpen: boolean;
   onOpenChange: () => void;
+  id: string;
 }
 
-const ModelDeleteProduct = ({ isOpen, onOpenChange }: IModelDeleteProduct) => {
+const ModelDeleteProduct = ({
+  isOpen,
+  onOpenChange,
+  id,
+}: IModelDeleteProduct) => {
+  const handleDelete = () => {
+    handleDeleteProduct(id);
+  };
   return (
     <>
       <Modal
@@ -35,7 +44,11 @@ const ModelDeleteProduct = ({ isOpen, onOpenChange }: IModelDeleteProduct) => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button
+                  color="primary"
+                  onPress={onClose}
+                  onClick={handleDelete}
+                >
                   Delete
                 </Button>
               </ModalFooter>
