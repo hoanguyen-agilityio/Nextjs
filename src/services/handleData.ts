@@ -1,44 +1,75 @@
-import { ProductList } from '@/types';
-import { apiRequest } from './api';
-import { PRODUCT_URL } from '@/constants';
+import { revalidateTag } from 'next/cache';
+import { unstable_noStore as noStore } from 'next/cache';
+import { API_PATH, PRODUCT_URL } from '../constants';
+class API {
+  async get<T>(path?: string, time?: number): Promise<T> {
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'GET',
+      next: {
+        tags: [API_PATH.PRODUCTS],
 
-const addData = async ({ products }: ProductList) => {
-  try {
-    if (!PRODUCT_URL) {
-      throw new Error('PRODUCT_URL is not defined');
-    }
+        // Re-validate every minute
+        revalidate: time || 60,
+      },
+    }).catch((error) => {
+      throw new Error(error);
+    });
 
-    const response = await apiRequest(PRODUCT_URL, 'POST', products);
-    return response;
-  } catch (error) {
-    console.error('Error adding product:', error);
+    return response.json();
   }
-};
 
-const editData = async ({ products }: ProductList, id: string) => {
-  try {
-    if (!PRODUCT_URL) {
-      throw new Error('PRODUCT_URL is not defined');
-    }
+  async post<T>(path?: string, payload: object = {}): Promise<T> {
+    noStore();
 
-    const response = await apiRequest(`${PRODUCT_URL}/${id}`, 'PUT', products);
-    return response;
-  } catch (error) {
-    console.error('Error edit product:', error);
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        ...payload,
+      }),
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
   }
-};
 
-const deleteData = async (id: string) => {
-  try {
-    if (!PRODUCT_URL) {
-      throw new Error('PRODUCT_URL is not defined');
-    }
+  async put<T>(path: string, payload: object = {}): Promise<T> {
+    noStore();
+    console.log('Hoá nè', `${PRODUCT_URL}${path}`);
 
-    const response = await apiRequest(`${PRODUCT_URL}/${id}`, 'DELETE');
-    return response;
-  } catch (error) {
-    console.error('Error delete product:', error);
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...payload }),
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
   }
-};
 
-export { addData, editData, deleteData };
+  async delete<T>(path: string): Promise<T> {
+    noStore();
+
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
+  }
+}
+
+export const APIs = new API();

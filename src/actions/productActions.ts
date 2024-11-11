@@ -1,5 +1,11 @@
-import { EMPTY_TEXT, MESSAGE, OVERVIEW_URL, PRODUCT_URL } from '@/constants';
-import { apiRequest } from '@/services';
+import {
+  EMPTY_TEXT,
+  MESSAGE,
+  OVERVIEW_URL,
+  PRODUCT_URL,
+  ROUTERS,
+} from '@/constants';
+import { apiRequest, APIs } from '@/services';
 import { IProducts, OverviewDataItem } from '@/types';
 
 const getDataProducts = async (
@@ -12,16 +18,16 @@ const getDataProducts = async (
     }
 
     const url = search.trim()
-      ? `${PRODUCT_URL}?search=${encodeURIComponent(search)}`
-      : PRODUCT_URL;
+      ? `?search=${encodeURIComponent(search)}`
+      : ROUTERS.EMPTY;
 
-    const res = await apiRequest<IProducts[]>(
-      url,
-      'GET',
-      undefined,
-      revalidate,
-    );
-    return res;
+    // const res = await apiRequest<IProducts[]>(
+    //   url,
+    //   'GET',
+    //   undefined,
+    //   revalidate,
+    // );
+    return await APIs.get(url, revalidate);
   } catch (error) {
     console.error(MESSAGE.ERROR_GET_DATA_PRODUCT, error);
     return null;

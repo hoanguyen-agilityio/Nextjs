@@ -1,9 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { editData, getDataById } from '@/services';
+import { APIs } from '@/services';
 import { IProducts } from '@/types';
-import { revalidateTag } from 'next/cache';
 import { Form, ProductPreview } from '@/components';
 
 const OverviewEditProduct = () => {
@@ -13,7 +12,7 @@ const OverviewEditProduct = () => {
   useEffect(() => {
     const fetchData = async () => {
       const productId = Array.isArray(id) ? id[0] : id;
-      const result = await getDataById(productId);
+      const result = await APIs.get(`/${productId}`);
       setData(result as IProducts);
     };
 
@@ -22,8 +21,9 @@ const OverviewEditProduct = () => {
 
   const handleFormSubmit = async (products: IProducts[]) => {
     try {
-      await editData({ products }, id as string);
-      revalidateTag('product');
+      // await editData({ products }, id as string);
+      // revalidateTag('product');
+      await APIs.put(id as string, products);
     } catch (err) {
       console.error('Error edit product:', err);
     }

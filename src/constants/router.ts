@@ -15,6 +15,7 @@ const ROUTERS = {
   DETAIL: 'detail',
   ADD_PRODUCT: 'add',
   EDIT_PRODUCT: 'edit',
+  EMPTY: '',
 };
 
 export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL };

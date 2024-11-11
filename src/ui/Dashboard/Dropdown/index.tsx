@@ -40,7 +40,11 @@ const DropdownIcon = ({ id }: DropdownIconProps) => {
           ))}
         </DropdownMenu>
       </Dropdown>
-      <ModelDeleteProduct isOpen={isOpen} onOpenChange={onOpenChange} id={id} />
+      <ModelDeleteProduct
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        id={String(id)}
+      />
     </>
   );
 };
