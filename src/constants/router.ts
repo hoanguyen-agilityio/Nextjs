@@ -16,6 +16,8 @@ const ROUTERS = {
   ADD_PRODUCT: 'add',
   EDIT_PRODUCT: 'edit',
   EMPTY: '',
+  LOGIN: 'login',
+  SIGN_UP: 'signUp',
 };
 
 export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL };

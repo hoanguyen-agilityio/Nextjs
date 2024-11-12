@@ -60,3 +60,26 @@ export const MENU = [
     href: ROUTERS.SETTINGS,
   },
 ];
+
+export const MENU_NO_AUTH = [
+  {
+    label: 'Overview',
+    href: ROUTERS.EMPTY,
+  },
+  {
+    label: 'Projects',
+    href: ROUTERS.EMPTY,
+  },
+  {
+    label: 'Tasks',
+    href: ROUTERS.EMPTY,
+  },
+  {
+    label: 'Reports',
+    href: ROUTERS.EMPTY,
+  },
+  {
+    label: 'Statements',
+    href: ROUTERS.EMPTY,
+  },
+];

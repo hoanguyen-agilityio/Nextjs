@@ -1,3 +1,4 @@
+import { Header } from '@/ui';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,5 +17,10 @@ export default function NoAuthLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return { children };
+  return (
+    <>
+      <Header />
+      <main className="flex">{children}</main>
+    </>
+  );
 }
