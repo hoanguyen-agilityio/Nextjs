@@ -1,8 +1,13 @@
 'use client';
 import { Card } from '@nextui-org/react';
 import Link from 'next/link';
-import { useState } from 'react';
-import { ROUTERS } from '@/constants';
+import { useState, useTransition } from 'react';
+import clsx from 'clsx';
+import { useRouter } from 'next/navigation';
+import { Controller, useForm } from 'react-hook-form';
+import { MESSAGE, REGEX, ROUTERS } from '@/constants';
+import { Account } from '@/types';
+import { getAccount } from '@/actions';
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,
@@ -15,51 +20,117 @@ import {
 
 const FormLogin = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [error, setError] = useState('');
   const toggleVisibility = () => setIsVisible(!isVisible);
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      username: '',
+      password: '',
+    },
+  });
+  const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+
+  const onSubmit = ({ username, password }: Account) => {
+    startTransition(async () => {
+      try {
+        const accountData = await getAccount();
+
+        const matchingAccount = accountData.find(
+          (account) =>
+            account.username === username && account.password === password,
+        );
+        if (matchingAccount) {
+          router.push(ROUTERS.HOME);
+        } else {
+          setError('Incorrect username or password');
+        }
+      } catch (error) {
+        setError('An error occurred and you cannot log in.');
+      }
+    });
+  };
 
   return (
     <Card className="flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl">
-      <form>
+      <form className="w-[528px]" onSubmit={handleSubmit(onSubmit)}>
         <h3 className="font-bold text-4xl">Sign In</h3>
-        <InputField
-          type="text"
-          placeholder="user0123456"
-          label="Name *"
-          className="mt-2"
-          size="xl"
-          color="secondary"
-          classWrapper="mt-11"
+        {!Object.keys(errors).length && error && (
+          <p className="text-red-600 text-sm font-normal">{error}</p>
+        )}
+        <Controller
+          name="username"
+          control={control}
+          rules={{
+            required: MESSAGE.USERNAME_REQUIRED,
+            pattern: {
+              value: REGEX.USERNAME,
+              message: MESSAGE.INVALID_USERNAME,
+            },
+          }}
+          render={({ field, fieldState }) => (
+            <InputField
+              {...field}
+              type="text"
+              placeholder="user0123456"
+              label="Username"
+              className="mt-2"
+              size="xl"
+              color="secondary"
+              classWrapper="mt-11"
+              errorMsg={fieldState.error ? fieldState.error.message : undefined}
+            />
+          )}
         />
-        <InputField
-          label="Password"
-          className="w-full"
-          color="secondary"
-          size="xl"
-          classWrapper="mt-10"
-          startContent={<LockIcon width="22px" height="22px" />}
-          endContent={
-            <button
-              className="focus:outline-none"
-              type="button"
-              onClick={toggleVisibility}
-              aria-label="toggle password visibility"
-            >
-              {isVisible ? (
-                <EyeSlashFilledIcon
-                  width="1em"
-                  height="1em"
-                  className="text-2xl text-default-400 pointer-events-none"
-                />
-              ) : (
-                <EyeFilledIcon
-                  width="1em"
-                  height="1em"
-                  className="text-2xl text-default-400 pointer-events-none"
-                />
-              )}
-            </button>
-          }
-          type={isVisible ? 'text' : 'password'}
+        <Controller
+          name="password"
+          control={control}
+          rules={{
+            required: MESSAGE.PASSWORD_REQUIRED,
+            pattern: {
+              value: REGEX.PASSWORD,
+              message: MESSAGE.INVALID_PASSWORD,
+            },
+          }}
+          render={({ field, fieldState }) => (
+            <InputField
+              {...field}
+              label="Password"
+              className="w-full"
+              color="secondary"
+              size="xl"
+              classWrapper="mt-10"
+              startContent={<LockIcon width="22px" height="22px" />}
+              endContent={
+                <button
+                  className="focus:outline-none"
+                  type="button"
+                  onClick={toggleVisibility}
+                  aria-label="toggle password visibility"
+                >
+                  {isVisible ? (
+                    <EyeSlashFilledIcon
+                      width="1em"
+                      height="1em"
+                      className="text-2xl text-default-400 pointer-events-none"
+                    />
+                  ) : (
+                    <EyeFilledIcon
+                      width="1em"
+                      height="1em"
+                      className="text-2xl text-default-400 pointer-events-none"
+                    />
+                  )}
+                </button>
+              }
+              type={isVisible ? 'text' : 'password'}
+              errorMsg={fieldState.error ? fieldState.error.message : undefined}
+            />
+          )}
         />
         <CheckboxCustom size="default" className="mt-3xl">
           remember me
@@ -67,9 +138,14 @@ const FormLogin = () => {
         <ButtonCustom
           color="dark"
           radius="sm"
-          className="py-4 w-full text-base font-semibold h-[52px] mt-5xl"
+          className={clsx(
+            'py-4 w-full text-base font-semibold h-[52px] mt-5xl',
+            { 'opacity-50 cursor-not-allowed': isPending },
+          )}
+          type="submit"
+          disabled={isPending}
         >
-          Log In to your account
+          {isPending ? 'Logging in...' : 'Log In to your account'}
         </ButtonCustom>
         <div className="flex justify-between items-center gap-3 mt-l">
           <div className="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"></div>

@@ -13,6 +13,13 @@ const MESSAGE = {
   CONVERSION_REQUIRED: 'Conversion is required',
   VALID_NUMBER: 'Please enter a valid number.',
   VALID_PERCENT: 'Please enter a valid percentage.',
+  ERROR_GET_ACCOUNT: 'An error occurred while retrieving account data.',
+  USERNAME_REQUIRED: 'Username is required',
+  PASSWORD_REQUIRED: 'Password is required',
+  INVALID_USERNAME:
+    'Username includes uppercase and lowercase letters and numbers',
+  INVALID_PASSWORD:
+    'Password must include uppercase and lowercase letters, numbers and special characters',
 };
 
 export { EMPTY_TEXT, MESSAGE };
