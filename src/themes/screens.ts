@@ -5,4 +5,5 @@ export const screen = {
   xl: '360px',
   '2xl': '558px',
   '3xl': '900px',
+  '4xl': '924px',
 };

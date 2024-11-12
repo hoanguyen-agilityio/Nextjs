@@ -85,6 +85,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               message="Give your product a short and clear name. 30 characters is recommended."
               className="mt-2"
               size="xl"
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -104,6 +105,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               classWrapper="mt-3xl"
               size="xl"
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -133,6 +135,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
                   <span className="font-semibold text-xsm">$</span>
                 </div>
               }
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -155,6 +158,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               classWrapper="mt-3xl"
               size="xl"
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -177,6 +181,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               classWrapper="mt-3xl"
               size="xl"
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -199,6 +204,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               classWrapper="mt-3xl"
               size="xl"
+              color="secondary"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -257,6 +263,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               size="xl"
               classWrapper="mt-[60px]"
               className="mt-2"
+              color="secondary"
             />
           )}
         />
@@ -271,6 +278,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               size="3xl"
               classWrapper="mt-[34px]"
               className="mt-2"
+              color="secondary"
               startContent={
                 <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
                   <p className="font-semibold text-xsm text-grayBlue-400">
@@ -297,6 +305,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-[34px]"
               className="mt-2"
               placeholder="Thank you for purchasing my product!"
+              color="secondary"
             />
           )}
         />
