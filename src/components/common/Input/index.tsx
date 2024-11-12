@@ -31,9 +31,10 @@ const InputCustom = extendVariants(Input, {
           'dark:bg-dark-900',
           'dark:border-gray-700',
           'focus-within:ring-0',
+          'text-grayBlue-400',
+          'placeholder:text-grayBlue-400',
         ],
         input: [
-          'text-grayBlue-400',
           'placeholder:text-grayBlue-400',
           'flex-grow',
           'focus:outline-none',

@@ -21,14 +21,12 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <main className="flex">
-        <Sidebar />
-        <div className="w-full">
-          <Header />
-          {children}
-        </div>
-      </main>
-    </>
+    <main className="flex">
+      <Sidebar />
+      <div className="w-full">
+        <Header />
+        {children}
+      </div>
+    </main>
   );
 }

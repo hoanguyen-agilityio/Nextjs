@@ -20,7 +20,7 @@ export default function NoAuthLayout({
   return (
     <>
       <Header />
-      <main className="flex">{children}</main>
+      <main className="bg-black-900 dark:bg-gray-800">{children}</main>
     </>
   );
 }

@@ -11,6 +11,7 @@ const ButtonCustom = extendVariants(Button, {
       info: 'bg-translucent-400 text-blue-400',
       dark: 'bg-black-900 text-white dark:bg-white dark:text-black-900',
       grey: 'bg-lightGray-100 text-white dark:bg-gray-700 dark:text-dark-900',
+      bright: 'bg-gray-50 dark:bg-gray-700 text-dark-800 dark:text-white',
     },
     isDisabled: {
       true: 'opacity-50 cursor-not-allowed',
