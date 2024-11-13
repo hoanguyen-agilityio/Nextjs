@@ -2,7 +2,7 @@
 import { Card } from '@nextui-org/react';
 import Link from 'next/link';
 import { useForm, Controller } from 'react-hook-form';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { FormProps, IProducts } from '@/types';
 import { normalizeUrl } from '@/utils';
@@ -16,8 +16,12 @@ import {
 } from '@/components';
 import { BackIcon } from '@/icons';
 import { useRouter } from 'next/navigation';
+import { getDataProducts } from '@/actions';
 
 const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
+  const [duplicateNameError, setDuplicateNameError] = useState<string | null>(
+    null,
+  );
   const { control, handleSubmit, reset, setValue } = useForm({
     defaultValues: {
       name: data?.name || '',
@@ -55,9 +59,24 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
 
   const clearImages = () => setValue('img', []);
 
-  const safeOnSubmit = (formData: IProducts[]) => {
+  const checkDuplicateName = async (name: string) => {
+    if (name === data?.name) return false;
+
+    const products = await getDataProducts();
+    return products?.some((product: IProducts) => product.name === name);
+  };
+
+  const safeOnSubmit = async (product: IProducts) => {
+    const isDuplicate = await checkDuplicateName(product.name);
+    if (isDuplicate) {
+      setDuplicateNameError(MESSAGE.DUPLICATE_NAME);
+      return;
+    }
+
+    setDuplicateNameError(null);
+
     if (onSubmit) {
-      onSubmit(formData);
+      onSubmit(product);
     }
     reset();
     clearImages();
@@ -86,7 +105,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               size="xl"
               color="secondary"
-              errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              errorMsg={duplicateNameError || fieldState.error?.message}
             />
           )}
         />

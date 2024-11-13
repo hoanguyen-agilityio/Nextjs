@@ -20,7 +20,7 @@ const OverviewEditProduct = () => {
     fetchData();
   }, [id]);
 
-  const handleEditProductSubmit = (formData: IProducts[]) => {
+  const handleEditProductSubmit = (formData: IProducts) => {
     handleEditProduct(id as string, formData);
   };
 

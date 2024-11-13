@@ -1,6 +1,7 @@
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 const PRODUCT_URL = process.env.NEXT_PUBLIC_DATA_PRODUCT;
 const OVERVIEW_URL = process.env.NEXT_PUBLIC_DATA_OVERVIEW;
+const ACCOUNT_URL = process.env.NEXT_PUBLIC_ACCOUNT_URL;
 const ROUTERS = {
   HOME: '/',
   INBOX: 'inbox',
@@ -20,4 +21,4 @@ const ROUTERS = {
   SIGN_UP: 'signUp',
 };
 
-export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL };
+export { ROUTERS, BASE_URL, PRODUCT_URL, OVERVIEW_URL, ACCOUNT_URL };

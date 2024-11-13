@@ -1,6 +1,12 @@
 import { LogoWithoutText } from '@/icons';
 import { FormLogin } from '@/ui';
 
+export const metadata = {
+  title: 'Login',
+  description:
+    'Access your account by logging in with your username and password. Secure and quick authentication for a seamless experience.',
+};
+
 const LoginPage = () => {
   return (
     <section className="flex items-center justify-around content-center min-h-screen">

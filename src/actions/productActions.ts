@@ -47,7 +47,7 @@ const getDataOverview = async () => {
   }
 };
 
-const handleAddProduct = async (products: IProducts[]) => {
+const handleAddProduct = async (products: IProducts) => {
   try {
     await APIs.post(ROUTERS.EMPTY, products);
   } catch (error) {
@@ -55,7 +55,7 @@ const handleAddProduct = async (products: IProducts[]) => {
   }
 };
 
-const handleEditProduct = async (id: string, products: IProducts[]) => {
+const handleEditProduct = async (id: string, products: IProducts) => {
   try {
     await APIs.put(`/${id}`, products);
   } catch (error) {
