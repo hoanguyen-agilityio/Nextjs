@@ -5,6 +5,8 @@ import { Form, ProductPreview } from '@/components';
 import { handleEditProduct } from '@/actions';
 import { useEffect, useState } from 'react';
 import { APIs } from '@/services';
+import { toast } from 'react-toastify';
+import { MESSAGE } from '@/constants';
 
 const OverviewEditProduct = () => {
   const { id } = useParams();
@@ -22,6 +24,7 @@ const OverviewEditProduct = () => {
 
   const handleEditProductSubmit = (formData: IProducts) => {
     handleEditProduct(id as string, formData);
+    toast.success(MESSAGE.EDIT_SUCCESSFULLY);
   };
 
   return (

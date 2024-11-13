@@ -21,6 +21,14 @@ const MESSAGE = {
   INVALID_PASSWORD:
     'Password must include uppercase and lowercase letters, numbers and special characters',
   DUPLICATE_NAME: 'Name already exists',
+  ADD_SUCCESSFULLY: 'Product added successfully',
+  EDIT_SUCCESSFULLY: 'Product edit successful',
+  DELETE_SUCCESSFULLY: 'Product deleted successfully',
+  LOGIN_SUCCESSFULLY: 'Login successful',
+  ERROR_ADD_DATA: 'Error adding product:',
+  ERROR_EDIT_DATA: 'Error edit product:',
+  ERROR_DELETE_DATA: 'Failed to delete product:',
+  ERROR_UNKNOWN: 'Unknown error occurred',
 };
 
 export { EMPTY_TEXT, MESSAGE };

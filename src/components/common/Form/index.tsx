@@ -2,7 +2,7 @@
 import { Card } from '@nextui-org/react';
 import Link from 'next/link';
 import { useForm, Controller } from 'react-hook-form';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { FormProps, IProducts } from '@/types';
 import { normalizeUrl } from '@/utils';
@@ -17,6 +17,7 @@ import {
 import { BackIcon } from '@/icons';
 import { useRouter } from 'next/navigation';
 import { getDataProducts } from '@/actions';
+import clsx from 'clsx';
 
 const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
   const [duplicateNameError, setDuplicateNameError] = useState<string | null>(
@@ -38,6 +39,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
     },
   });
   const router = useRouter();
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     if (data) {
@@ -66,21 +68,23 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
     return products?.some((product: IProducts) => product.name === name);
   };
 
-  const safeOnSubmit = async (product: IProducts) => {
-    const isDuplicate = await checkDuplicateName(product.name);
-    if (isDuplicate) {
-      setDuplicateNameError(MESSAGE.DUPLICATE_NAME);
-      return;
-    }
+  const safeOnSubmit = (product: IProducts) => {
+    startTransition(async () => {
+      const isDuplicate = await checkDuplicateName(product.name);
+      if (isDuplicate) {
+        setDuplicateNameError(MESSAGE.DUPLICATE_NAME);
+        return;
+      }
 
-    setDuplicateNameError(null);
+      setDuplicateNameError(null);
 
-    if (onSubmit) {
-      onSubmit(product);
-    }
-    reset();
-    clearImages();
-    router.push(ROUTERS.HOME);
+      if (onSubmit) {
+        onSubmit(product);
+      }
+      reset();
+      clearImages();
+      router.push(ROUTERS.HOME);
+    });
   };
 
   return (
@@ -338,9 +342,12 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
             type="submit"
             color="dark"
             radius="sm"
-            className="h-auto py-4 px-[102px] font-semibold text-base"
+            className={clsx('h-auto py-4 px-[102px] font-semibold text-base', {
+              'opacity-50 cursor-not-allowed': isPending,
+            })}
+            disabled={isPending}
           >
-            {label}
+            {isPending ? 'Logging in...' : label}
           </ButtonCustom>
           <ButtonCustom
             color="grey"

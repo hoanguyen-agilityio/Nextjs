@@ -5,8 +5,10 @@ import { useState, useTransition } from 'react';
 import clsx from 'clsx';
 import { useRouter } from 'next/navigation';
 import { Controller, useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 import { MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { Account } from '@/types';
+import { handleLogin } from '@/utils';
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,
@@ -16,7 +18,6 @@ import {
   GoogleIcon,
   LockIcon,
 } from '@/icons';
-import { handleLogin } from '@/utils';
 
 const FormLogin = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,9 +41,10 @@ const FormLogin = () => {
       const result = await handleLogin({ username, password });
 
       if (result.success) {
+        toast.success(MESSAGE.LOGIN_SUCCESSFULLY);
         router.push(ROUTERS.HOME);
       } else {
-        setError(result.error || 'Unknown error occurred');
+        setError(result.error || MESSAGE.ERROR_UNKNOWN);
       }
     });
   };

@@ -51,7 +51,7 @@ const handleAddProduct = async (products: IProducts) => {
   try {
     await APIs.post(ROUTERS.EMPTY, products);
   } catch (error) {
-    console.error('Error adding product:', error);
+    console.error(MESSAGE.ERROR_ADD_DATA, error);
   }
 };
 
@@ -59,7 +59,7 @@ const handleEditProduct = async (id: string, products: IProducts) => {
   try {
     await APIs.put(`/${id}`, products);
   } catch (error) {
-    console.error('Error edit product:', error);
+    console.error(MESSAGE.ERROR_EDIT_DATA, error);
   }
 };
 
@@ -68,7 +68,7 @@ const handleDeleteProduct = async (id: string) => {
     const res = await APIs.delete(`/${id}`);
     return res;
   } catch (error) {
-    console.error('Failed to delete product', error);
+    console.error(MESSAGE.ERROR_DELETE_DATA, error);
   }
 };
 

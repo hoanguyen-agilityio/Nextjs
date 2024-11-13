@@ -5,6 +5,8 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 // Components
 import montserrat from '@/assets/fonts';
 import './globals.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -28,6 +30,7 @@ export default function RootLayout({
         <NextUIProvider>
           <NextThemesProvider attribute="class" defaultTheme="light">
             {children}
+            <ToastContainer />
           </NextThemesProvider>
         </NextUIProvider>
       </body>

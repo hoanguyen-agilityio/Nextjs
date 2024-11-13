@@ -1,15 +1,22 @@
 'use client';
-import { IMAGE } from '@/constants';
+import { toast } from 'react-toastify';
+import { IMAGE, MESSAGE } from '@/constants';
+import { IProducts } from '@/types';
 import { Form, ProductPreview } from '@/components';
 import { handleAddProduct } from '@/actions';
 
 const OverviewAddProduct = () => {
+  const handleAddProductSubmit = async (product: IProducts) => {
+    toast.success(MESSAGE.ADD_SUCCESSFULLY);
+    await handleAddProduct(product);
+  };
+
   return (
     <div className="flex gap-8">
       <Form
         modePage="add"
         label="Publish Product"
-        onSubmit={handleAddProduct}
+        onSubmit={handleAddProductSubmit}
       />
       <ProductPreview
         imageSrc={IMAGE.DEFAULT}
