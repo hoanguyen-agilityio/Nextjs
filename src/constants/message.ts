@@ -20,6 +20,7 @@ const MESSAGE = {
     'Username includes uppercase and lowercase letters and numbers',
   INVALID_PASSWORD:
     'Password must include uppercase and lowercase letters, numbers and special characters',
+  DUPLICATE_NAME: 'Name already exists',
 };
 
 export { EMPTY_TEXT, MESSAGE };

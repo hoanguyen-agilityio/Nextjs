@@ -17,5 +17,5 @@ export interface FormProps {
   data?: IProducts | null;
   modePage: 'add' | 'edit' | 'detail';
   label: string | ReactNode;
-  onSubmit?: (formData: IProducts[]) => void;
+  onSubmit?: (formData: IProducts) => void;
 }

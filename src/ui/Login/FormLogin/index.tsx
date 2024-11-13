@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation';
 import { Controller, useForm } from 'react-hook-form';
 import { MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { Account } from '@/types';
-import { getAccount } from '@/actions';
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,
@@ -17,6 +16,7 @@ import {
   GoogleIcon,
   LockIcon,
 } from '@/icons';
+import { handleLogin } from '@/utils';
 
 const FormLogin = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,20 +37,12 @@ const FormLogin = () => {
 
   const onSubmit = ({ username, password }: Account) => {
     startTransition(async () => {
-      try {
-        const accountData = await getAccount();
+      const result = await handleLogin({ username, password });
 
-        const matchingAccount = accountData.find(
-          (account) =>
-            account.username === username && account.password === password,
-        );
-        if (matchingAccount) {
-          router.push(ROUTERS.HOME);
-        } else {
-          setError('Incorrect username or password');
-        }
-      } catch (error) {
-        setError('An error occurred and you cannot log in.');
+      if (result.success) {
+        router.push(ROUTERS.HOME);
+      } else {
+        setError(result.error || 'Unknown error occurred');
       }
     });
   };

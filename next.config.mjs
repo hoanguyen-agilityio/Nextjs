@@ -32,6 +32,15 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/detail/edit/:id*',
+        destination: '/edit/:id*',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
