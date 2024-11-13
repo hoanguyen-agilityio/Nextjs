@@ -12,6 +12,7 @@ const ButtonCustom = extendVariants(Button, {
       dark: 'bg-black-900 text-white dark:bg-white dark:text-black-900',
       grey: 'bg-lightGray-100 text-white dark:bg-gray-700 dark:text-dark-900',
       bright: 'bg-gray-50 dark:bg-gray-700 text-dark-800 dark:text-white',
+      unstyled: 'bg-none border-none',
     },
     isDisabled: {
       true: 'opacity-50 cursor-not-allowed',
@@ -21,6 +22,7 @@ const ButtonCustom = extendVariants(Button, {
       xs: 'py-4 pl-5 pr-4 text-xsm font-semibold border',
       md: 'py-1 px-2 text-base',
       xl: 'font-semibold border py-lg px-5 text-xsm',
+      unstyled: 'p-0',
     },
     radius: {
       md: 'rounded-md',

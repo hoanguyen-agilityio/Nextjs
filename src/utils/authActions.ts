@@ -13,8 +13,6 @@ const handleLogin = async ({ username, password }: Account) => {
         account.username === username && account.password === password,
     );
 
-    // save username + password to cookie "username=..,password="
-    // +encode password (MD5 js)
     if (matchingAccount) {
       const cookieStore = cookies();
       const encodedPassword = md5(password);
@@ -33,4 +31,13 @@ const handleLogin = async ({ username, password }: Account) => {
   }
 };
 
-export { handleLogin };
+const handleLogout = async () => {
+  const cookieStore = cookies();
+  const storedUsername = cookies().get('username');
+  console.log('Hoá nè', storedUsername);
+
+  cookieStore.delete('username');
+  cookieStore.delete('password');
+};
+
+export { handleLogin, handleLogout };

@@ -1,6 +1,8 @@
-import { colors } from '@/themes';
-import { InputCustom } from '@/components';
-import { NotificationIcon, SearchIcon, UpAndDownArrows } from '@/icons';
+import { ButtonCustom, InputCustom } from '@/components';
+import { ROUTERS } from '@/constants';
+import { Logout, NotificationIcon, SearchIcon } from '@/icons';
+import { handleLogout } from '@/utils';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -36,12 +38,13 @@ const Header = () => {
             </span>
             <span className="text-base text-grayBlue-400">Administrator</span>
           </div>
-          <UpAndDownArrows
-            width="20px"
-            height="21px"
-            className="ml-l cursor-pointer"
-            fill={colors.lightGray[100]}
-          />
+          <Link href={ROUTERS.LOGIN} onClick={handleLogout}>
+            <ButtonCustom
+              color="unstyled"
+              size="unstyled"
+              startContent={<Logout width="28px" height="28px" />}
+            />
+          </Link>
         </div>
       </div>
     </header>
