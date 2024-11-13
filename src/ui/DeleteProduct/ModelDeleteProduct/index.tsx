@@ -7,6 +7,8 @@ import {
   ModalHeader,
 } from '@nextui-org/react';
 import { handleDeleteProduct } from '@/actions';
+import { toast } from 'react-toastify';
+import { MESSAGE } from '@/constants';
 
 interface IModelDeleteProduct {
   isOpen: boolean;
@@ -19,9 +21,11 @@ const ModelDeleteProduct = ({
   onOpenChange,
   id,
 }: IModelDeleteProduct) => {
-  const handleDelete = () => {
-    handleDeleteProduct(id);
+  const handleDelete = async () => {
+    await handleDeleteProduct(id);
+    toast.success(MESSAGE.DELETE_SUCCESSFULLY);
   };
+
   return (
     <>
       <Modal

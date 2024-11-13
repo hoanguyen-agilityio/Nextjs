@@ -1,6 +1,44 @@
 import { ButtonCustom } from '@/components';
+import { IMAGE } from '@/constants';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
+import { APIs } from '@/services';
+import { IProducts } from '@/types';
 import { OverviewEditProduct } from '@/ui';
+import { Metadata } from 'next';
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> => {
+  const product = await APIs.get<IProducts>(`/${params.id}`);
+  const productImage =
+    product.img && product.img.length > 0 ? product.img[0] : IMAGE.DEFAULT;
+
+  return {
+    title: `Edit Product: ${product.name}`,
+    description: `Edit details for the product "${product.name}". Update the price, description, and more.`,
+    icons: [
+      {
+        rel: 'icon',
+        url: '/favicon.ico',
+      },
+    ],
+    openGraph: {
+      title: `Product Details: ${product.name}`,
+      description: `Discover more about the product "${product.name}". Price: $${product.total}`,
+      url: `/products/${product.id}`,
+      images: [
+        {
+          url: productImage,
+          width: 1200,
+          height: 630,
+          alt: product.name,
+        },
+      ],
+    },
+  };
+};
 
 const EditPage = () => {
   return (

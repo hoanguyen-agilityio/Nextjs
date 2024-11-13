@@ -1,6 +1,13 @@
+import { Metadata } from 'next';
 import { ButtonCustom } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import { OverviewAddProduct } from '@/ui';
+
+export const metadata: Metadata = {
+  title: 'Add Product',
+  description:
+    'Add a new product to your inventory by filling out the form below.',
+};
 
 const AddProduct = () => {
   return (
