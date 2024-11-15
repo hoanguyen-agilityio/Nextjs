@@ -1,3 +1,5 @@
+'use server';
+import { signIn } from '@/configs';
 import { ACCOUNT_URL, MESSAGE } from '@/constants';
 import { apiRequest } from '@/services';
 import { Account } from '@/types';
@@ -15,4 +17,12 @@ const getAccount = async (): Promise<Account[]> => {
   }
 };
 
-export { getAccount };
+const handleSignIn = async (payload: Account) => {
+  try {
+    return await signIn('credentials', payload);
+  } catch (error) {
+    return { error: `Failed to Sign In ${error}` };
+  }
+};
+
+export { getAccount, handleSignIn };

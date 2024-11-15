@@ -8,7 +8,6 @@ import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { Account } from '@/types';
-import { handleLogin } from '@/utils';
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,
@@ -19,7 +18,20 @@ import {
   LockIcon,
 } from '@/icons';
 
-const FormLogin = () => {
+interface FormLoginProps {
+  onSignIn: (payload: Account) => Promise<
+    | {
+        success: boolean;
+        error?: undefined;
+      }
+    | {
+        error: string;
+        success?: undefined;
+      }
+  >;
+}
+
+const FormLogin = ({ onSignIn }: FormLoginProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const [error, setError] = useState('');
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -36,15 +48,19 @@ const FormLogin = () => {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
-  const onSubmit = ({ username, password }: Account) => {
+  const onSubmit = async ({ username, password }: Account) => {
     startTransition(async () => {
-      const result = await handleLogin({ username, password });
+      // Start the sign-in process
+      const result = await onSignIn({ username, password });
 
-      if (result.success) {
+      // Check if sign-in was successful
+      if (result.error) {
+        // If there is an error, display it
+        setError(result.error);
+      } else {
+        // If successful, show success toast and redirect to the homepage
         toast.success(MESSAGE.LOGIN_SUCCESSFULLY);
         router.push(ROUTERS.HOME);
-      } else {
-        setError(result.error || MESSAGE.ERROR_UNKNOWN);
       }
     });
   };

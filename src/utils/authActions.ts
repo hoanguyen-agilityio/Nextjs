@@ -33,8 +33,6 @@ const handleLogin = async ({ username, password }: Account) => {
 
 const handleLogout = async () => {
   const cookieStore = cookies();
-  const storedUsername = cookies().get('username');
-  console.log('Hoá nè', storedUsername);
 
   cookieStore.delete('username');
   cookieStore.delete('password');

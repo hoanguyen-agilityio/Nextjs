@@ -1,8 +1,6 @@
+// import { handleSignOut } from '@/actions';
 import { ButtonCustom, InputCustom } from '@/components';
-import { ROUTERS } from '@/constants';
 import { Logout, NotificationIcon, SearchIcon } from '@/icons';
-import { handleLogout } from '@/utils';
-import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -38,13 +36,12 @@ const Header = () => {
             </span>
             <span className="text-base text-grayBlue-400">Administrator</span>
           </div>
-          <Link href={ROUTERS.LOGIN} onClick={handleLogout}>
-            <ButtonCustom
-              color="unstyled"
-              size="unstyled"
-              startContent={<Logout width="28px" height="28px" />}
-            />
-          </Link>
+          <ButtonCustom
+            color="unstyled"
+            size="unstyled"
+            startContent={<Logout width="28px" height="28px" />}
+            // onClick={handleSignOut}
+          />
         </div>
       </div>
     </header>

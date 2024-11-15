@@ -1,17 +1,9 @@
-import { NextRequest, NextResponse } from 'next/server';
+// Libs
+import NextAuth from 'next-auth';
+import { authConfig } from './configs/auth.config';
 
-export const middleware = (request: NextRequest) => {
-  const storedUsername = request.cookies.get('username');
-  const storedPassword = request.cookies.get('password');
-
-  // Redirect to login if accessing auth routes without credentials
-  if (!storedUsername || !storedPassword) {
-    return NextResponse.redirect(new URL('/login', request.url));
-  }
-
-  // Allow navigation if above conditions do not trigger
-  return NextResponse.next();
-};
+// Auth configs
+export default NextAuth(authConfig).auth;
 
 export const config = {
   matcher: [
