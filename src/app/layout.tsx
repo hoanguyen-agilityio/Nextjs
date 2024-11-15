@@ -7,6 +7,7 @@ import montserrat from '@/assets/fonts';
 import './globals.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SessionProvider } from 'next-auth/react';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -27,12 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <NextUIProvider>
-          <NextThemesProvider attribute="class" defaultTheme="light">
-            {children}
-            <ToastContainer />
-          </NextThemesProvider>
-        </NextUIProvider>
+        <SessionProvider>
+          <NextUIProvider>
+            <NextThemesProvider attribute="class" defaultTheme="light">
+              {children}
+              <ToastContainer />
+            </NextThemesProvider>
+          </NextUIProvider>
+        </SessionProvider>
       </body>
     </html>
   );

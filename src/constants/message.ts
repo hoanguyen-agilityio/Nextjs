@@ -29,6 +29,7 @@ const MESSAGE = {
   ERROR_EDIT_DATA: 'Error edit product:',
   ERROR_DELETE_DATA: 'Failed to delete product:',
   ERROR_UNKNOWN: 'Unknown error occurred',
+  INVALID_ACCOUNT: 'Incorrect username or password',
 };
 
 export { EMPTY_TEXT, MESSAGE };
