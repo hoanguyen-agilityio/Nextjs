@@ -1,6 +1,6 @@
-// import { handleSignOut } from '@/actions';
 import { ButtonCustom, InputCustom } from '@/components';
 import { Logout, NotificationIcon, SearchIcon } from '@/icons';
+import { handleLogout } from '@/utils';
 
 const Header = () => {
   return (
@@ -40,7 +40,7 @@ const Header = () => {
             color="unstyled"
             size="unstyled"
             startContent={<Logout width="28px" height="28px" />}
-            // onClick={handleSignOut}
+            onClick={handleLogout}
           />
         </div>
       </div>

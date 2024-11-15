@@ -1,6 +1,6 @@
 'use server';
-import { signIn } from '@/configs';
-import { ACCOUNT_URL, MESSAGE } from '@/constants';
+import { signIn, signOut } from '@/configs';
+import { ACCOUNT_URL, MESSAGE, ROUTERS } from '@/constants';
 import { apiRequest } from '@/services';
 import { Account } from '@/types';
 
@@ -34,4 +34,8 @@ const handleSignIn = async (payload: Account) => {
   }
 };
 
-export { getAccount, handleSignIn };
+const handleSignOut = async () => {
+  await signOut({ redirectTo: `/${ROUTERS.LOGIN}` });
+};
+
+export { getAccount, handleSignIn, handleSignOut };

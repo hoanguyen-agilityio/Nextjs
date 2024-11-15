@@ -7,19 +7,17 @@ export const authConfig = {
   },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
-      console.log(auth);
-
       const isLoggedIn = !!auth?.user;
-      const isPublicPage = nextUrl.pathname === ROUTERS.LOGIN;
+      const isLoginPage = nextUrl.pathname === ROUTERS.LOGIN;
 
-      // If use has not logged in and access to Dashboard pages, navigate to Login Page
-      if (!isLoggedIn && !isPublicPage) {
-        return Response.redirect(new URL(ROUTERS.LOGIN, nextUrl));
+      // If the user is logged in and tries to access the login page, redirect to the home page
+      if (isLoggedIn && isLoginPage) {
+        return Response.redirect(new URL(ROUTERS.HOME, nextUrl));
       }
 
-      // If user has logged in and access to Login page, navigate to Dashboard page
-      if (isLoggedIn && isPublicPage) {
-        return Response.redirect(new URL(ROUTERS.HOME, nextUrl));
+      // If the user is not logged in and accesses a protected page, redirect to the login page
+      if (!isLoggedIn && !isLoginPage) {
+        return Response.redirect(new URL(ROUTERS.LOGIN, nextUrl));
       }
 
       return true;
