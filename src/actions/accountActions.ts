@@ -19,9 +19,18 @@ const getAccount = async (): Promise<Account[]> => {
 
 const handleSignIn = async (payload: Account) => {
   try {
-    return await signIn('credentials', payload);
+    const result = await signIn('credentials', {
+      ...payload,
+      redirect: false,
+    });
+
+    if (result?.error) {
+      return { error: result.error };
+    }
+
+    return { success: true };
   } catch (error) {
-    return { error: `Failed to Sign In ${error}` };
+    return { error: `Failed to Sign In: ${error}` };
   }
 };
 

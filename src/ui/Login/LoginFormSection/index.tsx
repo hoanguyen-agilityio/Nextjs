@@ -1,3 +1,4 @@
+'use server';
 import { LogoWithoutText } from '@/icons';
 import FormLogin from '../FormLogin';
 import { handleSignIn } from '@/actions';

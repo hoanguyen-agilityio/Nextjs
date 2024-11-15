@@ -55,7 +55,6 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
 
       // Check if sign-in was successful
       if (result.error) {
-        // If there is an error, display it
         setError(result.error);
       } else {
         // If successful, show success toast and redirect to the homepage

@@ -1,10 +1,9 @@
 import NextAuth from 'next-auth';
 import { authConfig } from './auth.config';
 import Credentials from 'next-auth/providers/credentials';
+import { AUTH, MESSAGE } from '@/constants';
 import { getAccount } from '@/actions';
-import { AUTH } from '@/constants';
 
-// Define the User type expected by NextAuth
 interface User {
   id?: string;
   username: string;
@@ -27,25 +26,25 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         // If no credentials, return null
         if (!username || !password) return null;
 
-        try {
-          // Fetch users and check for matching username
-          const users = await getAccount();
-          const user = users.find((user) => user.username === username);
+        // Fetch users and check for matching username
+        const users = await getAccount();
 
-          if (!user) return null; // Return null if no matching user
+        const user = users.find(
+          (user) => user.username === username && user.password === password,
+        );
 
-          // For validation, ensure user object matches the expected User type
-          const userObj: User = {
-            id: user.id,
-            username: user.username,
-            password: user.password,
-          };
-
-          return userObj; // Return user as User type
-        } catch (error) {
-          console.error('Error during authorization', error);
-          return null;
+        if (!user) {
+          throw new Error(MESSAGE.INVALID_ACCOUNT);
         }
+
+        // For validation, ensure user object matches the expected User type
+        const userObj: User = {
+          id: user.id,
+          username: user.username,
+          password: user.password,
+        };
+
+        return userObj; // Return user as User type
       },
     }),
   ],
