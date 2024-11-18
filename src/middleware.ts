@@ -7,6 +7,7 @@ export default NextAuth(authConfig).auth;
 
 export const config = {
   matcher: [
+    '/login',
     '/',
     '/analytics',
     '/archive',

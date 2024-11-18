@@ -2,22 +2,19 @@ import { ROUTERS } from '@/constants';
 import type { NextAuthConfig } from 'next-auth';
 
 export const authConfig = {
-  pages: {
-    signIn: ROUTERS.LOGIN,
-  },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isLoginPage = nextUrl.pathname === ROUTERS.LOGIN;
+      const isAuthPage = nextUrl.pathname === `/${ROUTERS.LOGIN}`;
 
-      // If the user is logged in and tries to access the login page, redirect to the home page
-      if (isLoggedIn && isLoginPage) {
+      if (isLoggedIn && isAuthPage) {
+        // Redirect to the dashboard if logged in and trying to access an auth page
         return Response.redirect(new URL(ROUTERS.HOME, nextUrl));
       }
 
-      // If the user is not logged in and accesses a protected page, redirect to the login page
-      if (!isLoggedIn && !isLoginPage) {
-        return Response.redirect(new URL(ROUTERS.LOGIN, nextUrl));
+      if (!isLoggedIn && !isAuthPage) {
+        // Redirect to the login page if not logged in and trying to access a private route
+        return Response.redirect(new URL(`/${ROUTERS.LOGIN}`, nextUrl));
       }
 
       return true;

@@ -1,8 +1,5 @@
+import { Header } from '@/ui';
 import type { Metadata } from 'next';
-
-// Components
-import Header from '@/layouts/Header';
-import { Sidebar } from '@/components';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -15,18 +12,15 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function AuthLayout({
+export default function NoAuthLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex">
-      <Sidebar />
-      <div className="w-full">
-        <Header />
-        {children}
-      </div>
-    </main>
+    <>
+      <Header />
+      <main className="bg-black-900 dark:bg-gray-800">{children}</main>
+    </>
   );
 }
