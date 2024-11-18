@@ -7,15 +7,6 @@ export default NextAuth(authConfig).auth;
 
 export const config = {
   matcher: [
-    '/',
-    '/analytics',
-    '/archive',
-    '/detail/:id*',
-    '/inbox',
-    '/market',
-    '/newsFeed',
-    '/wallet',
-    '/add',
-    '/edit/:id*',
+    '/((?!api|_next/static|sitemap.xml|robots.txt|_next/image|.*\\.png$).*)',
   ],
 };
