@@ -10,6 +10,14 @@ const mockProducts: IProducts[] = [
     sales: '1004',
     conversion: '6.5%',
     total: '$14.238',
+    img: ['https://picsum.photos/id/74/4288/2848'],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'https://picsum.photos/id/100/2500/1656',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: '',
   },
   {
     key: '2',
@@ -19,6 +27,14 @@ const mockProducts: IProducts[] = [
     sales: '935',
     conversion: '5.8%',
     total: '$12.452',
+    img: ['https://picsum.photos/id/74/4288/2848'],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'https://picsum.photos/id/100/2500/1656',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: '',
   },
   {
     key: '3',
@@ -28,6 +44,14 @@ const mockProducts: IProducts[] = [
     sales: '1234',
     conversion: '7.2%',
     total: '$18.721',
+    img: ['https://picsum.photos/id/74/4288/2848'],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'https://picsum.photos/id/100/2500/1656',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: '',
   },
   {
     key: '4',
@@ -37,6 +61,14 @@ const mockProducts: IProducts[] = [
     sales: '1045',
     conversion: '5.3%',
     total: '$16.390',
+    img: ['https://picsum.photos/id/74/4288/2848'],
+    fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+    file: [
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+    ],
+    download: 'https://picsum.photos/id/100/2500/1656',
+    link: 'https://picsum.photos/id/78/4288/2848',
+    personal: '',
   },
 ];
 
@@ -52,6 +84,14 @@ describe('filterProducts', () => {
         sales: '1004',
         conversion: '6.5%',
         total: '$14.238',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
       {
         key: '2',
@@ -61,6 +101,14 @@ describe('filterProducts', () => {
         sales: '935',
         conversion: '5.8%',
         total: '$12.452',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
     ]);
   });
@@ -76,6 +124,14 @@ describe('filterProducts', () => {
         sales: '1234',
         conversion: '7.2%',
         total: '$18.721',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
       {
         key: '4',
@@ -85,6 +141,14 @@ describe('filterProducts', () => {
         sales: '1045',
         conversion: '5.3%',
         total: '$16.390',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
     ]);
   });
@@ -107,6 +171,14 @@ describe('paginateProducts', () => {
         sales: '1004',
         conversion: '6.5%',
         total: '$14.238',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
       {
         key: '2',
@@ -116,6 +188,14 @@ describe('paginateProducts', () => {
         sales: '935',
         conversion: '5.8%',
         total: '$12.452',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
     ]);
   });
@@ -131,6 +211,14 @@ describe('paginateProducts', () => {
         sales: '1234',
         conversion: '7.2%',
         total: '$18.721',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
       {
         key: '4',
@@ -140,6 +228,14 @@ describe('paginateProducts', () => {
         sales: '1045',
         conversion: '5.3%',
         total: '$16.390',
+        img: ['https://picsum.photos/id/74/4288/2848'],
+        fallbackSrc: 'https://picsum.photos/id/100/2500/1656',
+        file: [
+          'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+        ],
+        download: 'https://picsum.photos/id/100/2500/1656',
+        link: 'https://picsum.photos/id/78/4288/2848',
+        personal: '',
       },
     ]);
   });
