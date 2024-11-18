@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeySwitch component renders with default type 1`] = `
+<div>
+  <div
+    class="flex justify-between undefined"
+  >
+    <div>
+      <span
+        class="font-semibold text-lg text-black-900 dark:text-white"
+      >
+        Generate License Keys
+      </span>
+      <p
+        class="font-normal text-xsm text-grayBlue-400"
+      >
+        Issue each customer a unique license key after purchase
+      </p>
+    </div>
+    <label
+      class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
+    >
+      <span
+        style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+      >
+        <input
+          aria-labelledby=":r0:"
+          role="switch"
+          type="checkbox"
+          value=""
+        />
+      </span>
+      <span
+        aria-hidden="true"
+        class="px-1 relative inline-flex items-center justify-start flex-shrink-0 overflow-hidden bg-default-200 rounded-full outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:bg-primary group-data-[selected=true]:text-primary-foreground w-12 h-7 mr-2 rtl:ml-2 rtl:mr-[unset] transition-background"
+      >
+        <span
+          class="z-10 flex items-center justify-center bg-white shadow-small rounded-full origin-right w-5 h-5 text-small group-data-[selected=true]:ml-5 rtl:group-data-[selected=true]:ml-0 rtl:group-data-[selected=true]:mr-5 transition-all group-data-[pressed=true]:w-6 group-data-[selected]:group-data-[pressed]:ml-4"
+        />
+      </span>
+    </label>
+  </div>
+</div>
+`;
