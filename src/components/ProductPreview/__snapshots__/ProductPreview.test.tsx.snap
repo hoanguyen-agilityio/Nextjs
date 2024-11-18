@@ -3,7 +3,7 @@
 exports[`ProductPreview component renders ProductPreview 1`] = `
 <div>
   <div
-    class="flex flex-col relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-w-2xl pt-l pl-8 pr-lg pb-3xl"
+    class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[450px]"
     tabindex="-1"
   >
     <div
@@ -133,7 +133,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
         <span
           class="flex-1 px-1 text-green-300 dark:text-green-400 font-semibold text-base"
         >
-          $98.00
+          $99.99
         </span>
       </div>
     </div>

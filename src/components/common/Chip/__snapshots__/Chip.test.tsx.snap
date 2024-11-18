@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders with default type 1`] = `
+<div>
+  <div
+    class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap h-6 text-tiny text-success-foreground bg-green-100 dark:bg-green-200 py-1.5 px-2 rounded-lg"
+  >
+    <span
+      class="flex-1 px-1 text-green-300 dark:text-green-400 font-semibold text-base"
+    >
+      Chip Custom
+    </span>
+  </div>
+</div>
+`;

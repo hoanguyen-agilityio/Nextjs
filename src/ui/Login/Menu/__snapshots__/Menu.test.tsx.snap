@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu Component render Sidebar 1`] = `
+<div>
+  <ul
+    class="flex gap-24 items-center"
+  >
+    <li>
+      <a
+        class="text-xl font-semibold text-grayBlue-400"
+        href=""
+      >
+        <span>
+          Overview
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="text-xl font-semibold text-grayBlue-400"
+        href=""
+      >
+        <span>
+          Projects
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="text-xl font-semibold text-grayBlue-400"
+        href=""
+      >
+        <span>
+          Tasks
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="text-xl font-semibold text-grayBlue-400"
+        href=""
+      >
+        <span>
+          Reports
+        </span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="text-xl font-semibold text-grayBlue-400"
+        href=""
+      >
+        <span>
+          Statements
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+`;

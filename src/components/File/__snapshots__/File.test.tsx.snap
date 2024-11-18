@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`File component renders with default type 1`] = `
+<div>
+  <div
+    class="mt-11"
+  >
+    <h3
+      class="font-semibold text-lg text-black-900 dark:text-white mb-3"
+    >
+      Files
+    </h3>
+    <div
+      class="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3"
+    >
+      <svg
+        fill="none"
+        height="60px"
+        viewBox="0 0 61 60"
+        width="60px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="30.0996"
+          cy="30"
+          fill="#99B2C6"
+          r="30"
+        />
+        <path
+          class="fill-white dark:fill-black-900"
+          clip-rule="evenodd"
+          d="M24.1196 38.9923C21.4413 39.0835 19.1927 36.9932 19.0886 34.3153V29.4484C19.1927 26.7706 21.4415 24.6805 24.1196 24.7723H25.1196C25.4769 24.7723 25.807 24.9629 25.9857 25.2723C26.1643 25.5818 26.1643 25.9629 25.9857 26.2723C25.807 26.5818 25.4769 26.7723 25.1196 26.7723H24.1196C22.5848 26.7194 21.2958 27.9167 21.2357 29.4513V34.3182C21.2958 35.853 22.5846 37.0507 24.1196 36.9984L36.0717 36.9983C37.6067 37.0507 38.8955 35.853 38.9557 34.3184L38.9556 29.4413C38.896 27.9128 37.6124 26.72 36.0837 26.7723H35.0716C34.7144 26.7723 34.3842 26.5818 34.2056 26.2723C34.0269 25.9629 34.0269 25.5818 34.2056 25.2723C34.3842 24.9629 34.7144 24.7723 35.0716 24.7723H36.0836C38.7559 24.6818 40.999 26.7676 41.1027 29.4393L41.1026 34.3163C40.9985 36.9941 38.7499 39.0845 36.0716 38.9933L24.1196 38.9923ZM29.0197 32.0063V21.4064L27.7197 22.6174C27.2838 22.995 26.6367 22.995 26.2007 22.6174C26.001 22.4375 25.887 22.1813 25.887 21.9125C25.887 21.6437 26.001 21.3875 26.2007 21.2074L29.3307 18.2844C29.7729 17.9221 30.4094 17.9221 30.8517 18.2844L33.9827 21.2074C34.1821 21.3876 34.2959 21.6438 34.2959 21.9125C34.2959 22.1812 34.1821 22.4374 33.9827 22.6174C33.551 23.0072 32.8943 23.0072 32.4626 22.6174L31.1627 21.4064V32.0063H29.0197Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <p
+        class="text-center font-normal text-xsm text-grayBlue-400"
+      >
+        Drop your files here, or click to browse. Unlimited files, up to 5 GB.
+      </p>
+      <div
+        class="group flex-col data-[hidden=true]:hidden w-full relative justify-end hidden"
+        data-filled="true"
+        data-filled-within="true"
+        data-has-value="true"
+        data-slot="base"
+      >
+        <div
+          class="flex flex-col w-xl h-14"
+          data-slot="main-wrapper"
+        >
+          <div
+            class="relative tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full dark:bg-gray-700 focus-within:ring-0 py-4 px-6 w-full rounded-lg"
+            data-slot="input-wrapper"
+            style="cursor: text;"
+          >
+            <div
+              class="w-full items-center h-full box-border flex"
+              data-slot="inner-wrapper"
+            >
+              <input
+                accept=".pdf,.doc,.docx,.fdf,.txt"
+                aria-label=" "
+                class="w-full bg-transparent !outline-none placeholder:text-foreground-500 focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground text-grayBlue-400 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+                data-slot="input"
+                id="react-aria-:r0:"
+                multiple=""
+                type="file"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="file-previews mt-4"
+    />
+    <p
+      class="font-normal text-xsm text-grayBlue-400 mt-3"
+    >
+      Upload an unlimited number of files to your product. Your customers will be given access to them after purchase.
+    </p>
+  </div>
+</div>
+`;
