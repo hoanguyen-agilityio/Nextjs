@@ -8,7 +8,7 @@ export default {
 
 type Story = StoryObj<typeof File>;
 
-// Product Preview type default
+// File type default
 export const FileDefault: Story = {
   args: {},
 };
