@@ -161,33 +161,37 @@ exports[`Sidebar Component render Sidebar 1`] = `
     <div
       class="px-[52px] pt-6 border-t-2 border-gray-50 dark:border-gray-700"
     >
-      <button
-        class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
-        type="button"
+      <a
+        href="add"
       >
-        <svg
-          fill="none"
-          height="46px"
-          style="max-width: none;"
-          viewBox="0 0 46 46"
-          width="46px"
-          xmlns="http://www.w3.org/2000/svg"
+        <button
+          class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
+          type="button"
         >
-          <circle
-            cx="23"
-            cy="23"
-            fill="#12AFF0"
-            r="23"
-          />
-          <path
-            clip-rule="evenodd"
-            d="M22 29.5V25H17.5C16.9641 25 16.4689 24.7141 16.201 24.25C15.933 23.7859 15.933 23.2141 16.201 22.75C16.4689 22.2859 16.9641 22 17.5 22H22V17.5C22 16.9641 22.2859 16.4689 22.75 16.2009C23.2141 15.933 23.7859 15.933 24.25 16.2009C24.7141 16.4689 25 16.9641 25 17.5V22H29.5C30.0359 22 30.5311 22.2859 30.799 22.75C31.067 23.2141 31.067 23.7859 30.799 24.25C30.5311 24.7141 30.0359 25 29.5 25H25V29.5C25 30.0359 24.7141 30.5311 24.25 30.7991C23.7859 31.067 23.2141 31.067 22.75 30.7991C22.2859 30.5311 22 30.0359 22 29.5Z"
-            fill="white"
-            fill-rule="evenodd"
-          />
-        </svg>
-        Add new product
-      </button>
+          <svg
+            fill="none"
+            height="46px"
+            style="max-width: none;"
+            viewBox="0 0 46 46"
+            width="46px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="23"
+              cy="23"
+              fill="#12AFF0"
+              r="23"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M22 29.5V25H17.5C16.9641 25 16.4689 24.7141 16.201 24.25C15.933 23.7859 15.933 23.2141 16.201 22.75C16.4689 22.2859 16.9641 22 17.5 22H22V17.5C22 16.9641 22.2859 16.4689 22.75 16.2009C23.2141 15.933 23.7859 15.933 24.25 16.2009C24.7141 16.4689 25 16.9641 25 17.5V22H29.5C30.0359 22 30.5311 22.2859 30.799 22.75C31.067 23.2141 31.067 23.7859 30.799 24.25C30.5311 24.7141 30.0359 25 29.5 25H25V29.5C25 30.0359 24.7141 30.5311 24.25 30.7991C23.7859 31.067 23.2141 31.067 22.75 30.7991C22.2859 30.5311 22 30.0359 22 29.5Z"
+              fill="white"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Add new product
+        </button>
+      </a>
       <div
         class="flex items-center justify-between my-11"
       >
