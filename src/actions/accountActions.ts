@@ -1,4 +1,6 @@
-import { ACCOUNT_URL, MESSAGE } from '@/constants';
+'use server';
+import { signIn, signOut } from '@/configs';
+import { ACCOUNT_URL, MESSAGE, ROUTERS } from '@/constants';
 import { apiRequest } from '@/services';
 import { Account } from '@/types';
 
@@ -15,4 +17,25 @@ const getAccount = async (): Promise<Account[]> => {
   }
 };
 
-export { getAccount };
+const handleSignIn = async (payload: Account) => {
+  try {
+    const result = await signIn('credentials', {
+      ...payload,
+      redirect: false,
+    });
+
+    if (result?.error) {
+      return { error: result.error };
+    }
+
+    return { success: true };
+  } catch (error) {
+    return { error: `Failed to Sign In: ${error}` };
+  }
+};
+
+const handleSignOut = async () => {
+  await signOut({ redirectTo: `/${ROUTERS.LOGIN}` });
+};
+
+export { getAccount, handleSignIn, handleSignOut };
