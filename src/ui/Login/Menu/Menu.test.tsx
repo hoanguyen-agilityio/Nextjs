@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
-import Header from '.';
+import Menu from '.';
 
-describe('Header Component', () => {
+describe('Menu Component', () => {
   test('render Sidebar', () => {
-    const { container } = render(<Header />);
+    const { container } = render(<Menu />);
     expect(container).toMatchSnapshot();
   });
 });
