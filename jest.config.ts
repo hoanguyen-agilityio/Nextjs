@@ -63,7 +63,7 @@ const config: Config = {
     'next-auth/providers/credentials':
       '<rootDir>/__tests__/mocks/next-auth-providers-credentials.ts',
     'next-auth': '<rootDir>/__tests__/mocks/next-auth.ts',
-    // '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
   roots: ['<rootDir>/src'],
 }

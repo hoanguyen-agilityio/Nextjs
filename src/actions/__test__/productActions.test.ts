@@ -1,119 +1,109 @@
-import { MESSAGE, PRODUCT_URL } from '@/constants';
-import { IProducts } from '@/types';
-import { apiRequest } from '@/services';
-import { getDataProducts, getDataOverview } from '../productActions';
+import { APIs } from '@/services';
+import {
+  getDataProducts,
+  handleAddProduct,
+  handleDeleteProduct,
+  handleEditProduct,
+} from '../productActions';
 
-jest.mock('@/services/api', () => ({
-  apiRequest: jest.fn(),
+jest.mock('@/services', () => ({
+  APIs: {
+    get: jest.fn(),
+    post: jest.fn(),
+    put: jest.fn(),
+    delete: jest.fn(),
+  },
 }));
 
-describe('getData', () => {
-  const mockProducts: IProducts[] = [
-    {
-      key: '1',
-      name: 'Basic design guideline',
-      status: '9 Jan 2023 9:43 PM',
-      views: '3147',
-      sales: '1.004',
-      conversion: '6,5%',
-      total: '$14.238',
-    },
-    {
-      key: '2',
-      name: 'Basic design guideline',
-      status: '9 Jan 2023 9:43 PM',
-      views: '3147',
-      sales: '1.004',
-      conversion: '6,5%',
-      total: '$14.238',
-    },
-  ];
+const mockProduct = {
+  id: '1',
+  name: 'New Product',
+  status: '',
+  views: '1000',
+  sales: '1000',
+  conversion: '',
+  total: '',
+  download: '',
+  link: '',
+  personal: '',
+};
 
-  beforeEach(() => {
-    jest.clearAllMocks();
-    jest.spyOn(console, 'error').mockImplementation();
-  });
-
+describe('productActions', () => {
   afterEach(() => {
-    jest.restoreAllMocks();
-  });
-
-  test('fetches data with search query', async () => {
-    (apiRequest as jest.Mock).mockResolvedValue(mockProducts);
-
-    const result = await getDataProducts('test search');
-
-    expect(apiRequest).toHaveBeenCalledWith(
-      `${PRODUCT_URL}?search=test%20search`,
-      'GET',
-      undefined,
-      10,
-    );
-    expect(result).toEqual(mockProducts);
-  });
-
-  test('fetches data without search query', async () => {
-    (apiRequest as jest.Mock).mockResolvedValue(mockProducts);
-
-    const result = await getDataProducts();
-
-    expect(apiRequest).toHaveBeenCalledWith(PRODUCT_URL, 'GET', undefined, 10);
-    expect(result).toEqual(mockProducts);
-  });
-
-  test('returns null when an error occurs', async () => {
-    const error = new Error('API error');
-    (apiRequest as jest.Mock).mockRejectedValue(error);
-
-    const result = await getDataProducts('error search');
-
-    expect(apiRequest).toHaveBeenCalledWith(
-      `${PRODUCT_URL}?search=error%20search`,
-      'GET',
-      undefined,
-      10,
-    );
-    expect(result).toBeNull();
-    expect(console.error).toHaveBeenCalledWith(MESSAGE.ERROR_GET_DATA, error);
-  });
-});
-
-describe('getDataOverview', () => {
-  const mockData = [
-    { value: '$39,510.32', label: 'Total Revenue', growth: '+12.7%' },
-    { value: '175,182', label: 'Total Sales', growth: '+5.1%' },
-  ];
-
-  beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  test('should return data when API request is successful', async () => {
-    (apiRequest as jest.Mock).mockResolvedValue(mockData);
+  describe('getDataProducts', () => {
+    it('should fetch products successfully with search term', async () => {
+      const mockProducts = [{ id: '1', name: 'Product 1' }];
+      (APIs.get as jest.Mock).mockResolvedValue(mockProducts);
 
-    const result = await getDataOverview();
+      const result = await getDataProducts('example');
+      expect(APIs.get).toHaveBeenCalledWith('?search=example');
+      expect(result).toEqual(mockProducts);
+    });
 
-    expect(apiRequest).toHaveBeenCalledWith(
-      expect.any(String),
-      'GET',
-      undefined,
-      60,
-    );
-    expect(result).toEqual(mockData);
+    it('should fetch products successfully without search term', async () => {
+      const mockProducts = [{ id: '1', name: 'Product 1' }];
+      (APIs.get as jest.Mock).mockResolvedValue(mockProducts);
+
+      const result = await getDataProducts();
+      expect(APIs.get).toHaveBeenCalledWith('');
+      expect(result).toEqual(mockProducts);
+    });
+
+    it('should return null on API error', async () => {
+      (APIs.get as jest.Mock).mockRejectedValue(new Error('API error'));
+
+      const result = await getDataProducts('example');
+      expect(APIs.get).toHaveBeenCalledWith('?search=example');
+      expect(result).toBeNull();
+    });
   });
 
-  test('should handle an error during API request', async () => {
-    const errorMessage = 'API error';
-    (apiRequest as jest.Mock).mockRejectedValue(new Error(errorMessage));
+  describe('handleAddProduct', () => {
+    it('should call APIs.post with the correct arguments', async () => {
+      await handleAddProduct(mockProduct);
 
-    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation();
+      expect(APIs.post).toHaveBeenCalledWith('', mockProduct);
+    });
 
-    await getDataOverview();
+    it('should handle errors gracefully', async () => {
+      (APIs.post as jest.Mock).mockRejectedValue(new Error('API error'));
 
-    expect(consoleErrorSpy).toHaveBeenCalledWith(
-      MESSAGE.ERROR_GET_DATA,
-      expect.any(Error),
-    );
-    consoleErrorSpy.mockRestore();
+      await handleAddProduct(mockProduct);
+      expect(APIs.post).toHaveBeenCalled();
+    });
+  });
+
+  describe('handleEditProduct', () => {
+    it('should call APIs.put with the correct arguments', async () => {
+      await handleEditProduct('1', mockProduct);
+
+      expect(APIs.put).toHaveBeenCalledWith('/1', mockProduct);
+    });
+
+    it('should handle errors gracefully', async () => {
+      (APIs.put as jest.Mock).mockRejectedValue(new Error('API error'));
+
+      await handleEditProduct('1', mockProduct);
+      expect(APIs.put).toHaveBeenCalled();
+    });
+  });
+
+  describe('handleDeleteProduct', () => {
+    it('should call APIs.delete with the correct arguments', async () => {
+      await handleDeleteProduct('1');
+
+      expect(APIs.delete).toHaveBeenCalledWith('/1');
+    });
+
+    it('should handle errors gracefully', async () => {
+      (APIs.delete as jest.Mock).mockRejectedValue(new Error('API error'));
+
+      const result = await handleDeleteProduct('1');
+      expect(APIs.delete).toHaveBeenCalled();
+      expect(result).toBeUndefined();
+    });
   });
 });
