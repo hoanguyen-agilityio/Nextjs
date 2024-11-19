@@ -109,6 +109,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               size="xl"
               color="secondary"
+              fieldId="Input Name"
               errorMsg={duplicateNameError || fieldState.error?.message}
             />
           )}
@@ -129,6 +130,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-3xl"
               size="xl"
               color="secondary"
+              fieldId="Input Description"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -159,6 +161,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
                 </div>
               }
               color="secondary"
+              fieldId="Input Price"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -182,6 +185,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-3xl"
               size="xl"
               color="secondary"
+              fieldId="Input View"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -205,6 +209,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-3xl"
               size="xl"
               color="secondary"
+              fieldId="Input Sales"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -228,6 +233,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-3xl"
               size="xl"
               color="secondary"
+              fieldId="Input Conversion"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
             />
           )}
@@ -287,6 +293,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper="mt-[60px]"
               className="mt-2"
               color="secondary"
+              fieldId="Input Download Button"
             />
           )}
         />
@@ -313,6 +320,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
                 const normalized = normalizeUrl(e.target.value);
                 field.onChange(normalized);
               }}
+              fieldId="Input Product Link"
             />
           )}
         />
@@ -329,6 +337,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               placeholder="Thank you for purchasing my product!"
               color="secondary"
+              fieldId="Input Personal Note"
             />
           )}
         />

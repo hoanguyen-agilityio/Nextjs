@@ -7,6 +7,7 @@ interface IInputField extends ComponentProps<typeof InputCustom> {
   message?: string;
   classLabel?: string;
   classWrapper?: string;
+  fieldId: string;
 }
 
 const InputField = ({
@@ -15,6 +16,7 @@ const InputField = ({
   message,
   classLabel,
   classWrapper,
+  fieldId,
   ...rest
 }: IInputField) => {
   const getMessage = () => {
@@ -28,10 +30,11 @@ const InputField = ({
     <div className={classWrapper}>
       <label
         className={`font-semibold text-lg text-black-900 dark:text-white ${classLabel}`}
+        htmlFor={fieldId}
       >
         {label}
       </label>
-      <InputCustom {...rest} />
+      <InputCustom {...rest} id={fieldId} />
       {(errorMsg || message) && (
         <p
           className={`text-xsm mt-4 font-normal ${errorMsg ? 'text-red-500' : 'text-grayBlue-400'}`}
