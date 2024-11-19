@@ -42,7 +42,7 @@ export const generateMetadata = async ({
 
 const DetailPage = () => {
   return (
-    <main className="pb-[52px] pl-7 pr-[50px] pt-5">
+    <section className="pb-[52px] pl-7 pr-[50px] pt-5">
       <div className="flex justify-between items-center mb-l">
         <h1 className="font-bold text-3xl">Detail</h1>
         <div className="flex">
@@ -68,7 +68,7 @@ const DetailPage = () => {
         </div>
       </div>
       <OverviewDetail />
-    </main>
+    </section>
   );
 };
 
