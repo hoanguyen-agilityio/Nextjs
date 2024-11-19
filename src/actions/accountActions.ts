@@ -30,7 +30,7 @@ const handleSignIn = async (payload: Account) => {
 
     return { success: true };
   } catch (error) {
-    return { error: `Failed to Sign In: ${error}` };
+    return { error: MESSAGE.INVALID_ACCOUNT };
   }
 };
 
