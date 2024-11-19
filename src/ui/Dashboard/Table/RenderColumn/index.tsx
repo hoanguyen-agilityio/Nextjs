@@ -52,6 +52,12 @@ const RenderColumn = (
           ${getKeyValue(item, columnKey)}
         </TableCell>
       );
+    case 'conversion':
+      return (
+        <TableCell className="font-semibold text-grayBlue-400">
+          {getKeyValue(item, columnKey)}%
+        </TableCell>
+      );
     case 'details':
       return (
         <TableCell>

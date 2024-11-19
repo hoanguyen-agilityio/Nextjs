@@ -117,9 +117,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
         <Controller
           name="status"
           control={control}
-          rules={{
-            required: MESSAGE.DESCRIPTION_REQUIRED,
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -170,7 +167,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="views"
           control={control}
           rules={{
-            required: MESSAGE.VIEW_REQUIRED,
             pattern: {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
@@ -194,7 +190,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="sales"
           control={control}
           rules={{
-            required: MESSAGE.SALES_REQUIRED,
             pattern: {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
@@ -218,7 +213,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="conversion"
           control={control}
           rules={{
-            required: MESSAGE.CONVERSION_REQUIRED,
             pattern: {
               value: REGEX.PERCENT,
               message: MESSAGE.VALID_PERCENT,
