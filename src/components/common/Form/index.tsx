@@ -6,7 +6,7 @@ import { useForm, Controller } from 'react-hook-form';
 import { useEffect, useState, useTransition } from 'react';
 import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
 import { FormProps, IProducts } from '@/types';
-import { normalizeUrl } from '@/utils';
+import { filterNumericInput, normalizeUrl } from '@/utils';
 import {
   Media,
   File,
@@ -160,6 +160,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Price"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
             />
           )}
         />
@@ -183,6 +184,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input View"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
             />
           )}
         />
@@ -206,6 +208,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Sales"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
             />
           )}
         />
@@ -229,6 +232,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Conversion"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
             />
           )}
         />
