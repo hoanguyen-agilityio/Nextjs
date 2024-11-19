@@ -4,12 +4,14 @@ interface IKeySwitch extends SwitchProps {
   title: string;
   describe: string;
   classWrapper?: string;
+  ariaLabel: string;
 }
 
 const KeySwitch = ({
   title,
   describe,
   classWrapper,
+  ariaLabel,
   ...switchProps
 }: IKeySwitch) => {
   return (
@@ -20,7 +22,7 @@ const KeySwitch = ({
         </span>
         <p className="font-normal text-xsm text-grayBlue-400">{describe}</p>
       </div>
-      <Switch {...switchProps} />
+      <Switch {...switchProps} aria-label={ariaLabel} />
     </div>
   );
 };

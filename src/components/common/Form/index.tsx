@@ -270,7 +270,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           )}
         />
         {KEY_SWITCH.map(
-          ({ title, describe, classWrapper, defaultSelected }) => (
+          ({ title, describe, classWrapper, defaultSelected, ariaLabel }) => (
             <KeySwitch
               key={title}
               title={title}
@@ -278,6 +278,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               classWrapper={classWrapper}
               isDisabled={modePage === 'detail'}
               defaultSelected={defaultSelected}
+              ariaLabel={ariaLabel}
             />
           ),
         )}
