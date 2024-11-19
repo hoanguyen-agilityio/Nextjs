@@ -23,6 +23,7 @@ const DropdownIcon = ({ id }: DropdownIconProps) => {
       <Dropdown>
         <DropdownTrigger>
           <ButtonCustom
+            aria-label="Dropdown Button"
             color="secondary"
             startContent={<ThreeDotsIcon width="5px" height="24px" />}
           />
