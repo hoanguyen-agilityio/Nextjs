@@ -40,6 +40,7 @@ const Header = () => {
             color="unstyled"
             size="unstyled"
             startContent={<Logout width="28px" height="28px" />}
+            aria-label="Logout Button"
             onClick={handleLogout}
           />
         </div>
