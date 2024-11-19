@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header className="flex justify-between pt-3xl pb-6 pl-5 pr-5xl bg-white dark:bg-dark-900">
-      <Link href={ROUTERS.HOME}>
+      <Link href={ROUTERS.HOME} aria-label="WunderUI logo">
         <Logo width="266px" height="42px" />
       </Link>
       <div className="flex gap-[135px]">

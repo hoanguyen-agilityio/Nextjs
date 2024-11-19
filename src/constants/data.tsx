@@ -43,17 +43,20 @@ const KEY_SWITCH = [
     title: 'Generate License Keys',
     describe: 'Issue each customer a unique license key after purchase',
     classWrapper: 'mt-9',
+    ariaLabel: 'Generate License Keys',
   },
   {
     title: 'Redirect customers after purchase?',
     describe: 'Redirect customers to a custom URL after making a purchase',
     classWrapper: 'mt-[60px]',
+    ariaLabel: 'Redirect customers after purchase?',
   },
   {
     title: 'Display product on shop page?',
     describe: 'Show this product on your shop page',
     classWrapper: 'mt-[60px]',
     defaultSelected: true,
+    ariaLabel: 'Display product on shop page?',
   },
 ];
 

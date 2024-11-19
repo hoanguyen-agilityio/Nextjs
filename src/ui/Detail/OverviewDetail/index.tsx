@@ -4,7 +4,6 @@ import { useParams } from 'next/navigation';
 import { APIs } from '@/services';
 import { IProducts } from '@/types';
 import { Form, ProductPreview } from '@/components';
-import Link from 'next/link';
 import { ROUTERS } from '@/constants';
 
 const OverviewDetail = () => {
@@ -26,7 +25,8 @@ const OverviewDetail = () => {
       <Form
         data={data}
         modePage="detail"
-        label={<Link href={`${ROUTERS.EDIT_PRODUCT}/${id}`}>Edit Product</Link>}
+        label="Edit Product"
+        href={`${ROUTERS.EDIT_PRODUCT}/${id}`}
       />
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}
