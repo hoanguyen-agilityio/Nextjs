@@ -72,13 +72,16 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
 
   return (
     <div className="mt-11">
-      <h3 className="font-semibold text-lg text-black-900 dark:text-white mb-3">
+      <label
+        className="font-semibold text-lg text-black-900 dark:text-white"
+        htmlFor="Files"
+      >
         Files
-      </h3>
+      </label>
 
       {mode !== 'detail' && (
         <div
-          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3"
+          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3 mt-3"
           onDrop={(e) => {
             e.preventDefault();
             handleFileUpload(e.dataTransfer.files);
