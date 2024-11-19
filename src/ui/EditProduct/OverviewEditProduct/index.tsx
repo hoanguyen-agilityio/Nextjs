@@ -6,7 +6,7 @@ import { handleEditProduct } from '@/actions';
 import { useEffect, useState } from 'react';
 import { APIs } from '@/services';
 import { toast } from 'react-toastify';
-import { MESSAGE } from '@/constants';
+import { MESSAGE, ROUTERS } from '@/constants';
 
 const OverviewEditProduct = () => {
   const { id } = useParams();
@@ -34,6 +34,7 @@ const OverviewEditProduct = () => {
         modePage="edit"
         label="Publish Product"
         onSubmit={handleEditProductSubmit}
+        href={ROUTERS.EMPTY}
       />
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}
