@@ -67,7 +67,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
   return (
     <Card className="flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl">
       <form className="w-[528px]" onSubmit={handleSubmit(onSubmit)}>
-        <h3 className="font-bold text-4xl">Sign In</h3>
+        <span className="font-bold text-4xl">Sign In</span>
         {!Object.keys(errors).length && error && (
           <p className="text-red-600 text-sm font-normal">{error}</p>
         )}
@@ -92,6 +92,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
               color="secondary"
               classWrapper="mt-11"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              fieldId="username"
             />
           )}
         />
@@ -138,6 +139,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
               }
               type={isVisible ? 'text' : 'password'}
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              fieldId="password"
             />
           )}
         />
