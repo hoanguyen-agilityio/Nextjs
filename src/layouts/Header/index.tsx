@@ -1,6 +1,9 @@
+// Helpers
+import { handleLogout } from '@/utils';
+
+// Components
 import { ButtonCustom, InputCustom } from '@/components';
 import { Logout, NotificationIcon, SearchIcon } from '@/icons';
-import { handleLogout } from '@/utils';
 
 const Header = () => {
   return (

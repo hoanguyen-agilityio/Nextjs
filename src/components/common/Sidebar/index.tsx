@@ -1,7 +1,12 @@
+// Third party
 import Link from 'next/link';
+
+// Constants
 import { ROUTERS } from '@/constants';
-import { Logo, PlusIcon } from '@/icons';
+
+// Components
 import { Menu, ButtonCustom, SwitchMode } from '@/components';
+import { Logo, PlusIcon } from '@/icons';
 
 const Sidebar = () => (
   <aside className="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700">

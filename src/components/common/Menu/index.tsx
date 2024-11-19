@@ -1,5 +1,8 @@
+// Third party
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
+
+// Constants
 import { MENU } from '@/constants';
 
 const Menu = () => (

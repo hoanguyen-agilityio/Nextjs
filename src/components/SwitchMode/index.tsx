@@ -1,7 +1,10 @@
 'use client';
 
+// Third party
 import { Switch } from '@nextui-org/react';
 import { useTheme } from 'next-themes';
+
+// Components
 import { MoonIcon } from '@/icons';
 
 const SwitchMode = () => {

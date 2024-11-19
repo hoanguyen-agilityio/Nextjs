@@ -1,3 +1,4 @@
+// Third party
 import {
   Dropdown,
   DropdownItem,
@@ -5,10 +6,14 @@ import {
   DropdownTrigger,
   useDisclosure,
 } from '@nextui-org/react';
-import { ThreeDotsIcon } from '@/icons';
-import { ButtonCustom } from '@/components';
+
+// Constants
 import { productActions } from '@/mocks';
-import { ModelDeleteProduct } from '@/ui/DeleteProduct';
+
+// Components
+import { ModelDeleteProduct } from '@/ui';
+import { ButtonCustom } from '@/components';
+import { ThreeDotsIcon } from '@/icons';
 
 interface DropdownIconProps {
   id: string | number;

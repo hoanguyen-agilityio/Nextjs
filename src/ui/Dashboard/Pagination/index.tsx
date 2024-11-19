@@ -1,8 +1,13 @@
+// Third party
 import clsx from 'clsx';
 import { useCallback } from 'react';
+
+// Models
 import { PaginationProps } from '@/types';
-import { ArrowLeft, ArrowRight } from '@/icons';
+
+// Components
 import { ButtonCustom } from '@/components';
+import { ArrowLeft, ArrowRight } from '@/icons';
 
 const Pagination = ({
   currentPage,

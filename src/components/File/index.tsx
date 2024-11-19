@@ -1,6 +1,10 @@
 'use client';
+
+// Third party
 import { useRef, useState } from 'react';
-import { ButtonCustom, InputCustom } from '../common';
+
+// Components
+import { ButtonCustom, InputCustom } from '@/components';
 import { FileIcon } from '@/icons';
 
 interface FileUploaderProps {

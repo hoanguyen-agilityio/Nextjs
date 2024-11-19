@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Select } from '@nextui-org/react';
 
 const SelectCustom = extendVariants(Select, {

@@ -1,7 +1,11 @@
 'use client';
+
+// Third party
 import { useRef, useState, useEffect } from 'react';
 import { Image } from '@nextui-org/react';
-import { ButtonCustom, InputCustom } from '../common';
+
+// Components
+import { ButtonCustom, InputCustom } from '@/components';
 import { ImageIcon } from '@/icons';
 
 interface ImageUploaderProps {

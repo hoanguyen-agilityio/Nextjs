@@ -1,3 +1,4 @@
+// Third party
 import { Switch, SwitchProps } from '@nextui-org/react';
 
 interface IKeySwitch extends SwitchProps {

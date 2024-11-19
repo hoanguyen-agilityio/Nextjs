@@ -1,4 +1,7 @@
+// Third party
 import { memo } from 'react';
+
+// Components
 import { ChartArrows } from '@/icons';
 
 interface OverviewItemProps {

@@ -1,8 +1,13 @@
-import { getDataOverview } from '@/actions';
+// Constants
 import { dateDicker, productSelector } from '@/mocks';
-import { CalendarIcon } from '@/icons';
+
+// API
+import { getDataOverview } from '@/actions';
+
+// Components
 import { RenderSelect } from '../Select';
 import { OverviewStats } from '../OverviewStats';
+import { CalendarIcon } from '@/icons';
 
 const Overview = async () => {
   const dataOverview = (await getDataOverview()) || [];

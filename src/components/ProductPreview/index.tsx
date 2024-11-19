@@ -1,3 +1,4 @@
+// Third party
 import {
   Card,
   CardBody,
@@ -5,8 +6,10 @@ import {
   CardHeader,
   Image,
 } from '@nextui-org/react';
+
+// Components
+import { ChipCustom } from '@/components';
 import { ClockIcon, RatingIcon, ThreeDotsIcon } from '@/icons';
-import { ChipCustom } from '../common';
 
 interface ProductPreviewProp {
   imageSrc: string;

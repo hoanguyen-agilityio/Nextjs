@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Input } from '@nextui-org/react';
 
 const InputCustom = extendVariants(Input, {

@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Checkbox } from '@nextui-org/react';
 
 const CheckboxCustom = extendVariants(Checkbox, {

@@ -1,13 +1,21 @@
 'use client';
-import { Card } from '@nextui-org/react';
-import Link from 'next/link';
-import { useState, useTransition } from 'react';
+
+// Third party
 import clsx from 'clsx';
+import Link from 'next/link';
+import { Card } from '@nextui-org/react';
+import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+
+// Constants
 import { MESSAGE, REGEX, ROUTERS } from '@/constants';
+
+// Models
 import { Account } from '@/types';
+
+// Components
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,

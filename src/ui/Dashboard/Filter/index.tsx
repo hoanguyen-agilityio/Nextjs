@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import {
   colors,
   Dropdown,
@@ -9,8 +11,14 @@ import {
 import { useSearchParams } from 'next/navigation';
 import { memo } from 'react';
 import isEqual from 'react-fast-compare';
+
+// Constants
 import { items } from '@/mocks';
+
+// Helpers
 import { useFilterLogic } from '@/hooks';
+
+// Components
 import { ButtonCustom } from '@/components';
 import { CloseIcon, FilterIcon } from '@/icons';
 

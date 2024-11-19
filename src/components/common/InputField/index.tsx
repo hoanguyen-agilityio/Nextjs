@@ -1,5 +1,8 @@
+// Third party
 import { ComponentProps } from 'react';
-import InputCustom from '../Input';
+
+// Components
+import { InputCustom } from '@/components';
 
 interface IInputField extends ComponentProps<typeof InputCustom> {
   label: string;

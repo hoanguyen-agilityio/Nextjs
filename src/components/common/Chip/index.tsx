@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Chip } from '@nextui-org/react';
 
 const ChipCustom = extendVariants(Chip, {

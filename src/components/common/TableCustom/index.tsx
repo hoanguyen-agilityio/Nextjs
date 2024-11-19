@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Table } from '@nextui-org/react';
 
 const TableCustom = extendVariants(Table, {
