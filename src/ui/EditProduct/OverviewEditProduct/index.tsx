@@ -1,12 +1,22 @@
 'use client';
+
+// Third party
 import { useParams } from 'next/navigation';
-import { IProducts } from '@/types';
-import { Form, ProductPreview } from '@/components';
-import { handleEditProduct } from '@/actions';
-import { useEffect, useState } from 'react';
-import { APIs } from '@/services';
 import { toast } from 'react-toastify';
+import { useEffect, useState } from 'react';
+
+// Constants
 import { MESSAGE, ROUTERS } from '@/constants';
+
+// Models
+import { IProducts } from '@/types';
+
+// API
+import { handleEditProduct } from '@/actions';
+import { APIs } from '@/services';
+
+// Components
+import { Form, ProductPreview } from '@/components';
 
 const OverviewEditProduct = () => {
   const { id } = useParams();

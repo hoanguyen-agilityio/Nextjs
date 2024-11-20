@@ -1,4 +1,6 @@
 'use client';
+
+// Third party
 import { extendVariants, Input } from '@nextui-org/react';
 
 const InputCustom = extendVariants(Input, {
@@ -9,12 +11,19 @@ const InputCustom = extendVariants(Input, {
           'bg-gray-50',
           'flex items-center space-x-2',
           'h-full',
+          'placeholder:text-ratio-300',
+          'text-ratio-300',
           // dark theme
           'dark:bg-gray-700',
+          'dark: text-ratio-700',
+          'dark:placeholder:text-ratio-700',
           'focus-within:ring-0',
         ],
         input: [
-          'text-grayBlue-400',
+          'text-ratio-300',
+          'placeholder:text-ratio-300',
+          'dark:placeholder:text-ratio-700',
+          'dark: text-ratio-700',
           'flex-grow',
           'focus:outline-none',
           'focus:ring-0',
@@ -31,11 +40,11 @@ const InputCustom = extendVariants(Input, {
           'dark:bg-dark-900',
           'dark:border-gray-700',
           'focus-within:ring-0',
-          'text-grayBlue-400',
-          'placeholder:text-grayBlue-400',
+          'text-ratio-200 dark:text-ratio-800',
+          'placeholder:text-ratio-200 dark:placeholder:text-ratio-800',
         ],
         input: [
-          'placeholder:text-grayBlue-400',
+          'placeholder:text-ratio-200 dark:placeholder:text-ratio-800',
           'flex-grow',
           'focus:outline-none',
           'focus:ring-0',

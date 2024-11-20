@@ -1,6 +1,11 @@
 'use client';
+// Third party
 import { useRouter } from 'next/navigation';
+
+// Models
 import { IProducts } from '@/types';
+
+// Components
 import { Table } from '@/ui';
 
 interface IProductTable {

@@ -1,3 +1,4 @@
+// Third party
 import {
   Card,
   CardBody,
@@ -5,8 +6,10 @@ import {
   CardHeader,
   Image,
 } from '@nextui-org/react';
+
+// Components
+import { ChipCustom } from '@/components';
 import { ClockIcon, RatingIcon, ThreeDotsIcon } from '@/icons';
-import { ChipCustom } from '../common';
 
 interface ProductPreviewProp {
   imageSrc: string;
@@ -43,7 +46,7 @@ const ProductPreview = ({
         <div className="flex flex-col gap-5">
           <div className="flex gap-[10px]">
             <ClockIcon width="17px" height="17px" />
-            <p className="text-xsm text-grayBlue-400 font-semibold">
+            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold">
               9 Jan 2023 9:43 PM
             </p>
           </div>
@@ -53,11 +56,13 @@ const ProductPreview = ({
               height="16px"
               className="cursor-pointer"
             />
-            <p className="text-xsm text-grayBlue-400 font-semibold">4.3</p>
+            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold">
+              4.3
+            </p>
           </div>
         </div>
         <ChipCustom color="success" size="sm">
-          {price}
+          {`$${price}`}
         </ChipCustom>
       </CardFooter>
     </Card>

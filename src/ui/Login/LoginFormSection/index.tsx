@@ -1,7 +1,10 @@
 'use server';
-import { LogoWithoutText } from '@/icons';
-import FormLogin from '../FormLogin';
+// Third party
 import { handleSignIn } from '@/actions';
+
+// Components
+import FormLogin from '../FormLogin';
+import { LogoWithoutText } from '@/icons';
 
 const LoginFormSection = () => (
   <section className="flex items-center justify-around content-center min-h-screen">

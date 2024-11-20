@@ -1,8 +1,13 @@
+// Third party
 import clsx from 'clsx';
 import { useCallback } from 'react';
+
+// Models
 import { PaginationProps } from '@/types';
-import { ArrowLeft, ArrowRight } from '@/icons';
+
+// Components
 import { ButtonCustom } from '@/components';
+import { ArrowLeft, ArrowRight } from '@/icons';
 
 const Pagination = ({
   currentPage,
@@ -36,7 +41,7 @@ const Pagination = ({
         Previous
       </ButtonCustom>
       {totalPages > 0 && (
-        <span className="text-grayBlue-400 font-semibold">
+        <span className="text-ratio-200 dark:text-grayBlue-400 font-semibold">
           Page {currentPage} of {totalPages}
         </span>
       )}

@@ -1,3 +1,4 @@
+// Third party
 import {
   Button,
   Modal,
@@ -6,9 +7,13 @@ import {
   ModalFooter,
   ModalHeader,
 } from '@nextui-org/react';
-import { handleDeleteProduct } from '@/actions';
 import { toast } from 'react-toastify';
+
+// Constants
 import { MESSAGE } from '@/constants';
+
+// API
+import { handleDeleteProduct } from '@/actions';
 
 interface IModelDeleteProduct {
   isOpen: boolean;

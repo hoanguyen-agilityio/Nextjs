@@ -1,5 +1,10 @@
+// API
 import { getDataProducts } from '@/actions';
+
+// Helpers
 import { filterProducts, paginateProducts } from '@/utils';
+
+// Components
 import { ProductTable } from '@/ui';
 
 interface IProductTableWrapper {

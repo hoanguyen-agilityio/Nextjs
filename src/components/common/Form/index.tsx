@@ -1,12 +1,26 @@
 'use client';
+
+// Third party
 import clsx from 'clsx';
-import { Card } from '@nextui-org/react';
 import Link from 'next/link';
+import { Card } from '@nextui-org/react';
 import { useForm, Controller } from 'react-hook-form';
 import { useEffect, useState, useTransition } from 'react';
+import { useRouter } from 'next/navigation';
+
+// Constants
 import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
+
+// Models
 import { FormProps, IProducts } from '@/types';
-import { normalizeUrl } from '@/utils';
+
+// API
+import { getDataProducts } from '@/actions';
+
+// Helpers
+import { filterNumericInput, normalizeUrl } from '@/utils';
+
+// Components
 import {
   Media,
   File,
@@ -16,10 +30,8 @@ import {
   InputField,
 } from '@/components';
 import { BackIcon } from '@/icons';
-import { useRouter } from 'next/navigation';
-import { getDataProducts } from '@/actions';
 
-const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
+const Form = ({ data, modePage, label, onSubmit, href }: FormProps) => {
   const [duplicateNameError, setDuplicateNameError] = useState<string | null>(
     null,
   );
@@ -86,6 +98,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
       router.push(ROUTERS.HOME);
     });
   };
+  console.log(href);
 
   return (
     <Card className="flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9">
@@ -111,15 +124,13 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Name"
               errorMsg={duplicateNameError || fieldState.error?.message}
+              disabled={modePage === 'detail'}
             />
           )}
         />
         <Controller
           name="status"
           control={control}
-          rules={{
-            required: MESSAGE.DESCRIPTION_REQUIRED,
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -132,6 +143,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Description"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -163,6 +175,8 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Price"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -170,7 +184,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="views"
           control={control}
           rules={{
-            required: MESSAGE.VIEW_REQUIRED,
             pattern: {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
@@ -187,6 +200,8 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input View"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -194,7 +209,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="sales"
           control={control}
           rules={{
-            required: MESSAGE.SALES_REQUIRED,
             pattern: {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
@@ -211,6 +225,8 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Sales"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -218,7 +234,6 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           name="conversion"
           control={control}
           rules={{
-            required: MESSAGE.CONVERSION_REQUIRED,
             pattern: {
               value: REGEX.PERCENT,
               message: MESSAGE.VALID_PERCENT,
@@ -235,6 +250,8 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               fieldId="Input Conversion"
               errorMsg={fieldState.error ? fieldState.error.message : undefined}
+              onInput={filterNumericInput}
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -295,6 +312,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               className="mt-2"
               color="secondary"
               fieldId="Input Download Button"
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -312,7 +330,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               color="secondary"
               startContent={
                 <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
-                  <p className="font-semibold text-xsm text-grayBlue-400">
+                  <p className="font-semibold text-xsm text-ratio-200 dark:text-grayBlue-400">
                     https://
                   </p>
                 </div>
@@ -322,6 +340,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
                 field.onChange(normalized);
               }}
               fieldId="Input Product Link"
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -339,6 +358,7 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
               placeholder="Thank you for purchasing my product!"
               color="secondary"
               fieldId="Input Personal Note"
+              disabled={modePage === 'detail'}
             />
           )}
         />
@@ -348,17 +368,22 @@ const Form = ({ data, modePage, label, onSubmit }: FormProps) => {
           </CheckboxCustom>
         )}
         <div className="flex gap-5 mt-8">
-          <ButtonCustom
-            type="submit"
-            color="dark"
-            radius="sm"
-            className={clsx('h-auto py-4 px-[102px] font-semibold text-base', {
-              'opacity-50 cursor-not-allowed': isPending,
-            })}
-            disabled={isPending}
-          >
-            {isPending ? 'Logging in...' : label}
-          </ButtonCustom>
+          <Link href={href}>
+            <ButtonCustom
+              type="submit"
+              color="dark"
+              radius="sm"
+              className={clsx(
+                'h-auto py-4 px-[102px] font-semibold text-base',
+                {
+                  'opacity-50 cursor-not-allowed': isPending,
+                },
+              )}
+              disabled={isPending}
+            >
+              {isPending ? 'Logging in...' : label}
+            </ButtonCustom>
+          </Link>
           <ButtonCustom
             color="grey"
             radius="sm"

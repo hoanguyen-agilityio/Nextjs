@@ -1,5 +1,8 @@
+// Third party
 import { ComponentProps } from 'react';
-import InputCustom from '../Input';
+
+// Components
+import { InputCustom } from '@/components';
 
 interface IInputField extends ComponentProps<typeof InputCustom> {
   label: string;
@@ -37,7 +40,7 @@ const InputField = ({
       <InputCustom {...rest} id={fieldId} />
       {(errorMsg || message) && (
         <p
-          className={`text-xsm mt-4 font-normal ${errorMsg ? 'text-red-500' : 'text-grayBlue-400'}`}
+          className={`text-xsm mt-4 font-normal ${errorMsg ? 'text-red-500' : 'text-ratio-200 dark:text-grayBlue-400'}`}
         >
           {getMessage()}
         </p>

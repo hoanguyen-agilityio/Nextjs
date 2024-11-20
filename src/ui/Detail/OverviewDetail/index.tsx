@@ -1,10 +1,20 @@
 'use client';
+
+// Third party
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { APIs } from '@/services';
-import { IProducts } from '@/types';
-import { Form, ProductPreview } from '@/components';
+
+// Constants
 import { ROUTERS } from '@/constants';
+
+// Models
+import { IProducts } from '@/types';
+
+// API
+import { APIs } from '@/services';
+
+// Components
+import { Form, ProductPreview } from '@/components';
 
 const OverviewDetail = () => {
   const { id } = useParams();

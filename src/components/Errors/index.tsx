@@ -1,6 +1,10 @@
 'use client';
-import { MESSAGE, ROUTERS } from '@/constants';
+
+// Third party
 import Link from 'next/link';
+
+// Constants
+import { MESSAGE, ROUTERS } from '@/constants';
 
 type ErrorProps = {
   onReset?: () => void;

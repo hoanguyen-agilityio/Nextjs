@@ -1,4 +1,7 @@
+// Models
 import { OverviewData } from '@/types';
+
+// Components
 import OverviewItem from '../OverviewItem';
 
 const OverviewStats = ({ data }: OverviewData) => {

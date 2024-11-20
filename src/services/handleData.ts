@@ -1,6 +1,10 @@
+// Third party
 import { revalidateTag } from 'next/cache';
 import { unstable_noStore as noStore } from 'next/cache';
-import { API_PATH, PRODUCT_URL } from '../constants';
+
+// Constants
+import { API_PATH, PRODUCT_URL } from '@/constants';
+
 class API {
   async get<T>(path?: string, time?: number): Promise<T> {
     const response = await fetch(`${PRODUCT_URL}${path}`, {

@@ -1,7 +1,11 @@
 'use client';
+
+// Third party
 import { useRef, useState, useEffect } from 'react';
 import { Image } from '@nextui-org/react';
-import { ButtonCustom, InputCustom } from '../common';
+
+// Components
+import { ButtonCustom, InputCustom } from '@/components';
 import { ImageIcon } from '@/icons';
 
 interface ImageUploaderProps {
@@ -86,13 +90,13 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
 
       {mode !== 'detail' && (
         <div
-          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3 mt-3"
+          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-ratio-200 dark:text-grayBlue-400 cursor-pointer gap-3 mt-3"
           onDrop={handleDrop}
           onDragOver={handleDragOver}
           onClick={handleAreaClick}
         >
           <ImageIcon width="60px" height="60px" />
-          <p className="text-center font-normal text-xsm text-grayBlue-400">
+          <p className="text-center font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
             Drop your images here, or click to browse 1600 x 1200 (4:3) <br />
             recommended, up to 10MB each.
           </p>
@@ -129,7 +133,7 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
         ))}
       </div>
 
-      <p className="font-normal text-xsm text-grayBlue-400 mt-3">
+      <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3">
         Add up to 10 images to your product. Used to represent your product
         during checkout, in email, social sharing, and more.
       </p>

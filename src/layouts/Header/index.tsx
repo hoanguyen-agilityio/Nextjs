@@ -1,6 +1,9 @@
+// Helpers
+import { handleLogout } from '@/utils';
+
+// Components
 import { ButtonCustom, InputCustom } from '@/components';
 import { Logout, NotificationIcon, SearchIcon } from '@/icons';
-import { handleLogout } from '@/utils';
 
 const Header = () => {
   return (
@@ -27,14 +30,16 @@ const Header = () => {
           className="mr-10 cursor-pointer"
         />
         <div className="flex items-center border-l-2 border-gray-50 pl-10 dark:border-gray-700">
-          <span className="rounded-full w-sm h-sm bg-translucent-400 text-blue-400 flex items-center justify-center text-xl font-semibold">
+          <span className="rounded-full w-sm h-sm bg-translucent-400 text-ratio-100 dark:text-blue-400 flex items-center justify-center text-xl font-semibold">
             TE
           </span>
           <div className="flex flex-col ml-6 font-semibold">
             <span className="text-xl text-dark-800 dark:text-white">
               Theo Edwards
             </span>
-            <span className="text-base text-grayBlue-400">Administrator</span>
+            <span className="text-base text-ratio-200 dark:text-grayBlue-400">
+              Administrator
+            </span>
           </div>
           <ButtonCustom
             color="unstyled"

@@ -1,5 +1,8 @@
+// Third party
 import Link from 'next/link';
 import { twMerge } from 'tailwind-merge';
+
+// Constants
 import { MENU } from '@/constants';
 
 const Menu = () => (
@@ -10,7 +13,7 @@ const Menu = () => (
           <Link
             href={href}
             className={twMerge(
-              'flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400',
+              'flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400',
               className,
             )}
           >

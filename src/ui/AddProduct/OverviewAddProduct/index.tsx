@@ -1,9 +1,19 @@
 'use client';
+
+// Third party
 import { toast } from 'react-toastify';
+
+// Constants
 import { IMAGE, MESSAGE, ROUTERS } from '@/constants';
+
+// Models
 import { IProducts } from '@/types';
-import { Form, ProductPreview } from '@/components';
+
+// API
 import { handleAddProduct } from '@/actions';
+
+// Components
+import { Form, ProductPreview } from '@/components';
 
 const OverviewAddProduct = () => {
   const handleAddProductSubmit = async (product: IProducts) => {
@@ -23,7 +33,7 @@ const OverviewAddProduct = () => {
         imageSrc={IMAGE.DEFAULT}
         imageAlt="Image default"
         imageFallbackSrc={IMAGE.BLUR}
-        price="$99.99"
+        price="99.99"
       />
     </div>
   );

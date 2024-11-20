@@ -1,3 +1,4 @@
+// Third party
 import { Switch, SwitchProps } from '@nextui-org/react';
 
 interface IKeySwitch extends SwitchProps {
@@ -20,7 +21,9 @@ const KeySwitch = ({
         <span className="font-semibold text-lg text-black-900 dark:text-white">
           {title}
         </span>
-        <p className="font-normal text-xsm text-grayBlue-400">{describe}</p>
+        <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
+          {describe}
+        </p>
       </div>
       <Switch {...switchProps} aria-label={ariaLabel} />
     </div>

@@ -15,7 +15,7 @@ export const MENU = [
   {
     icon: <Dashboard width="30px" height="30px" />,
     label: 'Dashboard',
-    className: 'text-blue-400 bg-translucent-400',
+    className: 'text-ratio-100 bg-translucent-400 dark:text-blue-400',
     href: ROUTERS.HOME,
   },
   {

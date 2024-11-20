@@ -1,7 +1,13 @@
 'use client';
+
+// Third party
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+
+// Helpers
 import { handleSearch } from '@/utils';
+
+// Components
 import { InputCustom } from '@/components';
 import { SearchIcon } from '@/icons';
 

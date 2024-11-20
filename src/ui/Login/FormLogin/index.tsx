@@ -1,13 +1,21 @@
 'use client';
-import { Card } from '@nextui-org/react';
-import Link from 'next/link';
-import { useState, useTransition } from 'react';
+
+// Third party
 import clsx from 'clsx';
+import Link from 'next/link';
+import { Card } from '@nextui-org/react';
+import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+
+// Constants
 import { MESSAGE, REGEX, ROUTERS } from '@/constants';
+
+// Models
 import { Account } from '@/types';
+
+// Components
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
 import {
   AppleIcon,
@@ -160,7 +168,9 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         </ButtonCustom>
         <div className="flex justify-between items-center gap-3 mt-l">
           <div className="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"></div>
-          <p className="font-normal text-xsm text-grayBlue-400">or</p>
+          <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
+            or
+          </p>
           <div className="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"></div>
         </div>
         <ButtonCustom
@@ -179,7 +189,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         >
           Login with AppleID
         </ButtonCustom>
-        <p className="font-normal text-xsm text-grayBlue-400 text-center mt-3xl">
+        <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 text-center mt-3xl">
           Forgot password?{' '}
           <Link
             href={ROUTERS.EMPTY}
