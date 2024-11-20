@@ -21,7 +21,7 @@ const Sidebar = () => (
         <ButtonCustom
           color="secondary"
           startContent={<PlusIcon width="46px" height="46px" />}
-          className="flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
+          className="flex items-center text-lg px-0 text-ratio-200 dark:text-grayBlue-400 font-semibold h-auto gap-4"
         >
           Add new product
         </ButtonCustom>

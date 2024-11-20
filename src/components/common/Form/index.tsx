@@ -330,7 +330,7 @@ const Form = ({ data, modePage, label, onSubmit, href }: FormProps) => {
               color="secondary"
               startContent={
                 <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
-                  <p className="font-semibold text-xsm text-grayBlue-400">
+                  <p className="font-semibold text-xsm text-ratio-200 dark:text-grayBlue-400">
                     https://
                   </p>
                 </div>

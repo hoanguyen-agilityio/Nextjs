@@ -48,20 +48,20 @@ const RenderColumn = (
       );
     case 'status':
       return (
-        <TableCell className="flex items-center h-[70px] font-semibold text-grayBlue-400">
+        <TableCell className="flex items-center h-[70px] font-semibold text-ratio-200 dark:text-grayBlue-400">
           <CheckedIcon width="18px" height="18px" className="mr-2" />
           {getKeyValue(item, columnKey)}
         </TableCell>
       );
     case 'total':
       return (
-        <TableCell className="font-semibold text-grayBlue-400">
+        <TableCell className="font-semibold text-ratio-200 dark:text-grayBlue-400">
           ${getKeyValue(item, columnKey)}
         </TableCell>
       );
     case 'conversion':
       return (
-        <TableCell className="font-semibold text-grayBlue-400">
+        <TableCell className="font-semibold text-ratio-200 dark:text-grayBlue-400">
           {getKeyValue(item, columnKey)}%
         </TableCell>
       );
@@ -73,7 +73,7 @@ const RenderColumn = (
               color="default"
               size="md"
               radius="sm"
-              className="text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+              className="text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
             >
               Details
             </ButtonCustom>
@@ -88,7 +88,7 @@ const RenderColumn = (
       );
     default:
       return (
-        <TableCell className="font-semibold text-grayBlue-400">
+        <TableCell className="font-semibold text-ratio-200 dark:text-grayBlue-400">
           {getKeyValue(item, columnKey)}
         </TableCell>
       );

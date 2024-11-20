@@ -33,7 +33,7 @@ const OverviewAddProduct = () => {
         imageSrc={IMAGE.DEFAULT}
         imageAlt="Image default"
         imageFallbackSrc={IMAGE.BLUR}
-        price="$99.99"
+        price="99.99"
       />
     </div>
   );

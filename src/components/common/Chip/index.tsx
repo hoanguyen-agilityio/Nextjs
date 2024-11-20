@@ -8,7 +8,7 @@ const ChipCustom = extendVariants(Chip, {
     color: {
       success: {
         base: 'bg-green-100 dark:bg-green-200',
-        content: 'text-green-300 dark:text-green-400',
+        content: 'text-ratio-900 dark:text-green-400',
       },
     },
     size: {

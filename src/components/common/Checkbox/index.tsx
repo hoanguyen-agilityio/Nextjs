@@ -7,7 +7,7 @@ const CheckboxCustom = extendVariants(Checkbox, {
   variants: {
     size: {
       default: {
-        label: 'font-normal text-xsm text-grayBlue-400',
+        label: 'font-normal text-xsm text-ratio-200 dark:text-grayBlue-400',
       },
     },
   },

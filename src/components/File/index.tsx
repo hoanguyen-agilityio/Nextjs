@@ -85,7 +85,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
 
       {mode !== 'detail' && (
         <div
-          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-grayBlue-400 cursor-pointer gap-3 mt-3"
+          className="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-ratio-200 dark:text-grayBlue-400 cursor-pointer gap-3 mt-3"
           onDrop={(e) => {
             e.preventDefault();
             handleFileUpload(e.dataTransfer.files);
@@ -94,7 +94,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
           onClick={() => setShowModal(true)}
         >
           <FileIcon width="60px" height="60px" />
-          <p className="text-center font-normal text-xsm text-grayBlue-400">
+          <p className="text-center font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
             Drop your files here, or click to browse. Unlimited files, up to 5
             GB.
           </p>
@@ -116,7 +116,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
               href={file.src}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600"
+              className="text-blue-600 dark:text-ratio-1000"
             >
               {file.name}
             </a>
@@ -134,7 +134,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
         ))}
       </div>
 
-      <p className="font-normal text-xsm text-grayBlue-400 mt-3">
+      <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3">
         Upload an unlimited number of files to your product. Your customers will
         be given access to them after purchase.
       </p>

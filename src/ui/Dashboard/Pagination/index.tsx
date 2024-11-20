@@ -41,7 +41,7 @@ const Pagination = ({
         Previous
       </ButtonCustom>
       {totalPages > 0 && (
-        <span className="text-grayBlue-400 font-semibold">
+        <span className="text-ratio-200 dark:text-grayBlue-400 font-semibold">
           Page {currentPage} of {totalPages}
         </span>
       )}

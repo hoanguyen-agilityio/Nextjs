@@ -45,7 +45,7 @@ const Table = memo(
       >
         <TableHeader
           columns={columns}
-          className="bg-gray-600 gap-4 text-gray-500 font-bold p-2 border-b px-7 py-4xl"
+          className="bg-gray-600 gap-4 text-ratio-500 font-bold p-2 border-b px-7 py-4xl"
         >
           {(column) => (
             <TableColumn className={column.className} key={column.key}>

@@ -168,7 +168,9 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         </ButtonCustom>
         <div className="flex justify-between items-center gap-3 mt-l">
           <div className="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"></div>
-          <p className="font-normal text-xsm text-grayBlue-400">or</p>
+          <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
+            or
+          </p>
           <div className="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"></div>
         </div>
         <ButtonCustom
@@ -187,7 +189,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         >
           Login with AppleID
         </ButtonCustom>
-        <p className="font-normal text-xsm text-grayBlue-400 text-center mt-3xl">
+        <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 text-center mt-3xl">
           Forgot password?{' '}
           <Link
             href={ROUTERS.EMPTY}

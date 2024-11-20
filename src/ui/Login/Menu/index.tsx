@@ -8,7 +8,10 @@ const Menu = () => (
   <ul className="flex gap-24 items-center">
     {MENU_NO_AUTH.map(({ label, href }) => (
       <li key={label}>
-        <Link href={href} className="text-xl font-semibold text-grayBlue-400">
+        <Link
+          href={href}
+          className="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400"
+        >
           <span>{label}</span>
         </Link>
       </li>

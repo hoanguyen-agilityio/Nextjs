@@ -135,7 +135,7 @@ const columns = [
   {
     key: 'no',
     label: 'No',
-    className: 'w-20',
+    className: 'w-20 text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'img',
@@ -145,31 +145,37 @@ const columns = [
   {
     key: 'name',
     label: 'Name',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'status',
     label: 'Status',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'views',
     label: 'Views',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'sales',
     label: 'Sales',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'conversion',
     label: 'Conversion',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'total',
     label: 'Total',
+    className: 'text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'details',
     label: 'Details',
-    className: 'w-10',
+    className: 'w-10 text-ratio-500 dark:text-ratio-600',
   },
   {
     key: 'dropdown',
