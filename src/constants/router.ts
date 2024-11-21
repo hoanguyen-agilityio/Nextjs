@@ -17,7 +17,7 @@ const ROUTERS = {
   DETAIL: 'detail',
   ADD_PRODUCT: 'add',
   EDIT_PRODUCT: 'edit',
-  EMPTY: '#',
+  EMPTY: '',
   LOGIN: 'login',
   SIGN_UP: 'signUp',
 };
