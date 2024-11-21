@@ -27,7 +27,7 @@ const Header = () => {
         <NotificationIcon
           width="21px"
           height="26px"
-          className="mr-10 cursor-pointer"
+          className="mr-10 cursor-not-allowed"
         />
         <div className="flex items-center border-l-2 border-gray-50 pl-10 dark:border-gray-700">
           <span className="rounded-full w-sm h-sm bg-translucent-400 text-ratio-100 dark:text-blue-400 flex items-center justify-center text-xl font-semibold">

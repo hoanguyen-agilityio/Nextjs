@@ -10,7 +10,7 @@ const Menu = () => (
       <li key={label}>
         <Link
           href={href}
-          className="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400"
+          className="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
         >
           <span>{label}</span>
         </Link>

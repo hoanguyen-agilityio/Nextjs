@@ -30,7 +30,11 @@ const ProductPreview = ({
         <span className="font-bold text-2xl dark:text-white text-black-900">
           Product Preview
         </span>
-        <ThreeDotsIcon width="5px" height="24px" className="cursor-pointer" />
+        <ThreeDotsIcon
+          width="5px"
+          height="24px"
+          className="cursor-not-allowed"
+        />
       </CardHeader>
       <CardBody>
         <Image
@@ -51,11 +55,7 @@ const ProductPreview = ({
             </p>
           </div>
           <div className="flex gap-[10px]">
-            <RatingIcon
-              width="114px"
-              height="16px"
-              className="cursor-pointer"
-            />
+            <RatingIcon width="114px" height="16px" />
             <p className="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold">
               4.3
             </p>

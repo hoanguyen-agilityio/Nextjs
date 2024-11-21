@@ -176,7 +176,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <ButtonCustom
           color="bright"
           radius="sm"
-          className="py-4 w-full text-base font-semibold h-[52px] mt-l"
+          className="py-4 w-full text-base font-semibold h-[52px] mt-l cursor-not-allowed"
           startContent={<GoogleIcon width="26px" height="26px" />}
         >
           Continue with Google
@@ -184,7 +184,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <ButtonCustom
           color="bright"
           radius="sm"
-          className="py-4 w-full text-base font-semibold h-[52px] mt-3xl"
+          className="py-4 w-full text-base font-semibold h-[52px] mt-3xl cursor-not-allowed"
           startContent={<AppleIcon width="26px" height="26px" />}
         >
           Login with AppleID
