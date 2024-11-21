@@ -11,7 +11,7 @@ exports[`OverviewItem Component render overview item 1`] = `
       1000
     </span>
     <span
-      class="text-base font-semibold text-grayBlue-400 mb-2sm"
+      class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
     >
       Total Sales
     </span>

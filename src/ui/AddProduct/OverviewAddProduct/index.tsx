@@ -4,7 +4,7 @@
 import { toast } from 'react-toastify';
 
 // Constants
-import { IMAGE, MESSAGE, ROUTERS } from '@/constants';
+import { IMAGE, MESSAGE } from '@/constants';
 
 // Models
 import { IProducts } from '@/types';
@@ -27,7 +27,6 @@ const OverviewAddProduct = () => {
         modePage="add"
         label="Publish Product"
         onSubmit={handleAddProductSubmit}
-        href={ROUTERS.EMPTY}
       />
       <ProductPreview
         imageSrc={IMAGE.DEFAULT}

@@ -27,8 +27,8 @@ exports[`ProductTable Component render product table 1`] = `
           >
             <th
               class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-              data-key="row-header-column-g33nj9zuw7s"
-              id="react-aria-:r0:-row-header-column-g33nj9zuw7s"
+              data-key="row-header-column-8ofzfkkvw7a"
+              id="react-aria-:r0:-row-header-column-8ofzfkkvw7a"
               role="columnheader"
               tabindex="-1"
             >
@@ -71,7 +71,7 @@ exports[`ProductTable Component render product table 1`] = `
               </label>
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start w-20"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start w-20 text-ratio-500 dark:text-ratio-600"
               data-key="no"
               id="react-aria-:r0:-no"
               role="columnheader"
@@ -87,7 +87,7 @@ exports[`ProductTable Component render product table 1`] = `
               tabindex="-1"
             />
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="name"
               id="react-aria-:r0:-name"
               role="columnheader"
@@ -96,7 +96,7 @@ exports[`ProductTable Component render product table 1`] = `
               Name
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="status"
               id="react-aria-:r0:-status"
               role="columnheader"
@@ -105,7 +105,7 @@ exports[`ProductTable Component render product table 1`] = `
               Status
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="views"
               id="react-aria-:r0:-views"
               role="columnheader"
@@ -114,7 +114,7 @@ exports[`ProductTable Component render product table 1`] = `
               Views
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="sales"
               id="react-aria-:r0:-sales"
               role="columnheader"
@@ -123,7 +123,7 @@ exports[`ProductTable Component render product table 1`] = `
               Sales
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="conversion"
               id="react-aria-:r0:-conversion"
               role="columnheader"
@@ -132,7 +132,7 @@ exports[`ProductTable Component render product table 1`] = `
               Conversion
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start text-ratio-500 dark:text-ratio-600"
               data-key="total"
               id="react-aria-:r0:-total"
               role="columnheader"
@@ -141,7 +141,7 @@ exports[`ProductTable Component render product table 1`] = `
               Total
             </th>
             <th
-              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start w-10"
+              class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start w-10 text-ratio-500 dark:text-ratio-600"
               data-key="details"
               id="react-aria-:r0:-details"
               role="columnheader"
@@ -263,7 +263,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="11status"
               role="gridcell"
               tabindex="-1"
@@ -292,7 +292,7 @@ exports[`ProductTable Component render product table 1`] = `
               9 Jan 2023 9:43 PM
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="11views"
               role="gridcell"
               tabindex="-1"
@@ -302,7 +302,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="11sales"
               role="gridcell"
               tabindex="-1"
@@ -312,17 +312,16 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="11conversion"
               role="gridcell"
               tabindex="-1"
             >
-              <span>
-                6,5%
-              </span>
+              6,5%
+              %
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="11total"
               role="gridcell"
               tabindex="-1"
@@ -340,7 +339,7 @@ exports[`ProductTable Component render product table 1`] = `
                 href="detail/1"
               >
                 <button
-                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
                   type="button"
                 >
                   Details
@@ -356,6 +355,7 @@ exports[`ProductTable Component render product table 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
+                aria-label="Dropdown Button"
                 class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased"
                 data-slot="trigger"
                 id="react-aria-:r6:"
@@ -475,7 +475,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="22status"
               role="gridcell"
               tabindex="-1"
@@ -504,7 +504,7 @@ exports[`ProductTable Component render product table 1`] = `
               9 Jan 2023 9:43 PM
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="22views"
               role="gridcell"
               tabindex="-1"
@@ -514,7 +514,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="22sales"
               role="gridcell"
               tabindex="-1"
@@ -524,17 +524,16 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="22conversion"
               role="gridcell"
               tabindex="-1"
             >
-              <span>
-                6,5%
-              </span>
+              6,5%
+              %
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="22total"
               role="gridcell"
               tabindex="-1"
@@ -552,7 +551,7 @@ exports[`ProductTable Component render product table 1`] = `
                 href="detail/2"
               >
                 <button
-                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
                   type="button"
                 >
                   Details
@@ -568,6 +567,7 @@ exports[`ProductTable Component render product table 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
+                aria-label="Dropdown Button"
                 class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased"
                 data-slot="trigger"
                 id="react-aria-:rf:"
@@ -686,7 +686,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="33status"
               role="gridcell"
               tabindex="-1"
@@ -715,7 +715,7 @@ exports[`ProductTable Component render product table 1`] = `
               9 Jan 2023 9:43 PM
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="33views"
               role="gridcell"
               tabindex="-1"
@@ -725,7 +725,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="33sales"
               role="gridcell"
               tabindex="-1"
@@ -735,17 +735,16 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="33conversion"
               role="gridcell"
               tabindex="-1"
             >
-              <span>
-                6,5%
-              </span>
+              6,5%
+              %
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="33total"
               role="gridcell"
               tabindex="-1"
@@ -763,7 +762,7 @@ exports[`ProductTable Component render product table 1`] = `
                 href="detail/3"
               >
                 <button
-                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
                   type="button"
                 >
                   Details
@@ -779,6 +778,7 @@ exports[`ProductTable Component render product table 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
+                aria-label="Dropdown Button"
                 class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased"
                 data-slot="trigger"
                 id="react-aria-:ro:"
@@ -898,7 +898,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 flex items-center h-[70px] font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="44status"
               role="gridcell"
               tabindex="-1"
@@ -927,7 +927,7 @@ exports[`ProductTable Component render product table 1`] = `
               9 Jan 2023 9:43 PM
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="44views"
               role="gridcell"
               tabindex="-1"
@@ -937,7 +937,7 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="44sales"
               role="gridcell"
               tabindex="-1"
@@ -947,17 +947,16 @@ exports[`ProductTable Component render product table 1`] = `
               </span>
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="44conversion"
               role="gridcell"
               tabindex="-1"
             >
-              <span>
-                6,5%
-              </span>
+              6,5%
+              %
             </td>
             <td
-              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-grayBlue-400"
+              class="py-2 px-3 relative align-middle whitespace-normal text-small [&>*]:z-1 [&>*]:relative outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 before:content-[''] before:absolute before:z-0 before:inset-0 before:opacity-0 group-data-[disabled=true]:text-foreground-300 group-data-[disabled=true]:cursor-not-allowed before:bg-default/60 data-[selected=true]:text-default-foreground group-aria-[selected=false]:group-data-[hover=true]:before:bg-default-100 group-aria-[selected=false]:group-data-[hover=true]:before:opacity-70 group-data-[first=true]:first:before:rounded-ts-lg group-data-[first=true]:last:before:rounded-te-lg group-data-[middle=true]:before:rounded-none group-data-[last=true]:first:before:rounded-bs-lg group-data-[last=true]:last:before:rounded-be-lg text-start data-[selected=true]:before:opacity-0 font-semibold text-ratio-200 dark:text-grayBlue-400"
               data-key="44total"
               role="gridcell"
               tabindex="-1"
@@ -975,7 +974,7 @@ exports[`ProductTable Component render product table 1`] = `
                 href="detail/4"
               >
                 <button
-                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-blue-500 border-1 border-translucent-100 min-w-0 h-auto dark:text-blue-500"
+                  class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white dark:border-gray-700 dark:bg-dark-900 py-1 px-2 rounded-lg text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
                   type="button"
                 >
                   Details
@@ -991,6 +990,7 @@ exports[`ProductTable Component render product table 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
+                aria-label="Dropdown Button"
                 class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased"
                 data-slot="trigger"
                 id="react-aria-:r11:"
@@ -1040,7 +1040,7 @@ exports[`ProductTable Component render product table 1`] = `
           Previous
         </button>
         <span
-          class="text-grayBlue-400 font-semibold"
+          class="text-ratio-200 dark:text-grayBlue-400 font-semibold"
         >
           Page 
           1

@@ -12,7 +12,7 @@ exports[`KeySwitch component renders with default type 1`] = `
         Generate License Keys
       </span>
       <p
-        class="font-normal text-xsm text-grayBlue-400"
+        class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
       >
         Issue each customer a unique license key after purchase
       </p>

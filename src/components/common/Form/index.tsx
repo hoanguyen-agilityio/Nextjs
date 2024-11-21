@@ -31,7 +31,7 @@ import {
 } from '@/components';
 import { BackIcon } from '@/icons';
 
-const Form = ({ data, modePage, label, onSubmit, href }: FormProps) => {
+const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
   const [duplicateNameError, setDuplicateNameError] = useState<string | null>(
     null,
   );
@@ -95,10 +95,13 @@ const Form = ({ data, modePage, label, onSubmit, href }: FormProps) => {
       }
       reset();
       clearImages();
-      router.push(ROUTERS.HOME);
+      if (modePage === 'detail' && id) {
+        router.push(`${ROUTERS.EDIT_PRODUCT}/${id}`);
+      } else {
+        router.push(ROUTERS.HOME);
+      }
     });
   };
-  console.log(href);
 
   return (
     <Card className="flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9">
@@ -368,22 +371,17 @@ const Form = ({ data, modePage, label, onSubmit, href }: FormProps) => {
           </CheckboxCustom>
         )}
         <div className="flex gap-5 mt-8">
-          <Link href={href}>
-            <ButtonCustom
-              type="submit"
-              color="dark"
-              radius="sm"
-              className={clsx(
-                'h-auto py-4 px-[102px] font-semibold text-base',
-                {
-                  'opacity-50 cursor-not-allowed': isPending,
-                },
-              )}
-              disabled={isPending}
-            >
-              {isPending ? 'Logging in...' : label}
-            </ButtonCustom>
-          </Link>
+          <ButtonCustom
+            type="submit"
+            color="dark"
+            radius="sm"
+            className={clsx('h-auto py-4 px-[102px] font-semibold text-base', {
+              'opacity-50 cursor-not-allowed': isPending,
+            })}
+            disabled={isPending}
+          >
+            {isPending ? 'Logging in...' : label}
+          </ButtonCustom>
           <ButtonCustom
             color="grey"
             radius="sm"

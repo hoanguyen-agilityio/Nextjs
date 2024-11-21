@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Add a new product to your inventory by filling out the form below.',
 };
 
-const AddProduct = () => {
+const AddPage = () => {
   return (
     <section className="pb-[52px] pl-7 pr-[50px] pt-5">
       <div className="flex justify-between items-center mb-l">
@@ -18,7 +18,7 @@ const AddProduct = () => {
           <ButtonCustom
             color="default"
             radius="sm"
-            className="mr-5 h-auto gap-6"
+            className="mr-5 h-auto gap-6 cursor-not-allowed"
             size="xs"
             startContent={<RightArrowUp width="14px" height="13px" />}
           >
@@ -27,7 +27,7 @@ const AddProduct = () => {
           <ButtonCustom
             color="dark"
             radius="sm"
-            className="p-4 h-auto gap-4 text-xsm font-semibold text-white dark:text-black-900"
+            className="p-4 h-auto gap-4 text-xsm font-semibold text-white dark:text-black-900 cursor-not-allowed"
             startContent={
               <NewCustomerIcon width="26px" height="26px" fill="white" />
             }
@@ -41,4 +41,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default AddPage;

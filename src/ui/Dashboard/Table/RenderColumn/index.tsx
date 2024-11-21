@@ -2,7 +2,6 @@
 
 // Third party
 import { getKeyValue, Image, TableCell } from '@nextui-org/react';
-import { useRouter } from 'next/navigation';
 
 // Constants
 import { ROUTERS } from '@/constants';
@@ -14,17 +13,12 @@ import { TableRowCustomProps } from '@/types';
 import { ButtonCustom } from '@/components';
 import DropdownIcon from '../../Dropdown';
 import { CheckedIcon } from '@/icons';
+import Link from 'next/link';
 
 const RenderColumn = (
   columnKey: string,
   { item, index, currentPage, itemsPerPage }: TableRowCustomProps,
 ) => {
-  const router = useRouter();
-
-  const handleNavigation = (id: string) => {
-    router.push(`${ROUTERS.DETAIL}/${id}`);
-  };
-
   switch (columnKey) {
     case 'no':
       return (
@@ -76,15 +70,16 @@ const RenderColumn = (
     case 'details':
       return (
         <TableCell>
-          <ButtonCustom
-            color="default"
-            size="md"
-            radius="sm"
-            className="text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
-            onClick={() => handleNavigation(item.id ?? 'default-id')}
-          >
-            Details
-          </ButtonCustom>
+          <Link href={`${ROUTERS.DETAIL}/${item.id}`}>
+            <ButtonCustom
+              color="default"
+              size="md"
+              radius="sm"
+              className="text-sm font-semibold text-ratio-100 dark:text-blue-500 border-1 border-translucent-100 min-w-0 h-auto"
+            >
+              Details
+            </ButtonCustom>
+          </Link>
         </TableCell>
       );
     case 'dropdown':

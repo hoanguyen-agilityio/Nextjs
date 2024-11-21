@@ -27,7 +27,7 @@ exports[`Pagination Component render pagination 1`] = `
       Previous
     </button>
     <span
-      class="text-grayBlue-400 font-semibold"
+      class="text-ratio-200 dark:text-grayBlue-400 font-semibold"
     >
       Page 
       1

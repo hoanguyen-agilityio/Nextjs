@@ -5,7 +5,9 @@ export const authConfig = {
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
-      const isAuthPage = nextUrl.pathname === `/${ROUTERS.LOGIN}`;
+      const isAuthPage =
+        nextUrl.pathname === `/${ROUTERS.LOGIN}` ||
+        nextUrl.pathname === `/${ROUTERS.SIGN_UP}`;
 
       if (isLoggedIn && isAuthPage) {
         // Redirect to the dashboard if logged in and trying to access an auth page

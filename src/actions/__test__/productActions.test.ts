@@ -34,7 +34,7 @@ describe('productActions', () => {
   });
 
   describe('getDataProducts', () => {
-    it('should fetch products successfully with search term', async () => {
+    test('should fetch products successfully with search term', async () => {
       const mockProducts = [{ id: '1', name: 'Product 1' }];
       (APIs.get as jest.Mock).mockResolvedValue(mockProducts);
 
@@ -43,7 +43,7 @@ describe('productActions', () => {
       expect(result).toEqual(mockProducts);
     });
 
-    it('should fetch products successfully without search term', async () => {
+    test('should fetch products successfully without search term', async () => {
       const mockProducts = [{ id: '1', name: 'Product 1' }];
       (APIs.get as jest.Mock).mockResolvedValue(mockProducts);
 
@@ -52,7 +52,7 @@ describe('productActions', () => {
       expect(result).toEqual(mockProducts);
     });
 
-    it('should return null on API error', async () => {
+    test('should return null on API error', async () => {
       (APIs.get as jest.Mock).mockRejectedValue(new Error('API error'));
 
       const result = await getDataProducts('example');
@@ -62,13 +62,13 @@ describe('productActions', () => {
   });
 
   describe('handleAddProduct', () => {
-    it('should call APIs.post with the correct arguments', async () => {
+    test('should call APIs.post with the correct arguments', async () => {
       await handleAddProduct(mockProduct);
 
       expect(APIs.post).toHaveBeenCalledWith('', mockProduct);
     });
 
-    it('should handle errors gracefully', async () => {
+    test('should handle errors gracefully', async () => {
       (APIs.post as jest.Mock).mockRejectedValue(new Error('API error'));
 
       await handleAddProduct(mockProduct);
@@ -77,13 +77,13 @@ describe('productActions', () => {
   });
 
   describe('handleEditProduct', () => {
-    it('should call APIs.put with the correct arguments', async () => {
+    test('should call APIs.put with the correct arguments', async () => {
       await handleEditProduct('1', mockProduct);
 
       expect(APIs.put).toHaveBeenCalledWith('/1', mockProduct);
     });
 
-    it('should handle errors gracefully', async () => {
+    test('should handle errors gracefully', async () => {
       (APIs.put as jest.Mock).mockRejectedValue(new Error('API error'));
 
       await handleEditProduct('1', mockProduct);
@@ -92,13 +92,13 @@ describe('productActions', () => {
   });
 
   describe('handleDeleteProduct', () => {
-    it('should call APIs.delete with the correct arguments', async () => {
+    test('should call APIs.delete with the correct arguments', async () => {
       await handleDeleteProduct('1');
 
       expect(APIs.delete).toHaveBeenCalledWith('/1');
     });
 
-    it('should handle errors gracefully', async () => {
+    test('should handle errors gracefully', async () => {
       (APIs.delete as jest.Mock).mockRejectedValue(new Error('API error'));
 
       const result = await handleDeleteProduct('1');
