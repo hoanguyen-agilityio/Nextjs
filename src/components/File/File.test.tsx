@@ -20,11 +20,11 @@ describe('File component', () => {
     render(<File onFilesChange={mockOnFilesChange} mode="add" />);
 
     expect(
-      screen.getByText(/Drop your files here, or click to browse./i),
+      screen.getByText(
+        /Drop your files here, or click to browse. Unlimited files, up to/i,
+      ),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(/Unlimited files, up to 5 GB./i),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/5GB./i)).toBeInTheDocument();
   });
 
   test('should not render file upload area in detail mode', () => {

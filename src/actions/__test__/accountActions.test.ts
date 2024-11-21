@@ -63,7 +63,7 @@ describe('Account Actions', () => {
         redirect: false,
       });
       expect(result).toEqual({
-        error: expect.stringContaining('Failed to Sign In:'),
+        error: 'Incorrect username or password',
       });
     });
   });
