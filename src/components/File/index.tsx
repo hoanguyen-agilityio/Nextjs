@@ -3,9 +3,13 @@
 // Third party
 import { useRef, useState } from 'react';
 
+// Constants
+import { MESSAGE } from '@/constants';
+
 // Components
 import { ButtonCustom, InputCustom } from '@/components';
 import { FileIcon } from '@/icons';
+import clsx from 'clsx';
 
 interface FileUploaderProps {
   onFilesChange: (files: string[]) => void;
@@ -29,6 +33,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
   const [url, setUrl] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const updateFiles = (
     newFiles: { src: string; name: string; size: number }[],
@@ -47,7 +52,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
         totalSize += file.size;
         return true;
       }
-      alert('File size exceeds the maximum limit of 5GB');
+      setErrorMessage(MESSAGE.FILE_OVERLOAD);
       return false;
     });
 
@@ -57,6 +62,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
       size: file.size,
     }));
     updateFiles(newFiles);
+    setShowModal(false);
   };
 
   const handleUrlSubmit = () => {
@@ -72,6 +78,8 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
     setFiles(updatedFiles);
     onFilesChange(updatedFiles.map((file) => file.src));
     URL.revokeObjectURL(files[index].src); // Clean up object URL
+    setErrorMessage(null);
+    setShowModal(false);
   };
 
   return (
@@ -95,8 +103,8 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
         >
           <FileIcon width="60px" height="60px" />
           <p className="text-center font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
-            Drop your files here, or click to browse. Unlimited files, up to 5
-            GB.
+            Drop your files here, or click to browse. Unlimited files, up to
+            5GB.
           </p>
           <InputCustom
             type="file"
@@ -134,9 +142,14 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
         ))}
       </div>
 
-      <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3">
-        Upload an unlimited number of files to your product. Your customers will
-        be given access to them after purchase.
+      <p
+        className={clsx(
+          'font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3',
+          { 'text-red-500': errorMessage },
+        )}
+      >
+        {errorMessage ||
+          'Upload an unlimited number of files to your product. Your customers will be given access to them after purchase.'}
       </p>
 
       {showModal && (
@@ -172,17 +185,21 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
             <div className="flex justify-end gap-3 mt-2">
               <ButtonCustom
                 type="button"
-                color="default"
-                onClick={() => setShowModal(false)}
+                color="primary"
+                onClick={handleUrlSubmit}
+                className={clsx('rounded-md px-4 py-2', {
+                  'cursor-not-allowed opacity-50': !url.trim(),
+                })}
+                disabled={!url.trim()}
               >
-                Cancel
+                Add
               </ButtonCustom>
               <ButtonCustom
                 type="button"
-                color="primary"
-                onClick={handleUrlSubmit}
+                onClick={() => setShowModal(false)}
+                className="bg-gray-300 text-black rounded-md px-4 py-2"
               >
-                Add
+                Cancel
               </ButtonCustom>
             </div>
           </div>

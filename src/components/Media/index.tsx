@@ -193,7 +193,11 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
             <div className="flex justify-end">
               <ButtonCustom
                 onClick={handleUrlSubmit}
-                className="bg-blue-500 text-white rounded-md px-4 py-2 mr-2"
+                color="primary"
+                className={clsx('rounded-md px-4 py-2 mr-2', {
+                  'cursor-not-allowed opacity-50': !url.trim(),
+                })}
+                disabled={!url.trim()}
               >
                 Add
               </ButtonCustom>
