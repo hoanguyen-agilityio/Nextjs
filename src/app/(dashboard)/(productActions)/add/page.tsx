@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     'Add a new product to your inventory by filling out the form below.',
 };
 
-const AddProduct = () => {
+const AddPage = () => {
   return (
     <section className="pb-[52px] pl-7 pr-[50px] pt-5">
       <div className="flex justify-between items-center mb-l">
@@ -41,4 +41,4 @@ const AddProduct = () => {
   );
 };
 
-export default AddProduct;
+export default AddPage;
