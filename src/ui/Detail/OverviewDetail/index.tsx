@@ -4,9 +4,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 
-// Constants
-import { ROUTERS } from '@/constants';
-
 // Models
 import { IProducts } from '@/types';
 
@@ -36,7 +33,7 @@ const OverviewDetail = () => {
         data={data}
         modePage="detail"
         label="Edit Product"
-        href={`${ROUTERS.EDIT_PRODUCT}/${id}`}
+        id={id as string}
       />
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}

@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { useEffect, useState } from 'react';
 
 // Constants
-import { MESSAGE, ROUTERS } from '@/constants';
+import { MESSAGE } from '@/constants';
 
 // Models
 import { IProducts } from '@/types';
@@ -44,7 +44,6 @@ const OverviewEditProduct = () => {
         modePage="edit"
         label="Publish Product"
         onSubmit={handleEditProductSubmit}
-        href={ROUTERS.EMPTY}
       />
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}

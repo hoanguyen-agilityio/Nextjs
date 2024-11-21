@@ -18,5 +18,5 @@ export interface FormProps {
   modePage: 'add' | 'edit' | 'detail';
   label: string | ReactNode;
   onSubmit?: (formData: IProducts) => void;
-  href: string;
+  id?: string;
 }
