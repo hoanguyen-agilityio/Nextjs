@@ -1,0 +1,942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
+<div>
+  <div
+    class="flex gap-8"
+  >
+    <div
+      class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9"
+      tabindex="-1"
+    >
+      <form
+        class="w-full"
+      >
+        <div>
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Name"
+          >
+            Name *
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Name"
+                    name="name"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Give your product a short and clear name. 30 characters is recommended.
+          </p>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Description"
+          >
+            Description
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Description"
+                    name="status"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Give your product a short and clear description.
+          </p>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Price"
+          >
+            Price *
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-filled="true"
+            data-filled-within="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <div
+                    class="pointer-events-none flex items-center"
+                  >
+                    <span
+                      class="font-semibold text-xsm"
+                    >
+                      $
+                    </span>
+                  </div>
+                  <input
+                    aria-label="0.00"
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm text-right"
+                    data-has-start-content="true"
+                    data-slot="input"
+                    id="Input Price"
+                    name="total"
+                    placeholder="0.00"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Give your product a final price.
+          </p>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input View"
+          >
+            View
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input View"
+                    name="views"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Sales"
+          >
+            Sales
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Sales"
+                    name="sales"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Conversion"
+          >
+            Conversion
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Conversion"
+                    name="conversion"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-3xl"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white"
+            for="Media"
+          >
+            Media
+          </label>
+          <div
+            class="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-ratio-200 dark:text-grayBlue-400 cursor-pointer gap-3 mt-3"
+          >
+            <svg
+              fill="none"
+              height="60px"
+              viewBox="0 0 61 60"
+              width="60px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="30.0996"
+                cy="30"
+                fill="#99B2C6"
+                r="30"
+              />
+              <path
+                class="fill-white dark:fill-black-900"
+                clip-rule="evenodd"
+                d="M26.7216 40.5996C21.1996 40.5996 18.8406 38.2296 18.8406 32.6836V26.5566C18.8406 21.0106 21.2006 18.6416 26.7216 18.6416H32.8215C38.3435 18.6416 40.7025 21.0106 40.7025 26.5566V31.4306C40.7172 31.5167 40.7172 31.6046 40.7025 31.6906V32.6836C40.7025 38.2296 38.3435 40.5996 32.8215 40.5996H26.7216ZM26.7216 39.0676H32.8215C37.5095 39.0676 39.1776 37.3926 39.1776 32.6837V31.9056L37.7955 30.7136C37.2455 30.2743 36.4646 30.2743 35.9146 30.7136L31.6846 34.3596C30.5638 35.2887 28.9404 35.2887 27.8196 34.3596L27.4836 34.0596C26.976 33.6567 26.2675 33.6237 25.7245 33.9777L21.2656 36.9836C22.1995 38.4756 23.9235 39.0726 26.7216 39.0726V39.0676ZM20.3655 26.5566V32.6837C20.3453 33.6467 20.446 34.6086 20.6656 35.5466L24.8806 32.7047C25.9948 31.9654 27.4619 32.0442 28.4905 32.8986L28.8265 33.1986C29.3729 33.6378 30.1512 33.6378 30.6975 33.1986L34.9275 29.5526C36.048 28.6227 37.6719 28.6227 38.7925 29.5526L39.1775 29.8846V26.5596C39.1775 21.8516 37.5095 20.1766 32.8215 20.1766H26.7215C22.0336 20.1786 20.3666 21.8536 20.3666 26.5616L20.3655 26.5566ZM23.9255 25.5356C23.9305 23.9904 25.1863 22.7414 26.7314 22.7447C28.2767 22.748 29.5271 24.0024 29.5255 25.5477C29.5238 27.0929 28.2707 28.3447 26.7255 28.3447C25.982 28.3447 25.269 28.049 24.7438 27.5228C24.2186 26.9966 23.9242 26.2831 23.9255 25.5396V25.5356ZM25.4515 25.5356C25.4543 26.2369 26.0246 26.8035 26.7259 26.8016C27.4272 26.7998 27.9944 26.2303 27.9935 25.5289C27.9926 24.8276 27.4238 24.2596 26.7225 24.2596C26.3842 24.2607 26.0602 24.3962 25.8218 24.6363C25.5834 24.8763 25.4502 25.2013 25.4515 25.5397V25.5356Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p
+              class="text-center font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+            >
+              Drop your images here, or click to browse 1600 x 1200 (4:3) 
+              <br />
+              recommended, up to 10MB each.
+            </p>
+            <div
+              class="group flex-col data-[hidden=true]:hidden w-full relative justify-end hidden"
+              data-filled="true"
+              data-filled-within="true"
+              data-has-value="true"
+              data-slot="base"
+            >
+              <div
+                class="flex flex-col w-xl h-14"
+                data-slot="main-wrapper"
+              >
+                <div
+                  class="relative tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 py-4 px-6 w-full rounded-lg"
+                  data-slot="input-wrapper"
+                  style="cursor: text;"
+                >
+                  <div
+                    class="w-full items-center h-full box-border flex"
+                    data-slot="inner-wrapper"
+                  >
+                    <input
+                      accept="image/*"
+                      aria-label=" "
+                      class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: text-ratio-700 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+                      data-slot="input"
+                      id="react-aria-:ru:"
+                      multiple=""
+                      type="file"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="image-previews mt-4 grid grid-cols-2 gap-2"
+          />
+          <p
+            class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3"
+          >
+            Add up to 10 images to your product. Used to represent your product during checkout, in email, social sharing, and more.
+          </p>
+        </div>
+        <div
+          class="mt-11"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white"
+            for="Files"
+          >
+            Files
+          </label>
+          <div
+            class="upload-area border-2 border-dashed border-grayBlue-400 rounded-md p-8 flex flex-col items-center justify-center text-ratio-200 dark:text-grayBlue-400 cursor-pointer gap-3 mt-3"
+          >
+            <svg
+              fill="none"
+              height="60px"
+              viewBox="0 0 61 60"
+              width="60px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="30.0996"
+                cy="30"
+                fill="#99B2C6"
+                r="30"
+              />
+              <path
+                class="fill-white dark:fill-black-900"
+                clip-rule="evenodd"
+                d="M24.1196 38.9923C21.4413 39.0835 19.1927 36.9932 19.0886 34.3153V29.4484C19.1927 26.7706 21.4415 24.6805 24.1196 24.7723H25.1196C25.4769 24.7723 25.807 24.9629 25.9857 25.2723C26.1643 25.5818 26.1643 25.9629 25.9857 26.2723C25.807 26.5818 25.4769 26.7723 25.1196 26.7723H24.1196C22.5848 26.7194 21.2958 27.9167 21.2357 29.4513V34.3182C21.2958 35.853 22.5846 37.0507 24.1196 36.9984L36.0717 36.9983C37.6067 37.0507 38.8955 35.853 38.9557 34.3184L38.9556 29.4413C38.896 27.9128 37.6124 26.72 36.0837 26.7723H35.0716C34.7144 26.7723 34.3842 26.5818 34.2056 26.2723C34.0269 25.9629 34.0269 25.5818 34.2056 25.2723C34.3842 24.9629 34.7144 24.7723 35.0716 24.7723H36.0836C38.7559 24.6818 40.999 26.7676 41.1027 29.4393L41.1026 34.3163C40.9985 36.9941 38.7499 39.0845 36.0716 38.9933L24.1196 38.9923ZM29.0197 32.0063V21.4064L27.7197 22.6174C27.2838 22.995 26.6367 22.995 26.2007 22.6174C26.001 22.4375 25.887 22.1813 25.887 21.9125C25.887 21.6437 26.001 21.3875 26.2007 21.2074L29.3307 18.2844C29.7729 17.9221 30.4094 17.9221 30.8517 18.2844L33.9827 21.2074C34.1821 21.3876 34.2959 21.6438 34.2959 21.9125C34.2959 22.1812 34.1821 22.4374 33.9827 22.6174C33.551 23.0072 32.8943 23.0072 32.4626 22.6174L31.1627 21.4064V32.0063H29.0197Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p
+              class="text-center font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+            >
+              Drop your files here, or click to browse. Unlimited files, up to 5GB.
+            </p>
+            <div
+              class="group flex-col data-[hidden=true]:hidden w-full relative justify-end hidden"
+              data-filled="true"
+              data-filled-within="true"
+              data-has-value="true"
+              data-slot="base"
+            >
+              <div
+                class="flex flex-col w-xl h-14"
+                data-slot="main-wrapper"
+              >
+                <div
+                  class="relative tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 py-4 px-6 w-full rounded-lg"
+                  data-slot="input-wrapper"
+                  style="cursor: text;"
+                >
+                  <div
+                    class="w-full items-center h-full box-border flex"
+                    data-slot="inner-wrapper"
+                  >
+                    <input
+                      accept=".pdf,.doc,.docx,.fdf,.txt"
+                      aria-label=" "
+                      class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: text-ratio-700 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+                      data-slot="input"
+                      id="react-aria-:r13:"
+                      multiple=""
+                      type="file"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="file-previews mt-4"
+          />
+          <p
+            class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3"
+          >
+            Upload an unlimited number of files to your product. Your customers will be given access to them after purchase.
+          </p>
+        </div>
+        <div
+          class="flex justify-between mt-9"
+        >
+          <div>
+            <span
+              class="font-semibold text-lg text-black-900 dark:text-white"
+            >
+              Generate License Keys
+            </span>
+            <p
+              class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+            >
+              Issue each customer a unique license key after purchase
+            </p>
+          </div>
+          <label
+            aria-label="Generate License Keys"
+            class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
+          >
+            <span
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                aria-labelledby=":r18:"
+                role="switch"
+                type="checkbox"
+                value=""
+              />
+            </span>
+            <span
+              aria-hidden="true"
+              class="px-1 relative inline-flex items-center justify-start flex-shrink-0 overflow-hidden bg-default-200 rounded-full outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:bg-primary group-data-[selected=true]:text-primary-foreground w-12 h-7 mr-2 rtl:ml-2 rtl:mr-[unset] transition-background"
+            >
+              <span
+                class="z-10 flex items-center justify-center bg-white shadow-small rounded-full origin-right w-5 h-5 text-small group-data-[selected=true]:ml-5 rtl:group-data-[selected=true]:ml-0 rtl:group-data-[selected=true]:mr-5 transition-all group-data-[pressed=true]:w-6 group-data-[selected]:group-data-[pressed]:ml-4"
+              />
+            </span>
+          </label>
+        </div>
+        <div
+          class="flex justify-between mt-[60px]"
+        >
+          <div>
+            <span
+              class="font-semibold text-lg text-black-900 dark:text-white"
+            >
+              Redirect customers after purchase?
+            </span>
+            <p
+              class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+            >
+              Redirect customers to a custom URL after making a purchase
+            </p>
+          </div>
+          <label
+            aria-label="Redirect customers after purchase?"
+            class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
+          >
+            <span
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                aria-labelledby=":r19:"
+                role="switch"
+                type="checkbox"
+                value=""
+              />
+            </span>
+            <span
+              aria-hidden="true"
+              class="px-1 relative inline-flex items-center justify-start flex-shrink-0 overflow-hidden bg-default-200 rounded-full outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:bg-primary group-data-[selected=true]:text-primary-foreground w-12 h-7 mr-2 rtl:ml-2 rtl:mr-[unset] transition-background"
+            >
+              <span
+                class="z-10 flex items-center justify-center bg-white shadow-small rounded-full origin-right w-5 h-5 text-small group-data-[selected=true]:ml-5 rtl:group-data-[selected=true]:ml-0 rtl:group-data-[selected=true]:mr-5 transition-all group-data-[pressed=true]:w-6 group-data-[selected]:group-data-[pressed]:ml-4"
+              />
+            </span>
+          </label>
+        </div>
+        <div
+          class="flex justify-between mt-[60px]"
+        >
+          <div>
+            <span
+              class="font-semibold text-lg text-black-900 dark:text-white"
+            >
+              Display product on shop page?
+            </span>
+            <p
+              class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+            >
+              Show this product on your shop page
+            </p>
+          </div>
+          <label
+            aria-label="Display product on shop page?"
+            class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
+            data-selected="true"
+          >
+            <span
+              style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+            >
+              <input
+                aria-labelledby=":r1a:"
+                checked=""
+                role="switch"
+                type="checkbox"
+                value=""
+              />
+            </span>
+            <span
+              aria-hidden="true"
+              class="px-1 relative inline-flex items-center justify-start flex-shrink-0 overflow-hidden bg-default-200 rounded-full outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:bg-primary group-data-[selected=true]:text-primary-foreground w-12 h-7 mr-2 rtl:ml-2 rtl:mr-[unset] transition-background"
+            >
+              <span
+                class="z-10 flex items-center justify-center bg-white shadow-small rounded-full origin-right w-5 h-5 text-small group-data-[selected=true]:ml-5 rtl:group-data-[selected=true]:ml-0 rtl:group-data-[selected=true]:mr-5 transition-all group-data-[pressed=true]:w-6 group-data-[selected]:group-data-[pressed]:ml-4"
+              />
+            </span>
+          </label>
+        </div>
+        <div
+          class="mt-[60px]"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Download Button"
+          >
+            Download Button
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Download Button"
+                    name="download"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Customize the button text in the email receipt.
+          </p>
+        </div>
+        <div
+          class="mt-[34px]"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Product Link"
+          >
+            Product Link
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-filled="true"
+            data-filled-within="true"
+            data-has-value="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm px-3 gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 pr-4 pl-24 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <div
+                    class="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center"
+                  >
+                    <p
+                      class="font-semibold text-xsm text-ratio-200 dark:text-grayBlue-400"
+                    >
+                      https://
+                    </p>
+                  </div>
+                  <input
+                    aria-label=" "
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-has-start-content="true"
+                    data-slot="input"
+                    id="Input Product Link"
+                    name="link"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Customize the button link in the email receipt.
+          </p>
+        </div>
+        <div
+          class="mt-[34px]"
+        >
+          <label
+            class="font-semibold text-lg text-black-900 dark:text-white undefined"
+            for="Input Personal Note"
+          >
+            Personal Note
+          </label>
+          <div
+            class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+            data-filled="true"
+            data-filled-within="true"
+            data-slot="base"
+          >
+            <div
+              class="flex flex-col w-full h-14"
+              data-slot="main-wrapper"
+            >
+              <div
+                class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+                data-slot="input-wrapper"
+                style="cursor: text;"
+              >
+                <div
+                  class="inline-flex w-full items-center h-full box-border"
+                  data-slot="inner-wrapper"
+                >
+                  <input
+                    aria-label="Thank you for purchasing my product!"
+                    class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                    data-slot="input"
+                    id="Input Personal Note"
+                    name="personal"
+                    placeholder="Thank you for purchasing my product!"
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-xsm mt-4 font-normal text-ratio-200 dark:text-grayBlue-400"
+          >
+            Add a personalized thank you note to the end of email receipts.
+          </p>
+        </div>
+        <label
+          class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2 select-none mt-8"
+        >
+          <span
+            style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+          >
+            <input
+              aria-label="I agree with Terms and Policy"
+              aria-labelledby=":r1q:"
+              type="checkbox"
+              value=""
+            />
+          </span>
+          <span
+            aria-hidden="true"
+            class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:border-2 before:box-border before:border-default after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:bg-primary after:text-primary-foreground text-primary-foreground w-5 h-5 mr-2 rtl:ml-2 rtl:mr-[unset] rounded-[calc(theme(borderRadius.medium)*0.6)] before:rounded-[calc(theme(borderRadius.medium)*0.6)] after:rounded-[calc(theme(borderRadius.medium)*0.6)] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none"
+              role="presentation"
+              viewBox="0 0 17 18"
+            >
+              <polyline
+                fill="none"
+                points="1 9 7 14 15 4"
+                stroke="currentColor"
+                stroke-dasharray="22"
+                stroke-dashoffset="66"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </span>
+          <span
+            class="relative select-none text-medium transition-colors-opacity before:transition-width motion-reduce:transition-none font-normal text-ratio-200 dark:text-grayBlue-400"
+            id=":r1q:"
+          >
+            I agree with Terms and Policy
+          </span>
+        </label>
+        <div
+          class="flex gap-5 mt-8"
+        >
+          <button
+            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 text-white dark:bg-white dark:text-black-900 rounded-lg h-auto py-4 px-[102px] font-semibold text-base"
+            type="submit"
+          >
+            Publish Product
+          </button>
+          <button
+            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-lightGray-100 text-white dark:bg-gray-700 dark:text-dark-900 rounded-lg h-auto py-4 px-11 font-semibold text-base cursor-not-allowed"
+            disabled=""
+            type="submit"
+          >
+            Save as Draft
+          </button>
+        </div>
+      </form>
+      <a
+        class="h-10"
+        href="/"
+      >
+        <button
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white border-translucent-700 dark:border-gray-700 dark:bg-dark-900 dark:text-white py-4 pl-5 pr-4 text-xsm font-semibold border rounded-lg gap-5"
+          type="button"
+        >
+          <svg
+            fill="none"
+            height="18px"
+            viewBox="0 0 8 11"
+            width="7px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="fill-black-900 dark:fill-white"
+              clip-rule="evenodd"
+              d="M0.854614 6.03102C0.579834 5.84499 0.415283 5.5348 0.415283 5.20302C0.415283 4.87123 0.579834 4.56105 0.854614 4.37502L6.24365 0.375015C6.55017 0.166779 6.94666 0.145065 7.27405 0.318604C7.60144 0.492142 7.80603 0.832489 7.80566 1.20302V9.20302C7.80603 9.57358 7.60144 9.91391 7.27405 10.0874C6.94666 10.261 6.55005 10.2393 6.24365 10.031L0.854614 6.03102Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          Back
+        </button>
+      </a>
+    </div>
+    <div
+      class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[450px]"
+      tabindex="-1"
+    >
+      <div
+        class="p-3 z-10 w-full items-center shrink-0 overflow-inherit color-inherit subpixel-antialiased rounded-t-large flex justify-between"
+      >
+        <span
+          class="font-bold text-2xl dark:text-white text-black-900"
+        >
+          Product Preview
+        </span>
+        <svg
+          class="cursor-not-allowed"
+          fill="none"
+          height="24px"
+          viewBox="0 0 6 24"
+          width="5px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="fill-lightGray-100 dark:fill-gray-700"
+            clip-rule="evenodd"
+            d="M0.0996094 21.5V21.358C0.0996094 20.4648 0.57605 19.6395 1.34961 19.1929C2.12317 18.7464 3.07605 18.7464 3.84961 19.1929C4.62317 19.6395 5.09961 20.4648 5.09961 21.358V21.5C5.09961 22.3932 4.62317 23.2185 3.84961 23.6651C3.07605 24.1117 2.12317 24.1117 1.34961 23.6651C0.57605 23.2185 0.0996094 22.3932 0.0996094 21.5ZM0.0996094 12.072V11.929C0.0996094 11.0358 0.57605 10.2105 1.34961 9.76394C2.12317 9.31736 3.07605 9.31736 3.84961 9.76394C4.62317 10.2105 5.09961 11.0358 5.09961 11.929V12.072C5.09961 12.9652 4.62317 13.7905 3.84961 14.2371C3.07605 14.6837 2.12317 14.6837 1.34961 14.2371C0.57605 13.7905 0.0996094 12.9652 0.0996094 12.072ZM0.0996094 2.64402V2.5C0.0996094 1.60685 0.57605 0.781528 1.34961 0.334934C2.12317 -0.111645 3.07605 -0.111645 3.84961 0.334934C4.62317 0.781528 5.09961 1.60685 5.09961 2.5V2.64301C5.09961 3.53617 4.62317 4.36149 3.84961 4.80808C3.07605 5.25466 2.12317 5.25466 1.34961 4.80808C0.57605 4.36149 0.0996094 3.53617 0.0996094 2.64301V2.64402Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased"
+      >
+        <div
+          class="relative shadow-black/5 shadow-none rounded-large"
+          style="background-image: url(https://picsum.photos/id/237/200/300); max-width: 493px;"
+        >
+           
+          <img
+            alt="Image default"
+            class="relative z-10 opacity-0 shadow-black/5 data-[loaded=true]:opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
+            height="240"
+            loading="eager"
+            src="https://picsum.photos/200/300"
+            style="height: 240px;"
+            width="493"
+          />
+        </div>
+      </div>
+      <div
+        class="p-3 h-auto w-full items-center overflow-hidden color-inherit subpixel-antialiased rounded-b-large flex justify-between"
+      >
+        <div
+          class="flex flex-col gap-5"
+        >
+          <div
+            class="flex gap-[10px]"
+          >
+            <svg
+              fill="none"
+              height="17px"
+              viewBox="0 0 18 17"
+              width="17px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M0.0996094 8.5C0.0996094 3.8056 3.90515 0 8.59961 0C13.2941 0 17.0996 3.80554 17.0996 8.49994C17.0996 13.1944 13.2941 17 8.59961 17C3.90515 17 0.0996094 13.1944 0.0996094 8.5ZM1.64465 8.5C1.64368 11.3102 3.33704 13.8465 5.93518 14.9238C8.53345 16.001 11.5247 15.407 13.5142 13.4189C15.5037 11.4308 16.0996 8.43994 15.0242 5.841C13.9487 3.24213 11.4137 1.547 8.60107 1.54602C6.75635 1.54565 4.98718 2.27814 3.6825 3.58228C2.37793 4.88635 1.6449 6.6554 1.64465 8.5ZM10.3706 11.365L8.05261 9.047C7.90771 8.90228 7.82642 8.70575 7.82666 8.50098V3.86499C7.81665 3.58252 7.96167 3.31714 8.20483 3.17297C8.44788 3.02881 8.75037 3.02881 8.99341 3.17297C9.23657 3.31714 9.38159 3.58252 9.3717 3.86499V8.18097L11.4637 10.2729C11.6648 10.467 11.7455 10.7545 11.6747 11.0248C11.604 11.2951 11.3928 11.5062 11.1226 11.5769C10.8523 11.6476 10.5648 11.567 10.3707 11.366L10.3706 11.365Z"
+                fill="#809FB8"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p
+              class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+            >
+              9 Jan 2023 9:43 PM
+            </p>
+          </div>
+          <div
+            class="flex gap-[10px]"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              viewBox="0 0 115 16"
+              width="114px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="dark:fill-white fill-black-900"
+                clip-rule="evenodd"
+                d="M6.85876 0.560181L5.00879 4.6922L0.869751 5.35718C0.516846 5.44635 0.237305 5.71533 0.134644 6.06451C0.0319824 6.4137 0.121338 6.7912 0.369751 7.05719L3.36377 10.2722L2.65576 14.8142C2.56897 15.1652 2.69409 15.5345 2.97632 15.7605C3.25854 15.9865 3.64636 16.0277 3.96973 15.8662L7.66968 13.7232L11.3696 15.8662C11.6931 16.0267 12.0803 15.9851 12.3622 15.7594C12.6442 15.5337 12.7695 15.165 12.6836 14.8142L11.9756 10.2722L14.9696 7.05719C15.2186 6.79144 15.3085 6.4137 15.2057 6.06427C15.1029 5.71478 14.8229 5.44586 14.4696 5.35718L10.3306 4.6922L8.48059 0.560181C8.349 0.227417 8.02747 0.00878906 7.66968 0.00878906C7.31189 0.00878906 6.99036 0.227417 6.85876 0.560181Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="dark:fill-white fill-black-900"
+                clip-rule="evenodd"
+                d="M31.5686 0.560608L29.7186 4.69263L25.5807 5.3576C25.2278 5.44678 24.9482 5.71576 24.8456 6.06494C24.7429 6.41412 24.8323 6.79163 25.0807 7.05762L28.0747 10.2726L27.3667 14.8146C27.2799 15.1656 27.405 15.535 27.6873 15.7609C27.9695 15.9869 28.3573 16.0281 28.6807 15.8666L32.3806 13.7236L36.0806 15.8666C36.4041 16.0272 36.7913 15.9855 37.0731 15.7598C37.3551 15.5341 37.4805 15.1654 37.3945 14.8146L36.6865 10.2726L39.6805 7.05762C39.9296 6.79187 40.0194 6.41412 39.9166 6.0647C39.8138 5.71521 39.5338 5.44629 39.1805 5.3576L35.0415 4.69263L33.1915 0.560608C33.0604 0.227112 32.7385 0.0078125 32.3801 0.0078125C32.0217 0.0078125 31.6998 0.227112 31.5686 0.560608Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="dark:fill-white fill-black-900"
+                clip-rule="evenodd"
+                d="M56.2797 0.560181L54.4297 4.6922L50.2906 5.35718C49.9377 5.44635 49.6582 5.71533 49.5555 6.06451C49.4529 6.4137 49.5422 6.7912 49.7906 7.05719L52.7847 10.2722L52.0767 14.8142C51.9899 15.1652 52.115 15.5345 52.3972 15.7605C52.6794 15.9865 53.0673 16.0277 53.3906 15.8662L57.0906 13.7232L60.7905 15.8662C61.114 16.0267 61.5012 15.9851 61.7831 15.7594C62.0651 15.5337 62.1904 15.165 62.1045 14.8142L61.3965 10.2722L64.3905 7.05719C64.6389 6.7912 64.7283 6.4137 64.6256 6.06451C64.5229 5.71533 64.2434 5.44635 63.8905 5.35718L59.7515 4.6922L57.9015 0.560181C57.7699 0.227417 57.4484 0.00878906 57.0906 0.00878906C56.7328 0.00878906 56.4113 0.227417 56.2797 0.560181Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="dark:fill-white fill-black-900"
+                clip-rule="evenodd"
+                d="M80.9896 0.560364L79.1396 4.69238L75.0006 5.35736C74.6477 5.44653 74.3682 5.71552 74.2655 6.0647C74.1628 6.41388 74.2522 6.79138 74.5006 7.05737L77.4946 10.2724L76.7866 14.8144C76.6986 15.1655 76.823 15.5358 77.1051 15.7626C77.3873 15.9893 77.7758 16.031 78.0996 15.8694L81.7996 13.7264L85.4995 15.8694C85.823 16.0299 86.2102 15.9883 86.4921 15.7626C86.774 15.5369 86.8994 15.1682 86.8135 14.8174L86.1055 10.2754L89.0995 7.06036C89.3479 6.79431 89.4373 6.41681 89.3346 6.06763C89.2319 5.71844 88.9524 5.44946 88.5995 5.36029L84.4604 4.69537L82.6105 0.563354C82.4791 0.231018 82.1584 0.0123901 81.801 0.0117188C81.4437 0.0110474 81.1221 0.228516 80.9896 0.560364Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="fill-gray-50 dark:fill-gray-700"
+                clip-rule="evenodd"
+                d="M105.7 0.560608L103.85 4.69263L99.7106 5.3576C99.3577 5.44678 99.0781 5.71576 98.9755 6.06494C98.8728 6.41412 98.9622 6.79163 99.2106 7.05762L102.205 10.2726L101.497 14.8146C101.41 15.1656 101.535 15.535 101.817 15.7609C102.099 15.9869 102.487 16.0281 102.811 15.8666L106.51 13.7236L110.21 15.8666C110.534 16.0272 110.921 15.9855 111.203 15.7598C111.485 15.5341 111.61 15.1654 111.524 14.8146L110.816 10.2726L113.81 7.05762C114.059 6.79163 114.148 6.41412 114.046 6.06494C113.943 5.71576 113.663 5.44678 113.31 5.3576L109.172 4.69263L107.323 0.560608C107.191 0.227112 106.869 0.0078125 106.511 0.0078125C106.153 0.0078125 105.831 0.227112 105.699 0.560608H105.7Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <p
+              class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+            >
+              4.3
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap h-6 text-tiny text-success-foreground bg-green-100 dark:bg-green-200 py-1.5 px-2 rounded-lg"
+        >
+          <span
+            class="flex-1 px-1 text-ratio-900 dark:text-green-400 font-semibold text-base"
+          >
+            $99.99
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
