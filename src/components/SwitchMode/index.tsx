@@ -3,15 +3,26 @@
 // Third party
 import { Switch } from '@nextui-org/react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+
+// Helpers
+import { Theme } from '@/types';
 
 // Components
 import { MoonIcon } from '@/icons';
 
 const SwitchMode = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === Theme.Dark ? Theme.Light : Theme.Dark);
   };
 
   return (
@@ -23,7 +34,7 @@ const SwitchMode = () => {
         </label>
       </div>
       <Switch
-        isSelected={theme === 'dark'}
+        isSelected={theme === Theme.Dark}
         onChange={toggleTheme}
         color="success"
         size="md"
