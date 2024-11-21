@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { useParams } from 'next/navigation';
-import OverviewEditProduct from '.';
+import OverviewDetail from '.';
 
 jest.mock('next/navigation', () => ({
   useParams: jest.fn(),
@@ -10,11 +10,11 @@ jest.mock('next/navigation', () => ({
   }),
 }));
 
-describe('UI OverviewEditProduct', () => {
-  test('renders Overview Edit Product', () => {
+describe('UI OverviewDetail', () => {
+  test('renders Overview Detail', () => {
     (useParams as jest.Mock).mockReturnValue({ id: '1' });
 
-    const { container } = render(<OverviewEditProduct />);
+    const { container } = render(<OverviewDetail />);
     expect(container).toMatchSnapshot();
   });
 });
