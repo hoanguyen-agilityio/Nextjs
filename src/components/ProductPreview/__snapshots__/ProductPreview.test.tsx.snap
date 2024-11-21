@@ -15,7 +15,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
         Product Preview
       </span>
       <svg
-        class="cursor-pointer"
+        class="cursor-not-allowed"
         fill="none"
         height="24px"
         viewBox="0 0 6 24"
@@ -42,7 +42,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
           alt="Product Image"
           class="relative z-10 opacity-0 shadow-black/5 data-[loaded=true]:opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
           height="240"
-          loading="lazy"
+          loading="eager"
           src="https://via.placeholder.com/493x240"
           style="height: 240px;"
           width="493"
@@ -73,7 +73,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
             />
           </svg>
           <p
-            class="text-xsm text-grayBlue-400 font-semibold"
+            class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
           >
             9 Jan 2023 9:43 PM
           </p>
@@ -82,7 +82,6 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
           class="flex gap-[10px]"
         >
           <svg
-            class="cursor-pointer"
             fill="none"
             height="16px"
             viewBox="0 0 115 16"
@@ -121,7 +120,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
             />
           </svg>
           <p
-            class="text-xsm text-grayBlue-400 font-semibold"
+            class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
           >
             4.3
           </p>
@@ -131,9 +130,9 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
         class="relative max-w-fit min-w-min inline-flex items-center justify-between box-border whitespace-nowrap h-6 text-tiny text-success-foreground bg-green-100 dark:bg-green-200 py-1.5 px-2 rounded-lg"
       >
         <span
-          class="flex-1 px-1 text-green-300 dark:text-green-400 font-semibold text-base"
+          class="flex-1 px-1 text-ratio-900 dark:text-green-400 font-semibold text-base"
         >
-          $99.99
+          $$99.99
         </span>
       </div>
     </div>

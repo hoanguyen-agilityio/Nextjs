@@ -24,7 +24,7 @@ exports[`Dark Mode Switch component renders with default type 1`] = `
         />
       </svg>
       <label
-        class="text-lg font-semibold text-grayBlue-400"
+        class="text-lg font-semibold text-ratio-200 dark:text-grayBlue-400"
       >
         Dark mode
       </label>

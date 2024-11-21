@@ -6,6 +6,7 @@ exports[`Header Component render Sidebar 1`] = `
     class="flex justify-between pt-3xl pb-6 pl-5 pr-5xl bg-white dark:bg-dark-900"
   >
     <a
+      aria-label="WunderUI logo"
       href="/"
     >
       <svg
@@ -47,8 +48,8 @@ exports[`Header Component render Sidebar 1`] = `
       >
         <li>
           <a
-            class="text-xl font-semibold text-grayBlue-400"
-            href=""
+            class="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
+            href="#"
           >
             <span>
               Overview
@@ -57,8 +58,8 @@ exports[`Header Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="text-xl font-semibold text-grayBlue-400"
-            href=""
+            class="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
+            href="#"
           >
             <span>
               Projects
@@ -67,8 +68,8 @@ exports[`Header Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="text-xl font-semibold text-grayBlue-400"
-            href=""
+            class="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
+            href="#"
           >
             <span>
               Tasks
@@ -77,8 +78,8 @@ exports[`Header Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="text-xl font-semibold text-grayBlue-400"
-            href=""
+            class="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
+            href="#"
           >
             <span>
               Reports
@@ -87,8 +88,8 @@ exports[`Header Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="text-xl font-semibold text-grayBlue-400"
-            href=""
+            class="text-xl font-semibold text-ratio-200 dark:text-grayBlue-400 cursor-not-allowed"
+            href="#"
           >
             <span>
               Statements

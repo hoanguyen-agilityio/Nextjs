@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { ThemeProvider } from 'next-themes';
 import ButtonCustom from '.';
 
 describe('Button component', () => {
@@ -12,12 +13,19 @@ describe('Button component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('renders the button with custom color variant (primary)', () => {
-    render(<ButtonCustom color="primary">Primary Button</ButtonCustom>);
+  test('renders the button with custom color variant (primary) in dark mode', () => {
+    render(
+      <ThemeProvider attribute="class" defaultTheme="dark">
+        {' '}
+        {/* Add ThemeProvider here */}
+        <ButtonCustom color="primary">Primary Button</ButtonCustom>
+      </ThemeProvider>,
+    );
     const button = screen.getByRole('button', { name: /Primary Button/i });
 
-    expect(button).toHaveClass('bg-blue-500');
-    expect(button).toHaveClass('border-blue-500');
+    // Check if the button has dark mode classes applied
+    expect(button).toHaveClass('dark:bg-blue-500');
+    expect(button).toHaveClass('dark:border-blue-500');
   });
 
   test('renders the disabled button', () => {

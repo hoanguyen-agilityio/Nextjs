@@ -50,7 +50,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
       <ul>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-blue-400 bg-translucent-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-100 bg-translucent-400 dark:text-blue-400"
             href="/"
           >
             <span
@@ -62,7 +62,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="inbox"
           >
             <span
@@ -74,7 +74,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="wallet"
           >
             <span
@@ -86,7 +86,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="newsFeed"
           >
             <span
@@ -98,7 +98,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="analytics"
           >
             <span
@@ -110,7 +110,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="market"
           >
             <span
@@ -122,7 +122,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="archive"
           >
             <span
@@ -134,7 +134,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400 mt-[100px]"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400 mt-[100px]"
             href="profile"
           >
             <span
@@ -146,7 +146,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         </li>
         <li>
           <a
-            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-grayBlue-400"
+            class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
             href="settings"
           >
             <span
@@ -165,7 +165,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
         href="add"
       >
         <button
-          class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-grayBlue-400 font-semibold h-auto gap-4"
+          class="z-0 group relative justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-transparent border-transparent flex items-center text-lg px-0 text-ratio-200 dark:text-grayBlue-400 font-semibold h-auto gap-4"
           type="button"
         >
           <svg
@@ -214,7 +214,7 @@ exports[`Sidebar Component render Sidebar 1`] = `
             />
           </svg>
           <label
-            class="text-lg font-semibold text-grayBlue-400"
+            class="text-lg font-semibold text-ratio-200 dark:text-grayBlue-400"
           >
             Dark mode
           </label>

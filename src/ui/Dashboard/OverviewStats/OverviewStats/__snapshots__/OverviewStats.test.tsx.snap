@@ -14,7 +14,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
         $39,510.32
       </span>
       <span
-        class="text-base font-semibold text-grayBlue-400 mb-2sm"
+        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Total Revenue
       </span>
@@ -52,7 +52,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
         175,182
       </span>
       <span
-        class="text-base font-semibold text-grayBlue-400 mb-2sm"
+        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Total Sales
       </span>
@@ -90,7 +90,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
         508,072
       </span>
       <span
-        class="text-base font-semibold text-grayBlue-400 mb-2sm"
+        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Customers
       </span>
@@ -128,7 +128,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
         105,075
       </span>
       <span
-        class="text-base font-semibold text-grayBlue-400 mb-2sm"
+        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         New Subscriptions
       </span>

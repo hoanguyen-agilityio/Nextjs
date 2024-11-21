@@ -19,7 +19,7 @@ exports[`Header Layout render header 1`] = `
           data-slot="main-wrapper"
         >
           <div
-            class="relative tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full dark:bg-gray-700 focus-within:ring-0 py-4 px-6 w-full rounded-lg"
+            class="relative tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 py-4 px-6 w-full rounded-lg"
             data-slot="input-wrapper"
             style="cursor: text;"
           >
@@ -48,7 +48,7 @@ exports[`Header Layout render header 1`] = `
               </svg>
               <input
                 aria-label="search"
-                class="w-full bg-transparent !outline-none placeholder:text-foreground-500 focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground text-grayBlue-400 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+                class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: text-ratio-700 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
                 data-has-start-content="true"
                 data-slot="input"
                 id="react-aria-:r0:"
@@ -65,7 +65,7 @@ exports[`Header Layout render header 1`] = `
       class="flex items-center"
     >
       <svg
-        class="mr-10 cursor-pointer"
+        class="mr-10 cursor-not-allowed"
         fill="none"
         height="26px"
         viewBox="0 0 21 27"
@@ -83,7 +83,7 @@ exports[`Header Layout render header 1`] = `
         class="flex items-center border-l-2 border-gray-50 pl-10 dark:border-gray-700"
       >
         <span
-          class="rounded-full w-sm h-sm bg-translucent-400 text-blue-400 flex items-center justify-center text-xl font-semibold"
+          class="rounded-full w-sm h-sm bg-translucent-400 text-ratio-100 dark:text-blue-400 flex items-center justify-center text-xl font-semibold"
         >
           TE
         </span>
@@ -96,12 +96,13 @@ exports[`Header Layout render header 1`] = `
             Theo Edwards
           </span>
           <span
-            class="text-base text-grayBlue-400"
+            class="text-base text-ratio-200 dark:text-grayBlue-400"
           >
             Administrator
           </span>
         </div>
         <button
+          aria-label="Logout Button"
           class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-none border-none p-0"
           type="button"
         >
