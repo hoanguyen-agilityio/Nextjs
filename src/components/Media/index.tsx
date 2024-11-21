@@ -1,12 +1,14 @@
 'use client';
 
 // Third party
+import clsx from 'clsx';
 import { useRef, useState, useEffect } from 'react';
 import { Image } from '@nextui-org/react';
 
 // Components
 import { ButtonCustom, InputCustom } from '@/components';
 import { ImageIcon } from '@/icons';
+import { MESSAGE } from '@/constants';
 
 interface ImageUploaderProps {
   mode: 'add' | 'edit' | 'detail';
@@ -19,6 +21,7 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
   const [url, setUrl] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
     if (data?.img) {
@@ -32,8 +35,15 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
       const newImages = Array.from(files).map((file) =>
         URL.createObjectURL(file),
       );
-      const updatedImages = [...images, ...newImages].slice(0, 10);
+      const updatedImages = [...images, ...newImages];
+
+      if (updatedImages.length > 10) {
+        setErrorMessage(MESSAGE.IMAGE_OVERLOAD);
+        return;
+      }
+
       setImages(updatedImages);
+      setErrorMessage(null);
       onImagesChange?.(updatedImages);
     }
   };
@@ -48,9 +58,15 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
   };
 
   const handleUrlSubmit = () => {
-    if (url && images.length < 10) {
+    if (url) {
+      if (images.length > 10) {
+        setErrorMessage(MESSAGE.IMAGE_OVERLOAD);
+        return;
+      }
+
       const updatedImages = [...images, url];
       setImages(updatedImages);
+      setErrorMessage(null);
       onImagesChange?.(updatedImages);
       setUrl('');
       setShowModal(false);
@@ -60,6 +76,7 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
   const handleImageDelete = (index: number) => {
     const updatedImages = images.filter((_, i) => i !== index);
     setImages(updatedImages);
+    setErrorMessage(null);
     onImagesChange?.(updatedImages);
     URL.revokeObjectURL(images[index]);
   };
@@ -133,9 +150,14 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
         ))}
       </div>
 
-      <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3">
-        Add up to 10 images to your product. Used to represent your product
-        during checkout, in email, social sharing, and more.
+      <p
+        className={clsx(
+          'font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 mt-3',
+          { 'text-red-500': errorMessage },
+        )}
+      >
+        {errorMessage ||
+          'Add up to 10 images to your product. Used to represent your product during checkout, in email, social sharing, and more.'}
       </p>
 
       {showModal && (

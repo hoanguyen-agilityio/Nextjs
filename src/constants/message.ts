@@ -30,6 +30,7 @@ const MESSAGE = {
   ERROR_DELETE_DATA: 'Failed to delete product:',
   ERROR_UNKNOWN: 'Unknown error occurred',
   INVALID_ACCOUNT: 'Incorrect username or password',
+  IMAGE_OVERLOAD: 'You can only upload up to 10 images.',
 };
 
 export { EMPTY_TEXT, MESSAGE };

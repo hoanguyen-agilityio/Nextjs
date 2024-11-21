@@ -38,7 +38,7 @@ const ProductPreview = ({
           alt={imageAlt}
           width={493}
           height={240}
-          loading="lazy"
+          loading="eager"
           fallbackSrc={imageFallbackSrc}
         />
       </CardBody>
