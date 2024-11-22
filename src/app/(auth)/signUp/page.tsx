@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Sign Up',
   description:
-    'Access your account by logging in with your username and password. Secure and quick authentication for a seamless experience.',
+    'Create a new account effortlessly and securely. Join us to enjoy personalized features and seamless access.',
 };
 
 const SignUpPage = () => (
