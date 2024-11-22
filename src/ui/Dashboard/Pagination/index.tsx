@@ -14,6 +14,7 @@ const Pagination = ({
   totalItems,
   itemsPerPage,
   onPageChange,
+  data,
 }: PaginationProps) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
@@ -40,7 +41,7 @@ const Pagination = ({
       >
         Previous
       </ButtonCustom>
-      {totalPages > 0 && (
+      {data.length > 0 && (
         <span className="text-ratio-200 dark:text-grayBlue-400 font-semibold">
           Page {currentPage} of {totalPages}
         </span>

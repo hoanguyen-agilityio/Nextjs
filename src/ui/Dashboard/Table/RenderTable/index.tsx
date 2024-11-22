@@ -36,6 +36,7 @@ const Table = memo(
         size="default"
         bottomContent={
           <Pagination
+            data={products}
             currentPage={currentPage}
             totalItems={totalItems}
             itemsPerPage={itemsPerPage}
