@@ -91,7 +91,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
       setDuplicateNameError(null);
 
       if (onSubmit) {
-        onSubmit(product);
+        await onSubmit(product);
       }
       reset();
       clearImages();
