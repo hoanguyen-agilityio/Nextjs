@@ -94,8 +94,8 @@ describe('productActions', () => {
     test('should handle errors gracefully', async () => {
       (APIs.post as jest.Mock).mockRejectedValue(new Error('API error'));
 
-      await handleAddProduct(mockProduct);
-      expect(APIs.post).toHaveBeenCalled();
+      await handleEditProduct('1', mockProduct);
+      expect(APIs.put).toHaveBeenCalled();
     });
   });
 

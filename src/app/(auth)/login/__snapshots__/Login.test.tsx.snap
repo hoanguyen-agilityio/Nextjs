@@ -191,7 +191,7 @@ exports[`Login page renders login page 1`] = `
             style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
           >
             <input
-              aria-label="remember me"
+              aria-label="Remember me"
               aria-labelledby=":ra:"
               type="checkbox"
               value=""
@@ -223,7 +223,7 @@ exports[`Login page renders login page 1`] = `
             class="relative select-none text-medium transition-colors-opacity before:transition-width motion-reduce:transition-none font-normal text-ratio-200 dark:text-grayBlue-400"
             id=":ra:"
           >
-            remember me
+            Remember me
           </span>
         </label>
         <button

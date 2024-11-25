@@ -60,6 +60,7 @@ const Table = memo(
               <TableRow
                 key={item.key}
                 className="p-2 border-b font-semibold dark:border-gray-700"
+                data-hover={false}
               >
                 {(columnKey: React.Key) =>
                   RenderColumn(String(columnKey), {
