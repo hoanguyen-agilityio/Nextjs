@@ -2,6 +2,7 @@
 
 // Third party
 import { getKeyValue, Image, TableCell } from '@nextui-org/react';
+import Link from 'next/link';
 
 // Constants
 import { ROUTERS } from '@/constants';
@@ -13,7 +14,6 @@ import { TableRowCustomProps } from '@/types';
 import { ButtonCustom } from '@/components';
 import DropdownIcon from '../../Dropdown';
 import { CheckedIcon } from '@/icons';
-import Link from 'next/link';
 
 const RenderColumn = (
   columnKey: string,
