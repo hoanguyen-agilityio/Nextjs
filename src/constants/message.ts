@@ -32,6 +32,12 @@ const MESSAGE = {
   INVALID_ACCOUNT: 'Incorrect username or password',
   IMAGE_OVERLOAD: 'You can only upload up to 10 images.',
   FILE_OVERLOAD: 'File size exceeds the maximum limit of 5GB.',
+  MAX_NAME: 'Name cannot exceed 30 characters',
+  MAX_STATUS: 'Status cannot exceed 100 characters',
+  MAX_TOTAL: 'Total cannot exceed 10 characters',
+  MAX_VIEW: 'View cannot exceed 10 characters',
+  MAX_SALES: 'Sales cannot exceed 10 characters',
+  MAX_CONVERSION: 'Conversion cannot exceed 5 characters',
 };
 
 export { EMPTY_TEXT, MESSAGE };
