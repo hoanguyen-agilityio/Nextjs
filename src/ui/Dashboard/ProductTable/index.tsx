@@ -33,6 +33,7 @@ const ProductTable = ({
       itemsPerPage={itemsPerPage}
       totalItems={totalItems}
       onPageChange={handlePageChange}
+      data={products}
     />
   );
 };

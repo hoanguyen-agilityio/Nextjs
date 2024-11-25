@@ -27,8 +27,8 @@ exports[`ProductTable Component render product table 1`] = `
           >
             <th
               class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-              data-key="row-header-column-8ofzfkkvw7a"
-              id="react-aria-:r0:-row-header-column-8ofzfkkvw7a"
+              data-key="row-header-column-zzqzrzwaheg"
+              id="react-aria-:r0:-row-header-column-zzqzrzwaheg"
               role="columnheader"
               tabindex="-1"
             >
