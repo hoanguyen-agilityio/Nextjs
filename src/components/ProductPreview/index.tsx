@@ -25,7 +25,7 @@ const ProductPreview = ({
   price,
 }: ProductPreviewProp) => {
   return (
-    <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[450px]">
+    <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]">
       <CardHeader className="flex justify-between">
         <span className="font-bold text-2xl dark:text-white text-black-900">
           Product Preview
@@ -42,7 +42,7 @@ const ProductPreview = ({
           alt={imageAlt}
           width={493}
           height={240}
-          loading="eager"
+          loading="lazy"
           fallbackSrc={imageFallbackSrc}
         />
       </CardBody>

@@ -9,7 +9,7 @@ import { useEffect, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 
 // Constants
-import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
+import { IMAGE, KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
 
 // Models
 import { FormProps, IProducts } from '@/types';
@@ -48,6 +48,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
       personal: data?.personal || '',
       img: data?.img || [],
       file: data?.file || [],
+      fallbackSrc: IMAGE.BLUR,
     },
   });
   const router = useRouter();
@@ -115,6 +116,10 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
           control={control}
           rules={{
             required: MESSAGE.NAME_REQUIRED,
+            maxLength: {
+              value: 30,
+              message: MESSAGE.MAX_NAME,
+            },
           }}
           render={({ field, fieldState }) => (
             <InputField
@@ -134,6 +139,12 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="status"
           control={control}
+          rules={{
+            maxLength: {
+              value: 100,
+              message: MESSAGE.MAX_STATUS,
+            },
+          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -158,6 +169,10 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             pattern: {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
+            },
+            maxLength: {
+              value: 10,
+              message: MESSAGE.MAX_TOTAL,
             },
           }}
           render={({ field, fieldState }) => (
@@ -191,6 +206,10 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
             },
+            maxLength: {
+              value: 10,
+              message: MESSAGE.MAX_VIEW,
+            },
           }}
           render={({ field, fieldState }) => (
             <InputField
@@ -216,6 +235,10 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
               value: REGEX.NUMBER,
               message: MESSAGE.VALID_NUMBER,
             },
+            maxLength: {
+              value: 10,
+              message: MESSAGE.MAX_SALES,
+            },
           }}
           render={({ field, fieldState }) => (
             <InputField
@@ -240,6 +263,10 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             pattern: {
               value: REGEX.PERCENT,
               message: MESSAGE.VALID_PERCENT,
+            },
+            maxLength: {
+              value: 5,
+              message: MESSAGE.MAX_CONVERSION,
             },
           }}
           render={({ field, fieldState }) => (

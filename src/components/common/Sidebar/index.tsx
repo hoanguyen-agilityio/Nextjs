@@ -10,12 +10,14 @@ import { Logo, PlusIcon } from '@/icons';
 
 const Sidebar = () => (
   <aside className="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700">
-    <div className="pl-xl py-3xl border-b-2 border-gray-50 dark:border-gray-700">
-      <Link href={ROUTERS.HOME} aria-label="WunderUI logo">
-        <Logo width="267px" height="42px" />
-      </Link>
+    <div className="flex flex-col gap-80">
+      <div className="pl-xl py-3xl border-b-2 border-gray-50 dark:border-gray-700">
+        <Link href={ROUTERS.HOME} aria-label="WunderUI logo">
+          <Logo width="267px" height="42px" />
+        </Link>
+      </div>
+      <Menu />
     </div>
-    <Menu />
     <div className="px-[52px] pt-6 border-t-2 border-gray-50 dark:border-gray-700">
       <Link href={ROUTERS.ADD_PRODUCT}>
         <ButtonCustom

@@ -23,7 +23,14 @@ const ProductTableWrapper = async ({
   const allData = await getDataProducts(searchQuery);
   const safeData = Array.isArray(allData) ? allData : [];
 
-  const filteredData = filterProducts(safeData, filter);
+  const sortedData = safeData.sort((a, b) => {
+    const idA = Number(a.id as string | number);
+    const idB = Number(b.id as string | number);
+
+    return idB - idA;
+  });
+
+  const filteredData = filterProducts(sortedData, filter);
   const currentItems = paginateProducts(
     filteredData,
     currentPage,

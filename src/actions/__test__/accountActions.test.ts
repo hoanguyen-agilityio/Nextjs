@@ -1,6 +1,6 @@
 import { signIn, signOut } from '@/configs';
 import { ACCOUNT_URL, ROUTERS } from '@/constants';
-import { apiRequest } from '@/services';
+import { APIs } from '@/services';
 import { getAccount, handleSignIn, handleSignOut } from '..';
 
 jest.mock('@/configs', () => ({
@@ -9,7 +9,9 @@ jest.mock('@/configs', () => ({
 }));
 
 jest.mock('@/services', () => ({
-  apiRequest: jest.fn(),
+  APIs: {
+    get: jest.fn(),
+  },
 }));
 
 describe('Account Actions', () => {
@@ -20,11 +22,19 @@ describe('Account Actions', () => {
   describe('getAccount', () => {
     test('should return account data when API call succeeds', async () => {
       const mockAccounts = [{ id: 1, username: 'testUser' }];
-      (apiRequest as jest.Mock).mockResolvedValue(mockAccounts);
+      (APIs.get as jest.Mock).mockResolvedValue(mockAccounts);
 
       const result = await getAccount();
-      expect(apiRequest).toHaveBeenCalledWith(ACCOUNT_URL, 'GET');
+      expect(APIs.get).toHaveBeenCalledWith(undefined, undefined, ACCOUNT_URL);
       expect(result).toEqual(mockAccounts);
+    });
+
+    test('should handle error and return empty array when API call fails', async () => {
+      (APIs.get as jest.Mock).mockRejectedValue(new Error('API Error'));
+
+      const result = await getAccount();
+      expect(APIs.get).toHaveBeenCalledWith(undefined, undefined, ACCOUNT_URL);
+      expect(result).toEqual([]);
     });
   });
 

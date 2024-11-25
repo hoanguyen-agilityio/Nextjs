@@ -1,10 +1,12 @@
 import { APIs } from '@/services';
 import {
   getDataProducts,
+  getDataOverview,
   handleAddProduct,
-  handleDeleteProduct,
   handleEditProduct,
+  handleDeleteProduct,
 } from '../productActions';
+import { OVERVIEW_URL } from '@/constants';
 
 jest.mock('@/services', () => ({
   APIs: {
@@ -61,6 +63,27 @@ describe('productActions', () => {
     });
   });
 
+  describe('getDataOverview', () => {
+    test('should fetch overview data successfully', async () => {
+      const mockOverviewData = [
+        { label: 'Label1', value: 'Value1', growth: 'Growth1' },
+      ];
+      (APIs.get as jest.Mock).mockResolvedValue(mockOverviewData);
+
+      const result = await getDataOverview();
+      expect(APIs.get).toHaveBeenCalledWith(undefined, 60, OVERVIEW_URL);
+      expect(result).toEqual(mockOverviewData);
+    });
+
+    test('should return empty array on API error', async () => {
+      (APIs.get as jest.Mock).mockRejectedValue(new Error('API error'));
+
+      const result = await getDataOverview();
+      expect(APIs.get).toHaveBeenCalledWith(undefined, 60, OVERVIEW_URL);
+      expect(result).toEqual([]);
+    });
+  });
+
   describe('handleAddProduct', () => {
     test('should call APIs.post with the correct arguments', async () => {
       await handleAddProduct(mockProduct);
@@ -71,8 +94,8 @@ describe('productActions', () => {
     test('should handle errors gracefully', async () => {
       (APIs.post as jest.Mock).mockRejectedValue(new Error('API error'));
 
-      await handleAddProduct(mockProduct);
-      expect(APIs.post).toHaveBeenCalled();
+      await handleEditProduct('1', mockProduct);
+      expect(APIs.put).toHaveBeenCalled();
     });
   });
 

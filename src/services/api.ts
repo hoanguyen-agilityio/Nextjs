@@ -1,28 +1,83 @@
-type MethodRequest = 'GET' | 'POST' | 'PUT' | 'DELETE';
+// Third party
+import { revalidateTag } from 'next/cache';
+import { unstable_noStore as noStore } from 'next/cache';
 
-export const apiRequest = async <T, K = null>(
-  path: string,
-  method: MethodRequest,
-  data?: K,
-  revalidate?: number,
-) => {
-  const requestOptions: RequestInit = {
-    method: method,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  };
+// Constants
+import { API_PATH, PRODUCT_URL } from '@/constants';
 
-  if (data) {
-    requestOptions.body = JSON.stringify(data);
+class API {
+  private getFullUrl(path?: string, url?: string) {
+    return url ? url : `${PRODUCT_URL}${path}`;
   }
 
-  const request = await fetch(path, {
-    ...requestOptions,
-    next: revalidate ? { revalidate } : undefined,
-  });
+  async get<T>(path?: string, time?: number, url?: string): Promise<T> {
+    const fullUrl = this.getFullUrl(path, url);
+    const response = await fetch(fullUrl, {
+      method: 'GET',
+      next: {
+        tags: [API_PATH.PRODUCTS],
 
-  const responseData = await request.json();
+        // Re-validate every minute
+        revalidate: time || 60,
+      },
+    }).catch((error) => {
+      throw new Error(error);
+    });
 
-  return responseData as T;
-};
+    return response.json();
+  }
+
+  async post<T>(path?: string, payload: object = {}): Promise<T> {
+    noStore();
+
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        ...payload,
+      }),
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
+  }
+
+  async put<T>(path: string, payload: object = {}): Promise<T> {
+    noStore();
+
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...payload }),
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
+  }
+
+  async delete<T>(path: string): Promise<T> {
+    noStore();
+
+    const response = await fetch(`${PRODUCT_URL}${path}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).catch((error) => {
+      throw new Error(error);
+    });
+
+    revalidateTag(API_PATH.PRODUCTS);
+    return response.json();
+  }
+}
+
+export const APIs = new API();

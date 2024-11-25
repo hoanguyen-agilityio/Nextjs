@@ -2,6 +2,7 @@
 
 // Third party
 import { getKeyValue, Image, TableCell } from '@nextui-org/react';
+import Link from 'next/link';
 
 // Constants
 import { ROUTERS } from '@/constants';
@@ -13,7 +14,6 @@ import { TableRowCustomProps } from '@/types';
 import { ButtonCustom } from '@/components';
 import DropdownIcon from '../../Dropdown';
 import { CheckedIcon } from '@/icons';
-import Link from 'next/link';
 
 const RenderColumn = (
   columnKey: string,
@@ -43,8 +43,13 @@ const RenderColumn = (
             }
             alt={getKeyValue(item, 'name') || 'Image'}
             fallbackSrc={getKeyValue(item, 'fallbackSrc')}
-            className="rounded-none"
             loading="lazy"
+            width={40}
+            height={30}
+            classNames={{
+              img: 'rounded-none',
+              wrapper: 'rounded-none',
+            }}
           />
         </TableCell>
       );

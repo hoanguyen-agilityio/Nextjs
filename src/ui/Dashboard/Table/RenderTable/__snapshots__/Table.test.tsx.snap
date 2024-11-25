@@ -27,8 +27,8 @@ exports[`Table component renders table 1`] = `
           >
             <th
               class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-              data-key="row-header-column-jiyg5qc2wcf"
-              id="react-aria-:r0:-row-header-column-jiyg5qc2wcf"
+              data-key="row-header-column-vrcwpr1uk8s"
+              id="react-aria-:r0:-row-header-column-vrcwpr1uk8s"
               role="columnheader"
               tabindex="-1"
             >
@@ -172,6 +172,7 @@ exports[`Table component renders table 1`] = `
             aria-selected="false"
             class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
             data-first="true"
+            data-hover="false"
             data-key="1"
             role="row"
             tabindex="-1"
@@ -382,6 +383,7 @@ exports[`Table component renders table 1`] = `
             aria-labelledby="react-aria-:r0:-2-no"
             aria-selected="false"
             class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
+            data-hover="false"
             data-key="2"
             data-middle="true"
             data-odd="true"
@@ -594,6 +596,7 @@ exports[`Table component renders table 1`] = `
             aria-labelledby="react-aria-:r0:-3-no"
             aria-selected="false"
             class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
+            data-hover="false"
             data-key="3"
             data-middle="true"
             role="row"
@@ -805,6 +808,7 @@ exports[`Table component renders table 1`] = `
             aria-labelledby="react-aria-:r0:-4-no"
             aria-selected="false"
             class="group outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 cursor-default p-2 border-b font-semibold dark:border-gray-700"
+            data-hover="false"
             data-key="4"
             data-last="true"
             data-odd="true"
