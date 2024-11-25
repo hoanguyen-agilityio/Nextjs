@@ -1,10 +1,12 @@
 import { APIs } from '@/services';
 import {
   getDataProducts,
+  getDataOverview,
   handleAddProduct,
-  handleDeleteProduct,
   handleEditProduct,
+  handleDeleteProduct,
 } from '../productActions';
+import { OVERVIEW_URL } from '@/constants';
 
 jest.mock('@/services', () => ({
   APIs: {
@@ -58,6 +60,27 @@ describe('productActions', () => {
       const result = await getDataProducts('example');
       expect(APIs.get).toHaveBeenCalledWith('?search=example');
       expect(result).toBeNull();
+    });
+  });
+
+  describe('getDataOverview', () => {
+    test('should fetch overview data successfully', async () => {
+      const mockOverviewData = [
+        { label: 'Label1', value: 'Value1', growth: 'Growth1' },
+      ];
+      (APIs.get as jest.Mock).mockResolvedValue(mockOverviewData);
+
+      const result = await getDataOverview();
+      expect(APIs.get).toHaveBeenCalledWith(undefined, 60, OVERVIEW_URL);
+      expect(result).toEqual(mockOverviewData);
+    });
+
+    test('should return empty array on API error', async () => {
+      (APIs.get as jest.Mock).mockRejectedValue(new Error('API error'));
+
+      const result = await getDataOverview();
+      expect(APIs.get).toHaveBeenCalledWith(undefined, 60, OVERVIEW_URL);
+      expect(result).toEqual([]);
     });
   });
 

@@ -1,7 +1,7 @@
 'use server';
 import { signIn, signOut } from '@/configs';
 import { ACCOUNT_URL, MESSAGE, ROUTERS } from '@/constants';
-import { apiRequest } from '@/services';
+import { APIs } from '@/services';
 import { Account } from '@/types';
 
 const getAccount = async (): Promise<Account[]> => {
@@ -10,7 +10,7 @@ const getAccount = async (): Promise<Account[]> => {
       throw new Error(MESSAGE.ERROR_URL);
     }
 
-    return await apiRequest(ACCOUNT_URL, 'GET');
+    return await APIs.get(undefined, undefined, ACCOUNT_URL);
   } catch (error) {
     console.error(MESSAGE.ERROR_GET_ACCOUNT, error);
     return [];

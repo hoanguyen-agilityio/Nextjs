@@ -6,7 +6,7 @@ import {
   PRODUCT_URL,
   ROUTERS,
 } from '@/constants';
-import { apiRequest, APIs } from '@/services';
+import { APIs } from '@/services';
 import { IProducts, OverviewDataItem } from '@/types';
 
 const getDataProducts = async (
@@ -34,11 +34,10 @@ const getDataOverview = async () => {
     if (!OVERVIEW_URL) {
       throw new Error(MESSAGE.ERROR_URL);
     }
-    const res = await apiRequest<OverviewDataItem[]>(
-      OVERVIEW_URL,
-      'GET',
+    const res = await APIs.get<OverviewDataItem[]>(
       undefined,
       revalidate,
+      OVERVIEW_URL,
     );
     return res;
   } catch (error) {

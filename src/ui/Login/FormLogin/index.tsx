@@ -152,7 +152,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
           )}
         />
         <CheckboxCustom size="default" className="mt-3xl">
-          remember me
+          Remember me
         </CheckboxCustom>
         <ButtonCustom
           color="dark"
