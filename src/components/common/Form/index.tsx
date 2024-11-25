@@ -9,7 +9,7 @@ import { useEffect, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 
 // Constants
-import { KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
+import { IMAGE, KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
 
 // Models
 import { FormProps, IProducts } from '@/types';
@@ -48,6 +48,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
       personal: data?.personal || '',
       img: data?.img || [],
       file: data?.file || [],
+      fallbackSrc: IMAGE.BLUR,
     },
   });
   const router = useRouter();

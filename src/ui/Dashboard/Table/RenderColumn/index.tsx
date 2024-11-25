@@ -43,8 +43,13 @@ const RenderColumn = (
             }
             alt={getKeyValue(item, 'name') || 'Image'}
             fallbackSrc={getKeyValue(item, 'fallbackSrc')}
-            className="rounded-none"
             loading="lazy"
+            width={40}
+            height={30}
+            classNames={{
+              img: 'rounded-none',
+              wrapper: 'rounded-none',
+            }}
           />
         </TableCell>
       );
