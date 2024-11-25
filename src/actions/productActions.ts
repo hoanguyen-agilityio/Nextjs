@@ -48,9 +48,13 @@ const getDataOverview = async () => {
 
 const handleAddProduct = async (products: IProducts) => {
   try {
+    if (!PRODUCT_URL) {
+      throw new Error(MESSAGE.ERROR_URL);
+    }
     await APIs.post(ROUTERS.EMPTY, products);
   } catch (error) {
     console.error(MESSAGE.ERROR_ADD_DATA, error);
+    throw error;
   }
 };
 
