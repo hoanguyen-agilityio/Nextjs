@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import { rows } from '@/mocks';
 import Pagination from '.';
 
 describe('Pagination Component', () => {
@@ -9,6 +10,7 @@ describe('Pagination Component', () => {
   test('render pagination', () => {
     const { container } = render(
       <Pagination
+        data={rows}
         currentPage={currentPage}
         totalItems={totalItems}
         itemsPerPage={itemsPerPage}
@@ -23,6 +25,7 @@ describe('Pagination Component', () => {
 
     render(
       <Pagination
+        data={rows}
         currentPage={currentPage}
         totalItems={totalItems}
         itemsPerPage={itemsPerPage}
