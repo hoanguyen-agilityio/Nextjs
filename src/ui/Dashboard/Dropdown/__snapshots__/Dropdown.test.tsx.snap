@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown renders dropdown 1`] = `
+<div>
+  <button
+    aria-expanded="false"
+    aria-haspopup="true"
+    aria-label="Dropdown Button"
+    class="group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap font-normal overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small gap-2 rounded-medium [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none text-secondary-foreground data-[hover=true]:opacity-hover bg-transparent border-transparent z-10 aria-expanded:scale-[0.97] aria-expanded:opacity-70 subpixel-antialiased"
+    data-slot="trigger"
+    id="react-aria-:r1:"
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="24px"
+      viewBox="0 0 6 24"
+      width="5px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="fill-lightGray-100 dark:fill-gray-700"
+        clip-rule="evenodd"
+        d="M0.0996094 21.5V21.358C0.0996094 20.4648 0.57605 19.6395 1.34961 19.1929C2.12317 18.7464 3.07605 18.7464 3.84961 19.1929C4.62317 19.6395 5.09961 20.4648 5.09961 21.358V21.5C5.09961 22.3932 4.62317 23.2185 3.84961 23.6651C3.07605 24.1117 2.12317 24.1117 1.34961 23.6651C0.57605 23.2185 0.0996094 22.3932 0.0996094 21.5ZM0.0996094 12.072V11.929C0.0996094 11.0358 0.57605 10.2105 1.34961 9.76394C2.12317 9.31736 3.07605 9.31736 3.84961 9.76394C4.62317 10.2105 5.09961 11.0358 5.09961 11.929V12.072C5.09961 12.9652 4.62317 13.7905 3.84961 14.2371C3.07605 14.6837 2.12317 14.6837 1.34961 14.2371C0.57605 13.7905 0.0996094 12.9652 0.0996094 12.072ZM0.0996094 2.64402V2.5C0.0996094 1.60685 0.57605 0.781528 1.34961 0.334934C2.12317 -0.111645 3.07605 -0.111645 3.84961 0.334934C4.62317 0.781528 5.09961 1.60685 5.09961 2.5V2.64301C5.09961 3.53617 4.62317 4.36149 3.84961 4.80808C3.07605 5.25466 2.12317 5.25466 1.34961 4.80808C0.57605 4.36149 0.0996094 3.53617 0.0996094 2.64301V2.64402Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
+</div>
+`;
