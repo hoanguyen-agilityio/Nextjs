@@ -73,8 +73,11 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
   };
 
   return (
-    <Card className="flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl">
-      <form className="w-[528px]" onSubmit={handleSubmit(onSubmit)}>
+    <Card className="flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl max-[1200px]:flex-col-reverse">
+      <form
+        className="w-[528px] max-[1200px]:w-full"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <span className="font-bold text-4xl">Sign In</span>
         {!Object.keys(errors).length && error && (
           <p className="text-red-600 text-sm font-normal">{error}</p>
@@ -199,7 +202,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
           </Link>
         </p>
       </form>
-      <Link href={ROUTERS.HOME} className="h-10">
+      <Link href={ROUTERS.HOME} className="h-10 flex max-[1200px]:justify-end">
         <ButtonCustom
           startContent={<BackIcon width="7px" height="18px" />}
           color="default"

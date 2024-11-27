@@ -105,7 +105,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
   };
 
   return (
-    <Card className="flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9">
+    <Card className="flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9 max-[860px]:flex-col-reverse">
       <form
         key={data?.id || 'default'}
         className="w-full"
@@ -397,7 +397,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             I agree with Terms and Policy
           </CheckboxCustom>
         )}
-        <div className="flex gap-5 mt-8">
+        <div className="flex gap-5 mt-8 flex-wrap">
           <ButtonCustom
             type="submit"
             color="dark"
@@ -420,7 +420,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
           </ButtonCustom>
         </div>
       </form>
-      <Link href={ROUTERS.HOME} className="h-10">
+      <Link href={ROUTERS.HOME} className="h-10 flex max-[860px]:justify-end">
         <ButtonCustom
           startContent={<BackIcon width="7px" height="18px" />}
           color="default"

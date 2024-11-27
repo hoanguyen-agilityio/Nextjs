@@ -37,3 +37,4 @@ export { default as GoogleIcon } from './Google';
 export { default as AppleIcon } from './Apple';
 export { default as LogoWithoutText } from './LogoWithoutText';
 export { default as Logout } from './Logout';
+export { default as Hamburger } from './hamburger';

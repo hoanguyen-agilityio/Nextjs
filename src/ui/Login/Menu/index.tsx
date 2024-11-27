@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { MENU_NO_AUTH } from '@/constants';
 
 const Menu = () => (
-  <ul className="flex gap-24 items-center">
+  <ul className="flex gap-24 items-center max-[1500px]:gap-10 max-[1200px]:hidden">
     {MENU_NO_AUTH.map(({ label, href }) => (
       <li key={label}>
         <Link

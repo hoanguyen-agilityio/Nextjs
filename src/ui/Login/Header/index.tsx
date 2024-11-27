@@ -14,9 +14,9 @@ const Header = () => (
     <Link href={ROUTERS.HOME} aria-label="WunderUI logo">
       <Logo width="266px" height="42px" />
     </Link>
-    <div className="flex gap-[135px]">
+    <div className="flex gap-[135px] max-[1280px]:gap-5">
       <Menu />
-      <div className="flex gap-[22px]">
+      <div className="flex gap-[22px] max-[555px]:hidden">
         <Link href={ROUTERS.LOGIN}>
           <ButtonCustom color="default" radius="sm" size="s">
             Log In

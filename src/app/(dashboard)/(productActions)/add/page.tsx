@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 const AddPage = () => {
   return (
     <section className="pb-[52px] pl-7 pr-[50px] pt-5">
-      <div className="flex justify-between items-center mb-l">
+      <div className="flex justify-between mb-l sm:flex-row flex-col sm:items-center items-start gap-5 sm:gap-0">
         <h1 className="font-bold text-3xl">New Product</h1>
-        <div className="flex">
+        <div className="flex gap-5 flex-wrap">
           <ButtonCustom
             color="default"
             radius="sm"
-            className="mr-5 h-auto gap-6 cursor-not-allowed"
+            className="h-auto gap-6 cursor-not-allowed"
             size="xs"
             startContent={<RightArrowUp width="14px" height="13px" />}
           >
