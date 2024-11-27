@@ -25,7 +25,7 @@ const ProductPreview = ({
   price,
 }: ProductPreviewProp) => {
   return (
-    <Card className="max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]">
+    <Card className="max-[1250px]:hidden max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]">
       <CardHeader className="flex justify-between">
         <span className="font-bold text-2xl dark:text-white text-black-900">
           Product Preview
