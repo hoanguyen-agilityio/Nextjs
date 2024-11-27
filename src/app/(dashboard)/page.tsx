@@ -27,13 +27,13 @@ const Homepage = ({
 
   return (
     <div className="pl-7 pr-[50px] pt-5 pb-11">
-      <div className="flex justify-between items-center mb-l">
+      <div className="flex md:flex-row justify-between flex-col md:items-center items-start mb-l">
         <h1 className="font-bold text-3xl">Products</h1>
-        <div className="flex">
+        <div className="flex gap-5 flex-wrap">
           <ButtonCustom
             color="default"
             radius="sm"
-            className="mr-5 h-auto gap-6 cursor-not-allowed"
+            className="h-auto gap-6 cursor-not-allowed"
             size="xs"
             startContent={<RightArrowUp width="14px" height="13px" />}
           >
@@ -54,7 +54,7 @@ const Homepage = ({
       <Suspense fallback={<OverviewSkeleton productCount={4} />}>
         <Overview />
       </Suspense>
-      <div className="flex justify-between items-center mt-3xl">
+      <div className="flex mt-3xl md:flex-row justify-between flex-col md:items-center items-start gap-3 md:gap-0">
         <Filter />
         <ProductSearch />
       </div>

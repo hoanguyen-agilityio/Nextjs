@@ -17,6 +17,7 @@ const OverviewStats = ({ data }: OverviewData) => {
             label={item.label}
             growth={item.growth}
             isLast={index === safeData.length - 1}
+            isFirst={index === 0}
           />
         ))
       ) : (
