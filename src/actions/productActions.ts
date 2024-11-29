@@ -62,7 +62,8 @@ const handleEditProduct = async (id: string, products: IProducts) => {
   try {
     await APIs.put(`/${id}`, products);
   } catch (error) {
-    console.error(MESSAGE.ERROR_EDIT_DATA, error);
+    const errorMessage = (error as Error).message;
+    throw new Error(errorMessage);
   }
 };
 
