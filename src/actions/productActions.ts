@@ -53,8 +53,8 @@ const handleAddProduct = async (products: IProducts) => {
     }
     await APIs.post(ROUTERS.EMPTY, products);
   } catch (error) {
-    console.error(MESSAGE.ERROR_ADD_DATA, error);
-    throw error;
+    const errorMessage = (error as Error).message;
+    throw new Error(errorMessage);
   }
 };
 

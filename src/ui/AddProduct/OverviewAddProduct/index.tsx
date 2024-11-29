@@ -21,7 +21,8 @@ const OverviewAddProduct = () => {
       await handleAddProduct(product);
       toast.success(MESSAGE.ADD_SUCCESSFULLY);
     } catch (error) {
-      toast.error(MESSAGE.ERROR_ADD_DATA);
+      const errorMessage = (error as Error).message;
+      toast.error(`${MESSAGE.ERROR_ADD_DATA} ${errorMessage}`);
     }
   };
 

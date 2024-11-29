@@ -36,7 +36,8 @@ class API {
         ...payload,
       }),
     }).catch((error) => {
-      throw new Error(error);
+      const errorMessage = (error as Error).message;
+      throw new Error(errorMessage);
     });
 
     revalidateTag(API_PATH.PRODUCTS);
