@@ -14,6 +14,5 @@ export const ProductPreviewDefault: Story = {
   args: {
     imageSrc: IMAGE.DEFAULT,
     imageAlt: 'Images displayed on storybook',
-    imageFallbackSrc: IMAGE.BLUR,
   },
 };
