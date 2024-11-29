@@ -1,7 +1,7 @@
 'use client';
 
 // Third party
-import { getKeyValue, Image, TableCell } from '@nextui-org/react';
+import { getKeyValue, TableCell } from '@nextui-org/react';
 import Link from 'next/link';
 
 // Constants
@@ -11,7 +11,7 @@ import { ROUTERS } from '@/constants';
 import { TableRowCustomProps } from '@/types';
 
 // Components
-import { ButtonCustom } from '@/components';
+import { ButtonCustom, ImageCustom } from '@/components';
 import DropdownIcon from '../../Dropdown';
 import { CheckedIcon } from '@/icons';
 
@@ -35,20 +35,18 @@ const RenderColumn = (
     case 'img':
       return (
         <TableCell>
-          <Image
+          <ImageCustom
             src={
               Array.isArray(getKeyValue(item, columnKey))
                 ? getKeyValue(item, columnKey)[0]
                 : getKeyValue(item, columnKey)
             }
             alt={getKeyValue(item, 'name') || 'Image'}
-            fallbackSrc={getKeyValue(item, 'fallbackSrc')}
-            loading="lazy"
             width={40}
             height={30}
             classNames={{
               img: 'rounded-none',
-              wrapper: 'rounded-none',
+              wrapper: 'rounded-none bg-cover',
             }}
           />
         </TableCell>

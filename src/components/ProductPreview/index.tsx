@@ -1,29 +1,17 @@
 // Third party
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Image,
-} from '@nextui-org/react';
+import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react';
 
 // Components
-import { ChipCustom } from '@/components';
+import { ChipCustom, ImageCustom } from '@/components';
 import { ClockIcon, RatingIcon, ThreeDotsIcon } from '@/icons';
 
 interface ProductPreviewProp {
   imageSrc: string;
   imageAlt: string;
-  imageFallbackSrc: string;
   price: string;
 }
 
-const ProductPreview = ({
-  imageSrc,
-  imageAlt,
-  imageFallbackSrc,
-  price,
-}: ProductPreviewProp) => {
+const ProductPreview = ({ imageSrc, imageAlt, price }: ProductPreviewProp) => {
   return (
     <Card className="max-[1250px]:hidden max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]">
       <CardHeader className="flex justify-between">
@@ -37,13 +25,14 @@ const ProductPreview = ({
         />
       </CardHeader>
       <CardBody>
-        <Image
+        <ImageCustom
           src={imageSrc}
           alt={imageAlt}
           width={493}
           height={240}
-          loading="lazy"
-          fallbackSrc={imageFallbackSrc}
+          classNames={{
+            wrapper: 'bg-cover',
+          }}
         />
       </CardBody>
       <CardFooter className="flex justify-between">

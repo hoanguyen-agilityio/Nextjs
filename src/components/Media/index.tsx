@@ -3,10 +3,9 @@
 // Third party
 import clsx from 'clsx';
 import { useRef, useState, useEffect } from 'react';
-import { Image } from '@nextui-org/react';
 
 // Components
-import { ButtonCustom, InputCustom } from '@/components';
+import { ButtonCustom, ImageCustom, InputCustom } from '@/components';
 import { ImageIcon } from '@/icons';
 import { MESSAGE } from '@/constants';
 
@@ -131,10 +130,13 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
       <div className="image-previews mt-4 grid grid-cols-2 gap-2">
         {images.map((src, index) => (
           <div key={index} className="relative group">
-            <Image
+            <ImageCustom
               src={src}
               alt={`Preview ${index}`}
-              className="w-full h-32 object-cover rounded-md"
+              classNames={{
+                img: 'w-full h-32 object-cover rounded-md',
+                wrapper: 'bg-cover',
+              }}
             />
             {mode !== 'detail' && (
               <ButtonCustom
