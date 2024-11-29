@@ -33,8 +33,13 @@ const OverviewEditProduct = () => {
   }, [id]);
 
   const handleEditProductSubmit = (formData: IProducts) => {
-    handleEditProduct(id as string, formData);
-    toast.success(MESSAGE.EDIT_SUCCESSFULLY);
+    try {
+      handleEditProduct(id as string, formData);
+      toast.success(MESSAGE.EDIT_SUCCESSFULLY);
+    } catch (error) {
+      const errorMessage = (error as Error).message;
+      toast.error(`${MESSAGE.ERROR_EDIT_DATA} ${errorMessage}`);
+    }
   };
 
   return (

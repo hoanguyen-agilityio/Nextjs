@@ -27,8 +27,13 @@ const ModelDeleteProduct = ({
   id,
 }: IModelDeleteProduct) => {
   const handleDelete = async () => {
-    await handleDeleteProduct(id);
-    toast.success(MESSAGE.DELETE_SUCCESSFULLY);
+    try {
+      await handleDeleteProduct(id);
+      toast.success(MESSAGE.DELETE_SUCCESSFULLY);
+    } catch (error) {
+      const errorMessage = (error as Error).message;
+      toast.error(`${MESSAGE.ERROR_DELETE_DATA} ${errorMessage}`);
+    }
   };
 
   return (
