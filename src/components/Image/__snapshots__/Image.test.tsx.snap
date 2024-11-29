@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component Image Component With Displayed Image 1`] = `
+<div>
+  <div
+    class="relative shadow-black/5 shadow-none rounded-large"
+    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOyW9pu8TBhOqw5tUQh_5A6lrIYfmpu4c3GkV7t6pcfu7oTILl9FAm2nX8n45uLHdSpk&usqp=CAU); max-width: 200px;"
+  >
+     
+    <img
+      alt="Image default"
+      class="relative z-10 opacity-0 shadow-black/5 data-[loaded=true]:opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
+      height="300"
+      loading="lazy"
+      src="https://picsum.photos/200/300"
+      style="height: 300px;"
+      width="200"
+    />
+  </div>
+</div>
+`;
+
+exports[`Image component Image Component With Displayed fallback image 1`] = `
+<div>
+  <div
+    class="relative shadow-black/5 shadow-none rounded-large"
+    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOyW9pu8TBhOqw5tUQh_5A6lrIYfmpu4c3GkV7t6pcfu7oTILl9FAm2nX8n45uLHdSpk&usqp=CAU); max-width: 200px;"
+  >
+     
+    <img
+      alt="fallback image"
+      class="relative z-10 opacity-0 shadow-black/5 data-[loaded=true]:opacity-100 shadow-none transition-transform-opacity motion-reduce:transition-none !duration-300 rounded-large"
+      height="300"
+      loading="lazy"
+      style="height: 300px;"
+      width="200"
+    />
+  </div>
+</div>
+`;
