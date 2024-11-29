@@ -38,7 +38,6 @@ const OverviewDetail = () => {
       <ProductPreview
         imageSrc={data?.img?.[0] ?? ''}
         imageAlt={data?.name ?? 'Product Image'}
-        imageFallbackSrc={data?.fallbackSrc ?? ''}
         price={data?.total ?? 'N/A'}
       />
     </div>

@@ -26,8 +26,8 @@ class API {
     return response.json();
   }
 
-  async post<T>(path?: string, payload: object = {}): Promise<T> {
-    const response = await fetch(`${PRODUCT_URL}${path}`, {
+  async post(path?: string, payload: object = {}) {
+    await fetch(`${PRODUCT_URL}${path}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,11 +40,10 @@ class API {
     });
 
     revalidateTag(API_PATH.PRODUCTS);
-    return response.json();
   }
 
-  async put<T>(path: string, payload: object = {}): Promise<T> {
-    const response = await fetch(`${PRODUCT_URL}${path}`, {
+  async put(path: string, payload: object = {}) {
+    await fetch(`${PRODUCT_URL}${path}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -55,11 +54,10 @@ class API {
     });
 
     revalidateTag(API_PATH.PRODUCTS);
-    return response.json();
   }
 
-  async delete<T>(path: string): Promise<T> {
-    const response = await fetch(`${PRODUCT_URL}${path}`, {
+  async delete(path: string) {
+    await fetch(`${PRODUCT_URL}${path}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +67,6 @@ class API {
     });
 
     revalidateTag(API_PATH.PRODUCTS);
-    return response.json();
   }
 }
 
