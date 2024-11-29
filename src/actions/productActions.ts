@@ -72,7 +72,8 @@ const handleDeleteProduct = async (id: string) => {
     const res = await APIs.delete(`/${id}`);
     return res;
   } catch (error) {
-    console.error(MESSAGE.ERROR_DELETE_DATA, error);
+    const errorMessage = (error as Error).message;
+    throw new Error(errorMessage);
   }
 };
 
