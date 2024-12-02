@@ -9,6 +9,7 @@ describe('OverviewItem Component', () => {
         label="Total Sales"
         growth="15%"
         isLast={false}
+        isFirst={false}
       />,
     );
     expect(container).toMatchSnapshot();

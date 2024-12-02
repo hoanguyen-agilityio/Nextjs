@@ -20,7 +20,6 @@ describe('useFilterLogic', () => {
 
   beforeEach(() => {
     jest.clearAllMocks();
-    window.history.pushState({}, '', '/');
   });
 
   test('returns the selected item based on the currentFilterKey', () => {
