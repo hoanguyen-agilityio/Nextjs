@@ -9,6 +9,13 @@ jest.mock('next/navigation', () => ({
     push: jest.fn(),
   }),
 }));
+jest.mock('@/services', () => ({
+  APIs: {
+    get: jest.fn(() =>
+      Promise.resolve({ img: [], name: 'Test Product', id: '1', total: '100' }),
+    ),
+  },
+}));
 
 describe('Detail page', () => {
   test('renders detail page', () => {
