@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form login component renders form login 1`] = `
+<div>
+  <div
+    class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl max-[1200px]:flex-col-reverse"
+    tabindex="-1"
+  >
+    <form
+      class="w-[528px] max-[1200px]:w-full"
+    >
+      <span
+        class="font-bold text-4xl"
+      >
+        Sign In
+      </span>
+      <div
+        class="mt-11"
+      >
+        <label
+          class="font-semibold text-lg text-black-900 dark:text-white undefined"
+          for="username"
+        >
+          Username
+        </label>
+        <div
+          class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end mt-2"
+          data-filled="true"
+          data-filled-within="true"
+          data-slot="base"
+        >
+          <div
+            class="flex flex-col w-full h-14"
+            data-slot="main-wrapper"
+          >
+            <div
+              class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+              data-slot="input-wrapper"
+              style="cursor: text;"
+            >
+              <div
+                class="inline-flex w-full items-center h-full box-border"
+                data-slot="inner-wrapper"
+              >
+                <input
+                  aria-label="user0123456"
+                  class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                  data-slot="input"
+                  id="username"
+                  name="username"
+                  placeholder="user0123456"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-10"
+      >
+        <label
+          class="font-semibold text-lg text-black-900 dark:text-white undefined"
+          for="password"
+        >
+          Password
+        </label>
+        <div
+          class="group flex flex-col data-[hidden=true]:hidden relative justify-end w-full"
+          data-filled="true"
+          data-filled-within="true"
+          data-has-value="true"
+          data-slot="base"
+        >
+          <div
+            class="flex flex-col w-full h-14"
+            data-slot="main-wrapper"
+          >
+            <div
+              class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 pt-lg pb-4 px-4 rounded-lg"
+              data-slot="input-wrapper"
+              style="cursor: text;"
+            >
+              <div
+                class="inline-flex w-full items-center h-full box-border"
+                data-slot="inner-wrapper"
+              >
+                <svg
+                  fill="none"
+                  height="22px"
+                  viewBox="0 0 23 23"
+                  width="22px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M6.47601 22.062C1.97601 22.062 0.604004 20.694 0.604004 16.19V14.147C0.604004 10.305 1.604 8.74698 4.68903 8.36899V6.99899C4.68903 4.03699 5.40405 0.10498 11.582 0.10498C17.76 0.10498 18.476 4.03699 18.476 6.99899V8.36899C21.566 8.74399 22.561 10.305 22.561 14.147V16.189C22.561 20.689 21.1931 22.061 16.689 22.061L6.47601 22.062ZM2.13501 14.147V16.189C2.13501 19.836 2.81903 20.53 6.47601 20.53H16.688C20.345 20.53 21.029 19.836 21.029 16.189V14.147C21.029 10.501 20.345 9.80597 16.688 9.80597H6.47601C2.81897 9.80597 2.13501 10.501 2.13501 14.147ZM16.688 8.27496H16.944V6.99695C16.944 3.77994 16.035 1.63495 11.582 1.63495C7.12897 1.63495 6.22095 3.77994 6.22095 6.99695V8.27698H6.47693L16.688 8.27496ZM8.26196 15.169C8.26196 13.8266 9.07056 12.6163 10.3108 12.1026C11.551 11.5889 12.9786 11.8729 13.9278 12.8221C14.8771 13.7713 15.161 15.1989 14.6473 16.4391C14.1335 17.6793 12.9233 18.488 11.5809 18.488C9.74921 18.4841 8.26538 16.9998 8.26208 15.168L8.26196 15.169ZM9.79498 15.169C9.79779 16.1553 10.5991 16.9529 11.5853 16.951C12.5717 16.9491 13.3699 16.1485 13.369 15.1623C13.368 14.176 12.5682 13.377 11.5819 13.377C10.5983 13.3869 9.80481 14.1844 9.79993 15.168L9.79498 15.169Z"
+                    fill="#809FB8"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <input
+                  aria-label=" "
+                  class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+                  data-has-end-content="true"
+                  data-has-start-content="true"
+                  data-slot="input"
+                  id="password"
+                  name="password"
+                  type="password"
+                  value=""
+                />
+                <button
+                  aria-label="toggle password visibility"
+                  class="focus:outline-none"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="text-2xl text-default-400 pointer-events-none"
+                    fill="none"
+                    focusable="false"
+                    height="1em"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M21.25 9.14969C18.94 5.51969 15.56 3.42969 12 3.42969C10.22 3.42969 8.49 3.94969 6.91 4.91969C5.33 5.89969 3.91 7.32969 2.75 9.14969C1.75 10.7197 1.75 13.2697 2.75 14.8397C5.06 18.4797 8.44 20.5597 12 20.5597C13.78 20.5597 15.51 20.0397 17.09 19.0697C18.67 18.0897 20.09 16.6597 21.25 14.8397C22.25 13.2797 22.25 10.7197 21.25 9.14969ZM12 16.0397C9.76 16.0397 7.96 14.2297 7.96 11.9997C7.96 9.76969 9.76 7.95969 12 7.95969C14.24 7.95969 16.04 9.76969 16.04 11.9997C16.04 14.2297 14.24 16.0397 12 16.0397Z"
+                      fill="#809FB8"
+                    />
+                    <path
+                      d="M11.9984 9.14062C10.4284 9.14062 9.14844 10.4206 9.14844 12.0006C9.14844 13.5706 10.4284 14.8506 11.9984 14.8506C13.5684 14.8506 14.8584 13.5706 14.8584 12.0006C14.8584 10.4306 13.5684 9.14062 11.9984 9.14062Z"
+                      fill="#809FB8"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label
+        class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer tap-highlight-transparent p-2 -m-2 select-none mt-3xl"
+      >
+        <span
+          style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
+        >
+          <input
+            aria-label="Remember me"
+            aria-labelledby=":ra:"
+            type="checkbox"
+            value=""
+          />
+        </span>
+        <span
+          aria-hidden="true"
+          class="relative inline-flex items-center justify-center flex-shrink-0 overflow-hidden before:content-[''] before:absolute before:inset-0 before:border-solid before:border-2 before:box-border before:border-default after:content-[''] after:absolute after:inset-0 after:scale-50 after:opacity-0 after:origin-center group-data-[selected=true]:after:scale-100 group-data-[selected=true]:after:opacity-100 group-data-[hover=true]:before:bg-default-100 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background after:bg-primary after:text-primary-foreground text-primary-foreground w-5 h-5 mr-2 rtl:ml-2 rtl:mr-[unset] rounded-[calc(theme(borderRadius.medium)*0.6)] before:rounded-[calc(theme(borderRadius.medium)*0.6)] after:rounded-[calc(theme(borderRadius.medium)*0.6)] before:transition-colors group-data-[pressed=true]:scale-95 transition-transform after:transition-transform-opacity after:!ease-linear after:!duration-200 motion-reduce:transition-none"
+        >
+          <svg
+            aria-hidden="true"
+            class="z-10 opacity-0 group-data-[selected=true]:opacity-100 w-4 h-3 transition-opacity motion-reduce:transition-none"
+            role="presentation"
+            viewBox="0 0 17 18"
+          >
+            <polyline
+              fill="none"
+              points="1 9 7 14 15 4"
+              stroke="currentColor"
+              stroke-dasharray="22"
+              stroke-dashoffset="66"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+        <span
+          class="relative select-none text-medium transition-colors-opacity before:transition-width motion-reduce:transition-none font-normal text-ratio-200 dark:text-grayBlue-400"
+          id=":ra:"
+        >
+          Remember me
+        </span>
+      </label>
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 text-white dark:bg-white dark:text-black-900 rounded-lg py-4 w-full text-base font-semibold h-[52px] mt-5xl"
+        type="submit"
+      >
+        Log In to your account
+      </button>
+      <div
+        class="flex justify-between items-center gap-3 mt-l"
+      >
+        <div
+          class="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"
+        />
+        <p
+          class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400"
+        >
+          or
+        </p>
+        <div
+          class="w-full h-0 border border-gray-50 dark:border-gray-700 inline-block"
+        />
+      </div>
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-gray-50 dark:bg-gray-700 text-dark-800 dark:text-white rounded-lg py-4 w-full text-base font-semibold h-[52px] mt-l cursor-not-allowed"
+        type="button"
+      >
+        <svg
+          fill="none"
+          height="26px"
+          viewBox="0 0 26 27"
+          width="26px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask
+            height="27"
+            id="mask0_1_7084"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="26"
+            x="0"
+            y="0"
+          >
+            <rect
+              fill="white"
+              height="26"
+              width="26"
+              y="0.376953"
+            />
+          </mask>
+          <g
+            mask="url(#mask0_1_7084)"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M25.9996 13.6649C26.0159 12.7711 25.9218 11.8787 25.7197 11.0079L13.2646 11.0078V15.8318H20.5756C20.2904 17.5508 19.3099 19.0764 17.8646 20.0498L17.8397 20.2108L21.7766 23.1998L22.0507 23.2278C24.6767 20.7534 26.1147 17.2711 25.9996 13.6649Z"
+              fill="#5A96F5"
+              fill-rule="evenodd"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M13.2637 26.377C16.4843 26.4705 19.6218 25.346 22.0497 23.228L17.8627 20.0499C16.4986 20.944 14.8929 21.3978 13.2627 21.35C9.85089 21.3504 6.81714 19.1794 5.71667 15.95L5.56171 15.963L1.46167 19.0679L1.40869 19.2139C3.70471 23.6356 8.28155 26.4009 13.2637 26.377Z"
+              fill="#3ABB5D"
+              fill-rule="evenodd"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M5.71887 15.9478C5.42944 15.1214 5.28009 14.2524 5.27686 13.3768C5.28107 12.5028 5.42383 11.6351 5.69989 10.8058V10.6339L1.5509 7.47681L1.41589 7.54083C-0.471313 11.2019 -0.471313 15.5497 1.41589 19.2108L5.71887 15.9478Z"
+              fill="#FBC41E"
+              fill-rule="evenodd"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M13.264 5.40387C15.1575 5.37183 16.9918 6.06396 18.3921 7.33887L22.1371 3.7569C19.7174 1.54193 16.5441 0.333069 13.264 0.376892C8.28339 0.355652 3.70911 3.12146 1.41406 7.54187L5.70007 10.8049C6.80988 7.57544 9.84723 5.40649 13.2621 5.40491"
+              fill="#ED5A4C"
+              fill-rule="evenodd"
+            />
+          </g>
+        </svg>
+        Continue with Google
+      </button>
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-gray-50 dark:bg-gray-700 text-dark-800 dark:text-white rounded-lg py-4 w-full text-base font-semibold h-[52px] mt-3xl cursor-not-allowed"
+        type="button"
+      >
+        <svg
+          fill="none"
+          height="26px"
+          viewBox="0 0 26 27"
+          width="26px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask
+            height="27"
+            id="mask0_1_7095"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;"
+            width="26"
+            x="0"
+            y="0"
+          >
+            <rect
+              fill="white"
+              height="26"
+              width="26"
+              y="0.376953"
+            />
+          </mask>
+          <g
+            mask="url(#mask0_1_7095)"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M26 13.377C26 20.5566 20.1797 26.377 13 26.377C5.82031 26.377 0 20.5567 0 13.377C0 6.19733 5.82025 0.377014 12.9999 0.376953C20.1797 0.376892 26 6.19721 26 13.377Z"
+              fill="#283544"
+              fill-rule="evenodd"
+            />
+            <path
+              class="fill-white dark:fill-dark-900"
+              clip-rule="evenodd"
+              d="M19.0941 10.088C18.0404 10.656 17.3693 11.7425 17.3331 12.939C17.4093 14.2718 18.2562 15.4376 19.5001 15.922C19.2377 16.6816 18.8589 17.3958 18.3771 18.039C17.7311 18.954 17.0151 19.877 15.9271 19.877C14.8931 19.877 14.5211 19.267 13.3271 19.267C12.0451 19.267 11.6821 19.877 10.7001 19.877C9.61211 19.877 8.84209 18.905 8.1621 17.998C7.14385 16.5849 6.56566 14.9025 6.50011 13.162C6.45958 12.2256 6.69311 11.2977 7.17211 10.492C7.89263 9.35376 9.1325 8.64893 10.4791 8.612C11.5221 8.58002 12.4501 9.28003 13.0881 9.28003C13.6991 9.28003 14.8391 8.612 16.1301 8.612C17.297 8.60071 18.3987 9.14917 19.0931 10.087M13.0001 8.42303C12.9091 7.58063 13.2031 6.74219 13.8001 6.14099C14.4233 5.46521 15.2878 5.06244 16.2061 5.02002C16.2509 5.88684 15.9302 6.73273 15.3221 7.35199C14.7667 8.06329 13.9017 8.46228 13.0001 8.42303Z"
+              fill-rule="evenodd"
+            />
+          </g>
+        </svg>
+        Login with AppleID
+      </button>
+      <p
+        class="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400 text-center mt-3xl"
+      >
+        Forgot password?
+         
+        <a
+          class="font-semibold text-black-900 dark:text-white"
+          href=""
+        >
+          Recover my password
+        </a>
+      </p>
+    </form>
+    <a
+      class="h-10 flex max-[1200px]:justify-end"
+      href="/"
+    >
+      <button
+        class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 px-4 min-w-20 h-10 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-white border-translucent-700 dark:border-gray-700 dark:bg-dark-900 dark:text-white py-4 pl-5 pr-4 text-xsm font-semibold border rounded-lg gap-5"
+        type="button"
+      >
+        <svg
+          fill="none"
+          height="18px"
+          viewBox="0 0 8 11"
+          width="7px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="fill-black-900 dark:fill-white"
+            clip-rule="evenodd"
+            d="M0.854614 6.03102C0.579834 5.84499 0.415283 5.5348 0.415283 5.20302C0.415283 4.87123 0.579834 4.56105 0.854614 4.37502L6.24365 0.375015C6.55017 0.166779 6.94666 0.145065 7.27405 0.318604C7.60144 0.492142 7.80603 0.832489 7.80566 1.20302V9.20302C7.80603 9.57358 7.60144 9.91391 7.27405 10.0874C6.94666 10.261 6.55005 10.2393 6.24365 10.031L0.854614 6.03102Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        Back
+      </button>
+    </a>
+  </div>
+</div>
+`;
