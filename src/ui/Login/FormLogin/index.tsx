@@ -8,12 +8,16 @@ import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 // Constants
-import { MESSAGE, REGEX, ROUTERS } from '@/constants';
+import { MESSAGE, ROUTERS } from '@/constants';
 
 // Models
 import { Account } from '@/types';
+
+// Utils
+import { formLoginSchema } from '@/utils';
 
 // Components
 import { ButtonCustom, CheckboxCustom, InputField } from '@/components';
@@ -48,6 +52,7 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
     handleSubmit,
     formState: { errors },
   } = useForm({
+    resolver: zodResolver(formLoginSchema),
     defaultValues: {
       username: '',
       password: '',
@@ -85,13 +90,6 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <Controller
           name="username"
           control={control}
-          rules={{
-            required: MESSAGE.USERNAME_REQUIRED,
-            pattern: {
-              value: REGEX.USERNAME,
-              message: MESSAGE.INVALID_USERNAME,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -110,13 +108,6 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <Controller
           name="password"
           control={control}
-          rules={{
-            required: MESSAGE.PASSWORD_REQUIRED,
-            pattern: {
-              value: REGEX.PASSWORD,
-              message: MESSAGE.INVALID_PASSWORD,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}

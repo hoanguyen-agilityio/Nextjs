@@ -7,9 +7,10 @@ import { Card } from '@nextui-org/react';
 import { useForm, Controller } from 'react-hook-form';
 import { useEffect, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 // Constants
-import { IMAGE, KEY_SWITCH, MESSAGE, REGEX, ROUTERS } from '@/constants';
+import { IMAGE, KEY_SWITCH, MESSAGE, ROUTERS } from '@/constants';
 
 // Models
 import { FormProps, IProducts } from '@/types';
@@ -18,7 +19,7 @@ import { FormProps, IProducts } from '@/types';
 import { getDataProducts } from '@/actions';
 
 // Helpers
-import { filterNumericInput, normalizeUrl } from '@/utils';
+import { filterNumericInput, formSchema, normalizeUrl } from '@/utils';
 
 // Components
 import {
@@ -36,6 +37,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
     null,
   );
   const { control, handleSubmit, reset, setValue } = useForm({
+    resolver: zodResolver(formSchema),
     defaultValues: {
       name: data?.name || '',
       status: data?.status || '',
@@ -75,31 +77,40 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
   const clearImages = () => setValue('img', []);
 
   const checkDuplicateName = async (name: string) => {
-    if (name === data?.name) return false;
+    try {
+      if (name === data?.name) return false;
 
-    const products = await getDataProducts();
-    return products?.some((product: IProducts) => product.name === name);
+      const products = await getDataProducts();
+      return products?.some((product: IProducts) => product.name === name);
+    } catch (error) {
+      console.error('Error checking duplicate name:', error);
+      return false;
+    }
   };
 
   const safeOnSubmit = (product: IProducts) => {
     startTransition(async () => {
-      const isDuplicate = await checkDuplicateName(product.name);
-      if (isDuplicate) {
-        setDuplicateNameError(MESSAGE.DUPLICATE_NAME);
-        return;
-      }
+      try {
+        const isDuplicate = await checkDuplicateName(product.name);
+        if (isDuplicate) {
+          setDuplicateNameError(MESSAGE.DUPLICATE_NAME);
+          return;
+        }
 
-      setDuplicateNameError(null);
+        setDuplicateNameError(null);
 
-      if (onSubmit) {
-        await onSubmit(product);
-      }
-      reset();
-      clearImages();
-      if (modePage === 'detail' && id) {
-        router.push(`${ROUTERS.EDIT_PRODUCT}/${id}`);
-      } else {
-        router.push(ROUTERS.HOME);
+        if (onSubmit) {
+          await onSubmit(product);
+        }
+        reset();
+        clearImages();
+        if (modePage === 'detail' && id) {
+          router.push(`${ROUTERS.EDIT_PRODUCT}/${id}`);
+        } else {
+          router.push(ROUTERS.HOME);
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
       }
     });
   };
@@ -114,13 +125,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="name"
           control={control}
-          rules={{
-            required: MESSAGE.NAME_REQUIRED,
-            maxLength: {
-              value: 30,
-              message: MESSAGE.MAX_NAME,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -139,12 +143,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="status"
           control={control}
-          rules={{
-            maxLength: {
-              value: 100,
-              message: MESSAGE.MAX_STATUS,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -164,17 +162,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="total"
           control={control}
-          rules={{
-            required: MESSAGE.PRICE_REQUIRED,
-            pattern: {
-              value: REGEX.NUMBER,
-              message: MESSAGE.VALID_NUMBER,
-            },
-            maxLength: {
-              value: 10,
-              message: MESSAGE.MAX_TOTAL,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -201,16 +188,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="views"
           control={control}
-          rules={{
-            pattern: {
-              value: REGEX.NUMBER,
-              message: MESSAGE.VALID_NUMBER,
-            },
-            maxLength: {
-              value: 10,
-              message: MESSAGE.MAX_VIEW,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -230,16 +207,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="sales"
           control={control}
-          rules={{
-            pattern: {
-              value: REGEX.NUMBER,
-              message: MESSAGE.VALID_NUMBER,
-            },
-            maxLength: {
-              value: 10,
-              message: MESSAGE.MAX_SALES,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
@@ -259,16 +226,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
         <Controller
           name="conversion"
           control={control}
-          rules={{
-            pattern: {
-              value: REGEX.PERCENT,
-              message: MESSAGE.VALID_PERCENT,
-            },
-            maxLength: {
-              value: 5,
-              message: MESSAGE.MAX_CONVERSION,
-            },
-          }}
           render={({ field, fieldState }) => (
             <InputField
               {...field}
