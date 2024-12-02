@@ -3,7 +3,7 @@
 exports[`ProductPreview component renders ProductPreview 1`] = `
 <div>
   <div
-    class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]"
+    class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-[1250px]:hidden max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]"
     tabindex="-1"
   >
     <div
@@ -34,8 +34,8 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
       class="relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased"
     >
       <div
-        class="relative shadow-black/5 shadow-none rounded-large"
-        style="background-image: url(https://via.placeholder.com/493x240?text=Fallback); max-width: 493px;"
+        class="relative shadow-black/5 shadow-none rounded-large bg-cover"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOyW9pu8TBhOqw5tUQh_5A6lrIYfmpu4c3GkV7t6pcfu7oTILl9FAm2nX8n45uLHdSpk&usqp=CAU); max-width: 493px;"
       >
          
         <img

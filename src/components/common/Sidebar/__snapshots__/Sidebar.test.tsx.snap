@@ -3,7 +3,7 @@
 exports[`Sidebar Component render Sidebar 1`] = `
 <div>
   <aside
-    class="flex flex-col justify-between max-w-m w-full bg-white min-h-screen border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700"
+    class="flex flex-col justify-between w-[351px] bg-white border-r-2 border-gray-50 text-lg dark:bg-dark-900 dark:border-gray-700 transition-transform duration-300 -translate-x-full fixed top-0 left-0 z-40"
   >
     <div
       class="flex flex-col gap-80"
@@ -249,5 +249,38 @@ exports[`Sidebar Component render Sidebar 1`] = `
       </div>
     </div>
   </aside>
+  <button
+    aria-label="Open sidebar"
+    class="fixed top-7 left-4 z-50 bg-gray-800 text-white p-3 rounded-full shadow-lg dark:bg-dark-700"
+  >
+    <svg
+      fill="none"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        id="SVGRepo_bgCarrier"
+        stroke-width="0"
+      />
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <g
+        id="SVGRepo_iconCarrier"
+      >
+        <path
+          d="M4 6H20M4 12H20M4 18H20"
+          stroke="#000000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </g>
+    </svg>
+  </button>
 </div>
 `;

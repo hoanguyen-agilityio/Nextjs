@@ -6,7 +6,7 @@ exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
     class="flex gap-8"
   >
     <div
-      class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9"
+      class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row min-w-3xl w-full pt-6 pr-3xl pl-[52px] pb-10 gap-9 max-[860px]:flex-col-reverse"
       tabindex="-1"
     >
       <form
@@ -759,7 +759,7 @@ exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
           </span>
         </label>
         <div
-          class="flex gap-5 mt-8"
+          class="flex gap-5 mt-8 flex-wrap"
         >
           <button
             class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 text-white dark:bg-white dark:text-black-900 rounded-lg h-auto py-4 px-[102px] font-semibold text-base"
@@ -777,7 +777,7 @@ exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
         </div>
       </form>
       <a
-        class="h-10"
+        class="h-10 flex max-[860px]:justify-end"
         href="/"
       >
         <button
@@ -803,7 +803,7 @@ exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
       </a>
     </div>
     <div
-      class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]"
+      class="flex flex-col relative overflow-hidden text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none max-[1250px]:hidden max-w-2xl pt-l pl-8 pr-lg pb-3xl h-[460px]"
       tabindex="-1"
     >
       <div
@@ -834,8 +834,8 @@ exports[`UI OverviewAddProduct renders Overview Add Product 1`] = `
         class="relative flex w-full p-3 flex-auto flex-col place-content-inherit align-items-inherit h-auto break-words text-left overflow-y-auto subpixel-antialiased"
       >
         <div
-          class="relative shadow-black/5 shadow-none rounded-large"
-          style="background-image: url(https://picsum.photos/id/237/200/300); max-width: 493px;"
+          class="relative shadow-black/5 shadow-none rounded-large bg-cover"
+          style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOyW9pu8TBhOqw5tUQh_5A6lrIYfmpu4c3GkV7t6pcfu7oTILl9FAm2nX8n45uLHdSpk&usqp=CAU); max-width: 493px;"
         >
            
           <img

@@ -21,21 +21,6 @@ describe('Media Component', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('renders images passed in the "data" prop', () => {
-    const data = { img: ['image1.jpg', 'image2.jpg'] };
-    renderMedia('edit', data);
-
-    expect(screen.getAllByRole('img')).toHaveLength(2);
-    expect(screen.getByAltText('Preview 0')).toHaveAttribute(
-      'src',
-      'image1.jpg',
-    );
-    expect(screen.getByAltText('Preview 1')).toHaveAttribute(
-      'src',
-      'image2.jpg',
-    );
-  });
-
   test('does not render the upload area in "detail" mode', () => {
     renderMedia('detail');
     expect(
@@ -60,5 +45,21 @@ describe('Media Component', () => {
     fireEvent.click(cancelButton);
 
     expect(screen.queryByText(/Add Image/i)).not.toBeInTheDocument();
+  });
+
+  test('renders correctly in "add" mode with no initial data', () => {
+    const { container } = renderMedia('add');
+    expect(container).toMatchSnapshot();
+    expect(screen.getByText(/Drop your images here/i)).toBeInTheDocument();
+  });
+
+  test('renders images passed in the "data" prop', () => {
+    const data = { img: ['image1.jpg', 'image2.jpg'] };
+    renderMedia('edit', data);
+
+    const images = screen.getAllByRole('img');
+    expect(images).toHaveLength(2);
+    expect(images[0]).toHaveAttribute('src', 'image1.jpg');
+    expect(images[1]).toHaveAttribute('src', 'image2.jpg');
   });
 });

@@ -41,10 +41,10 @@ exports[`Header Component render Sidebar 1`] = `
       </svg>
     </a>
     <div
-      class="flex gap-[135px]"
+      class="flex gap-[135px] max-[1280px]:gap-5"
     >
       <ul
-        class="flex gap-24 items-center"
+        class="flex gap-24 items-center max-[1500px]:gap-10 max-[1200px]:hidden"
       >
         <li>
           <a
@@ -98,7 +98,7 @@ exports[`Header Component render Sidebar 1`] = `
         </li>
       </ul>
       <div
-        class="flex gap-[22px]"
+        class="flex gap-[22px] max-[555px]:hidden"
       >
         <a
           href="login"
