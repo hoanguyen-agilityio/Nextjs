@@ -3,7 +3,7 @@
 exports[`OverviewItem Component render overview item 1`] = `
 <div>
   <div
-    class="flex flex-col items-center border-r border-gray-700 pr-6xl"
+    class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
   >
     <span
       class="text-4xl font-semibold mb-2sm"

@@ -3,10 +3,10 @@
 exports[`Login page renders login page 1`] = `
 <div>
   <section
-    class="flex items-center justify-around content-center min-h-screen"
+    class="flex items-center justify-around content-center min-h-screen p-4"
   >
     <div
-      class="flex flex-col items-center"
+      class="flex flex-col items-center max-[1200px]:hidden"
     >
       <svg
         fill="none"
@@ -35,22 +35,22 @@ exports[`Login page renders login page 1`] = `
         />
       </svg>
       <h1
-        class="text-white dark:text-black-900 font-semibold text-[62px]"
+        class="text-white dark:text-black-900 font-semibold text-[62px] text-center"
       >
         Welcome to WunderUI
       </h1>
       <span
-        class="text-white dark:text-black-900 font-normal text-[26px]"
+        class="text-white dark:text-black-900 font-normal text-[26px] text-center"
       >
         Sign In now to discover the full experience
       </span>
     </div>
     <div
-      class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl"
+      class="flex relative overflow-hidden h-auto text-foreground box-border bg-content1 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large transition-transform-background motion-reduce:transition-none flex-row justify-end min-w-3xl pt-6 pr-3xl pl-[52px] pb-10 gap-9 w-4xl max-[1200px]:flex-col-reverse"
       tabindex="-1"
     >
       <form
-        class="w-[528px]"
+        class="w-[528px] max-[1200px]:w-full"
       >
         <span
           class="font-bold text-4xl"
@@ -365,7 +365,7 @@ exports[`Login page renders login page 1`] = `
         </p>
       </form>
       <a
-        class="h-10"
+        class="h-10 flex max-[1200px]:justify-end"
         href="/"
       >
         <button

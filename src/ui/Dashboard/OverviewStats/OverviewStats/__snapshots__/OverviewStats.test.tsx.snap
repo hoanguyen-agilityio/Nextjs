@@ -44,7 +44,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       </div>
     </div>
     <div
-      class="flex flex-col items-center border-r border-gray-700 pr-6xl"
+      class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
     >
       <span
         class="text-4xl font-semibold mb-2sm"
@@ -82,7 +82,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       </div>
     </div>
     <div
-      class="flex flex-col items-center border-r border-gray-700 pr-6xl"
+      class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
     >
       <span
         class="text-4xl font-semibold mb-2sm"
@@ -120,7 +120,7 @@ exports[`OverviewStats Component render overview stats 1`] = `
       </div>
     </div>
     <div
-      class="flex flex-col items-center "
+      class="flex flex-col items-center pl-7"
     >
       <span
         class="text-4xl font-semibold mb-2sm"

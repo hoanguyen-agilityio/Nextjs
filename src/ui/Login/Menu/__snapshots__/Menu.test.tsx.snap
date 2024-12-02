@@ -3,7 +3,7 @@
 exports[`Menu Component render Sidebar 1`] = `
 <div>
   <ul
-    class="flex gap-24 items-center"
+    class="flex gap-24 items-center max-[1500px]:gap-10 max-[1200px]:hidden"
   >
     <li>
       <a
