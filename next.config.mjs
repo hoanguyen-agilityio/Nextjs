@@ -39,6 +39,16 @@ const nextConfig = {
         destination: '/edit/:id*',
         permanent: true,
       },
+      {
+        source: '/detail/add',
+        destination: '/add',
+        permanent: true,
+      },
+      {
+        source: '/edit/add',
+        destination: '/add',
+        permanent: true,
+      },
     ]
   },
 };

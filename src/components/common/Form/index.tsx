@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import { Card } from '@nextui-org/react';
 import { useForm, Controller } from 'react-hook-form';
-import { useEffect, useState, useTransition } from 'react';
+import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 
@@ -55,24 +55,6 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
   });
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
-
-  useEffect(() => {
-    if (data) {
-      reset({
-        name: data.name || '',
-        status: data.status || '',
-        total: data.total || '',
-        views: data.views || '',
-        sales: data.sales || '',
-        conversion: data.conversion || '',
-        download: data.download || '',
-        link: data.link || '',
-        personal: data.personal || '',
-        img: data?.img || [],
-        file: data?.file || [],
-      });
-    }
-  }, [data, reset]);
 
   const clearImages = () => setValue('img', []);
 

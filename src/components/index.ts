@@ -6,3 +6,4 @@ export { default as File } from './File';
 export { default as ImageCustom } from './Image';
 
 export * from './common';
+export * from './Skeleton';

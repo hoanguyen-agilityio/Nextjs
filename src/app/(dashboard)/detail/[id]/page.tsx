@@ -1,10 +1,12 @@
-import { ButtonCustom } from '@/components';
+import { ButtonCustom, TableSkeleton } from '@/components';
 import { IMAGE } from '@/constants';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import { APIs } from '@/services';
 import { IProducts } from '@/types';
 import { OverviewDetail } from '@/ui';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 export const generateMetadata = async ({
   params,
@@ -40,7 +42,14 @@ export const generateMetadata = async ({
   };
 };
 
-const DetailPage = () => {
+const DetailPage = async (props: { params: Promise<{ id: string }> }) => {
+  const params = await props.params;
+  const id = params.id;
+
+  const data = await APIs.get<IProducts | 'string'>(`/${id}`);
+
+  if (typeof data === 'string') notFound();
+
   return (
     <section className="pb-[52px] pl-7 pr-[50px] pt-5">
       <div className="flex justify-between mb-l sm:flex-row flex-col sm:items-center items-start gap-5 sm:gap-0">
@@ -68,7 +77,9 @@ const DetailPage = () => {
           </ButtonCustom>
         </div>
       </div>
-      <OverviewDetail />
+      <Suspense fallback={<TableSkeleton productCount={10} />}>
+        <OverviewDetail data={data} />
+      </Suspense>
     </section>
   );
 };

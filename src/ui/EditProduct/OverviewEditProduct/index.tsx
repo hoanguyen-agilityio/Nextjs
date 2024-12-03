@@ -3,7 +3,6 @@
 // Third party
 import { useParams } from 'next/navigation';
 import { toast } from 'react-toastify';
-import { useEffect, useState } from 'react';
 
 // Constants
 import { MESSAGE } from '@/constants';
@@ -13,24 +12,12 @@ import { IProducts } from '@/types';
 
 // API
 import { handleEditProduct } from '@/actions';
-import { APIs } from '@/services';
 
 // Components
 import { Form, ProductPreview } from '@/components';
 
-const OverviewEditProduct = () => {
+const OverviewEditProduct = ({ data }: { data: IProducts }) => {
   const { id } = useParams();
-  const [data, setData] = useState<IProducts | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const productId = Array.isArray(id) ? id[0] : id;
-      const result = await APIs.get(`/${productId}`);
-      setData(result as IProducts);
-    };
-
-    fetchData();
-  }, [id]);
 
   const handleEditProductSubmit = (formData: IProducts) => {
     try {

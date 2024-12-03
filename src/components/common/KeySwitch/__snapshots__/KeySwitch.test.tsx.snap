@@ -18,6 +18,7 @@ exports[`KeySwitch component renders with default type 1`] = `
       </p>
     </div>
     <label
+      aria-label="Generate License Keys"
       class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
     >
       <span

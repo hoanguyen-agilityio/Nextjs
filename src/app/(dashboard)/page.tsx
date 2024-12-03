@@ -1,14 +1,7 @@
 import { Suspense } from 'react';
-import { ButtonCustom } from '@/components';
+import { ButtonCustom, OverviewSkeleton, TableSkeleton } from '@/components';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
-import {
-  Filter,
-  Overview,
-  OverviewSkeleton,
-  ProductSearch,
-  ProductTableWrapper,
-  TableSkeleton,
-} from '@/ui';
+import { Filter, Overview, ProductSearch, ProductTableWrapper } from '@/ui';
 
 export const metadata = {
   title: 'Dashboard - Products Overview',

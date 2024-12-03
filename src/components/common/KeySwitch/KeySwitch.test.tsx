@@ -7,6 +7,7 @@ describe('KeySwitch component', () => {
     const { container } = render(
       <KeySwitch
         title="Generate License Keys"
+        ariaLabel="Generate License Keys"
         describe="Issue each customer a unique license key after purchase"
       />,
     );
