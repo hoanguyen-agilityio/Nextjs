@@ -1,5 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Search component render with size 3xl 1`] = `
+<div>
+  <div
+    class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end"
+    data-has-value="true"
+    data-slot="base"
+  >
+    <div
+      class="flex flex-col w-full h-14"
+      data-slot="main-wrapper"
+    >
+      <div
+        class="relative w-full tap-highlight-transparent flex-row shadow-sm px-3 gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 pt-lg pb-4 pr-4 pl-24 rounded-lg"
+        data-slot="input-wrapper"
+        style="cursor: text;"
+      >
+        <div
+          class="inline-flex w-full items-center h-full box-border"
+          data-slot="inner-wrapper"
+        >
+          <input
+            aria-label=" "
+            class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+            data-slot="input"
+            id="react-aria-:rk:"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Search component render with size xl 1`] = `
+<div>
+  <div
+    class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end"
+    data-has-value="true"
+    data-slot="base"
+  >
+    <div
+      class="flex flex-col w-full h-14"
+      data-slot="main-wrapper"
+    >
+      <div
+        class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 pt-lg pb-4 px-4 rounded-lg"
+        data-slot="input-wrapper"
+        style="cursor: text;"
+      >
+        <div
+          class="inline-flex w-full items-center h-full box-border"
+          data-slot="inner-wrapper"
+        >
+          <input
+            aria-label=" "
+            class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm"
+            data-slot="input"
+            id="react-aria-:ra:"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Search component render with size xxl 1`] = `
+<div>
+  <div
+    class="group flex flex-col data-[hidden=true]:hidden w-full relative justify-end"
+    data-has-value="true"
+    data-slot="base"
+  >
+    <div
+      class="flex flex-col w-full h-14"
+      data-slot="main-wrapper"
+    >
+      <div
+        class="relative w-full tap-highlight-transparent flex-row shadow-sm gap-3 data-[hover=true]:bg-default-200 group-data-[focus=true]:bg-default-100 min-h-10 transition-background motion-reduce:transition-none !duration-150 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-gray-50 flex items-center space-x-2 h-full placeholder:text-ratio-300 dark:bg-gray-700 dark: text-ratio-700 dark:placeholder:text-ratio-700 focus-within:ring-0 pt-lg pb-4 px-4 rounded-lg"
+        data-slot="input-wrapper"
+        style="cursor: text;"
+      >
+        <div
+          class="inline-flex w-full items-center h-full box-border"
+          data-slot="inner-wrapper"
+        >
+          <input
+            aria-label=" "
+            class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text text-small group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: flex-grow focus:outline-none focus:ring-0 font-semibold text-xsm text-right"
+            data-slot="input"
+            id="react-aria-:rf:"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Search component renders with default type 1`] = `
 <div>
   <div
@@ -47,6 +152,41 @@ exports[`Search component renders with default type 1`] = `
             data-slot="input"
             id="react-aria-:r0:"
             placeholder="search"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Search component renders with secondary type 1`] = `
+<div>
+  <div
+    class="group flex flex-col data-[hidden=true]:hidden relative justify-end data-[has-label=true]:mt-[calc(theme(fontSize.small)_+_10px)] w-80"
+    data-has-value="true"
+    data-slot="base"
+  >
+    <div
+      class="flex flex-col w-80 h-12"
+      data-slot="main-wrapper"
+    >
+      <div
+        class="relative tap-highlight-transparent flex-row shadow-sm gap-3 min-h-10 transition-background motion-reduce:transition-none !duration-150 data-[hover=true]:bg-secondary-100 group-data-[focus=true]:bg-secondary-50 outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background bg-white flex items-center space-x-2 border border-gray-50 h-full dark:bg-dark-900 dark:border-gray-700 focus-within:ring-0 text-ratio-200 dark:text-ratio-800 placeholder:text-ratio-200 dark:placeholder:text-ratio-800 py-3.5 px-5 w-80 rounded-lg"
+        data-slot="input-wrapper"
+        style="cursor: text;"
+      >
+        <div
+          class="w-full items-center h-full box-border flex"
+          data-slot="inner-wrapper"
+        >
+          <input
+            aria-label=" "
+            class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text placeholder:text-ratio-200 dark:placeholder:text-ratio-800 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
+            data-slot="input"
+            id="react-aria-:r5:"
             type="text"
             value=""
           />
