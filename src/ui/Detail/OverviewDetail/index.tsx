@@ -1,31 +1,15 @@
 'use client';
 
 // Third party
-import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 
-// Models
 import { IProducts } from '@/types';
-
-// API
-import { APIs } from '@/services';
 
 // Components
 import { Form, ProductPreview } from '@/components';
 
-const OverviewDetail = () => {
+const OverviewDetail = ({ data }: { data: IProducts }) => {
   const { id } = useParams();
-  const [data, setData] = useState<IProducts | null>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const productId = Array.isArray(id) ? id[0] : id;
-      const result = await APIs.get(`/${productId}`);
-      setData(result as IProducts);
-    };
-
-    fetchData();
-  }, [id]);
 
   return (
     <div className="flex gap-8">

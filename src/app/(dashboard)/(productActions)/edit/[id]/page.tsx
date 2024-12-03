@@ -5,6 +5,7 @@ import { APIs } from '@/services';
 import { IProducts } from '@/types';
 import { OverviewEditProduct } from '@/ui';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 export const generateMetadata = async ({
   params,
@@ -40,7 +41,14 @@ export const generateMetadata = async ({
   };
 };
 
-const EditPage = () => {
+const EditPage = async (props: { params: Promise<{ id: string }> }) => {
+  const params = await props.params;
+  const id = params.id;
+
+  const data = await APIs.get<IProducts | 'string'>(`/${id}`);
+
+  if (typeof data === 'string') notFound();
+
   return (
     <section className="pb-[52px] pl-7 pr-[50px] pt-5">
       <div className="flex justify-between mb-l sm:flex-row flex-col sm:items-center items-start gap-5 sm:gap-0">
@@ -68,7 +76,7 @@ const EditPage = () => {
           </ButtonCustom>
         </div>
       </div>
-      <OverviewEditProduct />
+      <OverviewEditProduct data={data} />
     </section>
   );
 };
