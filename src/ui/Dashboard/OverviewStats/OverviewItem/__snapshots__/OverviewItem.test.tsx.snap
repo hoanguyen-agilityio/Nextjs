@@ -6,12 +6,12 @@ exports[`OverviewItem Component render overview item 1`] = `
     class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
   >
     <span
-      class="text-4xl font-semibold mb-2sm"
+      class="text-4xl mb-2sm"
     >
       1000
     </span>
     <span
-      class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
+      class="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm"
     >
       Total Sales
     </span>

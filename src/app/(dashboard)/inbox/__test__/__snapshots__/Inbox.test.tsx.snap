@@ -6,7 +6,7 @@ exports[`Inbox Page renders inbox page 1`] = `
     class="flex h-screen flex-col items-center justify-center gap-2"
   >
     <h2
-      class="text-4xl font-semibold"
+      class="text-4xl"
     >
       Inbox Page
     </h2>

@@ -8,7 +8,7 @@ exports[`Menu Component render menu 1`] = `
     <ul>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-100 bg-translucent-400 dark:text-blue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-100 bg-translucent-400 dark:text-blue-400"
           href="/"
         >
           <span
@@ -20,7 +20,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="inbox"
         >
           <span
@@ -32,7 +32,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="wallet"
         >
           <span
@@ -44,7 +44,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="newsFeed"
         >
           <span
@@ -56,7 +56,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="analytics"
         >
           <span
@@ -68,7 +68,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="market"
         >
           <span
@@ -80,7 +80,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="archive"
         >
           <span
@@ -92,7 +92,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400 mt-[100px]"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400 mt-[100px]"
           href="profile"
         >
           <span
@@ -104,7 +104,7 @@ exports[`Menu Component render menu 1`] = `
       </li>
       <li>
         <a
-          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer font-semibold text-ratio-200 dark:text-grayBlue-400"
+          class="flex py-lg pl-2xl rounded-lg items-center cursor-pointer text-ratio-200 dark:text-grayBlue-400"
           href="settings"
         >
           <span

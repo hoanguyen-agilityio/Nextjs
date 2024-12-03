@@ -4,7 +4,7 @@ exports[`InputField component renders with default type 1`] = `
 <div>
   <div>
     <label
-      class="font-semibold text-lg text-black-900 dark:text-white undefined"
+      class="text-lg text-black-900 dark:text-white undefined"
     >
       InputField Test
     </label>

@@ -32,7 +32,7 @@ const InputField = ({
   return (
     <div className={classWrapper}>
       <label
-        className={`font-semibold text-lg text-black-900 dark:text-white ${classLabel}`}
+        className={`text-lg text-black-900 dark:text-white ${classLabel}`}
         htmlFor={fieldId}
       >
         {label}

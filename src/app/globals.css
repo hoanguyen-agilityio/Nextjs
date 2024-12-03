@@ -5,13 +5,19 @@
 :root {
   --background: #F9FBFC;
   --foreground: #171717;
+  --fontSize: 16px;
+  --fontWeight: 600;
 }
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --fontSize: 16px;
+  --fontWeight: 600;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
 }

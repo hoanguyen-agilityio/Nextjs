@@ -46,7 +46,7 @@ const ModelDeleteProduct = ({
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 text-center text-3xl font-semibold text-red-600">
+              <ModalHeader className="flex flex-col gap-1 text-center text-3xl text-red-600">
                 Warning !!!
               </ModalHeader>
               <ModalBody>

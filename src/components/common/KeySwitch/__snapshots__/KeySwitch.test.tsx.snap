@@ -7,7 +7,7 @@ exports[`KeySwitch component renders with default type 1`] = `
   >
     <div>
       <span
-        class="font-semibold text-lg text-black-900 dark:text-white"
+        class="text-lg text-black-900 dark:text-white"
       >
         Generate License Keys
       </span>

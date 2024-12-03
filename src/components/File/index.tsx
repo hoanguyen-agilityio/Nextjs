@@ -84,10 +84,7 @@ const File = ({ onFilesChange, mode, data }: FileUploaderProps) => {
 
   return (
     <div className="mt-11">
-      <label
-        className="font-semibold text-lg text-black-900 dark:text-white"
-        htmlFor="Files"
-      >
+      <label className="text-lg text-black-900 dark:text-white" htmlFor="Files">
         Files
       </label>
 

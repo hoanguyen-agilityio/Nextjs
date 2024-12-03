@@ -30,8 +30,8 @@ exports[`Table component renders table 1`] = `
             >
               <th
                 class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-                data-key="row-header-column-hyofgdoryz9"
-                id="react-aria-:r0:-row-header-column-hyofgdoryz9"
+                data-key="row-header-column-muw4vtj5e2"
+                id="react-aria-:r0:-row-header-column-muw4vtj5e2"
                 role="columnheader"
                 tabindex="-1"
               >

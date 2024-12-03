@@ -6,7 +6,7 @@ exports[`File component renders with default type 1`] = `
     class="mt-11"
   >
     <label
-      class="font-semibold text-lg text-black-900 dark:text-white"
+      class="text-lg text-black-900 dark:text-white"
       for="Files"
     >
       Files

@@ -70,7 +70,7 @@ exports[`Edit page renders edit page 1`] = `
         >
           <div>
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Name"
             >
               Name *
@@ -116,7 +116,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Description"
             >
               Description
@@ -162,7 +162,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Price"
             >
               Price *
@@ -220,7 +220,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input View"
             >
               View
@@ -261,7 +261,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Sales"
             >
               Sales
@@ -302,7 +302,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Conversion"
             >
               Conversion
@@ -343,7 +343,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-3xl"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white"
+              class="text-lg text-black-900 dark:text-white"
               for="Media"
             >
               Media
@@ -425,7 +425,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-11"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white"
+              class="text-lg text-black-900 dark:text-white"
               for="Files"
             >
               Files
@@ -506,7 +506,7 @@ exports[`Edit page renders edit page 1`] = `
           >
             <div>
               <span
-                class="font-semibold text-lg text-black-900 dark:text-white"
+                class="text-lg text-black-900 dark:text-white"
               >
                 Generate License Keys
               </span>
@@ -545,7 +545,7 @@ exports[`Edit page renders edit page 1`] = `
           >
             <div>
               <span
-                class="font-semibold text-lg text-black-900 dark:text-white"
+                class="text-lg text-black-900 dark:text-white"
               >
                 Redirect customers after purchase?
               </span>
@@ -584,7 +584,7 @@ exports[`Edit page renders edit page 1`] = `
           >
             <div>
               <span
-                class="font-semibold text-lg text-black-900 dark:text-white"
+                class="text-lg text-black-900 dark:text-white"
               >
                 Display product on shop page?
               </span>
@@ -624,7 +624,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-[60px]"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Download Button"
             >
               Download Button
@@ -670,7 +670,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-[34px]"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Product Link"
             >
               Product Link
@@ -728,7 +728,7 @@ exports[`Edit page renders edit page 1`] = `
             class="mt-[34px]"
           >
             <label
-              class="font-semibold text-lg text-black-900 dark:text-white undefined"
+              class="text-lg text-black-900 dark:text-white undefined"
               for="Input Personal Note"
             >
               Personal Note
@@ -929,7 +929,7 @@ exports[`Edit page renders edit page 1`] = `
                 />
               </svg>
               <p
-                class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+                class="text-xsm text-ratio-200 dark:text-grayBlue-400"
               >
                 9 Jan 2023 9:43 PM
               </p>
@@ -976,7 +976,7 @@ exports[`Edit page renders edit page 1`] = `
                 />
               </svg>
               <p
-                class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+                class="text-xsm text-ratio-200 dark:text-grayBlue-400"
               >
                 4.3
               </p>
