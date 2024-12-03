@@ -18,7 +18,7 @@ const AddPage = () => {
           <ButtonCustom
             color="default"
             radius="sm"
-            className="h-auto gap-6 cursor-not-allowed"
+            className="h-auto gap-6 cursor-not-allowed max-[420px]:w-full"
             size="xs"
             startContent={<RightArrowUp width="14px" height="13px" />}
           >
@@ -28,7 +28,7 @@ const AddPage = () => {
             color="dark"
             radius="sm"
             size="xxl"
-            className="p-4 h-auto gap-4 text-white dark:text-black-900 cursor-not-allowed"
+            className="p-4 h-auto gap-4 text-white dark:text-black-900 cursor-not-allowed max-[420px]:w-full"
             startContent={
               <NewCustomerIcon width="26px" height="26px" fill="white" />
             }

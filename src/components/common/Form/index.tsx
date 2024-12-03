@@ -342,7 +342,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             color="dark"
             radius="sm"
             size="l"
-            className={clsx('h-auto py-4 px-[102px]', {
+            className={clsx('max-[720px]:w-full h-auto py-4 px-[102px]', {
               'opacity-50 cursor-not-allowed': isPending,
             })}
             disabled={isPending}
@@ -353,7 +353,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             color="grey"
             radius="sm"
             size="l"
-            className="h-auto py-4 px-11 cursor-not-allowed"
+            className="max-[720px]:w-full h-auto py-4 px-11 cursor-not-allowed"
             disabled={true}
             type="submit"
           >
