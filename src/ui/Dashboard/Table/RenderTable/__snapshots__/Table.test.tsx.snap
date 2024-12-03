@@ -30,8 +30,8 @@ exports[`Table component renders table 1`] = `
             >
               <th
                 class="group px-3 h-10 align-middle bg-default-100 whitespace-nowrap text-foreground-500 text-tiny font-semibold first:rounded-s-lg last:rounded-e-lg data-[sortable=true]:cursor-pointer data-[hover=true]:text-foreground-400 outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 text-start"
-                data-key="row-header-column-muw4vtj5e2"
-                id="react-aria-:r0:-row-header-column-muw4vtj5e2"
+                data-key="row-header-column-uwd3j1lmb2"
+                id="react-aria-:r0:-row-header-column-uwd3j1lmb2"
                 role="columnheader"
                 tabindex="-1"
               >
@@ -1038,7 +1038,7 @@ exports[`Table component renders table 1`] = `
           class="flex justify-between items-center mt-4"
         >
           <button
-            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white rounded-md p-3 gap-4 font-semibold text-base border-1 border-translucent-100 cursor-not-allowed opacity-50"
+            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white font-semibold text-base rounded-md p-3 gap-4 border-1 border-translucent-100 cursor-not-allowed opacity-50"
             disabled=""
             type="button"
           >
@@ -1059,7 +1059,7 @@ exports[`Table component renders table 1`] = `
             Previous
           </button>
           <span
-            class="text-ratio-200 dark:text-grayBlue-400 font-semibold"
+            class="text-ratio-200 dark:text-grayBlue-400"
           >
             Page 
             1
@@ -1067,7 +1067,7 @@ exports[`Table component renders table 1`] = `
             1
           </span>
           <button
-            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white rounded-md p-3 gap-4 font-semibold text-base border-1 border-translucent-100 cursor-not-allowed opacity-50"
+            class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 h-10 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover text-black bg-white dark:border-gray-700 dark:bg-dark-900 dark:text-white font-semibold text-base rounded-md p-3 gap-4 border-1 border-translucent-100 cursor-not-allowed opacity-50"
             disabled=""
             type="button"
           >

@@ -37,7 +37,7 @@ exports[`Edit page renders edit page 1`] = `
           Export
         </button>
         <button
-          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 dark:bg-white rounded-lg p-4 h-auto gap-4 font-semibold text-white dark:text-black-900 cursor-not-allowed"
+          class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 text-small [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 dark:bg-white font-semibold rounded-lg p-4 h-auto gap-4 text-white dark:text-black-900 cursor-not-allowed"
           type="button"
         >
           <svg
@@ -190,7 +190,7 @@ exports[`Edit page renders edit page 1`] = `
                       class="pointer-events-none flex items-center"
                     >
                       <span
-                        class="font-semibold text-xsm"
+                        class="text-xsm"
                       >
                         $
                       </span>
@@ -699,7 +699,7 @@ exports[`Edit page renders edit page 1`] = `
                       class="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center"
                     >
                       <p
-                        class="font-semibold text-xsm text-ratio-200 dark:text-grayBlue-400"
+                        class="text-xsm text-ratio-200 dark:text-grayBlue-400"
                       >
                         https://
                       </p>
@@ -818,13 +818,13 @@ exports[`Edit page renders edit page 1`] = `
             class="flex gap-5 mt-8 flex-wrap"
           >
             <button
-              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 text-white dark:bg-white dark:text-black-900 rounded-lg h-auto py-4 px-[102px] font-semibold text-base"
+              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-black-900 text-white dark:bg-white dark:text-black-900 font-semibold text-base rounded-lg h-auto py-4 px-[102px]"
               type="submit"
             >
               Publish Product
             </button>
             <button
-              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-lightGray-100 text-white dark:bg-slate-100 dark:text-black-900 rounded-lg h-auto py-4 px-11 font-semibold text-base cursor-not-allowed"
+              class="z-0 group relative inline-flex items-center justify-center box-border appearance-none select-none whitespace-nowrap subpixel-antialiased overflow-hidden tap-highlight-transparent data-[pressed=true]:scale-[0.97] outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 min-w-20 gap-2 [&>svg]:max-w-[theme(spacing.8)] transition-transform-colors-opacity motion-reduce:transition-none data-[hover=true]:opacity-hover bg-lightGray-100 text-white dark:bg-slate-100 dark:text-black-900 font-semibold text-base rounded-lg h-auto py-4 px-11 cursor-not-allowed"
               disabled=""
               type="submit"
             >
