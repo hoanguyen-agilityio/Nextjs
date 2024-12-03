@@ -174,7 +174,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
               size="xxl"
               startContent={
                 <div className="pointer-events-none flex items-center">
-                  <span className="font-semibold text-xsm">$</span>
+                  <span className="text-xsm">$</span>
                 </div>
               }
               color="secondary"
@@ -317,7 +317,7 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
               color="secondary"
               startContent={
                 <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
-                  <p className="font-semibold text-xsm text-ratio-200 dark:text-grayBlue-400">
+                  <p className="text-xsm text-ratio-200 dark:text-grayBlue-400">
                     https://
                   </p>
                 </div>
@@ -359,7 +359,8 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
             type="submit"
             color="dark"
             radius="sm"
-            className={clsx('h-auto py-4 px-[102px] font-semibold text-base', {
+            size="l"
+            className={clsx('h-auto py-4 px-[102px]', {
               'opacity-50 cursor-not-allowed': isPending,
             })}
             disabled={isPending}
@@ -369,7 +370,8 @@ const Form = ({ data, modePage, label, onSubmit, id }: FormProps) => {
           <ButtonCustom
             color="grey"
             radius="sm"
-            className="h-auto py-4 px-11 font-semibold text-base cursor-not-allowed"
+            size="l"
+            className="h-auto py-4 px-11 cursor-not-allowed"
             disabled={true}
             type="submit"
           >

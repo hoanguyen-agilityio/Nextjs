@@ -24,7 +24,9 @@ const ButtonCustom = extendVariants(Button, {
       s: 'py-3.5 px-5 text-xsm font-semibold border',
       xs: 'py-4 pl-5 pr-4 text-xsm font-semibold border',
       md: 'py-1 px-2 text-base',
+      l: 'font-semibold text-base',
       xl: 'font-semibold border py-lg px-5 text-xsm',
+      xxl: 'font-semibold text-xsm',
       unstyled: 'p-0',
     },
     radius: {
