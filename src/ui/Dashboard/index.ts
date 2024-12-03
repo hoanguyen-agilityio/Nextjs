@@ -6,7 +6,6 @@ export { default as ProductTable } from './ProductTable';
 export { default as ProductTableWrapper } from './ProductTableWrapper';
 export { default as DropdownIcon } from './Dropdown';
 
-export * from './Skeleton';
 export * from './OverviewStats';
 export * from './Table';
 export * from './Select';

@@ -1,4 +1,4 @@
-import { ButtonCustom } from '@/components';
+import { ButtonCustom, TableSkeleton } from '@/components';
 import { IMAGE } from '@/constants';
 import { NewCustomerIcon, RightArrowUp } from '@/icons';
 import { APIs } from '@/services';
@@ -6,6 +6,7 @@ import { IProducts } from '@/types';
 import { OverviewDetail } from '@/ui';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 export const generateMetadata = async ({
   params,
@@ -76,7 +77,9 @@ const DetailPage = async (props: { params: Promise<{ id: string }> }) => {
           </ButtonCustom>
         </div>
       </div>
-      <OverviewDetail data={data} />
+      <Suspense fallback={<TableSkeleton productCount={10} />}>
+        <OverviewDetail data={data} />
+      </Suspense>
     </section>
   );
 };

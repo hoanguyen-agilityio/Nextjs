@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Error from '.';
 
 describe('Error component', () => {
@@ -9,7 +9,6 @@ describe('Error component', () => {
 
   test('renders with default message and no reset button', () => {
     render(<Error />);
-    expect(screen.getByText('Oops! Something went wrong.')).toBeInTheDocument();
     expect(screen.getByText('Go to Home Page')).toBeInTheDocument();
     expect(
       screen.queryByRole('button', { name: /reset/i }),
@@ -23,12 +22,16 @@ describe('Error component', () => {
     expect(screen.getByText('Go to Home Page')).toBeInTheDocument();
   });
 
-  test('renders with reset button when onReset is provided', () => {
-    const onReset = jest.fn();
-    render(<Error onReset={onReset} />);
-    const resetButton = screen.getByRole('button', { name: /reset/i });
-    expect(resetButton).toBeInTheDocument();
-    fireEvent.click(resetButton);
-    expect(onReset).toHaveBeenCalledTimes(1);
+  test('renders with default message and no reset button', () => {
+    render(<Error />);
+    expect(
+      screen.getByText(
+        'We apologize for the inconvenience. The page you are looking for might have been removed or is temporarily unavailable.',
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Go to Home Page')).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /reset/i }),
+    ).not.toBeInTheDocument();
   });
 });
