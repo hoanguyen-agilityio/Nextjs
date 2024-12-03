@@ -29,7 +29,7 @@ exports[`Overview Component renders Overview when no data is returned 1`] = `
             />
           </svg>
           <span
-            class="font-semibold text-sm"
+            class="text-sm"
           >
             12/12/2022 - 12/20/2022
           </span>
@@ -260,7 +260,7 @@ exports[`Overview Component renders Overview with mock data 1`] = `
             />
           </svg>
           <span
-            class="font-semibold text-sm"
+            class="text-sm"
           >
             12/12/2022 - 12/20/2022
           </span>

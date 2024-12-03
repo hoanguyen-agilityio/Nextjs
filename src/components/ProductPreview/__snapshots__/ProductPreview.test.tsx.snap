@@ -73,7 +73,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
             />
           </svg>
           <p
-            class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+            class="text-xsm text-ratio-200 dark:text-grayBlue-400"
           >
             9 Jan 2023 9:43 PM
           </p>
@@ -120,7 +120,7 @@ exports[`ProductPreview component renders ProductPreview 1`] = `
             />
           </svg>
           <p
-            class="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold"
+            class="text-xsm text-ratio-200 dark:text-grayBlue-400"
           >
             4.3
           </p>

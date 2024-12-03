@@ -9,12 +9,12 @@ exports[`OverviewStats Component render overview stats 1`] = `
       class="flex flex-col items-center border-r border-gray-700 pr-6xl"
     >
       <span
-        class="text-4xl font-semibold mb-2sm"
+        class="text-4xl mb-2sm"
       >
         $39,510.32
       </span>
       <span
-        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
+        class="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Total Revenue
       </span>
@@ -47,12 +47,12 @@ exports[`OverviewStats Component render overview stats 1`] = `
       class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
     >
       <span
-        class="text-4xl font-semibold mb-2sm"
+        class="text-4xl mb-2sm"
       >
         175,182
       </span>
       <span
-        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
+        class="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Total Sales
       </span>
@@ -85,12 +85,12 @@ exports[`OverviewStats Component render overview stats 1`] = `
       class="flex flex-col items-center border-r border-gray-700 pr-6xl pl-7"
     >
       <span
-        class="text-4xl font-semibold mb-2sm"
+        class="text-4xl mb-2sm"
       >
         508,072
       </span>
       <span
-        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
+        class="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         Customers
       </span>
@@ -123,12 +123,12 @@ exports[`OverviewStats Component render overview stats 1`] = `
       class="flex flex-col items-center pl-7"
     >
       <span
-        class="text-4xl font-semibold mb-2sm"
+        class="text-4xl mb-2sm"
       >
         105,075
       </span>
       <span
-        class="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm"
+        class="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm"
       >
         New Subscriptions
       </span>

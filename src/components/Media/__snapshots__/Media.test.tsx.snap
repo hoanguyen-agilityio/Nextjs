@@ -6,7 +6,7 @@ exports[`Media Component renders correctly in "add" mode with no initial data 1`
     class="mt-3xl"
   >
     <label
-      class="font-semibold text-lg text-black-900 dark:text-white"
+      class="text-lg text-black-900 dark:text-white"
       for="Media"
     >
       Media
@@ -93,7 +93,7 @@ exports[`Media Component renders with default type 1`] = `
     class="mt-3xl"
   >
     <label
-      class="font-semibold text-lg text-black-900 dark:text-white"
+      class="text-lg text-black-900 dark:text-white"
       for="Media"
     >
       Media

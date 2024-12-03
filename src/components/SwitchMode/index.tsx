@@ -29,7 +29,7 @@ const SwitchMode = () => {
     <div className="flex items-center justify-between my-11">
       <div className="flex items-center">
         <MoonIcon width="26px" height="26px" className="mr-6" />
-        <label className="text-lg font-semibold text-ratio-200 dark:text-grayBlue-400">
+        <label className="text-lg text-ratio-200 dark:text-grayBlue-400">
           Dark mode
         </label>
       </div>

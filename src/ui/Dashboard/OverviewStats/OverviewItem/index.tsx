@@ -22,8 +22,8 @@ const OverviewItem = memo(
         { 'pl-7': !isFirst },
       )}
     >
-      <span className="text-4xl font-semibold mb-2sm">{value}</span>
-      <span className="text-base font-semibold text-ratio-200 dark:text-grayBlue-400 mb-2sm">
+      <span className="text-4xl mb-2sm">{value}</span>
+      <span className="text-base text-ratio-200 dark:text-grayBlue-400 mb-2sm">
         {label}
       </span>
       <div className="flex items-center rounded-lg bg-gray-50 py-sm px-m dark:bg-gray-700">

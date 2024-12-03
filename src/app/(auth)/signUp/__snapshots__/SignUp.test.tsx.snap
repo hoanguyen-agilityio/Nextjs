@@ -6,7 +6,7 @@ exports[`Sign Up page renders sign up page 1`] = `
     class="flex h-screen flex-col items-center justify-center gap-2 text-white dark:text-black-900"
   >
     <h2
-      class="text-4xl font-semibold"
+      class="text-4xl"
     >
       Sign Up Page
     </h2>

@@ -27,7 +27,8 @@ const AddPage = () => {
           <ButtonCustom
             color="dark"
             radius="sm"
-            className="p-4 h-auto gap-4 text-xsm font-semibold text-white dark:text-black-900 cursor-not-allowed"
+            size="xxl"
+            className="p-4 h-auto gap-4 text-white dark:text-black-900 cursor-not-allowed"
             startContent={
               <NewCustomerIcon width="26px" height="26px" fill="white" />
             }

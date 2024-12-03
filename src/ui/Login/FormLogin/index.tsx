@@ -151,10 +151,10 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <ButtonCustom
           color="dark"
           radius="sm"
-          className={clsx(
-            'py-4 w-full text-base font-semibold h-[52px] mt-5xl',
-            { 'opacity-50 cursor-not-allowed': isPending },
-          )}
+          size="l"
+          className={clsx('py-4 w-full h-[52px] mt-5xl', {
+            'opacity-50 cursor-not-allowed': isPending,
+          })}
           type="submit"
           disabled={isPending}
         >
@@ -170,7 +170,8 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <ButtonCustom
           color="bright"
           radius="sm"
-          className="py-4 w-full text-base font-semibold h-[52px] mt-l cursor-not-allowed"
+          size="l"
+          className="py-4 w-full h-[52px] mt-l cursor-not-allowed"
           startContent={<GoogleIcon width="26px" height="26px" />}
         >
           Continue with Google
@@ -178,7 +179,8 @@ const FormLogin = ({ onSignIn }: FormLoginProps) => {
         <ButtonCustom
           color="bright"
           radius="sm"
-          className="py-4 w-full text-base font-semibold h-[52px] mt-3xl cursor-not-allowed"
+          size="l"
+          className="py-4 w-full h-[52px] mt-3xl cursor-not-allowed"
           startContent={<AppleIcon width="26px" height="26px" />}
         >
           Login with AppleID

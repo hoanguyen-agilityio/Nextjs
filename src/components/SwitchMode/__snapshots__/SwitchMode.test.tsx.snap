@@ -1,61 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dark Mode Switch component renders with default type 1`] = `
-<div>
-  <div
-    class="flex items-center justify-between my-11"
-  >
-    <div
-      class="flex items-center"
-    >
-      <svg
-        class="mr-6"
-        fill="none"
-        height="26px"
-        viewBox="0 0 26 27"
-        width="26px"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          clip-rule="evenodd"
-          d="M25.9588 17.2772C26.0278 17.0449 26.0075 16.7953 25.9018 16.5773C25.7936 16.3561 25.6083 16.1823 25.3808 16.0883C25.1508 15.993 24.8944 15.9832 24.6578 16.0603C22.75 16.6893 20.701 16.7532 18.7578 16.2444C16.8247 15.7408 15.0818 14.6814 13.7448 13.1973C12.4243 11.7317 11.5764 9.9021 11.3118 7.94727C11.0516 5.99854 11.3891 4.01685 12.2798 2.26428C12.3888 2.04749 12.4127 1.79773 12.3468 1.56433C12.2782 1.32825 12.1252 1.12573 11.9168 0.995361C11.7058 0.862793 11.4541 0.810669 11.2078 0.848389C7.93285 1.3396 4.95859 3.03381 2.86578 5.60034C-1.42604 10.8662 -0.808876 18.5781 4.26579 23.0944C8.99734 27.3246 16.0398 27.6787 21.1718 23.9442C23.4443 22.2996 25.1239 19.964 25.9598 17.2863L25.9588 17.2772ZM13.2638 24.5262C10.6196 24.5233 8.05902 23.5997 6.02178 21.9142C4.01145 20.2528 2.66528 17.9242 2.22878 15.3531C1.80122 12.7913 2.31901 10.1615 3.68579 7.953C5.07203 5.71948 7.20216 4.04688 9.70079 3.2301C9.36108 4.33142 9.18915 5.47766 9.19079 6.63013C9.20176 9.80884 10.4947 12.8486 12.7768 15.0613C15.5724 17.7698 19.4768 19.0095 23.3228 18.4102C22.3823 20.2484 20.9484 21.7882 19.1818 22.8572C17.3968 23.939 15.351 24.5145 13.2638 24.5222V24.5262Z"
-          fill="#99B2C6"
-          fill-rule="evenodd"
-        />
-      </svg>
-      <label
-        class="text-lg font-semibold text-ratio-200 dark:text-grayBlue-400"
-      >
-        Dark mode
-      </label>
-    </div>
-    <label
-      aria-label="Automatic updates"
-      class="group relative max-w-fit inline-flex items-center justify-start cursor-pointer touch-none tap-highlight-transparent select-none"
-    >
-      <span
-        style="border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
-      >
-        <input
-          aria-labelledby=":r0:"
-          role="switch"
-          type="checkbox"
-          value=""
-        />
-      </span>
-      <span
-        aria-hidden="true"
-        class="px-1 relative inline-flex items-center justify-start flex-shrink-0 overflow-hidden bg-default-200 rounded-full outline-none group-data-[focus-visible=true]:z-10 group-data-[focus-visible=true]:ring-2 group-data-[focus-visible=true]:ring-focus group-data-[focus-visible=true]:ring-offset-2 group-data-[focus-visible=true]:ring-offset-background group-data-[selected=true]:bg-success group-data-[selected=true]:text-success-foreground w-12 h-7 mr-2 rtl:ml-2 rtl:mr-[unset] transition-background"
-      >
-        <span
-          class="z-10 flex items-center justify-center bg-white shadow-small rounded-full origin-right w-5 h-5 text-small group-data-[selected=true]:ml-5 rtl:group-data-[selected=true]:ml-0 rtl:group-data-[selected=true]:mr-5 transition-all group-data-[pressed=true]:w-6 group-data-[selected]:group-data-[pressed]:ml-4"
-        />
-      </span>
-    </label>
-  </div>
-</div>
-`;
-
 exports[`SwitchMode Component renders with default type 1`] = `
 <div>
   <div
@@ -80,7 +24,7 @@ exports[`SwitchMode Component renders with default type 1`] = `
         />
       </svg>
       <label
-        class="text-lg font-semibold text-ratio-200 dark:text-grayBlue-400"
+        class="text-lg text-ratio-200 dark:text-grayBlue-400"
       >
         Dark mode
       </label>

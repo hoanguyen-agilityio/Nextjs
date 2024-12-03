@@ -97,10 +97,7 @@ const Media = ({ mode, onImagesChange, data }: ImageUploaderProps) => {
 
   return (
     <div className="mt-3xl">
-      <label
-        className="font-semibold text-lg text-black-900 dark:text-white"
-        htmlFor="Media"
-      >
+      <label className="text-lg text-black-900 dark:text-white" htmlFor="Media">
         Media
       </label>
 

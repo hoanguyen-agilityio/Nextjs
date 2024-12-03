@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <section className="flex h-screen flex-col items-center justify-center gap-2">
       <FaceFrownIcon width="60px" height="60px" />
-      <h2 className="text-4xl font-semibold">404 Not Found</h2>
+      <h2 className="text-4xl">404 Not Found</h2>
       <p className="text-2xl">Could not find the requested invoice.</p>
       <Link
         href="/"

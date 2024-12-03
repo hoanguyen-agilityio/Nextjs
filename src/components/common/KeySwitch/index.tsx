@@ -18,9 +18,7 @@ const KeySwitch = ({
   return (
     <div className={`flex justify-between ${classWrapper}`}>
       <div>
-        <span className="font-semibold text-lg text-black-900 dark:text-white">
-          {title}
-        </span>
+        <span className="text-lg text-black-900 dark:text-white">{title}</span>
         <p className="font-normal text-xsm text-ratio-200 dark:text-grayBlue-400">
           {describe}
         </p>

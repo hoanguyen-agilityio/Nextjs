@@ -39,13 +39,13 @@ const ProductPreview = ({ imageSrc, imageAlt, price }: ProductPreviewProp) => {
         <div className="flex flex-col gap-5">
           <div className="flex gap-[10px]">
             <ClockIcon width="17px" height="17px" />
-            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold">
+            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400">
               9 Jan 2023 9:43 PM
             </p>
           </div>
           <div className="flex gap-[10px]">
             <RatingIcon width="114px" height="16px" />
-            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400 font-semibold">
+            <p className="text-xsm text-ratio-200 dark:text-grayBlue-400">
               4.3
             </p>
           </div>

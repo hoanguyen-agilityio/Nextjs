@@ -28,7 +28,7 @@ const INPUT_FIELD_DATA = [
     size: 'xxl' as const,
     startContent: (
       <div className="pointer-events-none flex items-center">
-        <span className="font-semibold text-xsm">$</span>
+        <span className="text-xsm">$</span>
       </div>
     ),
     classWrapper: 'mt-3xl',
@@ -76,7 +76,7 @@ const CUSTOM_INPUT_FIELDS = [
     className: 'mt-2',
     startContent: (
       <div className="bg-translucent-100 dark:bg-translucent-700 w-24 h-full rounded-l-lg absolute left-0 flex items-center justify-center">
-        <p className="font-semibold text-xsm text-grayBlue-400">https://</p>
+        <p className="text-xsm text-grayBlue-400">https://</p>
       </div>
     ),
   },
