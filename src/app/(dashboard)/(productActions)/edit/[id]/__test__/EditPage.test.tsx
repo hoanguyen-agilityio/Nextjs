@@ -1,8 +1,9 @@
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import EditPage from '../page';
 import { useParams } from 'next/navigation';
-import DetailPage from './page';
 
+// Mock the necessary modules
 jest.mock('next/navigation', () => ({
   useParams: jest.fn(),
   useRouter: jest.fn().mockReturnValue({
@@ -17,10 +18,18 @@ jest.mock('@/services', () => ({
   },
 }));
 
-describe('Detail page', () => {
-  test('renders detail page', () => {
+describe('EditPage Component', () => {
+  test('renders the EditPage correctly', async () => {
     (useParams as jest.Mock).mockReturnValue({ id: '1' });
-    const { container } = render(<DetailPage />);
-    expect(container).toMatchSnapshot();
+
+    const mockParamsPromise = Promise.resolve({ id: '1' });
+
+    const { asFragment } = render(
+      await EditPage({
+        params: mockParamsPromise,
+      }),
+    );
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
