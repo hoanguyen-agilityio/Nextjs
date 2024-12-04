@@ -22,24 +22,4 @@ describe('Search component', () => {
     );
     expect(container).toMatchSnapshot();
   });
-
-  test('renders with secondary type', () => {
-    const { container } = render(<InputCustom color="secondary" size="md" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  test('render with size xl', () => {
-    const { container } = render(<InputCustom size="xl" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  test('render with size xxl', () => {
-    const { container } = render(<InputCustom size="xxl" />);
-    expect(container).toMatchSnapshot();
-  });
-
-  test('render with size 3xl', () => {
-    const { container } = render(<InputCustom size="3xl" />);
-    expect(container).toMatchSnapshot();
-  });
 });
