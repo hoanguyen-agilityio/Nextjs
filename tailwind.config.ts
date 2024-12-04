@@ -2,6 +2,8 @@ import { nextui } from '@nextui-org/react';
 import type { Config } from 'tailwindcss';
 import { colors, fontSize, screen, customSpacing } from './src/themes';
 
+const { light, black } = colors;
+
 const config: Config = {
   purge: {
     enabled: true,
@@ -41,6 +43,23 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui()]
+  plugins: [nextui({
+    addCommonColors: true,
+    themes: {
+      light: {
+        colors: {
+          background: light[100],
+          foreground: black[700]
+        },
+        layout: {},
+      },
+      dark: {
+        colors: {
+          background: black[600],
+          foreground: light[200]
+        }
+      }
+    }
+  })]
 };
 export default config;
