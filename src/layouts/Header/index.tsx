@@ -14,6 +14,7 @@ const Header = () => {
           placeholder="search"
           size="xs"
           radius="xs"
+          disabled={true}
           startContent={
             <SearchIcon
               width="21px"

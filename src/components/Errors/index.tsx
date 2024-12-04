@@ -6,38 +6,13 @@ import Link from 'next/link';
 // Constants
 import { MESSAGE, ROUTERS } from '@/constants';
 
+// Utils
+import { getErrorCode, getErrorMessage } from '@/utils';
+
 type ErrorProps = {
   onReset?: () => void;
   message?: string;
   className?: string;
-};
-
-const getErrorCode = (): number => {
-  if (typeof window !== 'undefined') {
-    const code = new URLSearchParams(window.location.search).get('errorCode');
-    return code ? parseInt(code, 10) : 500;
-  }
-
-  return 500;
-};
-
-const getErrorMessage = (code: number): string => {
-  switch (code) {
-    case 404:
-      return 'Page not found';
-    case 500:
-      return 'Internal server error';
-    case 403:
-      return 'Forbidden';
-    case 401:
-      return 'Unauthorized';
-    case 400:
-      return 'Bad request';
-    case 300:
-      return 'Multiple choices';
-    default:
-      return 'Oops! Something went wrong.';
-  }
 };
 
 const Error = ({ onReset, message = MESSAGE.DEFAULT }: ErrorProps) => {

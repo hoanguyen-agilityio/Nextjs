@@ -23,7 +23,14 @@ const ProductTable = ({
 }: IProductTable) => {
   const router = useRouter();
   const handlePageChange = (page: number) => {
-    router.push(`?page=${page}`);
+    // Get current URL parameters
+    const params = new URLSearchParams(window.location.search);
+
+    // Set the new page
+    params.set('page', page.toString());
+
+    // Push the updated URL with all existing parameters and the new page value
+    router.push(`?${params.toString()}`);
   };
 
   return (

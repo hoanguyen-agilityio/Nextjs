@@ -46,11 +46,11 @@ const ModelDeleteProduct = ({
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 text-center text-3xl text-red-600">
+              <ModalHeader className="flex flex-col gap-1 text-center text-3xl text-red-500">
                 Warning !!!
               </ModalHeader>
               <ModalBody>
-                <p className="text-2xl text-center">
+                <p className="text-2xl text-center font-medium">
                   Do you really want to delete the product?
                 </p>
               </ModalBody>

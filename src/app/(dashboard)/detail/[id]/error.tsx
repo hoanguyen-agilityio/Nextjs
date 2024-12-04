@@ -6,8 +6,8 @@ type GlobalErrorProps = {
   reset: () => void;
 };
 
-const ErrorAuth = ({ reset, error }: GlobalErrorProps) => (
+const ErrorDetailPage = ({ reset, error }: GlobalErrorProps) => (
   <Error onReset={reset} message={error.message} />
 );
 
-export default ErrorAuth;
+export default ErrorDetailPage;
