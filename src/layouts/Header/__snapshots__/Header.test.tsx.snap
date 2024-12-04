@@ -51,6 +51,7 @@ exports[`Header Layout render header 1`] = `
                 class="w-full bg-transparent !outline-none focus-visible:outline-none data-[has-start-content=true]:ps-1.5 data-[has-end-content=true]:pe-1.5 file:cursor-pointer file:bg-transparent file:border-0 autofill:bg-transparent bg-clip-text group-data-[has-value=true]:text-default-foreground placeholder:text-ratio-300 dark:placeholder:text-ratio-700 dark: text-ratio-700 flex-grow focus:outline-none focus:ring-0 text-base font-semibold"
                 data-has-start-content="true"
                 data-slot="input"
+                disabled=""
                 id="react-aria-:r0:"
                 placeholder="search"
                 type="text"
